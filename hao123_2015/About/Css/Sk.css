@@ -1,0 +1,24 @@
+.user_fk{width:950px;position:relative;margin:8px auto 0 auto;}
+.fk_left{float:left;width:172px;}
+.fk_right{float:right;width:779px;height:380px;border:1px solid #7DC7ED;padding-top:12px;}
+.fk_menu{position:absolute;z-index:2;width:170px;height:200px;left: 0;top: 0;}
+.fk_menu li{width:170px;height:34px;line-height:32px;margin-bottom:8px;font-size:14px;}
+.fk_menu li a{display:block;}
+.fk_menu li a:hover{color:#000;text-decoration:none;}
+.fk_menu1{width:170px;height:34px;background:url(../images/support/fknav1.gif) no-repeat;font-weight:bold;}
+.fk_menu2{width:170px;height:34px;background:url(../images/support/fknav2.gif) no-repeat;}
+.fk_rt td{font-size:14px;padding:3px 0;line-height:24px;}
+.fk_input1{width:200px;border:1px solid #aaa;padding:4px 2px;}
+.fk_input2{width:300px;border:1px solid #aaa;padding:4px 2px;}
+.fk_input3{width:585px;height:175px;border:1px solid #aaa;padding:4px 2px;}
+.fk_input4{width:310px;height:150px;border:1px solid #aaa;padding:4px 2px;line-height:24px;font-size:13px;}
+.redtips{color:#c00;}
+.fk_anniu{float:left;display:block;width:90px;text-align:center;line-height:34px;height:36px;color: #333;font-size:14px;background: url(../images/support/fk_anniu.gif) no-repeat;cursor: pointer;margin-right:8px;}
+.fk_anniu:link,.fk_anniu:visited{color:#333;text-decoration:none}
+.fk_anniu:hover{color:#333;text-decoration:none}
+.fk_tips1{width:320;height:160px;background: url(http://panxinyou.com/images/support/fk_tips.gif) no-repeat 0 4px;}
+.fk_tips1a{padding:8px 3px 0 15px;line-height:24px;}
+.fk_tips1a span{float:right;width:273px;font-size:12px;color:#0075BF;text-align:left;}
+.fk_jy img{float:left;padding:2px 5px 0 0;}
+.fk_tips2{width:591;height:77px;background: url(http://panxinyou.com/images/support/fk_tips1.gif) no-repeat;}
+.fk_tips2a{font-size:12px;padding:6px 15px;color:#0075BF;}

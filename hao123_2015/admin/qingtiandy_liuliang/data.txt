@@ -1,0 +1,16 @@
+<soojs_un:soojs_u_name>qingtiandy</soojs_un:soojs_u_name>
+<soojs_un:soojs_u_pass>9685749852</soojs_un:soojs_u_pass>
+<soojs_un:soojs_uu_name>晴天</soojs_un:soojs_uu_name>
+<soojs_un:soojs_u_tel>13506810000</soojs_un:soojs_u_tel>
+<soojs_un:soojs_u_email>mysoojs@yahoo.com.cn</soojs_un:soojs_u_email>
+<soojs_un:soojs_u_addr>浙江</soojs_un:soojs_u_addr>
+<soojs_un:soojs_date>2009-10-28 21:32:27</soojs_un:soojs_date>
+<soojs_un:soojs_lastdate>2009-10-28 21:32:27</soojs_un:soojs_lastdate>
+<soojs_un:soojs_thisdate>2009-10-28 21:32:27</soojs_un:soojs_thisdate>
+<soojs_un:soojs_ip>127.0.0.1</soojs_un:soojs_ip>
+<soojs_un:soojs_thisip>127.0.0.1</soojs_un:soojs_thisip>
+<soojs_un:soojs_lastip>127.0.0.1</soojs_un:soojs_lastip>
+<soojs_un:soojs_u_birth>1980-01-01</soojs_un:soojs_u_birth>
+<soojs_un:soojs_status>1</soojs_un:soojs_status>
+<soojs_un:soojs_u_Webf>1</soojs_un:soojs_u_Webf>
+<qingtiandy_url>www.qingtiandy.cn|||晴天电影系统{###}www.qingtianpic.cn|||晴天图片系统{###}hao123.qingtiandy.cn|||晴天网址导航程序{###}www.soojs.com|||网站搜索{###}www.kuleo.cn|||酷乐窝{###}www.yayamovie.com|||娅娅免费电影{###}www.aoodoo.cn|||阿朵影视馆{###}www.baidu.com|||百　度{###}www.sina.com.cn|||新　浪{###}www.qq.com|||腾　讯{###}www.sohu.com|||搜　狐{###}www.163.com|||网　易{###}www.google.cn|||谷　歌{###}www.ifeng.com|||凤 凰 网{###}www.cctv.com/default.shtml|||央 视 网{###}www.xinhuanet.com|||新 华 网{###}www.people.com.cn|||人 民 网{###}www.china.com|||中 华 网{###}cn.yahoo.com|||雅　虎{###}www.xiaonei.com|||校 内 网{###}www.kaixin001.com|||开 心 网{###}www.hunantv.com|||湖南卫视{###}youa.baidu.com|||百度有啊{###}www.taobao.com|||淘 宝 网{###}www.baixing.com|||百 姓 网{###}www.51.com|||51个人空间{###}www.360.cn|||360卫士{###}www.icbc.com.cn|||工商银行{###}www.tianya.cn|||天涯社区{###}china.nba.com|||NBA中文网{###}www.zol.com.cn|||中关村在线{###}www.qidian.com|||起点小说网{###}www.newyx.net|||单机游戏{###}china.alibaba.com|||阿里巴巴{###}www.4399.com|||小游戏网{###}www.youku.com|||优 酷 网{###}www.tudou.com|||土 豆 网{###}www.xunlei.com|||迅雷在线{###}www.gov.cn|||中国政府网{###}www.chinamobile.com|||中国移动{###}www.10010.com|||中国联通{###}www.ct10000.com|||中国电信{###}weather.news.sina.com.cn|||天气预报{###}www.dheart.net/mobile|||号码归属地{###}www.chsi.com.cn/xlcx/|||学历查询{###}www.qunar.com|||航班查询{###}www.hao123.com/haoserver/xzcx.htm|||星座查询{###}www.zdic.net|||字典搜索</qingtiandy_url>

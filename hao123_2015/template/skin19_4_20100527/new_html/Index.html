@@ -1,0 +1,602 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="gb2312" />
+<title>{qt:G_WEBTITLE}</title>
+<meta name="description" content="{qt:G_DIE}" />
+<meta name="keywords" content="{qt:G_KEY}" /> 
+<meta name="author" content="qTcms! qingtiancms Team" />
+<meta name="copyright" content="2009-2014 qingtiancms Inc." />
+<script charset="gb2312" type="text/javascript"> var BaiduTn = {tn: "{qt:G_lm_baidu}", ch: "1" };</script>
+<script charset="gb2312" type="text/javascript" src="../js/public4/rebuild/js/qingtiancmsb.js?140214141124"></script>
+{if:"{qt:G_qTcms_Com_16_Pifu}"<>""}<script type="text/javascript"> if(Cookie.get("{qt:G_qTcms_Com_16_Pifu}")){}else{Cookie.set("{qt:G_qTcms_Com_16_Pifu}","isSeted");Cookie.set("skinCss","{qt:G_qTcms_Com_16_Pifu}");}</script>{end if}
+<script language="javascript">var qtcmsdd={t:"{qt:indexurl}template/{qt:G_moban}/js/",d:"{qt:indexurl}",taobao:"{qt:G_lm_taobao2}",mm:"{qt:pageone f_m_members.html}",ml:"{qt:pageone f_m_login.html}",ig:"{qt:pageone IndexGouwu.htm}",iy:"{qt:pageone IndexYule.htm}",mi:"{qt:pageone m_sethomepage.html}",co:"{qt:G_u_Cookies}",jn:"{qt:G_jifen_jifen_name}",ey:"{qt:G_U_yiqifa_id}",ao:"{qt:G_All_moshi}",aj:"{qt:pageone 1.js}",Dc:"{qt:G_qTcms_Com_16_City}",Ss:"{qt:G_qTcms_Com_16_sosuo_q}",Ssg:"{qt:G_lm_sogou_s}",Sgg:"{qt:G_lm_google_s}",Ns2:"{qt_Loop:List19 1,10,1}{qt:n_title2}{/qt_Loop}",Ns1:"{qt_Loop:List19 1,6,1}{qt:n_title2}{/qt_Loop}",NSs:"{qt:G_qTcms_Com_16_mkuai}",Ns1_2:"{qt_Loop:List19 1,7,1}{qt:n_title2}{/qt_Loop}",Ns1_3:"{qt_Loop:List19 1,8,1}{qt:n_title2}{/qt_Loop}",Ns1_4:"{qt_Loop:List19 1,9,1}{qt:n_title2}{/qt_Loop}",Ns2_2:"{qt_Loop:List19 1,11,1}{qt:n_title2}{/qt_Loop}",Ns2_3:"{qt_Loop:List19 1,12,1}{qt:n_title2}{/qt_Loop}",Ns2_4:"{qt_Loop:List19 1,13,1}{qt:n_title2}{/qt_Loop}",b:{},Nb:{a1:"{qt_Loop:List19 1,23,1,1}{qt:n_title2}{/qt_Loop}",a2:"{qt_Loop:List19 1,23,1,2}{qt:n_title2}{/qt_Loop}",a3:"{qt_Loop:List19 1,23,1,3}{qt:n_title2}{/qt_Loop}",a4:"{qt_Loop:List19 1,23,1,4}{qt:n_title2}{/qt_Loop}",a5:"{qt_Loop:List19 1,23,1,5}{qt:n_title2}{/qt_Loop}",a6:"{qt_Loop:List19 1,23,1,6}{qt:n_title2}{/qt_Loop}",a7:"{qt_Loop:List19 1,23,1,7}{qt:n_title2}{/qt_Loop}"},xzd:"1",xxpf:"{qt:G_qTcms_Com_16_Pifu}",dc:{a:"{qingtiancms:G_qTcms_Com_16_right_mz}",b:"{qt:G_qTcms_Com_16_qingtiancms_b_b1}",c:"{qt:G_qTcms_Com_16_qingtiancms_b_b2}"},aqq:{a:"1"},dff:{a:"",b:"",c:"difangzhan",d:"{qt:pageone m_more.html}"},cpp:{a:"0",b:4},add:{a:"{qt_Loop:List19 1,3,1}{qt:n_title2}{/qt_Loop}"},toplist:[{qt_Loop:List19 1,39,10}"{qt:n_title1}",{/qt_Loop}""]}</script>
+<script>if(qtcmsdd.dc.c=="2")qtcmsdd.dc.c="";if(qtcmsdd.dc.b=="2")qtcmsdd.dc.b="";</script>
+<script charset="gb2312" src="{qt:indexurl}p_inc/public.js"></script>
+<link id="js_oStyle" href="../js/public4/rebuild/css/index.css?140214141124" rel="stylesheet" />
+<link href="../js/public4/rebuild/css/other.css?20140512" rel="stylesheet" />
+{if:"{qt:G_qTcms_Com_16_Pifu}"<>""}
+<link rel="stylesheet" id="js_skinStyle" href="../js/public4/rebuild/css/skin/{qt:G_qTcms_Com_16_Pifu}.css?140214141124" />
+{else}
+<link rel="stylesheet" id="js_skinStyle" href="" />
+{end if}
+<base target="_blank"/><!--[if IE 6 ]></base><![endif]-->
+<script charset="gb2312" src="../js/public4/rebuild/js/skin.js?140214141124"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+</head>
+<body>
+<em style="display:none;" class="filter"></em>
+<div id="classicsWrap">
+	<div class="topbar">
+		<div class="w980 cf top-bd">
+			<div class="wel fl">
+				<ul>
+					<li class="mcol"><a href="{qt:G_WEBURL}" class="home" target="_self" onClick="Yl.setHome(this, this.href);return false;">设为主页</a></li>
+					
+					{qt_Loop:List19 1,30,8}<li><a href="{qt:n_gotourl}">{qt:n_title1}</a></li>{/qt_Loop}
+					{if:"{qt:G_jinbi_kaifang}"="1"}<li><A href="{qt:indexurl}members/?Back_url=./ujifeninstr.asp" target="_blank" id="p_skin_jinbi" class="divred">绑定本机金币</a></li>{end if}
+					{if:"{qt:G_qTcms_Com_16_qq}"<>""}
+					<li class="imgs001" id="p_skin_qqlogin"><a href="{qt:indexurl}Api_qqlogin/redirect.asp" target="_blank"><img src="../images/other/qq_login.png" border="0"></a></li>
+					{end if}
+					{if:"{qt:G_qTcms_Com_16_qq}"<>"1"}
+					<script>qtcmsdd.aqq.a="2"</script>
+					<li><a href="{qt:indexurl}Members/login.asp?reurl={qt:indexurl}" id="p_skin_login" target="_self">登录</a></li>
+					<li><a href="{qt:indexurl}Members/reg.asp" id="p_skin_reg" target="_self">注册</a></li>
+					{end if}
+				</ul>
+			</div>
+			
+			<ul class="sets fr cf" id="set">
+				<li class="drop"><a target="_self" href="javascript:;" id="js_nm">标准版</a>
+				<ol> 
+					<li id="js_ws"><a target="_self" href="javascript:;">宽屏版</a></li> 
+					<li id="js_reOld"><a target="_self" href="javascript:;" class="exp-new"></a></li> 
+				</ol>  
+				</li>
+				<li class="setColor cf"  id="js_simpleSetColor"><a class="blue" title="蓝色" skin="blue">蓝色</a><a title="绿色"  skin="green" class="green">绿色</a><a class="pink" title="粉色" skin="pink">粉色</a></li>			
+				<li class="themeChange " id="themeChange"><a href="javascript:void(0)" target="_self">换肤</a></li>		
+				<li class=""></li>
+			</ul>
+		</div>
+	</div>	
+	<div class="theme" id="theme">	
+		<div class="themeWrap loadingBig"></div>  
+	</div>  
+	<div id="wrap">
+		<div class="container"> 
+			<div class="header">
+				<div class="header-bd cf">							
+					<div class="weather-tip">有雨，出门带伞哦<span class="weather-close">X</span></div>
+					<div id="imgArr">{qt_Loop:List19 1,25,10}<a href="{qt:n_gotourl}" title="{qt:n_title1}"><img src="{qt:n_pic}"  alt="{qt:n_title1}" /></a>{/qt_Loop}</div>
+					<div class="fr cf">
+						<div class="fl calendar" id="js_cal"><span class="loading">正在加载</span></div>
+						<div class="fl box-weather bg"><div id="weather"></div><ul id="setCityBox" style="display:none;" class="box-setCity"><li><select id="w_pro" onChange="Weather.cp(this.value)"><option value="109">B 北京</option><option value="117">S 上海</option><option value="110">T 天津</option><option value="135">C 重庆</option><option value="119">A 安徽</option><option value="123">F 福建</option><option value="127">G 广东</option><option value="128">G 广西</option><option value="137">G 贵州</option><option value="131">G 甘肃</option><option value="111">H 河北</option><option value="124">H 河南</option><option value="125">H 湖北</option><option value="126">H 湖南</option><option value="129">H 海南</option><option value="116">H 黑龙江</option><option value="122">J 江西</option><option value="120">J 江苏</option><option value="115">J 吉林</option><option value="114">L 辽宁</option><option value="132">N 宁夏</option><option value="113">N 内蒙古</option><option value="133">Q 青海</option><option value="118">S 山东</option><option value="112">S 山西</option><option value="130">S 陕西</option><option value="136">S 四川</option><option value="139">X 西藏</option><option value="134">X 新疆</option><option value="138">Y 云南</option><option value="121">Z 浙江</option><option value="140">X 香港</option><option value="141">A 澳门</option><option value="142">T 台湾</option></select><select id="w_city" onChange="Weather.cc(this.value);"></select><select id="l_city"></select></li><li> <a class="button"  href="javascript:void(0);" target="_self" onClick="Weather.custom();return false;">确 定</a> <a class="button"  href="javascript:void(0);" target="_self" onClick="Weather.autoLoad();return false;">自动判断</a> </li></ul></div>
+						<div class="fl handle bg" id="qingtiancms_com_xiaohua"> 
+						{qt_Loop:GgList 1,0,0,1}<a href="{qt:indexurl}members/gg_detail.asp?id={qt:n_id}" class="notice bg">公告：{qt:mntitle_1_color}</a>{/qt_Loop}
+						<form id="mail" class="mailForm" target="_blank" action="" onSubmit="MailLogin.sendMail();return false;" method="post" name="mail"><div class="e-mail" id="js_eMail"><div class="cf"><input type="text" class="mailUsername fl" autocomplete="off" id="js_mailUsername" /><span class="box-mailSelect fl rep"><label class="bg mailSelect" id="js_mailServer">@163.com</label></span><label for="js_mailUsername" class="mailPrompt">邮箱</label></div><div class="mailLogin cf" id="js_mailLogin"><input type="password" class="mailPassWord fl" id="js_mailPassWord" /><span class="box-mailSubmit fl"><input type="submit" value="登录" hidefocus="true" id="js_mailSubmit" rel="nr" class="mailSubmit rep" /></span><label for="js_mailPassWord" class="mailPromptPw">密码</label></div>  <ul class="eMail-list" selectIndex="1" id="js_eMailList"><li class="no">-- 请选择邮箱 --</li><li class="" dn="1">@163.com</li><li class="" dn="2">@126.com</li><li class="" dn="3">@vip.163.com</li><li class="" dn="4">@sina.com</li><li class="" dn="5">@vip.sina.com</li><li class="" dn="6">@yahoo.com.cn</li><li class="" dn="7">@yahoo.cn</li><li class="" dn="8">@sohu.com</li><li class="" dn="9">@tom.com</li><li class="" dn="10">@21cn.com</li><li class="" dn="11">@yeah.net</li><li class="" dn="12">@189.cn</li><li class="" dn="13">@139.com</li><li class="" dn="14">百度帐号</li><li class="" dn="15">人人网</li><li class="" dn="16">51.com</li><li class="" dn="17">ChinaRen</li><li class="no">以下弹出登录</li><li class=""><a href="https://www.alipay.com/user/login.htm">支付宝</a></li><li class=""><a href="http://t.sina.com.cn/">新浪微博</a></li><li><a href="http://www.kaixin001.com/">开心网</a></li><li><a href="http://qzone.qq.com/">QQ空间</a></li><li><a href="http://mail.qq.com/cgi-bin/loginpage">@qq.com</a></li><li><a href="http://mail.google.com/mail/">@gmail.com</a></li><li><a href="http://www.hotmail.com">@hotmail.com</a></li><li class=""><a href="http://www.188.com/">@188.com</a></li></ul><!--E:邮箱地址列表 }--></div></form></div>
+					</div>  		
+					<a href="{qt:HomePage}" hidefocus="true" class="logo fl" title="{qt:G_WEBNAME}">{qt:G_WEBNAME}</a>
+				</div>
+			</div> 
+						
+			<div class="w980 m-search rep" block="search">
+				<div class="m-rep"></div>
+				<div class="s-hot" id="s-hot">
+					<div class="hot-til">
+						<span class="hot-clock"></span>&nbsp;&nbsp;<label>实时热点</label>
+					</div>
+					<div class="hot-con"></div>
+				</div>
+				<ul id="sm_tab" class="m-search-tab cf">
+					<li class="active" rel="web" id="g_web">网页</li>
+					{qt_Loop:List19 1,29,10}
+					<li rel="{qt:n_title2}" class="">{qt:n_title1}</li>
+					{/qt_Loop}
+				</ul>
+				<div class="cf m-search-con" id="sb">
+					<div id="sw" class="fr col-hotKeys"></div>
+					<div id="sf" class="fl search-widget">
+						<form target="_blank" method="get" action="http://www.baidu.com/s" id="searchForm">
+							<div style="float:left" id="div_divf__out" class="divf__out" onMouseOut="this.className='divf__out'" onMouseOver="this.className='divf__over'">
+								<a id="sf_label" class="pic fl" href="http://www.baidu.com/index.php?tn={qt:G_lm_baidu}&ch=1"><img src="../js/public4/rebuild/images/s/{qt:G_qTcms_Com_16_sosuo_q}.gif" id="searchGroupLogo" /><img src="../js/public4/search_logo/search_arrow.gif" border="0" class="im" id="searchGroupLogob"></a>
+								<div id="search_list">
+									<ul>
+										<li><img src="../js/public4/rebuild/images/s/google.gif" alt="谷歌搜索" width="105" rel="google" /></li>
+										<li><img src="../js/public4/rebuild/images/s/360.gif" alt="360搜索" width="105" rel="s360" /></li>
+										<li><img src="../js/public4/rebuild/images/s/sogou.gif" alt="搜狗搜索" width="105" rel="sogou" /></li>
+										<li><img src="../js/public4/rebuild/images/s/bing.gif" ALT="必应搜索" width="105" rel="bing" /></li>
+										<li><img src="../js/public4/rebuild/images/s/baidu.gif" alt="百度搜索" width="105" rel="baidu" /></li>
+										<li><img src="../js/public4/rebuild/images/s/youdao.gif" alt="有道搜索" width="105" rel="youdao" /></li>
+									</ul>
+								</div>
+							</div>
+							<div class="box-search-input fl"><b class="shadow-x"></b><b class="shadow-y"></b><input type="text" autocomplete="off" class="searchWord" name="wd" baidusug="1" /></div>
+							<span class="box-search-submit cf rep fl"><b class="r fr bg"></b><b class="l fl bg"></b><input type="submit" value="搜索一下" class="searchSubmit fl" hidefocus="true" /></span>
+							<input type="hidden" value="{qt:G_lm_baidu}" name="tn" />
+							<input type="hidden" value="1" name="ch" />
+						</form>
+					</div>
+					<div style="display:none;" id="suggest" class="sug-wrap"></div>
+					<div id="topShow"></div>
+				</div>
+			</div>
+			
+			<div class="w980 content_top_ad1 cf" id="content_top_ad1" style="display:none"></div>
+			<div class="menus" id="menu_tab">
+		<li rel="qingtiancmsindex" class="select" open="0"><a class="channel" target="_self"><i class="qt_index menutop"></i><span>网址大全</span></a></li>
+			<li rel="qt_tab_1" height="4490" url="/htmls/s_pindao_news.html" open="0"><a class="channel"  target="_self"><i class="menutop qt_tab_1"></i><span>新闻头条</span></a></li><li rel="qt_tab_2" height="1394" url="/htmls/s_pindao_tv.html" open="0"><a class="channel"  target="_self"><i class="menutop qt_tab_2"></i><span>电视剧</span></a></li><li rel="qt_tab_3" height="1394" url="/htmls/s_pindao_movie.html" open="0"><a class="channel"  target="_self"><i class="menutop qt_tab_3"></i><span>最新电影</span></a></li><li rel="qt_tab_4" height="542" url="/htmls/s_pindao_yinyue.html" open="0"><a class="channel"  target="_self"><i class="menutop qt_tab_4"></i><span>音乐之声</span></a></li><li rel="qt_tab_5" height="3498" url="/htmls/s_pindao_xiaoyouxi.html" open="0"><a class="channel"  target="_self"><i class="menutop qt_tab_5"></i><span>小游戏</span></a></li><li rel="qt_tab_6" height="3540" url="/htmls/s_pindao_xiaoshuo.html" open="0"><a class="channel"  target="_self"><i class="menutop qt_tab_6"></i><span>小说大全</span></a></li><li rel="qt_tab_7" height="2770" url="http://ju.taobao.com/" open="1"><a class="channel" href="http://s.click.taobao.com/t?e=m%3D2%26s%3DskHuxgFImxUcQipKwQzePCperVdZeJviEViQ0P1Vf2kguMN8XjClAuPZpt6NQJrTwVKLpnfV7hnNgEHOXs62ytUcanGLds7ri8LdEZc9LijcpQfUBNdPDeo0BcZWWIRYYA%2FDpPH01wK9AmARIwX9K%2BAjBDXvuqoU47FHjfsActnIQu5PdXpojKJn5AyUbPoV" target="_blank"><i class="menutop qt_tab_7"></i><span>聚划算</span></a></li><li rel="qt_tab_8" height="3870" url="/htmls/s_pindao_gouwu.html" open="0"><a class="channel"  target="_self"><i class="menutop qt_tab_8"></i><span>正品购物</span></a></li>
+			</div>	
+			<div style="line-height:0px; font-size:0px; clear:both" id="menu_id_both"></div>
+			
+			<div class="w980 content cf" id="qingtiancmsbody"> 
+			<div id="qingtiancmsindex">
+
+				<div class="main fl">
+					<div class="col col-fmSite" id="hh_active">
+						<div id="bb" class="fmSite-con" block="mingzhan">
+							<div id="fm" class="box-fmSite" style="display:block;">
+								<ul class="cf fmSite bb">
+									{qt_Loop:List19 1,1,18}<li><a href="{qt:n_gotourl}"{if:"{qt:n_pic}"<>""} style="background: url({qt:n_pic}) no-repeat 1px;padding-left:20px;"{end if}>{qt:nd_title1_color}</a>{if:"{qt:n_title2}"<>""}<a href="{qt:n_gotourl2}" style="background: url(../js/public4/rebuild/images/dian.gif) no-repeat 1px;padding-left:7px;">{qt:n_title2}</a>{end if}{qt:n_content}</li>{/qt_Loop}
+							  </ul>
+								 <ul class="cf fmSite ">
+								 	{qt_Loop:List19 1,1,{qingtiancms:G_qTcms_Com_16_right_mz}|18}<li><a href="{qt:n_gotourl}"{if:"{qt:n_pic}"<>""}  style="background: url({qt:n_pic}) no-repeat 1px;padding-left:20px;"{end if}>{qt:nd_title1_color}</a>{if:"{qt:n_title2}"<>""}<a href="{qt:n_gotourl2}" style="background: url(../js/public4/rebuild/images/dian.gif) no-repeat 1px;padding-left:7px;">{qt:n_title2}</a>{end if}{qt:n_content}</li>{/qt_Loop}
+								</ul>
+							</div>
+							<div id="loadFav"></div>
+						</div>
+						<span id="ldMore" title="打开我的导航"></span>
+					</div>
+					<div class="box-hot cf">{qt_Loop:List19 1,2,15}<a  href="{qt:n_gotourl}"{if:"{qt:n_title2}"<>""} class="a1"{end if}>{qt:nd_title1_color}</a>{if:"{qt:n_title2}"<>""}<a href="{qt:n_gotourl2}" style="background: url(../js/public4/rebuild/images/dian.gif) no-repeat 1px;padding-left:7px;">{qt:n_title2}</a>{end if}{/qt_Loop}</div>
+				
+					<div class="col" block="cool-site">
+						<ul class="colnavi fcolnavi">
+							{qt_Loop:List19 1,26,7}<li><span class="g{qt:n2_i}"></span><a href="{qt:n_gotourl}">{qt:n_title1}</a><i>|</i></li>{/qt_Loop}
+							{qt_Loop:List19 1,26,8|7}<li><span class="g08" style="position: relative;"></span> <a href="{qt:n_gotourl}">{qt:n_title1}<ins class="tmkt" style="display: inline-block;position: absolute;width: 90px;height: 29px;margin-top: 3px;margin-left: 3px;overflow: hidden;"><img src="{qt:n_pic}"></ins></a></li>{/qt_Loop}
+						</ul>
+						<ul class="sortSite" id="qingtiancms_middle_ul_1">
+							{-qt_Loop:AllList 0,8,10}
+							<li class='alt'><h4 class="tit fl"><a href="{qt:ListUrl2 {-qt:type2_id}}">{-qt:type2_name2}</a></h4><span class="more fr"><a href="{qt:ListUrl2 {-qt:type2_id}}" target="_blank">更多&#62;&#62;</a></span>{qt_Loop:ListNew 1,{-qt:type1_id},6}<span class="box-sort_left"><a  href="{qt:m_url}"{aif:"{qt:m_pic}"<>""} style="background: url({qt:m_pic}) no-repeat 0;padding-left: 20px;margin-right: -20px;"{aend if}>{qt:mname_1_color}</a></span>{/qt_Loop}</li>
+							{/-qt_Loop}
+						</ul>
+						<ul class="colnavi">{qt_Loop:List19 1,35,8,1}<li><a href="{qt:n_gotourl}">{qt:n_title1}</a>{if:{qt:n_i}<=7}<i></i>{end if}</li>{/qt_Loop}</ul>
+						
+						<ul class="sortSite" id="qingtiancms_middle_ul_2">
+							{-qt_Loop:AllList 0,18|8,10}
+							<li><h4 class="tit fl"><a href="{qt:ListUrl2 {-qt:type2_id}}">{-qt:type2_name2}</a></h4><span class="more fr"><a href="{qt:ListUrl2 {-qt:type2_id}}" target="_blank">更多&#62;&#62;</a></span>{qt_Loop:ListNew 1,{-qt:type1_id},6}<span class="box-sort_left"><a  href="{qt:m_url}"{aif:"{qt:m_pic}"<>""} style="background: url({qt:m_pic}) no-repeat 0;padding-left: 20px;margin-right: -20px;"{aend if}>{qt:mname_1_color}</a></span>{/qt_Loop}</li>
+							{/-qt_Loop}
+						</ul>
+						<ul class="colnavi">{qt_Loop:List19 1,35,8,2}<li><a href="{qt:n_gotourl}">{qt:n_title1}</a>{if:{qt:n_i}<=7}<i></i>{end if}</li>{/qt_Loop}</ul>
+						
+						<ul class="sortSite" id="qingtiancms_middle_ul_3">
+							{-qt_Loop:AllList 0,23|18,10}
+							<li class='alt'><h4 class="tit fl"><a href="{qt:ListUrl2 {-qt:type2_id}}">{-qt:type2_name2}</a></h4><span class="more fr"><a href="{qt:ListUrl2 {-qt:type2_id}}" target="_blank">更多&#62;&#62;</a></span>{qt_Loop:ListNew 1,{-qt:type1_id},6}<span class="box-sort_left"><a  href="{qt:m_url}"{aif:"{qt:m_pic}"<>""} style="background: url({qt:m_pic}) no-repeat 0;padding-left: 20px;margin-right: -20px;"{aend if}>{qt:mname_1_color}</a></span>{/qt_Loop}</li>
+							{/-qt_Loop}
+						</ul>
+						
+						<ul class="colnavi">{qt_Loop:List19 1,35,8,3}<li><a href="{qt:n_gotourl}">{qt:n_title1}</a>{if:{qt:n_i}<=7}<i></i>{end if}</li>{/qt_Loop}</ul>
+						
+						<ul class="sortSite sortSite_last" id="qingtiancms_middle_ul_4">
+							{-qt_Loop:AllList 0,32|23,10}
+							<li><h4 class="tit fl"><a href="{qt:ListUrl2 {-qt:type2_id}}">{-qt:type2_name2}</a></h4><span class="more fr"><a href="{qt:ListUrl2 {-qt:type2_id}}" target="_blank">更多&#62;&#62;</a></span>{qt_Loop:ListNew 1,{-qt:type1_id},6}<span class="box-sort_left"><a  href="{qt:m_url}"{aif:"{qt:m_pic}"<>""} style="background: url({qt:m_pic}) no-repeat 0;padding-left: 20px;margin-right: -20px;"{aend if}>{qt:mname_1_color}</a></span>{/qt_Loop}</li>
+							{/-qt_Loop}
+						</ul>
+					</div>
+				</div>  
+				<script>var qTcmsl={a:'{qt_Loop:List19 1,3,1}<dt><a href="{qt:n_gotourl}" title="{qt:n_title1}"><img src="{qt:n_pic}" alt="{qt:n_title1}" /></a></dt>{/qt_Loop}'}</script>
+
+				<div class="sideBar fl" block="sidebar">
+					<dl class="col-row01" id="qingtiancms_com_toutiao">
+						
+						<dt id="imgArr_t">{qt_Loop:List19 1,3,10}<a href="{qt:n_gotourl}" title="{qt:n_title1}"><img src="{qt:n_pic}" alt="{qt:n_title1}" /></a>{/qt_Loop}</dt>
+						{qt_Loop:List19 1,4,3}<dd><a class="n" href="{qt:n_gotourl}" >{qt:n_title1}</a>{if:"{qt:n_title2}"<>""}<i class="vhr">|</i> <a href="{qt:n_gotourl2}" >{qt:n_title2}</a>{end if}</dd>{/qt_Loop}
+					</dl>
+				<div class="box-shadow3">
+					<ul class="col-row02 cf">
+						{qt_Loop:List19 1,5,8}<li class="m{qt:n2_i}"><a href="{qt:n_gotourl}">{qt:nd_title1_color}</a>{if:"{qt:n_title2}"<>""} <i class="vhd">·</i> <a href="{qt:n_gotourl2}">{qt:n_title2}</a>{end if}</li>{/qt_Loop}
+						<li class="line"></li>
+						{qt_Loop:List19 1,5,12|8}<li class="m{qt:n2_i 8}"><a href="{qt:n_gotourl}">{qt:nd_title1_color}</a>{if:"{qt:n_title2}"<>""} <i class="vhd">·</i> <a href="{qt:n_gotourl2}">{qt:n_title2}</a>{end if}</li>{/qt_Loop}
+					</ul>
+					<div class="comBox btop">
+						<ul class="colTitle" id="aside-col01-tab">
+							{qt_Loop:List19 1,6,1}<script>qtcmsdd.dff.a="{qt:n_title2}"</script><li rel="{qt:n_title2}" class="active"><a href="{qt:n_gotourl}">{qt:n_title1}</a></li>{/qt_Loop}
+							{qt_Loop:List19 1,7,1}<li rel="{qt:n_title2}"><a href="{qt:n_gotourl}">{qt:n_title1}</a></li>{/qt_Loop}
+							{qt_Loop:List19 1,8,1}<li rel="{qt:n_title2}"><a href="{qt:n_gotourl}">{qt:n_title1}</a></li>{/qt_Loop}
+							{qt_Loop:List19 1,9,1}<li rel="{qt:n_title2}"><a href="{qt:n_gotourl}">{qt:n_title1}</a></li>{/qt_Loop}
+						</ul>
+						<script>qtcmsdd.dff.b='{qt_Loop:type2 0,27,10,0,difangzhan}<span><a href="{qt:m_type_url}">{qt:m_type_name}</a></span>{/qt_Loop}<span><a href="{qt:pageone m_more.html}">更多</a></span>'</script>
+						<div class="boxCase" id="aside-col01-cont">
+							<div style="display: block;" {qt_Loop:List19 1,6,1}id="{qt:n_title2}"{/qt_Loop} class="comWrap">
+								<ul class="mslide">
+									{qt_Loop:List19 1,6,4|1}<li{if:{qt:n_i}>1} style="display: none; opacity: 1;"{else} style="display: block; opacity: 1;"{end if}><a  title="{qt:n_title1}" href="{qt:n_gotourl}"><img  alt="{qt:n_title1}" src="{qt:n_pic}"><cite>{qt:n_title1}</cite></a></li>{/qt_Loop}
+								</ul>
+								<div class="scroCtr"><a target="_self" class="lft" href="javascript:;"></a><a target="_self" class="rgt" href="javascript:;"></a></div>
+								<div class="snum"></div>
+								<ul class="nslist">{qt_Loop:List19 1,6,8|4}<li><a title="{qt:n_title1}" href="{qt:n_gotourl}">{qt:nd_title1_color}</a></li>{/qt_Loop}</ul>
+							</div>
+							<script>qingtiancms_com.a()</script>
+							<div class="comWrap" {qt_Loop:List19 1,7,1}id="{qt:n_title2}"{/qt_Loop} style="display:none;">
+								<ul class="mslide">
+									{qt_Loop:List19 1,7,4|1}<li{if:{qt:n_i}>1} style="display: none; opacity: 1;"{else} style="display: block; opacity: 1;"{end if}><a  title="{qt:n_title1}" href="{qt:n_gotourl}"><img  alt="{qt:n_title1}" org="{qt:n_pic}" style="background:url(../js/public4/rebuild/images/loading.gif ) no-repeat center"><cite>{qt:n_title1}</cite></a></li>{/qt_Loop}
+								</ul>
+								<div class="scroCtr"><a href="javascript:;" class="lft" target="_self"></a><a href="javascript:;" class="rgt" target="_self"></a></div><div class="snum"></div>
+								<ul class="nslist">{qt_Loop:List19 1,7,8|4}<li><a title="{qt:n_title1}" href="{qt:n_gotourl}">{qt:nd_title1_color}</a></li>{/qt_Loop}</ul>
+							</div>
+							<div class="comWrap" {qt_Loop:List19 1,8,1}id="{qt:n_title2}"{/qt_Loop} style="display:none;">
+								<ul class="mslide">
+									{qt_Loop:List19 1,8,4|1}<li{if:{qt:n_i}>1} style="display: none; opacity: 1;"{else} style="display: block; opacity: 1;"{end if}><a  title="{qt:n_title1}" href="{qt:n_gotourl}"><img  alt="{qt:n_title1}" org="{qt:n_pic}" style="background:url(../js/public4/rebuild/images/loading.gif ) no-repeat center"><cite>{qt:n_title1}</cite></a></li>{/qt_Loop}
+								</ul>
+								<div class="scroCtr"><a href="javascript:;" class="lft" target="_self"></a><a href="javascript:;" class="rgt" target="_self"></a></div>
+								<ul class="nslist">{qt_Loop:List19 1,8,8|4}<li><a title="{qt:n_title1}" href="{qt:n_gotourl}">{qt:nd_title1_color}</a></li>{/qt_Loop}</ul>
+						  </div>
+								<div class="comWrap" {qt_Loop:List19 1,9,1}id="{qt:n_title2}"{/qt_Loop} style="display:none;">
+									<ul class="mslide">
+										{qt_Loop:List19 1,9,4|1}<li{if:{qt:n_i}>1} style="display: none; opacity: 1;"{else} style="display: block; opacity: 1;"{end if}><a  title="{qt:n_title1}" href="{qt:n_gotourl}"><img  alt="{qt:n_title1}" org="{qt:n_pic}" style="background:url(../js/public4/rebuild/images/loading.gif ) no-repeat center"><cite>{qt:n_title1}</cite></a></li>{/qt_Loop}
+									</ul>
+									<div class="scroCtr"><a href="javascript:;" class="lft" target="_self"></a><a href="javascript:;" class="rgt" target="_self"></a></div>
+									<div class="snum"></div>
+									<ul class="nslist">{qt_Loop:List19 1,9,8|4}<li><a title="{qt:n_title1}" href="{qt:n_gotourl}">{qt:nd_title1_color}</a></li>{/qt_Loop}</ul>
+								</div>
+					  </div>
+							<ul class="colTitle btop" id="aside-col02-tab">
+								{qt_Loop:List19 1,10,1}<li rel="{qt:n_title2}" class="active"><a href="{qt:n_gotourl}">{qt:n_title1}</a></li>{/qt_Loop}
+								{qt_Loop:List19 1,11,1}<li rel="{qt:n_title2}"><a href="{qt:n_gotourl}">{qt:n_title1}</a></li>{/qt_Loop}
+								{qt_Loop:List19 1,12,1}<li rel="{qt:n_title2}"><a href="{qt:n_gotourl}">{qt:n_title1}</a></li>{/qt_Loop}
+								{qt_Loop:List19 1,13,1}<li rel="{qt:n_title2}"><a href="{qt:n_gotourl}">{qt:n_title1}</a></li>{/qt_Loop}
+							</ul>
+							<div class="boxCase" id="aside-col02-cont">
+								<div class="comWrap" {qt_Loop:List19 1,10,1}id="{qt:n_title2}"{/qt_Loop} style="display:block;"><!--热播-->
+								<ul class="msColi">
+									<li style="display:block;">{qt_Loop:List19 1,10,3|1}<a href="{qt:n_gotourl}"{if:{qt:n_i} mod 2=0} class="rgt"{end if}><img src="{qt:n_pic}" alt="{qt:n_title1}" title="{qt:n_title1}" /><cite>{qt:n_title1}</cite></a>  {/qt_Loop}</li>
+									<li style="display:none;">{qt_Loop:List19 1,10,5|3}<a href="{qt:n_gotourl}"{if:{qt:n_i} mod 2=0} class="rgt"{end if}><img src="{qt:n_pic}" alt="{qt:n_title1}" title="{qt:n_title1}" /><cite>{qt:n_title1}</cite></a>  {/qt_Loop}</li>
+									<li style="display:none;">{qt_Loop:List19 1,10,7|5}<a href="{qt:n_gotourl}"{if:{qt:n_i} mod 2=0} class="rgt"{end if}><img src="{qt:n_pic}" alt="{qt:n_title1}" title="{qt:n_title1}" /><cite>{qt:n_title1}</cite></a>  {/qt_Loop}</li>
+								</ul>
+								<div class="scroCtr"><a href="javascript:;" class="lft" target="_self"></a><a href="javascript:;" class="rgt" target="_self"></a></div>
+								<ul class="msCover cf">
+								{qt_Loop:List19 1,10,13|7}<li><a href="{qt:n_gotourl}">{qt:n_title1}</a></li>{/qt_Loop}
+								</ul>
+							</div>
+							<div class="comWrap" {qt_Loop:List19 1,11,1}id="{qt:n_title2}"{/qt_Loop} style="display:none;">
+								<ul class="msColi"><!--电影剧-->
+								<li style="display:block;">{qt_Loop:List19 1,11,3|1}<a href="{qt:n_gotourl}"{if:{qt:n_i} mod 2=0} class="rgt"{end if}><img org="{qt:n_pic}" alt="{qt:n_title1}" title="{qt:n_title1}" src="../js/public4/rebuild/images/blank.png" /><cite>{qt:n_title1}</cite></a>  {/qt_Loop}</li>
+								<li style="display:none;"> {qt_Loop:List19 1,11,5|3}<a href="{qt:n_gotourl}"{if:{qt:n_i} mod 2=0} class="rgt"{end if}><img org="{qt:n_pic}" alt="{qt:n_title1}" title="{qt:n_title1}" src="../js/public4/rebuild/images/blank.png" /><cite>{qt:n_title1}</cite></a>  {/qt_Loop}</li>
+								<li style="display:none;"> {qt_Loop:List19 1,11,7|5}<a href="{qt:n_gotourl}"{if:{qt:n_i} mod 2=0} class="rgt"{end if}><img org="{qt:n_pic}" alt="{qt:n_title1}" title="{qt:n_title1}" src="../js/public4/rebuild/images/blank.png" /><cite>{qt:n_title1}</cite></a>  {/qt_Loop}</li>
+								</ul>
+								<div class="scroCtr"><a href="javascript:;" class="lft" target="_self"></a><a href="javascript:;" class="rgt" target="_self"></a></div>
+								<ul class="msCover cf">
+								{qt_Loop:List19 1,11,13|7}<li><a href="{qt:n_gotourl}">{qt:n_title1}</a></li>{/qt_Loop}
+								</ul>
+							</div>
+							<div class="comWrap" {qt_Loop:List19 1,12,1}id="{qt:n_title2}"{/qt_Loop} style="display:none;">
+								<ul class="msColi"><!--电影剧-->
+								<li style="display:block;">{qt_Loop:List19 1,12,3|1}<a href="{qt:n_gotourl}"{if:{qt:n_i} mod 2=0} class="rgt"{end if}><img org="{qt:n_pic}" alt="{qt:n_title1}" title="{qt:n_title1}" src="../js/public4/rebuild/images/blank.png" /><cite>{qt:n_title1}</cite></a>  {/qt_Loop}</li>
+								<li style="display:none;"> {qt_Loop:List19 1,12,5|3}<a href="{qt:n_gotourl}"{if:{qt:n_i} mod 2=0} class="rgt"{end if}><img org="{qt:n_pic}" alt="{qt:n_title1}" title="{qt:n_title1}" src="../js/public4/rebuild/images/blank.png" /><cite>{qt:n_title1}</cite></a>  {/qt_Loop}</li>
+								<li style="display:none;"> {qt_Loop:List19 1,12,7|5}<a href="{qt:n_gotourl}"{if:{qt:n_i} mod 2=0} class="rgt"{end if}><img org="{qt:n_pic}" alt="{qt:n_title1}" title="{qt:n_title1}" src="../js/public4/rebuild/images/blank.png" /><cite>{qt:n_title1}</cite></a>  {/qt_Loop}</li>
+								</ul>
+								<div class="scroCtr"><a href="javascript:;" class="lft" target="_self"></a><a href="javascript:;" class="rgt" target="_self"></a></div>
+								<ul class="msCover cf">
+								{qt_Loop:List19 1,12,13|7}<li><a href="{qt:n_gotourl}">{qt:n_title1}</a></li>{/qt_Loop}
+								</ul>
+							</div>
+							<div class="comWrap" {qt_Loop:List19 1,13,1}id="{qt:n_title2}"{/qt_Loop} style="display:none;">
+								<ul class="msColi"><!--购票-->
+								<li style="display:block;">{qt_Loop:List19 1,13,3|1}<a href="{qt:n_gotourl}"{if:{qt:n_i} mod 2=0} class="rgt"{end if}><img org="{qt:n_pic}" alt="{qt:n_title1}" title="{qt:n_title1}" src="../js/public4/rebuild/images/blank.png" /><cite>{qt:n_title1}</cite></a>  {/qt_Loop}</li>
+								<li style="display:none;"> {qt_Loop:List19 1,13,5|3}<a href="{qt:n_gotourl}"{if:{qt:n_i} mod 2=0} class="rgt"{end if}><img org="{qt:n_pic}" alt="{qt:n_title1}" title="{qt:n_title1}" src="../js/public4/rebuild/images/blank.png" /><cite>{qt:n_title1}</cite></a>  {/qt_Loop}</li>
+								<li style="display:none;"> {qt_Loop:List19 1,13,7|5}<a href="{qt:n_gotourl}"{if:{qt:n_i} mod 2=0} class="rgt"{end if}><img org="{qt:n_pic}" alt="{qt:n_title1}" title="{qt:n_title1}" src="../js/public4/rebuild/images/blank.png" /><cite>{qt:n_title1}</cite></a>  {/qt_Loop}</li>
+								</ul>
+								<div class="scroCtr"><a href="javascript:;" class="lft" target="_self"></a><a href="javascript:;" class="rgt" target="_self"></a></div>
+								<ul class="msCover cf">
+								{qt_Loop:List19 1,13,13|7}<li><a href="{qt:n_gotourl}">{qt:n_title1}</a></li>{/qt_Loop}
+								</ul>
+							</div>
+						</div>
+						<ul class="colTitle btop" id="aside-col03-tab">
+							<li rel="game" class="active">{qt_Loop:List19 1,14,1}<a href="{qt:n_gotourl}">{qt:n_title1}</a>{/qt_Loop}</li>
+							<li rel="webGame">{qt_Loop:List19 1,15,1}<a href="{qt:n_gotourl}">{qt:n_title1}</a>{/qt_Loop}</li>
+							<li rel="sGame">{qt_Loop:List19 1,16,1}<a href="{qt:n_gotourl}">{qt:n_title1}</a>{/qt_Loop}</li>
+							<li rel="comic">{qt_Loop:List19 1,17,1}<a href="{qt:n_gotourl}">{qt:n_title1}</a>{/qt_Loop}</li>
+						</ul>
+						<div class="boxCase" id="aside-col03-cont">
+							<div class="comWrap" id="game" style="display:block;">
+								<ul class="msColi">
+								<li style="display:block;">{qt_Loop:List19 1,14,3|1}<a href="{qt:n_gotourl}"{if:{qt:n_i} mod 2=0} class="rgt"{end if}><img src="{qt:n_pic}" alt="{qt:n_title1}" title="{qt:n_title1}" /></a>  {/qt_Loop}</li>
+								<li style="display:none;"> {qt_Loop:List19 1,14,5|3}<a href="{qt:n_gotourl}"{if:{qt:n_i} mod 2=0} class="rgt"{end if}><img src="{qt:n_pic}" alt="{qt:n_title1}" title="{qt:n_title1}" /></a>  {/qt_Loop}</li>
+								<li style="display:none;"> {qt_Loop:List19 1,14,7|5}<a href="{qt:n_gotourl}"{if:{qt:n_i} mod 2=0} class="rgt"{end if}><img src="{qt:n_pic}" alt="{qt:n_title1}" title="{qt:n_title1}" /></a>  {/qt_Loop}</li>
+								</ul>
+								
+								<div class="scroCtr"><a href="javascript:;" class="lft" target="_self"></a><a href="javascript:;" class="rgt" target="_self"></a></div>
+								<ul class="msCover cf">{qt_Loop:List19 1,14,13|7}<li><a href="{qt:n_gotourl}">{qt:n_title1}</a></li>{/qt_Loop}</ul>
+							</div>
+							<div class="comWrap" id="webGame" style="display:none;">
+								<ul class="msColi">
+								<li style="display:block;">{qt_Loop:List19 1,15,3|1}<a href="{qt:n_gotourl}"{if:{qt:n_i} mod 2=0} class="rgt"{end if}><img org="{qt:n_pic}" alt="{qt:n_title1}" title="{qt:n_title1}" src="../js/public4/rebuild/images/blank.png" /></a>  {/qt_Loop}</li>
+								<li style="display:none;"> {qt_Loop:List19 1,15,5|3}<a href="{qt:n_gotourl}"{if:{qt:n_i} mod 2=0} class="rgt"{end if}><img org="{qt:n_pic}" alt="{qt:n_title1}" title="{qt:n_title1}" src="../js/public4/rebuild/images/blank.png" /></a>  {/qt_Loop}</li>
+								<li style="display:none;"> {qt_Loop:List19 1,15,7|5}<a href="{qt:n_gotourl}"{if:{qt:n_i} mod 2=0} class="rgt"{end if}><img org="{qt:n_pic}" alt="{qt:n_title1}" title="{qt:n_title1}" src="../js/public4/rebuild/images/blank.png" /></a>  {/qt_Loop}</li>
+								</ul>
+								<div class="scroCtr"><a href="javascript:;" class="lft" target="_self"></a><a href="javascript:;" class="rgt" target="_self"></a></div>
+								<ul class="msCover cf">{qt_Loop:List19 1,15,13|7}<li><a href="{qt:n_gotourl}">{qt:n_title1}</a></li>{/qt_Loop}</ul>
+							</div>
+							<div class="comWrap" id="sGame" style="display:none;">
+								<ul class="msColi">
+								<li style="display:block;">{qt_Loop:List19 1,16,3|1}<a href="{qt:n_gotourl}"{if:{qt:n_i} mod 2=0} class="rgt"{end if}><img org="{qt:n_pic}" alt="{qt:n_title1}" title="{qt:n_title1}" src="../js/public4/rebuild/images/blank.png" /></a>  {/qt_Loop}</li>
+								<li style="display:none;"> {qt_Loop:List19 1,16,5|3}<a href="{qt:n_gotourl}"{if:{qt:n_i} mod 2=0} class="rgt"{end if}><img org="{qt:n_pic}" alt="{qt:n_title1}" title="{qt:n_title1}" src="../js/public4/rebuild/images/blank.png" /></a>  {/qt_Loop}</li>
+								<li style="display:none;"> {qt_Loop:List19 1,16,7|5}<a href="{qt:n_gotourl}"{if:{qt:n_i} mod 2=0} class="rgt"{end if}><img org="{qt:n_pic}" alt="{qt:n_title1}" title="{qt:n_title1}" src="../js/public4/rebuild/images/blank.png" /></a>  {/qt_Loop}</li>
+								</ul>
+								<div class="scroCtr"><a href="javascript:;" class="lft" target="_self"></a><a href="javascript:;" class="rgt" target="_self"></a></div>
+								<ul class="msCover cf">{qt_Loop:List19 1,16,13|7}<li><a href="{qt:n_gotourl}">{qt:n_title1}</a></li>{/qt_Loop}</ul>
+							</div>
+							<div class="comWrap" id="comic" style="display:none;">
+								<ul class="msColi">
+								<li style="display:block;">{qt_Loop:List19 1,17,3|1}<a href="{qt:n_gotourl}"{if:{qt:n_i} mod 2=0} class="rgt"{end if}><img org="{qt:n_pic}" alt="{qt:n_title1}" title="{qt:n_title1}" src="../js/public4/rebuild/images/blank.png" /></a>  {/qt_Loop}</li>
+								<li style="display:none;"> {qt_Loop:List19 1,17,5|3}<a href="{qt:n_gotourl}"{if:{qt:n_i} mod 2=0} class="rgt"{end if}><img org="{qt:n_pic}" alt="{qt:n_title1}" title="{qt:n_title1}" src="../js/public4/rebuild/images/blank.png" /></a>  {/qt_Loop}</li>
+								<li style="display:none;"> {qt_Loop:List19 1,17,7|5}<a href="{qt:n_gotourl}"{if:{qt:n_i} mod 2=0} class="rgt"{end if}><img org="{qt:n_pic}" alt="{qt:n_title1}" title="{qt:n_title1}" src="../js/public4/rebuild/images/blank.png" /></a>  {/qt_Loop}</li>
+								</ul>
+								<div class="scroCtr"><a href="javascript:;" class="lft" target="_self"></a><a href="javascript:;" class="rgt" target="_self"></a></div>
+								<ul class="msCover cf">{qt_Loop:List19 1,17,13|7}<li><a href="{qt:n_gotourl}">{qt:n_title1}</a></li>{/qt_Loop}</ul>
+							</div>
+						</div>
+						
+						<ul class="colTitle" id="aside-col04-tab">
+							<li rel="anzhuo" class="active">{qt_Loop:List19 1,18,1}<a href="{qt:n_gotourl}">{qt:n_title1}</a>{/qt_Loop}</li>
+							<li rel="iPhone">{qt_Loop:List19 1,19,1}<a href="{qt:n_gotourl}">{qt:n_title1}</a>{/qt_Loop}</li>
+							<li rel="iPad">{qt_Loop:List19 1,20,1}<a href="{qt:n_gotourl}">{qt:n_title1}</a>{/qt_Loop}</li>
+							<li rel="shouyou">{qt_Loop:List19 1,21,1}<a href="{qt:n_gotourl}">{qt:n_title1}</a>{/qt_Loop}</li>
+						</ul>
+						<div class="boxCase" id="aside-col04-cont">
+							<div class="comWrap ecom" id="anzhuo" style="display:block;">
+								<ul class="mslide appWrap">
+								<li style="display:block;">{qt_Loop:List19 1,18,4|1}<a class="app" href="{qt:n_gotourl}"><img src="{qt:n_pic}" alt="{qt:n_title1}" title="{qt:n_title1}" height="48px" width="48px" />{qt:n_title1}</a>  {/qt_Loop}</li>
+								<li style="display:none;"> {qt_Loop:List19 1,18,7|4}<a class="app" href="{qt:n_gotourl}"><img src="{qt:n_pic}" alt="{qt:n_title1}" title="{qt:n_title1}" height="48px" width="48px" />{qt:n_title1}</a>  {/qt_Loop}</li>
+								<li style="display:none;"> {qt_Loop:List19 1,18,10|7}<a  class="app"href="{qt:n_gotourl}"><img src="{qt:n_pic}" alt="{qt:n_title1}" title="{qt:n_title1}" height="48px" width="48px" />{qt:n_title1}</a>  {/qt_Loop}</li>
+								</ul>
+								<div class="scroCtr"><a href="javascript:;" class="lft" target="_self"></a><a href="javascript:;" class="rgt" target="_self"></a></div>
+								<ul class="msCover cf">{qt_Loop:List19 1,18,16|10}<li><a href="{qt:n_gotourl}">{qt:n_title1}</a></li>{/qt_Loop}</ul>
+							</div>
+							<div class="comWrap ecom" id="iPhone" style="display:none;">
+								<div id="mixCoverWrap">
+									<div class="wrapConts" style="display:block;">
+										<ul class="mslide appWrap">
+											<li style="display:block;">{qt_Loop:List19 1,19,4|1}<a class="app" href="{qt:n_gotourl}"><img org="{qt:n_pic}" alt="{qt:n_title1}" title="{qt:n_title1}" src="../js/public4/rebuild/images/blank.png" height="48px" width="48px" />{qt:n_title1}</a>  {/qt_Loop}</li>
+											<li style="display:none;"> {qt_Loop:List19 1,19,7|4}<a class="app" href="{qt:n_gotourl}"><img org="{qt:n_pic}" alt="{qt:n_title1}" title="{qt:n_title1}" src="../js/public4/rebuild/images/blank.png" height="48px" width="48px" />{qt:n_title1}</a>  {/qt_Loop}</li>
+											<li style="display:none;"> {qt_Loop:List19 1,19,10|7}<a class="app" href="{qt:n_gotourl}"><img org="{qt:n_pic}" alt="{qt:n_title1}" title="{qt:n_title1}" src="../js/public4/rebuild/images/blank.png" height="48px" width="48px" />{qt:n_title1}</a>  {/qt_Loop}</li>
+										</ul>									 
+										<div class="scroCtr">
+											<a href="javascript:;" class="lft" target="_self"></a>
+											<a href="javascript:;" class="rgt" target="_self"></a>
+										</div>
+										<ul class="msCover cf">{qt_Loop:List19 1,19,16|10}<li><a href="{qt:n_gotourl}">{qt:n_title1}</a></li>{/qt_Loop}</ul>
+									</div>
+								</div>
+								<div class="scroCtr">
+									<a href="javascript:;" class="lft" target="_self"></a>
+									<a href="javascript:;" class="rgt" target="_self"></a>
+								</div>
+								<div class="snum"></div>
+							</div>
+							<div class="comWrap ecom" id="iPad" style="display:none;">
+								<ul class="mslide appWrap">
+									<li style="display:block;">{qt_Loop:List19 1,20,4|1}<a class="app" href="{qt:n_gotourl}"><img org="{qt:n_pic}" alt="{qt:n_title1}" title="{qt:n_title1}" src="../js/public4/rebuild/images/blank.png" height="48px" width="48px" />{qt:n_title1}</a>  {/qt_Loop}</li>
+									<li style="display:none;"> {qt_Loop:List19 1,20,7|4}<a class="app" href="{qt:n_gotourl}"><img org="{qt:n_pic}" alt="{qt:n_title1}" title="{qt:n_title1}" src="../js/public4/rebuild/images/blank.png" height="48px" width="48px" />{qt:n_title1}</a>  {/qt_Loop}</li>
+									<li style="display:none;"> {qt_Loop:List19 1,20,10|7}<a class="app" href="{qt:n_gotourl}"><img org="{qt:n_pic}" alt="{qt:n_title1}" title="{qt:n_title1}" src="../js/public4/rebuild/images/blank.png" height="48px" width="48px" />{qt:n_title1}</a>  {/qt_Loop}</li>
+								</ul>	
+								<div class="scroCtr">
+									<a href="javascript:;" class="lft" target="_self"></a>
+									<a href="javascript:;" class="rgt" target="_self"></a>
+								</div>
+								<ul class="msCover cf">{qt_Loop:List19 1,20,16|10}<li><a href="{qt:n_gotourl}">{qt:n_title1}</a></li>{/qt_Loop}</ul>
+							</div>
+							<div class="comWrap ecom" id="shouyou" style="display:none;">
+								<ul class="mslide appWrap">
+									<li style="display:block;">{qt_Loop:List19 1,21,4|1}<a class="app" href="{qt:n_gotourl}"><img org="{qt:n_pic}" alt="{qt:n_title1}" title="{qt:n_title1}" src="../js/public4/rebuild/images/blank.png" height="48px" width="48px" />{qt:n_title1}</a>  {/qt_Loop}</li>
+									<li style="display:none;"> {qt_Loop:List19 1,21,7|4}<a class="app" href="{qt:n_gotourl}"><img org="{qt:n_pic}" alt="{qt:n_title1}" title="{qt:n_title1}" src="../js/public4/rebuild/images/blank.png" height="48px" width="48px" />{qt:n_title1}</a>  {/qt_Loop}</li>
+									<li style="display:none;"> {qt_Loop:List19 1,21,10|7}<a class="app" href="{qt:n_gotourl}"><img org="{qt:n_pic}" alt="{qt:n_title1}" title="{qt:n_title1}" src="../js/public4/rebuild/images/blank.png" height="48px" width="48px" />{qt:n_title1}</a>  {/qt_Loop}</li>
+								</ul>	
+								<div class="scroCtr"><a href="javascript:;" class="lft" target="_self"></a><a href="javascript:;" class="rgt" target="_self"></a></div>
+								<ul class="msCover cf">{qt_Loop:List19 1,21,16|10}<li><a href="{qt:n_gotourl}">{qt:n_title1}</a></li>{/qt_Loop}</ul>
+							</div>
+						</div>
+						<ul class="colTitle btop" id="aside-col05-tab">
+							<li rel="shuang" class="active"><a href="javascript:;">双色球</a></li>
+							<li rel="daletou"><a href="javascript:;">大乐透</a></li>
+							<li rel="3dee"><a href="javascript:;">3D</a></li>
+							<li rel="xuan"><a href="javascript:;">11选5</a></li>
+						</ul>
+						<div id="aside-col05-cont" class="boxCase">
+							<div style="display: block;" id="shuang" class="comWrap"><p class="icai cf"><span class="fl">第<i>2014039</i>期</span><span class="fr">04月10日周四    <a href="http://www.cpdyj.com/">玩法</a></span></p><ul class="tickets"><li>03</li><li>11</li><li>15</li><li>19</li><li>20</li><li>31</li><li class="blue last">07</li></ul><ul class="selb"><li><a class="current" href="http://www.cpdyj.com/" _hover-ignore="1">立即投注</a></li><li><a href="http://www.cpdyj.com/" _hover-ignore="1">参与合买</a></li></ul><ul class="tiOth cf"><li><a href="http://www.cpdyj.com/">近期开奖</a><i>|</i></li><li><a href="http://www.cpdyj.com/">最快最全双色球资讯</a></li><li><a href="http://www.cpdyj.com/">基本走势</a><i>|</i></li><li><a href="http://www.cpdyj.com/">老快3全天千万加奖中</a></li></ul></div>
+							<div style="display: none;" id="daletou" class="comWrap"><p class="icai cf"><span class="fl">第<i>14040</i>期</span><span class="fr">04月09日 周三    <a href="http://www.aicai.com/feedback/feedback!questionDetail.jhtml?game=TC_DLT">玩法</a></span></p><ul class="tickets"><li>12</li><li>15</li><li>21</li><li>30</li><li>33</li><li class="blue">02</li><li class="blue last">08</li></ul><ul class="selb"><li><a class="current" href="http://www.aicai.com/tcdlt/">立即投注</a></li><li><a href="http://www.aicai.com/hemai/tcdlt/">参与合买</a></li></ul><ul class="tiOth cf"><li><a href="http://kaijiang.aicai.com/tcdlt/">近期开奖</a><i>|</i></li><li><a href="http://zx.aicai.com/1295/tq561ppla5cp1finyc22qmtje.html">大乐透345等级送钱啦</a></li><li><a href="http://zst.aicai.com/dlt/">基本走势</a><i>|</i></li><li><a href="http://www.aicai.com/hd/activity/zcscl/zcscl.jhtml">新用户不中奖返钱</a></li></ul></div>
+							<div style="display: none;" id="3dee" class="comWrap"><p class="icai cf"><span class="fl">第<i>2014093</i>期</span><span class="fr">04月11日 周五    <a href="http://www.aicai.com/feedback/feedback!questionDetail.jhtml?game=FC_3D">玩法</a></span></p><ul class="tickets"><li>9</li><li>9</li><li>8</li><li class="txt">试机号：9 6 9</li></ul><ul class="selb"><li><a class="current" href="http://www.aicai.com/tcdlt/">立即投注</a></li><li><a href="http://www.aicai.com/hemai/fc3d/">参与合买</a></li></ul><ul class="tiOth cf"><li><a href="http://kaijiang.aicai.com/fc3d/">近期开奖</a><i>|</i></li><li><a href="http://zx.aicai.com/zx/fc3d/zimi/">3D字谜每期送胆码</a></li><li><a href="http://zst.aicai.com/dlt/">基本走势</a><i>|</i></li><li><a href="http://zx.aicai.com/zx/fc3d/zimi/">每期太湖钓叟字谜</a></li></ul></div>
+							<div style="display: none;" id="xuan" class="comWrap"><p class="icai cf"><span class="fl">第<i>2014041101</i>期</span><span class="fr">04月11日 周五</span></p><ul class="tickets"><li>10</li><li>04</li><li>06</li><li>11</li><li>03</li></ul><ul class="selb"><li><a class="current" href="http://www.aicai.com/11x5/">立即投注</a></li><li><a class="w" href="http://zx.aicai.com/zx/11x5">如何玩赚11选5?</a></li></ul><ul class="tiOth cf"><li><a href="http://zx.aicai.com/">专家推荐</a><i>|</i></li><li><a href="http://www.aicai.com/hd2/act2337/">百万红包疯狂派送</a></li><li><a href="http://zst.aicai.com/institute/11x5/11x5_hmyl_json.jsp">遗漏数据</a><i>|</i></li><li><a href="http://zx.aicai.com/1118/s5wvoqvfhd7h1x4mh2efk3hw1.html/">11选5任五投注技巧</a></li></ul></div>
+						</div>
+					</div>
+				</div>
+			</div>  
+			</div> 
+		  </div>
+			
+			<div class="btmlist botNavi cf">
+				<div class="wrapCont">
+					<div class="botCol1 botCol">
+						<div class="btmTil">
+							<span class="btmIcon grayNews"></span>
+							<span class="btmTxt">{-qt_Loop:Alltype2 0,50,10}{if:{qt:m_i}=1}<a href="{qt:ListUrl1 {qt:m_type_id1}}">{qt:ListName1 {qt:m_type_id1}}</a>{end if}{/-qt_Loop}</span>
+						</div>
+						<ul>
+						{-qt_Loop:Alltype2 0,50,10}{aif:{qt:m-_i}=1}{qt_Loop:type2 0,16,10,{qt:m_type_id1}}<li><a href="{qt:m_type_url}" {bif:{qt:mm_i} mod 4=1}class="botBlue"{bend if}>{qt:m_type_name}</a></li>{/qt_Loop}{aend if}{/-qt_Loop}
+						</ul>
+					</div>
+					<div class="botCol2 botCol">
+						<div class="btmTil">
+							<span class="btmIcon grayRest"></span>
+							<span class="btmTxt">{-qt_Loop:Alltype2 0,50,10}{if:{qt:m_i}=2}<a href="{qt:ListUrl1 {qt:m_type_id1}}">{qt:ListName1 {qt:m_type_id1}}</a>{end if}{/-qt_Loop}</span>
+						</div>
+						<ul class="">
+							{-qt_Loop:Alltype2 0,50,10}{aif:{qt:m-_i}=2}{qt_Loop:type2 0,24,10,{qt:m_type_id1}}<li><a href="{qt:m_type_url}" {bif:{qt:mm_i} mod 6=1}class="botBlue"{bend if}>{qt:m_type_name}</a></li>{/qt_Loop}{aend if}{/-qt_Loop}
+						</ul>
+					</div>
+					<div class="botCol3 botCol">
+						<div class="btmTil">
+							<span class="btmIcon grayShop"></span>
+							<span class="btmTxt">{-qt_Loop:Alltype2 0,50,10}{if:{qt:m_i}=3}<a href="{qt:ListUrl1 {qt:m_type_id1}}">{qt:ListName1 {qt:m_type_id1}}</a>{end if}{/-qt_Loop}</span>
+						</div>
+						<ul class="">
+							{-qt_Loop:Alltype2 0,50,10}{aif:{qt:m-_i}=3}{qt_Loop:type2 0,16,10,{qt:m_type_id1}}<li><a href="{qt:m_type_url}" {bif:{qt:mm_i} mod 4=1}class="botBlue"{bend if}>{qt:m_type_name}</a></li>{/qt_Loop}{aend if}{/-qt_Loop}
+						</ul>
+					</div>
+					<div class="botCol4 botCol">
+						<div class="btmTil">
+							<span class="btmIcon grayOther"></span>
+							<span class="btmTxt">{-qt_Loop:Alltype2 0,50,10}{if:{qt:m_i}=4}<a href="{qt:ListUrl1 {qt:m_type_id1}}">{qt:ListName1 {qt:m_type_id1}}</a>{end if}{/-qt_Loop}</span>
+						</div>
+						<ul class="">
+							{-qt_Loop:Alltype2 0,50,10}{aif:{qt:m-_i}=4}{qt_Loop:type2 0,15,10,{qt:m_type_id1}}<li><a href="{qt:m_type_url}" {bif:{qt:mm_i} mod 4=1}class="botBlue"{bend if}>{qt:m_type_name}</a></li>{/qt_Loop}<li><a href="{qt:ListUrl1 {qt:m_type_id1}}">更多</a></li>{aend if}{/-qt_Loop}
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="ecRow clearfix" id="qingtiancms_b_b1"{if:{qt:G_qTcms_Com_16_qingtiancms_b_b1}="1"} style="display:none"{end if}></div>
+			<div class="btmContent" id="qingtiancms_b_b2"{if:{qt:G_qTcms_Com_16_qingtiancms_b_b2}="1"} style="display:none"{end if}></div> 
+			{if:"{qt:G_qTcms_Com_16_yq}"="1"}
+			<div class="youqingContent">
+				<div class="title">
+					<div class="subject">友情链接</div>
+				</div>
+				<div class="con_a1">
+					<ul>
+						{qt_Loop:List19 1,28,50}<li><a href="{qt:n_gotourl}">{qt:nd_title1_color}</a></li>{/qt_Loop}
+					</ul>
+				</div>
+				<div style="clear:both"></div>
+			</div>
+			{end if}
+			<div class="youqingContent" id="Div_qTcms_Data_01" style="display:none">
+				<div class="title">
+					<div class="subject">最新点入</div>
+				</div>
+				<div class="con_a1">
+					<ul id="qTcms_Data_01">
+						
+					</ul>
+				</div>
+				<div style="clear:both"></div>
+			</div>		
+			<div class="footer cf">
+				<div class="link">{qt_Loop:List19 1,33,8,0}<a href="{qt:n_gotourl}">{qt:nd_title1_color}</a> | {/qt_Loop}{qt_Loop:List19 1,40,1}{qt:n_content}{/qt_Loop}</div>
+				<p class="copyright">&copy; 2012-<script type="text/javascript">document.write(new Date().getFullYear());</script>&nbsp;<a target="_self" href="/">{qt:G_WEBNAME}</a>&nbsp;<a href="http://www.miibeian.gov.cn">{qt:G_BEIAN}</a><a href="/app/" class="azDownload">安卓版</a><a class="appleDownload" href="/app/">iPhone版</a></p>
+			</div>  
+		</div>
+		<div id="top-outerbg"><div id="top-innerbg"><div></div></div></div>
+		<div id="bottom-outerbg"><div id="bottom-innerbg"><div></div></div></div>
+	</div>
+</div>
+<div id="costom">
+	{qt_Loop:List19 1,36,9,0}
+	{qt:n_content}
+	{/qt_Loop}
+</div>
+						
+						
+<script type="text/javascript" src="http://www.panxinyou.com/htmls/s_qingtiancms_n1.js"></script>
+<script type="text/javascript" src="http://www.panxinyou.com/htmls/s_qingtiancms_mm.js" charset="gb2312"></script>
+
+<script type="text/javascript">
+var _loadExtScript = 0,
+_loadExtTimmer, _extLoaded = false;
+function loadExtScript() {
+	Ylmf.ScriptLoader.Add({
+		src: qtcmsdd.t+"public4/rebuild/js/qingtiancome.js?3",
+		charset: "gb2312"
+	}); 
+
+}
+function loadExt() {
+	if (_extLoaded) return;
+	var _top = document.documentElement.scrollTop || document.body.scrollTop;
+	var _cHeight = document.documentElement.clientHeight;
+	if (_top + _cHeight > 1600) {
+		doLoad();
+	}
+};
+function doLoad() {
+	if (_extLoaded) return;
+	_extLoaded = true;
+	if(qtcmsdd.dc.b==""){
+		if(qtcmsdd.dc.c=="1")_loadExtScript++;
+		Ajax.request(qtcmsdd.ig+'?'+new Date(), {						
+			success: function(xhr) {
+				var kk=xhr.responseText;
+				kk=kk.replace(/###/gi,qtcmsdd.t)									
+				$(".ecRow").html(kk);
+				if (_loadExtScript == 1) {
+					loadExtScript();
+				} else {
+					_loadExtScript++;
+				}
+			},
+			failure: function(xhr) {
+				if (_loadExtScript == 1) {
+					loadExtScript();
+				} else {
+					_loadExtScript++;
+				}
+			}
+		});
+	}else{
+		$("#qingtiancms_b_b1").hide();
+	}
+	if(qtcmsdd.dc.c==""){
+		if(qtcmsdd.dc.b=="1")_loadExtScript++;
+		Ajax.request(qtcmsdd.iy+'?'+new Date(), {
+			success: function(xhr) {
+				var kk=xhr.responseText;
+				kk=kk.replace(/###/gi,qtcmsdd.t)								
+				$(".btmContent").html(kk);
+				if (_loadExtScript == 1) {
+					loadExtScript();
+				} else {
+					_loadExtScript++;
+				}
+			},
+			failure: function(xhr) {
+				if (_loadExtScript == 1) {
+					loadExtScript();
+				} else {
+					_loadExtScript++;
+				}
+			}
+		})
+	}else{
+		$("#qingtiancms_b_b2").hide();
+	}
+}
+loadExt();
+$(window).on('scroll',
+function() {
+	window.clearTimeout(_loadExtTimmer);
+	_loadExtTimmer = window.setTimeout(function() {
+		loadExt();
+	},
+	200);
+});
+$(window).on('resize',
+function() {
+	window.clearTimeout(_loadExtTimmer);
+	_loadExtTimmer = window.setTimeout(function() {
+		loadExt();
+	},
+	200);
+});						
+</script>
+<script language="javascript" src="{qt:indexurl}p_inc/public.js" type="text/javascript"></script>
+<script src="../js/public4/rebuild/js/j.js"></script>
+<div id="qt_copy" style="display:none"></div>
+<div class="corner">{qt_Loop:List19 1,32,1,0}{qt:n_content}{/qt_Loop}</div>	
+{self}底部.html{/self}
+{qt_Loop:List19 1,34,1,0}{qt:n_content}{/qt_Loop}
+<span style="display:none">{qt_Loop:List19 1,40,10|1}{qt:n_content}{/qt_Loop}</span>
+<dt id="imgArr_t_code" style="display:none">{qt_Loop:List19 1,3,1}{qt:n_content}{/qt_Loop}</dt>
+<div id="costom1"align="center">
+<a href="http://www.panxinyou.com/" target="_blank"><img src="http://www.go569.com/uploads/allimg/150306/1_2256283491.gif" border=0 /></a>
+</div>
+<script>qingtiancms_com.b()</script>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"slide":{"type":"slide","bdImg":"1","bdPos":"right","bdTop":"100"}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+</body></html>

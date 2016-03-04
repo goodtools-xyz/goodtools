@@ -1,0 +1,216 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script>
+$(document).on("pagecreate", "#page1", function () {
+    $("#filterList").on("filterablefilter", function (event, ui) {
+        ui.items.each(function (index) {
+            $(this).collapsible("option", "collapsed", $(this).hasClass("ui-screen-hidden")).removeClass("ui-screen-hidden");
+        });
+    });
+    
+    $(document).on("click", ".collapseExpand", function(){
+        $('#filterList [data-role="collapsible"]').each(function(idx){
+        	$(this).collapsible("option", "collapsed", $(this).find('.ui-collapsible-heading-collapsed').length > 0 ? false : true);
+ 				});
+    });
+});
+</script>
+</head>
+
+<body>
+<div data-role="page" id="page1">
+    <div data-role="header">
+         <h1>Filterable Opens Collapsibles</h1> 
+    </div>
+    <div role="main" class="ui-content">
+        <div class="ui-grid-solo">
+            <a id="btnExpand" class="ui-btn ui-corner-all collapseExpand" data-expand="true">Expand/Collapse All</a>
+           
+        </div>
+        <form class="ui-filterable">
+            <input id="filterBasic-input" data-type="search" placeholder="Open matching collapsibles..." />
+        </form>
+        <div id="filterList" data-filter="true" data-input="#filterBasic-input">
+            <div data-role="collapsible" data-inset="false" data-mini="true">
+                <h4>Aaron       </h4>
+                <p>Aaron is a great employee</p>
+            </div>
+            <div data-role="collapsible" data-inset="false" data-mini="true">
+                <h4>Adam        </h4>
+                <p>Adam is a great employee</p>
+            </div>
+            <div data-role="collapsible" data-inset="false" data-mini="true">
+                <h4>Benjamin    </h4>
+                <p>Benjamin is a great employee</p>
+            </div>
+            <div data-role="collapsible" data-inset="false" data-mini="true">
+                <h4>Brandon     </h4>
+                <p>Brandon is a great employee</p>
+            </div>
+            <div data-role="collapsible" data-inset="false" data-mini="true">
+                <h4>Caleb       </h4>
+                <p>Caleb is a great employee</p>
+            </div>
+            <div data-role="collapsible" data-inset="false" data-mini="true">
+                <h4>Cameron     </h4>
+                <p>Cameron is a great employee</p>
+            </div>
+            <div data-role="collapsible" data-inset="false" data-mini="true">
+                <h4>Damien      </h4>
+                <p>Damien is a great employee</p>
+            </div>
+            <div data-role="collapsible" data-inset="false" data-mini="true">
+                <h4>Daniel      </h4>
+                <p>Daniel is a great employee</p>
+            </div>
+            <div data-role="collapsible" data-inset="false" data-mini="true">
+                <h4>Edward      </h4>
+                <p>Edward is a great employee</p>
+            </div>
+            <div data-role="collapsible" data-inset="false" data-mini="true">
+                <h4>Elizabeth   </h4>
+                <p>Elizabeth is a great employee</p>
+            </div>
+            <div data-role="collapsible" data-inset="false" data-mini="true">
+                <h4>Elliot      </h4>
+                <p>Elliot is a great employee</p>
+            </div>
+            <div data-role="collapsible" data-inset="false" data-mini="true">
+                <h4>Finn        </h4>
+                <p>Finn is a great employee</p>
+            </div>
+            <div data-role="collapsible" data-inset="false" data-mini="true">
+                <h4>Gabriel     </h4>
+                <p>Gabriel is a great employee</p>
+            </div>
+            <div data-role="collapsible" data-inset="false" data-mini="true">
+                <h4>Gavin       </h4>
+                <p>Gavin is a great employee</p>
+            </div>
+            <div data-role="collapsible" data-inset="false" data-mini="true">
+                <h4>Grace       </h4>
+                <p>Grace is a great employee</p>
+            </div>
+            <div data-role="collapsible" data-inset="false" data-mini="true">
+                <h4>Hannah      </h4>
+                <p>Hannah is a great employee</p>
+            </div>
+            <div data-role="collapsible" data-inset="false" data-mini="true">
+                <h4>Harry       </h4>
+                <p>Harry is a great employee</p>
+            </div>
+            <div data-role="collapsible" data-inset="false" data-mini="true">
+                <h4>Ian         </h4>
+                <p>Ian is a great employee</p>
+            </div>
+            <div data-role="collapsible" data-inset="false" data-mini="true">
+                <h4>Isaac       </h4>
+                <p>Isaac is a great employee</p>
+            </div>
+            <div data-role="collapsible" data-inset="false" data-mini="true">
+                <h4>Isabel      </h4>
+                <p>Isabel is a great employee</p>
+            </div>
+            <div data-role="collapsible" data-inset="false" data-mini="true">
+                <h4>Jack        </h4>
+                <p>Jack is a great employee</p>
+            </div>
+            <div data-role="collapsible" data-inset="false" data-mini="true">
+                <h4>Kylie       </h4>
+                <p>Kylie is a great employee</p>
+            </div>
+            <div data-role="collapsible" data-inset="false" data-mini="true">
+                <h4>Lauren      </h4>
+                <p>Lauren is a great employee</p>
+            </div>
+            <div data-role="collapsible" data-inset="false" data-mini="true">
+                <h4>Leah        </h4>
+                <p>Leah is a great employee</p>
+            </div>
+            <div data-role="collapsible" data-inset="false" data-mini="true">
+                <h4>Madeline    </h4>
+                <p>Madeline is a great employee</p>
+            </div>
+            <div data-role="collapsible" data-inset="false" data-mini="true">
+                <h4>Mason       </h4>
+                <p>Mason is a great employee</p>
+            </div>
+            <div data-role="collapsible" data-inset="false" data-mini="true">
+                <h4>Natalie     </h4>
+                <p>Natalie is a great employee</p>
+            </div>
+            <div data-role="collapsible" data-inset="false" data-mini="true">
+                <h4>Nathan      </h4>
+                <p>Nathan is a great employee</p>
+            </div>
+            <div data-role="collapsible" data-inset="false" data-mini="true">
+                <h4>Oliver      </h4>
+                <p>Oliver is a great employee</p>
+            </div>
+            <div data-role="collapsible" data-inset="false" data-mini="true">
+                <h4>Olivia      </h4>
+                <p>Olivia is a great employee</p>
+            </div>
+            <div data-role="collapsible" data-inset="false" data-mini="true">
+                <h4>Paige       </h4>
+                <p>Paige is a great employee</p>
+            </div>
+            <div data-role="collapsible" data-inset="false" data-mini="true">
+                <h4>Ruby        </h4>
+                <p>Ruby is a great employee</p>
+            </div>
+            <div data-role="collapsible" data-inset="false" data-mini="true">
+                <h4>Ryan        </h4>
+                <p>Ryan is a great employee</p>
+            </div>
+            <div data-role="collapsible" data-inset="false" data-mini="true">
+                <h4>Samuel      </h4>
+                <p>Samuel is a great employee</p>
+            </div>
+            <div data-role="collapsible" data-inset="false" data-mini="true">
+                <h4>Sarah       </h4>
+                <p>Sarah is a great employee</p>
+            </div>
+            <div data-role="collapsible" data-inset="false" data-mini="true">
+                <h4>Thomas      </h4>
+                <p>Thomas is a great employee</p>
+            </div>
+            <div data-role="collapsible" data-inset="false" data-mini="true">
+                <h4>Tristan     </h4>
+                <p>Tristan is a great employee</p>
+            </div>
+            <div data-role="collapsible" data-inset="false" data-mini="true">
+                <h4>Violet      </h4>
+                <p>Violet is a great employee</p>
+            </div>
+            <div data-role="collapsible" data-inset="false" data-mini="true">
+                <h4>Vivienne    </h4>
+                <p>Vivienne is a great employee</p>
+            </div>
+            <div data-role="collapsible" data-inset="false" data-mini="true">
+                <h4>William     </h4>
+                <p>William is a great employee</p>
+            </div>
+            <div data-role="collapsible" data-inset="false" data-mini="true">
+                <h4>Xavier      </h4>
+                <p>Xavier is a great employee</p>
+            </div>
+            <div data-role="collapsible" data-inset="false" data-mini="true">
+                <h4>Zachary     </h4>
+                <p>Zachary is a great employee</p>
+            </div>
+            <div data-role="collapsible" data-inset="false" data-mini="true">
+                <h4>Zoe         </h4>
+                <p>Zoe is a great employee</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

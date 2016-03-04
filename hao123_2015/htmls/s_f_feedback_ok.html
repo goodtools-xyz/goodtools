@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+		<title>用户反馈</title>
+        <style>
+			html,body,*{ margin:0px;padding:0px; }
+
+			body{ font: 12px/1.125 Arial,Helvetica,sans-serif;background:#fff; }
+			.head{ height:40px;line-height:40px;font-size:16px;color:#3a85c1;text-align:center;background:#cfe8ff;position:relative; }
+			.closeBtn{ position:absolute;top:13px;right:19px;background:url( ../template/skin19_4_20100527/js/public4/rebuild/images/close2.gif ) no-repeat;width:13px;height:13px;cursor:pointer; }
+			.text2{ font-size:14px;color:#424242;line-height:24px;margin:20px 20px 20px 30px; }
+			.textarea{ display:block;width:100%;border:0px solid #fff;line-height:1.5;height:80px;outline:none;resize:none; }
+			.textareaWrap2{padding:10px;}
+			.textareaWrap{ display:block;margin:0px 30px;border:1px solid #c1c1c1; }
+			.row3{ margin:15px 0px 0px 30px; }
+			.input{ height:28px;line-height:28px;padding-left:10px;width:300px; vertical-align:middle;}
+			.ps{ color:#999999;font-size:12px; }
+			.blueBtn{ height:30px;line-height:30px;display:inline-block;width:100px;text-align:center;font-size:14px;background:#63aae9;border:none;color:#fff;cursor:pointer;vertical-align:middle; }
+			.row4{ margin:15px 0px 0px 30px;}
+			.errprTxt{ font-size:12px;color:#ff0000;background:#ffdcdc;border:1px solid #fca6a6; height:23px;line-height:23px;display:inline-block;padding:0px 10px;margin-left:10px;vertical-align:middle; }
+		</style>
+    </head>
+	<body>
+		<div class="head">
+			六合人家网址导航网用户反馈<span class="closeBtn" onClick="closeWin()"></span>
+		</div>
+		<div class="text2" style="text-align:center;margin:20px 20px">
+			感谢您提交的反馈！我们会参考您的意见，尽快做出响应。
+		</div>
+		
+		<div class="row4" style="text-align:center;margin:15px 0px 0px 0px" >
+			<input type="button" value="关  闭" class="blueBtn" onClick="closeWin();"/>
+		</div>
+		<script type="text/javascript" src="../template/skin19_4_20100527/js/public4/rebuild/js/jquery-1.7.js"></script>
+		<script type="text/javascript">
+			String.prototype.trim = function(){ 
+				return this.replace(/(^\s*)|(\s*$)/g, ""); 
+			};
+		(function() {
+				var util = {
+					mix: $.extend
+				}; // 基础的一些方法
+				var usePM = ( typeof window.postMessage !== 'undefined'); // 是否支持 postMessage
+				var PM = function( win ) {
+					this._win = win;
+					this._event = function(){};
+					this._initialize();
+				};
+				util.mix( PM.prototype, {
+					_initialize: function() { // 初始化
+						var me = this;
+						if ( usePM ) {
+							if( window.addEventListener ) {
+								window.addEventListener('message', function(e){
+								me._event( e.data);
+							});
+							} else {
+								window.attachEvent('onmessage', function(e){
+									me._event(e.data);
+								});
+							}
+						} else {
+							var lastName = window.name;
+							setInterval( function() {
+								if( window.name != lastName && window.name != '' ) {
+									lastName = window.name;
+									me._event(lastName);
+								}
+							}, 50);
+						}
+					},
+					onmessage: function(callback) { // 添加 onmessage 方法
+						this._event = callback;
+					},
+					send: function( data, origin ) { // send 方法
+						var wl = window.location;
+						var sendOrigin = wl.href.substr( 0, wl.href.indexOf( wl.pathname ) + 1 );
+						var sendData = {
+							data: data,
+							ts: (+(new Date)).toString(10),
+							origin: sendOrigin
+						}
+			 
+						if( usePM ) {
+							this._win.postMessage( data, origin || '*' );
+						} else {
+							this._win.name = data;
+						}
+					}
+				});
+				window.XPM = PM;
+			})();
+
+
+			var f = window.parent;
+			var PM = new XPM(f);
+			
+			function closeWin(){
+
+					var text = "close";
+					PM.send(text);
+			}
+			PM.send("190");
+		</script>
+		<div id="costom1"align="center">
+<a href="http://www.panxinyou.com/" target="_blank"><img src="http://www.go569.com/uploads/allimg/150306/1_2256283491.gif" border=0 /></a>
+</div>
+	</body>
+</html>

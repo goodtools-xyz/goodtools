@@ -1,0 +1,204 @@
+@charset "gb2312";
+#box {
+	BACKGROUND: url(../images/box_c.jpg) #ffffff repeat-x; MARGIN: 1px 0px 10px
+}
+#box #left {
+	FLOAT: left; WIDTH: 229px
+}
+#box #right {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 10px; MARGIN-LEFT: 229px; PADDING-TOP: 10px
+}
+.content {
+	FONT-SIZE: 14px; MARGIN: 20px; COLOR: #333333; LINE-HEIGHT: 200%; TEXT-ALIGN: left
+}
+.content P {
+	FONT-SIZE: 14px; MARGIN-BOTTOM: 20px; TEXT-INDENT: 27px
+}
+.content STRONG {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 0px; COLOR: #ff3300; PADDING-TOP: 0px
+}
+.content A {
+	FONT-SIZE: 14px; COLOR: #0000ff; TEXT-DECORATION: underline
+}
+.content A:hover {
+	TEXT-DECORATION: none
+}
+.content UL {
+	MARGIN: 0px 0px 0px 50px; LIST-STYLE-TYPE: disc
+}
+.content OL {
+	MARGIN: 0px 0px 0px 50px; LIST-STYLE-TYPE: decimal
+}
+.content H1 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: normal; FONT-SIZE: 24px; PADDING-BOTTOM: 0px; MARGIN: 10px 0px; PADDING-TOP: 0px
+}
+.content H2 {
+	FONT-WEIGHT: normal;
+	FONT-SIZE: 22px;
+	LINE-HEIGHT: 200%;
+	width: 65%;
+}
+.content H3 {
+	FONT-WEIGHT: normal; FONT-SIZE: 18px; LINE-HEIGHT: 200%
+}
+.content H4 {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; MARGIN: 20px; LINE-HEIGHT: 200%; BORDER-BOTTOM: #ccc 1px solid
+}
+.content H4 SPAN {
+	FONT-WEIGHT: normal; FLOAT: right
+}
+.content H5 {
+	FONT-SIZE: 14px; LINE-HEIGHT: 200%
+}
+.content H6 {
+	FONT-SIZE: 12px; LINE-HEIGHT: 200%
+}
+.title_h1 {
+	DISPLAY: block;
+	FONT-SIZE: 20px;
+	MARGIN: 0px 0px 20px;
+	COLOR: #000000;
+	FONT-FAMILY: "Î¢ÈíÑÅºÚ", Helvetica, sans-serif;
+	HEIGHT: 60px
+}
+.title_h1 SPAN {
+	BORDER-RIGHT: #0075b9 1px dashed; PADDING-RIGHT: 5px; DISPLAY: block; PADDING-LEFT: 0px; FONT-WEIGHT: bold; FONT-SIZE: 50px; FLOAT: left; PADDING-BOTTOM: 0px; MARGIN: 0px 5px 0px 0px; COLOR: #0075b9; LINE-HEIGHT: 100%; PADDING-TOP: 0px; FONT-FAMILY: Georgia, "Times New Roman", Times, serif
+}
+.title_h1 STRONG {
+	DISPLAY: block; FONT-SIZE: 20px; COLOR: #0075b9; LINE-HEIGHT: 20px; FONT-FAMILY: Georgia, "Times New Roman", Times, serif
+}
+.title_h2 {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FONT-WEIGHT: normal; FONT-SIZE: 26px; PADDING-BOTTOM: 10px; MARGIN: 10px; COLOR: #000; PADDING-TOP: 10px; FONT-FAMILY: "Î¢ÈíÑÅºÚ", Arial, Helvetica, sans-serif; HEIGHT: 200%
+}
+.title_h5 {
+	DISPLAY: block; FONT-WEIGHT: bold; FONT-SIZE: 12px; MARGIN: 0px 0px 0px 20px; COLOR: #000
+}
+.tel {
+	MARGIN: 20px; COLOR: #ff6600
+}
+.tel STRONG {
+	FONT-WEIGHT: bold; COLOR: #333333
+}
+.email STRONG {
+	FONT-WEIGHT: bold; COLOR: #333333
+}
+.email {
+	MARGIN: 20px; COLOR: #ff6600
+}
+.Team {
+	FONT-SIZE: 12px; MARGIN: 0px 20px
+}
+.Team DT {
+	DISPLAY: block; FLOAT: left; WIDTH: 20%
+}
+.Team DD {
+	DISPLAY: block; FLOAT: left; WIDTH: 29%; COLOR: #666
+}
+.Team STRONG {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #333
+}
+.Team A {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #333
+}
+.Team A:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #333
+}
+.map {
+	MARGIN: 0px 15px
+}
+.map DT {
+	MARGIN: 10px 0px 20px; BORDER-BOTTOM: #ccc 1px solid
+}
+.map DT A {
+	FONT-WEIGHT: bold; FONT-SIZE: 20px; COLOR: #04d
+}
+.map DT A:link {
+	FONT-WEIGHT: bold; FONT-SIZE: 20px; COLOR: #04d
+}
+.map DT A:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 20px; COLOR: #04d
+}
+.map DD {
+	
+}
+.map DD STRONG {
+	MARGIN-TOP: 15px; DISPLAY: block; FONT-SIZE: 14px; COLOR: #333
+}
+.map DD STRONG A {
+	FONT-SIZE: 14px; COLOR: #333
+}
+.map DD STRONG A:link {
+	FONT-SIZE: 14px; COLOR: #333
+}
+.map DD STRONG A:visited {
+	FONT-SIZE: 14px; COLOR: #333
+}
+.map DD A {
+	FONT-SIZE: 14px; MARGIN: 5px
+}
+.map DD A:link {
+	FONT-SIZE: 14px; MARGIN: 5px
+}
+.map DD A:visited {
+	FONT-SIZE: 14px; MARGIN: 5px
+}
+.rss A {
+	TEXT-DECORATION: none
+}
+.rss TD {
+	TEXT-ALIGN: center
+}
+.rss TH {
+	TEXT-ALIGN: center
+}
+.rss TH {
+	WIDTH: 20%
+}
+.rss TD {
+	WIDTH: 16%
+}
+.rss TH A {
+	COLOR: #ff0000
+}
+.rss TD A STRONG {
+	FONT-SIZE: 14px; COLOR: #333
+}
+#header {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 0px; PADDING-TOP: 5px; BORDER-BOTTOM: #09447e 10px solid; HEIGHT: 35px; BACKGROUND-COLOR: #0075b9
+}
+#header #logo {
+	FLOAT: left
+}
+#header #menu {
+	MARGIN-TOP: 7px; FLOAT: right
+}
+#header #menu LI {
+	FONT-SIZE: 12px; FLOAT: left; WIDTH: 89px; LINE-HEIGHT: 28px; LIST-STYLE-TYPE: none; HEIGHT: 28px; TEXT-ALIGN: center
+}
+#header #menu LI.on {
+	FONT-WEIGHT: bold; BACKGROUND-IMAGE: url(../images/menu_on.jpg); BACKGROUND-REPEAT: no-repeat
+}
+#header #menu LI A {
+	COLOR: #fff
+}
+#header #menu LI A:link {
+	COLOR: #fff
+}
+#header #menu LI A:visited {
+	COLOR: #fff
+}
+#header #menu LI A:hover {
+	TEXT-DECORATION: underline
+}
+#bottom {
+	CLEAR: both; PADDING-RIGHT: 0px; BORDER-TOP: #ddd 1px solid; PADDING-LEFT: 0px; FONT-SIZE: 12px; PADDING-BOTTOM: 10px; MARGIN: auto; COLOR: #333; PADDING-TOP: 10px; TEXT-ALIGN: center
+}
+#bottom P {
+	PADDING-RIGHT: 0px; DISPLAY: block; PADDING-LEFT: 0px; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; COLOR: #666; LINE-HEIGHT: 150%; PADDING-TOP: 0px
+}
+#bottom A {
+	COLOR: #039; LINE-HEIGHT: 200%; TEXT-DECORATION: underline
+}
+#bottom A:hover {
+	COLOR: #04d
+}

@@ -1,0 +1,194 @@
+        s115: {
+            action: "http://s.116.com/",
+            name: "q",
+            btn: "搜 索",
+            img: [qtcmsdd.t+"public4/rebuild/images/s/116.gif", "116.com"],
+            url: "http://s.116.com/",
+            params: {
+                ie: "gbk"
+            }
+        },
+        web: {
+            action: "http://www.baidu.com/s",
+            name: "wd",
+            btn: "百度一下",
+            img: [qtcmsdd.t+"public4/rebuild/images/s/baidu.gif?v2.0", "百度首页"],
+            url: "http://www.baidu.com/index.php?tn=" + BaiduTn.tn + "&ch=" + BaiduTn.ch,
+            params: {
+                tn: BaiduTn.tn,
+                ch: BaiduTn.ch
+            }
+        },
+		baidu: {
+			action: "http://www.baidu.com/s",
+			btn: "百度一下",
+			name: "wd",
+			img: [qtcmsdd.t+"public4/rebuild/images/s/baidu.gif?v2.0", "百度一下"],
+			url: "http://www.baidu.com/",
+			params: {
+				tn:  BaiduTn.tn
+			}
+		},
+		bing: {
+			action: "http://daohang.soojs.com/data/search.asp",
+			btn: "必应搜索",
+			name: "w",
+			img: [qtcmsdd.t+"public4/rebuild/images/s/bing.gif?v2.0", "必应搜索"],
+			url: "http://cn.bing.com/",
+			params: {
+				a: 'cn.bing.com'
+			}
+		},		
+		sogou: {
+			action: "http://www.sogou.com/sogou",
+			btn: "搜狗搜索",
+			name: "query",
+			img: [qtcmsdd.t+"public4/rebuild/images/s/sogou.gif?v2.0", "搜狗搜索"],
+			url: "http://www.sogou.com/",
+			params: {
+				pid: qtcmsdd.Ssg
+			}
+		},
+		google: {
+			action: "http://www.google.com.hk/cse",
+			btn: "谷歌搜索",
+			name: "q",
+			img: [qtcmsdd.t+"public4/rebuild/images/s/google.gif?v2.0", "谷歌搜索"],
+			url: "http://www.google.com.hk/",
+			params: {
+				cx:qtcmsdd.Sgg,
+				hl:"zh-CN",
+				ie:"gb2312",
+				oe: 'gb2312',
+				"newwindow":1
+			}
+		},
+		s360: {
+			action: "http://www.so.com/s",
+			btn: "搜索一下",
+			name: "q",
+			img: [qtcmsdd.t+"public4/rebuild/images/s/360.gif?v2.0", "搜索一下"],
+			url: "http://www.so.com/",
+			params: {
+				ie:"gb2312"
+			}
+		},
+		youdao: {
+			action: "http://www.youdao.com/search",
+			btn: "有道搜索",
+			name: "q",
+			img: [qtcmsdd.t+"public4/rebuild/images/s/youdao.gif?v2.0", "有道搜索"],
+			url: "http://www.youdao.com/",
+			params: {
+				ie:"gb2312",
+				keyfrom:"web.index"
+			}
+		},		
+        mp3: {
+            action: "http://daohang.soojs.com/data/search.asp",
+            name: "w",
+            btn: "百度一下",
+            img: [qtcmsdd.t+"public4/rebuild/images/s/yinyue.gif?v2.0", "百度一下"],
+            url: "http://music.baidu.com/?ie=utf-8&ct=134217728&word=&tn=" + BaiduTn.tn + "&ch=" + BaiduTn.ch,
+            params: {
+                a: "mp3.baidu.com"
+            }
+        },
+        video: {
+            action: "http://video.baidu.com/v",
+            name: "word",
+            btn: "百度一下",
+            img: [qtcmsdd.t+"public4/rebuild/images/s/video.gif", "百度一下"],
+            url: "http://video.baidu.com/",
+            params: {
+               
+            }
+        },
+        v115: {
+            action: "http://hz.v.baofeng.com/search/web/search.php",
+            name: "keywords",
+            btn: "暴风视频",
+            img: [qtcmsdd.t+"public4/rebuild/images/s/bf-video.gif?v2.0", "暴风视频"],
+            url: "http://hz.v.baofeng.com/",
+            params: {}
+        },
+        image: {
+            action: "http://image.baidu.com/i",
+            name: "word",
+            btn: "百度一下",
+            img: [qtcmsdd.t+"public4/rebuild/images/s/pic.gif?v2.0", "百度图片"],
+            url: "http://image.baidu.com/",
+            params: {
+                ct: "201326592",
+                cl: "2",
+                pv: "",
+                lm: "-1"
+            }
+        },
+        zhidao: {
+            action: "http://zhidao.baidu.com/q",
+            name: "word",
+            btn: "百度一下",
+            img: [qtcmsdd.t+"public4/rebuild/images/s/zhidao.gif?v2.0", "百度知道"],
+            url: "http://zhidao.baidu.com/q?pt=ylmf_ik",
+            params: {
+                tn: "ikaslist",
+                ct: "17"
+            }
+        },
+        taobao: {
+            action: "http://search8.taobao.com/search",
+            name: "q",
+            btn: "淘宝搜索",
+            img: [qtcmsdd.t+"public4/rebuild/images/s/taobao.gif?v2.0", "淘宝网"],
+            url: "http://www.taobao.com/",
+            params: {
+                pid: qtcmsdd.taobao,
+                commend: "all"
+            }
+        },
+        baike: {
+            action: "http://baike.baidu.com/searchword/",
+            name: "word",
+            btn: "搜索词条",
+            img: [qtcmsdd.t+"public4/rebuild/images/s/baike.gif", "百度百科"],
+            url: "http://baike.baidu.com/",
+            params: {
+                tn: "baiduWikiSearch",
+                submit: "search",
+                pn: "0",
+                rn: "10",
+                ct: "17",
+                lm: "0"
+            }
+        },
+        ditu: {
+            action: "http://map.baidu.com/m",
+            name: "word",
+            btn: "搜索地图",
+            img: [qtcmsdd.t+"public4/rebuild/images/s/ditu.gif", "百度地图"],
+            url: "http://map.baidu.com/",
+            params: {
+                ie: "gbk"
+            }
+        },
+        computer: {
+            action: "http://search.yesky.com/searchproduct.do",
+            name: "wd",
+            btn: "搜 索",
+            img: [qtcmsdd.t+"public4/rebuild/images/s/yesky.gif", "天极电脑"],
+            url: "http://product.yesky.com/",
+            params: {
+                ie: "gbk"
+            }
+        },
+        qvod: {
+            action: "http://daohang.soojs.com/data/search.asp",
+            name: "w",
+            btn: "快播搜索",
+            img: [qtcmsdd.t+"public4/rebuild/images/s/qvod.gif", "快播搜索"],
+            url: "http://product.yesky.com/",
+            params: {
+                a:"www.ketuan.cc"
+            }
+        }

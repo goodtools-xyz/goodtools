@@ -1,0 +1,8 @@
+ul.fcolnavi{padding-left:0px;border:1px solid #dbdbdb;border-bottom:none;height: 31px;position: relative;background: #fff;}
+ul.fcolnavi li{text-align: center; border-right: 1px solid #dbdbdb;/*padding:2px;width:86px;*/float: left; display:inline-block;vertical-align:top;height:31px;line-height:31px;}
+ul.fcolnavi .channelHover a{background: #ececec; cursor:pointer}
+ul.fcolnavi li a.channel{/*display:inline-block;width:86px;height:30px;text-align: center; text-decoration:none;*/display:inline-block;width: 86px;height: 27px; line-height:27px; text-align: center; margin: 2px;text-decoration:none;}
+
+ul.fcolnavi li a:hover{}
+ul.fcolnavi .active{font-weight:bold;border-right: 1px solid #dbdbdb;}
+ul.fcolnavi .active a{text-decoration:none;}

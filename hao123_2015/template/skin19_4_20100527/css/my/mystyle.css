@@ -1,0 +1,83 @@
+/* initialization */
+body,h1,h2,h3,h4,p,dl,dt,dd,ul,li,form,th,td,table,label,article, aside, dialog, footer, header, section, footer, nav, figure,hgroup{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;}
+body,button,input,select,textarea,li,dt,dd,div,p,span{font:12px/1 Arial;}
+article,aside,dialog,footer,header,section,footer,nav,figure,hgroup{display:block;}
+ul{list-style:none;}
+img{border:none;}
+em,b{font-style:normal;}
+b{font-weight:normal;}
+a{cursor:pointer;}
+button,input,select,textarea{font-size:100%;outline:0;vertical-align:middle;margin:0;padding:0;}
+button{cursor:pointer;}
+table{border-collapse:collapse;border-spacing:0;}
+.clearfix:after{content:"\0020";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix{clear:both;zoom:1;}
+/*=====================================================================================================================*/
+/* public */
+a{text-decoration:none; color:#07519a;}
+a:hover{text-decoration:underline; color:#e60012;}
+.f-l{float:left;}
+.f-r{float:right;}
+.tx{font-size:12px; color:#666;}
+.hide{display:none;}
+input.input-text{margin:0 5px 0 0; padding:0 7px 0 8px; height:23px; line-height:22px; color:#666; border:1px solid #aaadb4; background:#fff; overflow:hidden;}
+input.input-button{margin:0 12px 0 0; width:78px; height:28px;line-height:28px; text-align:center; cursor:pointer;}
+/*=====================================================================================================================*/
+/* div container */
+#wrap{position:relative; width:100%; height:313px;}
+#top{position:relative; width:100%; height:35px;}
+	#top h2{padding:0 0 0 18px; width:400px; height:35px; line-height:34px; font-weight:normal; overflow:hidden;}
+.tool{position:absolute; top:10px; right:11px; width:114px; height:25px;}
+	.tool a.add-site{padding:0 0 0 21px; height:16px; line-height:18px; color:#07519a; background:url(http://w.qhimg.com/images/v2/haotech/hao360cn_home/20110620/mynav/icon_addsite.gif) no-repeat 0 0; display:block;}
+	.tool a.add-site:hover{text-decoration:none; color:#e50505;}
+	.tool a.bt-close{margin:5px 0 0; width:8px; height:9px; background:url(http://w.qhimg.com/images/v2/haotech/hao360cn_home/20110620/mynav/icon_close.png) no-repeat 0 0; display:block; overflow:hidden;}
+	.tool a.bt-close:hover{background-position:0 -9px;}
+#bottom{position:relative; width:100%; height:277px; border-top:1px solid #b5d9f9;}
+.login-box{position:relative; padding:20px 20px 0 47px; width:300px; height:257px; background:url(http://w.qhimg.com/images/v2/haotech/hao360cn_home/20110620/mynav/bg_divide.png) no-repeat right top;}
+	.login-box dt{padding:0 0 0 44px; width:256px; height:38px; line-height:34px; font-weight:bold; font-size:14px; color:#05519c; background:url(http://w.qhimg.com/images/v2/haotech/hao360cn_home/20110620/mynav/icon_head.png) no-repeat left top;}
+	.login-box dd{position:relative; padding:11px 0 0 48px; width:252px; height:28px;}
+	.login-box dd span{position:absolute; left:0; top:18px; color:#07519a;}
+	.login-box dd input.input-text{width:150px;}
+	.login-box dd a{text-decoration:underline; color:#074e9c;}
+	.login-box dd a:hover{text-decoration:none; color:#e50505;}
+	.login-box dd input.input-checkbox{margin:1px 9px 0 0; _margin:-4px 9px 0 0;}
+	.login-box dd label{line-height:14px; color:#000;}
+	.login-box dd.btn{padding-top:0; line-height:26px;}
+	.login-box dd.prompt{color:#e50505;}
+.brief-box{width:330px; height:277px;}
+	.brief-box p{padding:0 0 0 10px; line-height:22px; color:#666;}
+	.brief-box p.pic{padding:0;}
+	.brief-box p span{font-size:14px; }
+.separator-line{position:relative; float:left; margin:0 0 0 -1px; width:1px; height:280px; background:#b5d9f9; overflow:hidden;}
+.aside{float:left; padding:17px 0 0; width:131px; height:260px; background:#f3faff;}	
+	.aside li{display:block;position:relative; width:130px; height:30px; border-top:0px; border-bottom:0px; border-right:1px solid #b5d9f9; z-index:99;overflow:hidden;}
+	.aside li.active{font-weight:bold; border-top:1px solid #b5d9f9; border-bottom:1px solid #b5d9f9; border-right:1px solid #fff; background-color:#fff;}
+	.aside li.hover .folder{color:#ee0508;}
+	.aside li .folder{position:absolute;top:0;left:0;padding:0 0 0 30px; width:60px; height:28px; line-height:28px; color:#07519a; background:url(http://w.qhimg.com/images/v2/haotech/hao360cn_home/20110620/mynav/icon_folder.gif) no-repeat 8px 4px; cursor:pointer; overflow:hidden;}
+	.aside li.add-classify .folder{background:url(http://w.qhimg.com/images/v2/haotech/hao360cn_home/20110620/mynav/icon_add.gif) no-repeat 12px 10px;}
+	.aside li .input-text{padding:0 2px; width:54px; height:18px; line-height:18px;}
+	.aside li .modify-folder{position:absolute; top:10px; right:24px; width:10px; height:10px; background:url(http://w.qhimg.com/images/v2/haotech/hao360cn_home/20110620/mynav/icon_tool.gif) no-repeat; overflow:hidden; cursor:pointer;}
+	.aside li .save-folder{position:absolute; top:0; right:5px; height:30px;line-height:30px; overflow:hidden; cursor:pointer;}
+	.aside li .delete-folder{position:absolute; top:9px; right:8px; width:11px; height:11px; background:url(http://w.qhimg.com/images/v2/haotech/hao360cn_home/20110620/mynav/icon_trash.gif) no-repeat; overflow:hidden; cursor:pointer;}
+    .aside li.tx-cue{padding:0 0 0 10px; color:#f00;width:120px; border-right:medium none;}
+    .aside li.tx-cue span{color:#f00;}
+.content{float:left; width:589px; height:260px; background:#fff;}
+	.content li{float:left; padding:16px 0 0 8px; width:107px; height:16px; display:inline; overflow:hidden;}
+	.content li a{font-family:"ËÎÌו";float:left; margin:0 2px 0 0; font-size:14px; line-height:16px;}
+	.content li a:hover{text-decoration:none;}
+	.content li span{float:left; margin:2px 0 0; display:none; cursor:pointer;}
+	.content li span.show{display:block;}
+.modify-site{float:left; padding:23px 0 0 63px; width:500px;}
+	.modify-site dd{padding:14px 0 0; color:#05529a;}
+	.modify-site .input-text{width:213px; color:#000;}
+	.modify-site select{padding:2px; color:#000;}
+	.modify-site span{padding:0 0 0 20px; line-height:20px; color:#878787;}
+	.modify-site .btn{padding:20px 0 0 35px;}
+	.modify-site .delete-site{padding:0 0 0 20px; color:#fe0103; background:url(http://w.qhimg.com/images/v2/haotech/hao360cn_home/20110620/mynav/icon_del.jpg) no-repeat;}
+    .modify-site span.pic-correct{color:#fff;background:url(http://w.qhimg.com/images/v2/haotech/hao360cn_home/20110620/mynav/icon_suc.jpg) no-repeat;}
+    .modify-site span.pic-error{color:#f00; background:url(http://w.qhimg.com/images/v2/haotech/hao360cn_home/20110620/mynav/icon_del.jpg) no-repeat;}
+.pop-success,
+.pop-error{padding:35px 0 0 120px; width:280px; height:65px; font-size:14px; font-weight:bold; color:#666; line-height:22px; overflow:hidden;}
+.pop-success{border:1px solid #95dd95; background:url(http://w.qhimg.com/images/v2/haotech/hao360cn_home/20110620/mynav/icon_correct.png) no-repeat #eeffee 40px 15px;}
+.pop-error{border:1px solid #fec799; background:url(http://w.qhimg.com/images/v2/haotech/hao360cn_home/20110620/mynav/icon_error.png) no-repeat #fefbec 40px 15px;}
+

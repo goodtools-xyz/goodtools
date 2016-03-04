@@ -1,0 +1,495 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="gbk"/>
+<title>网址导航</title>
+<style>
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0;}body,button,input,select,textarea{font:12px/1.5 tahoma,arial,\5b8b\4f53,sans-serif;}h1,h2,h3,h4,h5,h6{font-size:100%;}address,cite,dfn,em,var{font-style:normal;}code,kbd,pre,samp{font-family:courier new,courier,monospace;}small{font-size:12px;}ul,ol{list-style:none;}a{text-decoration:none;}a:hover{text-decoration:underline;}sup{vertical-align:text-top;}sub{vertical-align:text-bottom;}legend{color:#000;}fieldset,img{border:0;}button,input,select,textarea{font-size:100%;}table{border-collapse:collapse;border-spacing:0;}#page,#header,#content,#footer{margin-left:auto;margin-right:auto;}.w950{width:950px;}.col-main{float:left;width:100%;min-height:1px;}.col-sub,.col-extra{float:left;}.layout:after,.main-wrap:after,.col-sub:after,.col-extra:after{content:'\20';display:block;height:0;clear:both;}.layout,.main-wrap,.col-sub,.col-extra{*zoom:1;}.hidden{display:none;}.invisible{visibility:hidden;}.clear:after{content:'\20';display:block;height:0;clear:both;}.clear{*zoom:1;}
+a {
+    margin: auto 10px;
+    color: black;
+}
+a:hover {
+    color: red;
+}
+table {
+    width: 100%;
+    text-align: center;
+}
+td {
+    vertical-align: middle;
+}
+body{
+	padding:7px;
+}
+.hide{
+	display:none;
+}
+.navigator {
+    position: relative;
+}
+.navigator .title-bar {
+    position: relative;
+    margin-bottom: 10px;
+    color: #07519a;
+}
+.navigator a{
+	line-height:2;
+}
+.navigator .title-bar a {
+    color: #07519a;
+}
+
+.navigator .toolbar {
+    position: absolute;
+    right: 5px;
+}
+.navigator .toolbar a{
+	margin:0;
+}
+.navigator p, .navigator form {
+    font-size: 14px;
+    line-height: 2;
+    text-align: center;
+}
+
+.navigator form {
+    margin: 20px auto;
+}
+
+.navigator .btn {
+    width: 46px;
+}
+
+.navigator p a {
+    color: #07519a;
+    text-decoration: underline;
+}
+
+.navigator .history {
+    margin-bottom: 6px;
+    padding-bottom: 6px;
+    border-bottom: 0px dashed #afb5c5;
+	width:100%
+}
+.navigator .mylogin .ipt {
+    height: 20px;
+    width: 98px;
+    margin: auto 10px auto 4px;
+}
+.navigator .addbox-wrap, .navigator .addbox-overlay {
+    z-index: 1000;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 295px;
+}
+.navigator .fdk {
+    text-align: center;
+    color: red;
+    margin-top: 6px;
+}
+.navigator .addbox-overlay {
+    z-index: 999;
+    background-color: rgb(150, 150, 150);
+    opacity: 0.6;
+    filter: alpha(opacity = 60);
+}
+.navigator .mysite .myurl {
+    display: inline-block;
+    position: relative;
+    zoom: 1;
+    margin: 0 8px;
+    padding: 0 4px;
+    text-align: center;
+    white-space: nowrap;
+    /*overflow: hidden;
+    text-overflow:ellipsis;
+    -o-text-overflow: ellipsis;*/
+}
+.navigator .mysite .mysite-cnt{
+	overflow-y:auto;
+	height:95px;
+	position:relative;
+}
+.navigator .mysite .myurl a {
+    padding: 0 10px;
+    margin: 0;
+}
+.navigator .mysite .myurl b, .navigator .mysite .myurl s {
+    display: none;
+    position: absolute;
+    top: 2px;
+    right: 0;
+    height: 8px;
+    width: 8px;
+    overflow: hidden;
+    cursor: pointer;
+	background: transparent url("../images/tps/history/T1BxNQXkpwXXXXXXXX-144-238.png") no-repeat;
+}
+.navigator .mysite .myurl:hover b, .navigator .mysite .myurl:hover s,
+.navigator .mysite .myurl.hover b, .navigator .mysite .myurl.hover s {
+    display: block;
+}
+.navigator .mysite .myurl b {
+    background-position: -135px -196px;
+}
+.navigator .mysite .myurl s {
+    background-position:  -135px -184px;
+    top: 14px;
+}
+.navigator .addbox {
+    width: 50%;
+    margin: 40px auto;
+    border: 1px solid #7bd676;
+    background-color: white;
+}
+
+.navigator .addbox .title-bar {
+    height: 26px;
+    padding: 4px 6px;
+    background-color: #d8f0cc;
+}
+
+.navigator .addbox .ipt {
+    width: 168px;
+}
+
+.navigator .addbox p {
+    text-align: center;
+    color: grey;
+}
+#historybox ul{list-style-type:none; clear:both; height:50px; overflow:hidden}
+#historybox ul li {
+	float: left; display: inline-block; margin: 0 1px; width: 135px; overflow: hidden;white-space: nowrap;text-overflow:ellipsis; text-align: center; list-style-type:none; 
+}
+.clsear1{ line-height:0px; height:0px; font-size:0px; height:1px; border-bottom: 1px dashed #afb5c5}
+</style>
+<base target="_blank">
+<script language="javascript" src="{qt:indexurl}p_inc/public.js" type="text/javascript"></script>
+<script>var G_WebUrl="{qt:G_WEBURL}",G_dirUrl="{qt:indexurl}template/{qt:G_moban}/",G_moban="{qt:G_moban}",G_waibu="{qt:indexurl}";G_JIN_TAI_PageOne="{qt:G_JIN_TAI_PageOne}";G_lm_baidu="{qt:G_lm_baidu}";var currTab_c="baidu";var G_lm_taobao2="{qt:G_lm_taobao2}";var G_lm_xunlei="{qt:G_lm_xunlei}";var G_lm_sogou_s="{qt:G_lm_sogou_s}";var currTab_c="";var G_lm_google_s="{qt:G_lm_google_s}";var G_lm_dangdang_s="{qt:G_lm_dangdang_s}";var G_lm_amazon_s="{qt:G_lm_amazon_s}";var qtCms_m1="{qt:pageone m_famous_edit.html}";var G_u_Cookies="{qt:G_u_Cookies}";var qtCms_m2="{qt:pageone m_login.html}";var G_lm_youdao="{qt:G_lm_youdao}";var G_lm_360buy="{qt:G_lm_360buy}";var G_u_Cookies="{qt:G_u_Cookies}";var G_jifen_jifen_name="{qt:G_jifen_jifen_name}"</script>
+</head>
+<body id="J_navigator" class="navigator">
+
+	<div class="history" style="clear:both">
+	    <div class="title-bar" style="clear:both">
+	        <div class="toolbar">
+	        	<a target="_self" href="javascript:location.reload()" id="J_refresh">[刷新]</a>
+	            <a target="_self" href="javascript:history_clears()" id="J_clear">[清空]</a>
+				
+	        </div>
+	        <span>浏览记录</span>
+	    </div>
+	    <p id="f_history">对不起，暂时没有浏览记录</p>
+	    <div id="historybox">
+		<ul>
+		</ul>
+		</div>
+	</div>
+	<div class="clsear1"></div>
+	<div class="mylogin" id="f_mylogin" style="clear:both">
+	</div>
+	<div class="mysite hide" id="f_mysite">
+	    <div class="title-bar">
+	        <div class="toolbar">
+	            <a target="_self" href="javascript:void(0)" id="J_add" class="hide">[添加网址]</a>
+				
+	        </div>
+	        <span id="f_user"><a href="{qt:indexurl}" target="_blank">XXX</a></span><a id="J_exit" target="_self" href="javascript:d_l_out()">[退出]</a><a target="_blank" href="{qt:indexurl}members">[用户中心]</a>
+	    </div>
+	    <div id="J_mysite" class="mysite-cnt"></div>
+	    <div class="fdk" id="f_fdk"></div>
+	</div>
+	<div class="addbox-overlay hide" id="f_addbox-overlay"></div>
+	<div class="addbox-wrap hide" id="f_addbox-wrap">
+	    <div class="addbox">
+	        <div class="title-bar">
+	            <div class="toolbar">
+	                <a target="_self" href="javascript:void(0)" id="J_close">关闭</a>
+	            </div>
+	            <b>管理</b>
+	        </div>
+	        <form action="">
+	            <div class="filed">
+	                <label>网址:</label><input type="text" class="address ipt grey" name="address" value="http://" id="f_wangzhi"/><input type="hidden" id="site-id" name="v" /><input type="hidden" id="vid" name="id" />
+	            </div>
+	            <div class="filed">
+	                <label>名称:</label><input type="text" maxlength="32" class="name ipt grey" name="name" value="" id="f_name"/>
+	            </div>
+	            <p class="fdk"></p>
+	            <div class="filed">
+	                <button type="submit" class="btn" id="f_baocun">保存</button>
+	            </div>
+	        </form>
+	    </div>
+	</div>
+<script>
+var soojs_id=qTcms.Cookie.get3(qTcms.Cookie.get(G_u_Cookies),"soojs_id");
+var soojs_u=qTcms.Cookie.get3(qTcms.Cookie.get(G_u_Cookies),"soojs_u");	
+if(soojs_id==null){soojs_id=0;};
+if(soojs_id=="")soojs_id=0;		
+var a='<div style="margin:0 auto;text-align:center; height:200px; width:600px;margin-top:20px;line-height:40px;"><div style="font-size:14px;">立即使用<strong style="color:#009901;">在线收藏夹</strong>，让网址永不丢失！</div><div><button tabindex="3" style="background:url(\'../js/public4/rebuild/images/stuff.png\') no-repeat scroll 0 -100px transparent;border:0  none;cursor:pointer;display:inline-block;font-size:0;height:27px;line-height:100px;margin-right:6px;overflow:hidden;width:86px;vertical-align:middle;" type="submit" onclick="top.location.href=\'{qt:indexurl}members/login.asp?reurl={qt:HomePage}?tab=1\'">登录</button><a href="{qt:indexurl}members/ugetpass.asp" target="_blank" style="color:#808080">忘记密码？</a></div><div>还没有收藏账号？<a href="{qt:indexurl}members/reg.asp" target="_blank" style="color:#808080">立即注册</a></div></div>';
+if(soojs_id==0){qTcms.Dom.get("f_mylogin").innerHTML=a;window.location="{qt:pageone f_m_login.html}"}
+else{
+	qTcms.Dom.get("f_mylogin").innerHTML="";
+	qTcms.Dom.get("f_mylogin").style.display="none";
+	qTcms.Dom.get("f_mysite").style.display="block";
+	qTcms.Dom.get("J_add").style.display="block";
+	qTcms.Dom.get("f_user").innerHTML=qTcms.reconvert(qTcms.Cookie.get4("qtcmsuser"));
+	/*记录历史记录*/
+	qTcms.Dom.get("f_fdk").innerHTML="您还没有保存网址记录哦~";
+	w_list()
+}
+
+
+function d_oka(v){
+	if(v==1){/*未登录*/
+		qTcms.Dom.get("f_mylogin").innerHTML=a;
+		qTcms.Dom.get("f_mylogin").style.display="block";
+		qTcms.Dom.get("f_mysite").style.display="none";
+		qTcms.Dom.get("J_add").style.display="none";		
+		window.location="{qt:pageone f_m_login.html}"
+	}else if(v==2){/*登录*/
+		qTcms.Dom.get("f_mylogin").innerHTML="";
+		qTcms.Dom.get("f_mylogin").style.display="none";
+		qTcms.Dom.get("f_mysite").style.display="block";
+		qTcms.Dom.get("J_add").style.display="block";
+		qTcms.Dom.get("f_user").innerHTML=soojs_u;		
+	}
+}
+/*添加网址*/
+qTcms.Dom.get("J_add").onclick=function(){J_add_f(1);w_add()}
+qTcms.Dom.get("J_close").onclick=function(){J_add_f(0)}
+function J_add_f(v){
+	if(v==1){
+		qTcms.Dom.get("f_addbox-overlay").style.display="block";
+		qTcms.Dom.get("f_addbox-wrap").style.display="block";
+	}else if(v==0){
+		qTcms.Dom.get("f_addbox-overlay").style.display="none";
+		qTcms.Dom.get("f_addbox-wrap").style.display="none";		
+	}
+}
+
+/*获取收藏列表*/
+function w_list(){
+	qTcms.Ajax("../images/g_js/Ajax_value.asp?v=c_shoucang2&r="+new Date().getTime(),function(d){
+		var c=d.responseText;
+		if(c!=""){
+			mycallback_d2(d)			
+		}
+	})	
+}
+function mycallback_d2(obj) {	
+	var s=obj.responseText;
+	
+	var hisstr=s,hisarr=new Array();
+	if( hisstr != null ) hisarr=hisstr.split('^^');
+	var ts="";
+	if(typeof(hisarr) == 'object')
+	{
+		var len=hisarr.length;
+		j=len-1;
+		for(i=0;i<j;i++)
+		{
+			r = hisarr[i].split('**');
+			if(r[0] != 'undefined')
+			ts+='<span class="myurl" onMouseOver="w_over(this)" onMouseOut="w_out(this)"><a href="'+r[1]+'"  id="n_'+r[2]+'">'+r[0]+'</a><b onClick="w_edit(\''+r[2]+'\')"></b><s onClick="w_del(\''+r[2]+'\')"></s></span>';
+			
+		}
+		if(ts!=""){
+			document.getElementById("J_mysite").innerHTML=ts;
+			qTcms.Dom.get("f_fdk").style.display="none"
+		}
+	}
+}
+/*移上鼠标*/
+function w_over(o){
+	o.childNodes[1].style.display="block";
+	o.childNodes[2].style.display="block";
+	qTcms.Dom.get("f_wangzhi").value=o.childNodes[0].href
+	qTcms.Dom.get("f_name").value=o.childNodes[0].innerHTML
+}
+/*移下鼠标*/
+function w_out(o){
+	o.childNodes[1].style.display="none";
+	o.childNodes[2].style.display="none";
+}
+/*编辑网址*/
+function w_edit(id){
+	qTcms.Dom.get("vid").value=id
+	qTcms.Dom.get("site-id").value="c_shoucang_edit";	
+	J_add_f(1);
+}
+/*添加网址*/
+function w_add(){
+	qTcms.Dom.get("f_wangzhi").value="";
+	qTcms.Dom.get("f_name").value="";
+	qTcms.Dom.get("vid").value="";
+	qTcms.Dom.get("site-id").value="c_shoucang_a";
+}
+/*删除网址*/
+function w_del(id){
+	if(confirm("确定要删除这个收藏网址吗?")){
+		qTcms.Dom.get("vid").value=id
+		qTcms.Dom.get("site-id").value="c_shoucang_d2";	
+		id=qTcms.Dom.get("vid").value
+		v=qTcms.Dom.get("site-id").value
+		qTcms.Ajax("../images/g_js/Ajax_value.asp?id="+id+"&v="+escape(v)+"&t="+"&t"+new Date().getTime(),function(d){
+			var c=d.responseText;
+			if(c=="ok"){
+				J_add_f(0);
+				qTcms.Dom.get("n_"+qTcms.Dom.get("vid").value).parentNode.style.display="none";
+			}else{
+				J_add_f(0);
+				alert("删除失败");			
+			}
+		})	
+	}	
+}
+qTcms.Dom.get("f_baocun").onclick=function(){w_baocun();return false}
+/*保存网址*/
+function w_baocun(){
+	u1=qTcms.Dom.get("f_wangzhi").value
+	u2=qTcms.Dom.get("f_name").value
+	v=qTcms.Dom.get("site-id").value
+	id=qTcms.Dom.get("vid").value
+	if(u1==""){
+		alert("请填写网址~")
+		qTcms.Dom.get("f_wangzhi").focus()
+		return false
+	}
+	if(u2==""){
+		alert("请填写网站名~")
+		qTcms.Dom.get("f_name").focus()
+		return false
+	}	
+	
+	if(v=="c_shoucang_edit"){
+		qTcms.Ajax("../images/g_js/Ajax_value.asp?d1="+escape(u2)+"&d2="+escape(u1)+"&v="+escape(v)+"&id="+id+"&t="+"&t"+new Date().getTime(),function(d){
+			var c=d.responseText;
+			if(c=="ok"){
+				J_add_f(0);
+				qTcms.Dom.get("n_"+qTcms.Dom.get("vid").value).innerHTML=qTcms.Dom.get("f_name").value
+				qTcms.Dom.get("n_"+qTcms.Dom.get("vid").value).href=qTcms.Dom.get("f_wangzhi").value
+				//alert("收藏修改成功");
+			}else{
+				J_add_f(0);
+				alert("收藏修改失败");			
+			}
+		})	
+	}else if(v=="c_shoucang_a"){
+		qTcms.Ajax("../images/g_js/Ajax_value.asp?d1="+escape(u2)+"&d2="+escape(u1)+"&v="+escape(v)+"&id="+id+"&t="+"&t"+new Date().getTime(),function(d){
+			var c=d.responseText;
+			if(c=="ok"){
+				J_add_f(0);
+				//alert("收藏添加成功");
+				w_list()
+			}else{
+				J_add_f(0);
+				alert("收藏添加失败");			
+			}
+		})			
+	}	
+}
+function d_l_out(){
+	qTcms.Ajax(G_waibu+"Members/regok.asp?action=out&Back_url=noback&m="+new Date().getTime(),function(d){
+		var c=d.responseText;
+		if(c!=""){
+			d_oka(1)			
+		}
+	})			
+}
+
+
+/*历史记录*/
+function els(i,t){
+	if(typeof(i)=="string")i=$(i);
+	return i.getElementsByTagName(t)
+}
+function getVisitedCookieName(){return "history";}
+
+function getVisited(){
+    return getCookie(getVisitedCookieName());
+}
+function getCookie(k){
+	var arr = document.cookie.match(new RegExp("(^| )" + k + "=([^;]*)(;|$)"));
+	if (arr != null) {
+		return unescape(arr[2])
+	}
+	return null
+}
+
+function history_dis(){
+/*	var st="<ul>"; 
+	for(i=0;i<6;i++){  
+		st+="<li>";  
+		for(ii=0;ii<6;ii++){   
+			st+="<span id='hh_"+ii+"'></span>"  
+		}  
+		st+="</li>"; 
+	} 
+	st+="</ul>"; 
+*/	
+	
+	var pps="";
+	//var favli=els("historybox","span");
+	var ii=0;
+	var hisstr=getVisited(),hisarr=new Array()	;
+	
+	if( hisstr != null ) hisarr=hisstr.split('_[YLMF]_');
+	var ts="";
+	
+	if(typeof(hisarr) == 'object')
+	{
+		pps+="<ul>";
+		
+		qTcms.Dom.get("f_history").style.display="none";
+		var len=hisarr.length;
+		if(len>10)len=10
+		j=len-1;
+		for(i=0;i<len;i++)
+		{
+			var rn=hisarr[i];
+			
+			if(rn!=""){
+				r = hisarr[i].split('_[TEXT]_');
+				if(r[0] != 'undefined' && r[0].substr(0,4)=='http'){
+					pps+="<li>";
+					pps+="<span><a href='"+r[0]+"' target='_blank'>"+r[1]+"</a></span>";
+					pps+="</li>";
+					ii++;
+				}
+			}
+		}
+		/*if ((ii - 1 % 5) !== 4) pps += '</li>';*/
+		pps+="</ul>";
+		if(pps.indexOf("<span>")!=-1)
+			qTcms.Dom.get("historybox").innerHTML=pps;	
+		else
+			qTcms.Dom.get("f_history").style.display="block";	
+				
+	}else{
+	}
+
+	
+}
+function history_clears(){
+	if(confirm("确定要清除所有浏览记录吗?")){
+		DelCookie(getVisitedCookieName());
+		qTcms.Dom.get("historybox").innerHTML="";
+		qTcms.Dom.get("f_history").style.display="block";
+	}
+}
+function DelCookie(name)
+//删除Cookie
+{
+parent.Cookie.clear("history",null,'');
+}
+history_dis()
+</script>
+<div id="costom1"align="center">
+<a href="http://www.panxinyou.com/" target="_blank"><img src="http://www.go569.com/uploads/allimg/150306/1_2256283491.gif" border=0 /></a>
+</div>
+</body>
+</html>

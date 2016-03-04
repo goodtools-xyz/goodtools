@@ -1,0 +1,10 @@
+@charset "gb2312";
+#wrap{ background:#efefef;}
+/*Í·²¿±³¾°*/
+#top-outerbg{background:url( "./../../images/theme/valentine20140213_02.png" ) top center #efefef no-repeat;height:407px;  }
+/*LOGO*/
+/*.header .logo {
+	background-image: url(../../../../../images/logo.png);
+    _background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=noscale,src="../../../../../images/logo.png");
+}*/

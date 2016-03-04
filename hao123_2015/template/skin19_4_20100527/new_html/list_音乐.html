@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+{self}列表页头部.html{/self}
+<link type="text/css" rel="stylesheet" href="../js/public4/rebuild/js/yinyue/style.css" />
+<base target="_blank" />
+</head>
+<body>
+{self}列表页头部2.html{/self}
+<div class="wrapper">
+	{self}列表页头部3.html{/self}
+	<div class="comRowGuid" id="main_frame_2">
+		{qt_Loop:List19 1,37,1}
+		<dl class="">{if:"{qt:n_title1}"<>""}<dt><a href="{qt:n_gotourl}" target="_blank">{qt:n_title1}</a></dt>{end if}<dd>{qt:n_content}</dd></dl>
+		<div class="shr"></div>
+		{/qt_Loop}	
+		{qt_Loop:type3 0,50,10,{qt:m_type1}}
+		<dl>
+			<dt><a>{qt:m_type_name}</a></dt>
+			<dd>
+				<table>
+				<tr>{qt_Loop:urlList}<td><a href="{qt:md_url}">{bif:"{qt:md_pic}"<>""}<img width="16" height="16" class="img" src="{qt:md_pic}">{else}<img width="16" height="16" class="img" src="../images/ico/ie.gif">{bend if}{qt:mdname_1_color}</a></td>{bif:{qt:md_i} mod 6=0}</tr><tr>{bend if}{/qt_Loop:urlList}</tr>
+				</table>
+			</dd>
+		</dl> 
+		<div class="shr"></div>
+		{/qt_Loop}
+		{qt:ListContent3 {qt:m_type1}}
+		{self}列表页底部2.html{/self}
+		{qt_Loop:List19 1,38,1}
+		<div class="shr"></div>
+		<dl class="">{if:"{qt:n_title1}"<>""}<dt><a href="{qt:n_gotourl}" target="_blank">{qt:n_title1}</a></dt>{end if}<dd>{qt:n_content}</dd></dl>
+		{/qt_Loop}		
+	</div>
+	<div class="line"></div>
+	
+	<div class="comRowGuid clearfix" id="main_frame_1">
+		<div class="music-media cf" >
+		   
+			<div id="mediaIframe" class="media-iframe  border-grey1">
+				<iframe id="playIframe" border='0' frameborder="0" scrolling="no"  src=""></iframe>
+			</div>
+		
+			 <ul id="mediaList" class="media-list  border-grey1">
+			 	<li data-url="http://web.kugou.com/tao123.html"><i class="icon-kg"></i><p><strong>酷狗音乐</strong><span>完美在线音乐播放</span></p></li>
+			 	<li data-url="http://app.9ku.com/2345da/"><i class="icon-9ku"></i><p><strong>九酷音乐</strong><span>听好歌，上九酷</span></p></li>
+				<li data-url="http://www.xiami.com/player/tao123/"><i class="icon-xm"></i><p><strong>虾米音乐</strong><span>高品质音乐Mp3</span></p></li>
+				<li data-url="http://www.1ting.com/api/tao123/"><i class="icon-yt"></i><p><strong>一听音乐</strong><span>免费歌曲在线试听</span></p></li>
+				<li data-url="http://www.yinyuetai.com/baidu/hao123"><i class="icon-yy"></i><p><strong>音悦TV</strong><span>高清MV音乐分享</span></p></li>
+				<li data-url="http://player.kuwo.cn/webmusic/web/play?f=tao123"><i class="icon-kw"></i><p><strong>酷我音乐</strong><span>海量曲库，一点即播</span></p></li>
+				<li data-url="http://douban.fm/partner/playerhao123"><i class="icon-db"></i><p><strong>豆瓣FM</strong><span>个性化音乐收听</span></p></li>
+				<li data-url="http://y.qq.com/webplayer/index.html"><i class="icon-qq"></i><p><strong>QQ音乐</strong><span>音乐你的生活</span></p></li>
+				<li data-url="http://app.duomiyy.com/webradio/duba/"><i class="icon-duomi"></i><p><strong>多米音乐</strong><span>让音乐跟我走</span></p></li>
+				<li data-url="http://www.xiami.com/kuang/hao123/"><i class="icon-xmdt"></i><p><strong>虾米电台</strong><span>发现,分享高品质音乐</span></p></li>
+				<li data-url="http://player.kuwo.cn/webmusic/kuwodt/tao123.html"><i class="icon-kwdt"></i><p><strong>酷我电台</strong><span>高音质正版音乐电台</span></p></li>
+				<li data-url="http://ting.baidu.com/app/hao123/tingradio/"><i class="icon-ting"></i><p><strong>ting!电台</strong><span>打开就有好音乐</span></p></li>
+				<li data-url="http://topic.kugou.com/radio/"><i class="icon-kgdt"></i><p><strong>酷狗电台</strong><span>酷狗电台，好歌不断</span></p></li>
+				
+			  
+			</ul>
+		</div>
+	</div>
+	<div class="line"></div>
+	{self}列表页底部.html{/self}
+</div>	
+{self}列表页底部js.html{/self}	
+
+<script src="../js/public4/rebuild/js/yinyue/jquery.cookie.js?v=20111223"></script>
+<script src="../js/public4/rebuild/js/yinyue/jquery.c.js"></script>
+{self}底部.html{/self}
+<div id="costom1"align="center">
+<a href="http://www.panxinyou.com/" target="_blank"><img src="http://www.go569.com/uploads/allimg/150306/1_2256283491.gif" border=0 /></a>
+</div>
+</body></html>

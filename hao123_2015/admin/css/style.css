@@ -1,0 +1,56 @@
+/*全局基本样式*/
+BODY {
+	MARGIN-TOP: 5px; SCROLLBAR-FACE-COLOR: #799ae1; FONT-SIZE: 12px; BACKGROUND: #cad7f7; SCROLLBAR-HIGHLIGHT-COLOR: #799ae1; SCROLLBAR-SHADOW-COLOR: #799ae1; SCROLLBAR-3DLIGHT-COLOR: #799ae1; SCROLLBAR-ARROW-COLOR: #ffffff; SCROLLBAR-TRACK-COLOR: #aabfec; SCROLLBAR-DARKSHADOW-COLOR: #799ae1;WORD-BREAK: break-all;  WORD-WRAP: break-word
+}
+TD {
+	FONT-SIZE: 12px
+}
+INPUT {
+	BORDER-TOP-WIDTH: 1px; BORDER-LEFT-WIDTH: 1px; FONT-SIZE: 12px; BORDER-BOTTOM-WIDTH: 1px; BORDER-RIGHT-WIDTH: 1px;FONT-FAMILY: Verdana
+}
+TEXTAREA {
+	BORDER-TOP-WIDTH: 1px; BORDER-LEFT-WIDTH: 1px; FONT-SIZE: 12px; BORDER-BOTTOM-WIDTH: 1px; BORDER-RIGHT-WIDTH: 1px
+}
+SELECT {
+	BORDER-TOP-WIDTH: 1px; BORDER-LEFT-WIDTH: 1px; FONT-SIZE: 12px; BORDER-BOTTOM-WIDTH: 1px; BORDER-RIGHT-WIDTH: 1px
+}
+SPAN {
+	FONT-SIZE: 12px; POSITION: static
+}
+A:link {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #428eff; TEXT-DECORATION: underline
+}
+
+
+/*表样式*/
+TH {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; BACKGROUND-IMAGE: url(../images/admin_bg_1.gif); COLOR: white; BACKGROUND-COLOR: #4455aa
+}
+.tableBorder {
+	BORDER-RIGHT: #183789 1px solid; BORDER-TOP: #183789 1px solid; BORDER-LEFT: #183789 1px solid; WIDTH: 98%; BORDER-BOTTOM: #183789 1px solid; BACKGROUND-COLOR: #ffffff
+}
+TD.forumRowHighlight {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; BACKGROUND: #E4EDF9; PADDING-BOTTOM: 3px; PADDING-TOP: 3px
+}
+TD.bodytitle {
+	BACKGROUND-IMAGE: url(../images/admin_bg_2.gif)
+}
+TD.forumRow {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; BACKGROUND: #f1f3f5; PADDING-BOTTOM: 3px; PADDING-TOP: 3px
+}
+.forumRow21 {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px;BACKGROUND-IMAGE: url(../images/admin_bg_1.gif); COLOR: white; PADDING-BOTTOM: 3px; PADDING-TOP: 3px;font-weight:bold; font-size:16px; cursor:pointer
+}
+
+.forumRow22 {
+	font-weight:normal;font-size:14px; cursor:pointer
+}
+
+.b1{ cursor:pointer; font-weight:bold; background-color:#d6dff7; color:#000}
+.b2{ cursor:pointer}

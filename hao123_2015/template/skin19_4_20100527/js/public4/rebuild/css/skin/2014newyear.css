@@ -1,0 +1,60 @@
+@charset "gb2312";
+#wrap{ background:#fef6df;}
+#top-outerbg{ height:640px;background:url( "./../../images/theme/2014newyear.jpg" ) center  #f9f9f9;height:640px;  }
+#top-innerbg{  }
+
+
+/*边框颜色*/
+.col-usage, .col-coolsite, .col, .fmSite-tab li, dl, ul.col-row02, .comBox, #botNavi, .sedulist,.m-search,.botNavi ,.ecRow, .btmContent,dl.col-row01,.youqingContent{
+	border-color: #ffa0a0;
+}
+.btmContent .tabHander li,ul.colTitle li.active,ul.colTitle li,.btmContent .tabHander li{
+	border-top-color: #ffa0a0;
+}
+/* 背景颜色 */
+.ecRow .ecBottomLine,.btmContent .tabHander,.starCol .txt1Row2 a{ background:#ffa0a0; }
+
+/*字体颜色*/
+.tilTxt,.botNavi .botBlue,.ecRow .ecTilTxt .ecTilSpan,.col-hotKeys .hotKeys a, .box-prlInq .tit, .box-prlInq .more, .usage-tab .active, .col-coolsite .tit, .fmSite-tab li, .box-tuan a, .sortSite .tit a, .recomSite .tit a ,ul.colnavi li a, #botNavi ul li a.hex,.youqingContent .subject{
+	color: #cd2f26;
+}
+
+/*头部*/
+.m-search-tab .active,.s-hot .hot-til,.s-hot .hot-con .bot-nub, .col-hotKeys .bot-nub{
+	background:#e8574e;
+}
+.starRow2 .detail,.starCol .star_chose a:hover{ color:#e8574e; }
+.s-hot .hot-con{ border-color:#e8574e; }
+.m-search,.s-hot .hot-con .cur{ background:#fefbee; }
+
+/*天气鼠标经过效果*/
+.weather .tWrapHover,.weather .mWrapHover{ border:1px solid  #ffa0a0;padding:0px; }
+
+/* 图标 */
+ul.col-row02 li, #botNavi ul li span, .morCrt a, ul.colTitle, span#mcLft, span#mcRgt,ul.colnavi li span ,.scroCtr a, .tilTxt .tilIcon, .btmc_con .btmc_la, .btmc_con .btmc_ra, .ecRow .ecTilTxt .ecTilIcon
+,ul.col-row02 li, #botNavi ul li span, .morCrt a, ul.colTitle, span#mcLft, span#mcRgt,.s-hot .hot-clock,.topbar .wel ul li.mcol a.home:hover, .header .notice,#ldMore,
+.footer .copyright .appleDownload, .footer .copyright .azDownload,.youqingContent .subject,.menutop{
+	background-image: url(../../images/theme/iconall-red.png);
+}
+
+.header .notice {
+	background-position: -236px -69px;
+}
+.topbar .wel ul li.mcol a.home:hover{
+	background-position: -232px -36px;
+}
+#ldMore{
+	background-position: -232px 0px;
+}
+#ldMore.my{
+	background-position: -253px 0px;
+}
+
+/*.header .logo {
+	background-image: url(../../../../../images/logo.png);
+	_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=noscale,src="../../../../../images/logo.png");
+}*/
+
+ul.fcolnavi .active a,ul.fcolnavi .active em{background: #e8574e !important;color:#fff;}
+.menus .select{border-top-color:#ffa0a0}

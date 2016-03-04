@@ -1,0 +1,89 @@
+body {
+	background-color: #FF0000;
+	text-align: center;
+}
+
+header {
+	background-color: gold;
+	-webkit-box-shadow: 0px 0px 46px;
+	box-shadow: 0px 0px 46px;
+	}
+main {
+}
+h1 {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	color: red;
+	text-shadow: 0px 0px;
+	text-align: center;
+	font-weight: bold;
+	font-size: xx-large;
+}
+
+h2 {
+	color:gold;
+}
+
+p {
+	font-size: 142px;
+}
+
+a {
+	text-decoration: none;
+	margin-left: auto;
+	margin-right: auto;
+ }
+a:hover
+{
+	color:#F3BA69;
+	}
+	
+footer {
+	margin-top: 40px;
+	padding: 10px;
+	text-align: center;
+	background-color: gold;
+	border-top-width: thin;
+	border-top-style: solid;
+	}
+	
+
+/*ipad air 2 2048*1536 */
+@media screen and (max-width:1536px) and (orientation:portrait){
+	body {
+	margin:0 auto;
+	min-width:1536px;
+}
+}
+/*iphone 6 1334*750 */
+@media screen and (max-width:750px) and (orientation:portrait){
+	body {
+	margin:0 auto;
+	min-width:750px;
+}
+}
+
+/*iphone 6  plus 1920*1080 */
+@media screen and (max-width:1080px){
+	body {
+	margin:0 auto;
+	min-width:1080px;
+}
+}
+
+/*MBA  plus 1430*900 */
+
+@media screen and (max-width:1430px){
+	body {
+	margin:0 auto;
+	max-width:5120px;
+}
+}
+
+/*Samsung s6 9208 2560*1440 */
+@media screen and (max-width:1440px) and (orientation:portait){
+	body {
+	margin:0 auto;
+	min-width:1440px;
+}
+}

@@ -1,0 +1,67 @@
+@charset "gb2312";
+#wrap{ background:#f9f9f9;}
+/*头部背景*/
+#top-outerbg{background:url( "./../../images/theme/shopping_bg.jpg" ) top center #f9f9f9 no-repeat;height:900px;  }
+#top-innerbg{  }
+/*底部背景*/
+
+/*边框颜色*/
+.col-usage, .col-coolsite, .col, .fmSite-tab li, dl, ul.col-row02, .comBox, #botNavi, .sedulist,.m-search,.botNavi ,.ecRow, .btmContent,dl.col-row01,.youqingContent{
+	border-color: #fc91a8;
+}
+.btmContent .tabHander li,ul.colTitle li.active,ul.colTitle li,.btmContent .tabHander li{
+	border-top-color: #fc91a8;
+}
+/* 背景颜色 底部电商 */
+.ecRow .ecBottomLine,.btmContent .tabHander,.starCol .txt1Row2 a{ background:#fa7793; }
+
+
+/*字体颜色*/
+.tilTxt,.botNavi .botBlue,.ecRow .ecTilTxt .ecTilSpan,.col-hotKeys .hotKeys a, .box-prlInq .tit, .box-prlInq .more, .usage-tab .active, .col-coolsite .tit, .fmSite-tab li, .box-tuan a, .sortSite .tit a, .recomSite .tit a ,ul.colnavi li a, #botNavi ul li a.hex,.youqingContent .subject{
+	color: #fa7793;
+}
+
+/*搜索框选中及头�?/
+.m-search-tab .active,.s-hot .hot-til,.s-hot .hot-con .bot-nub, .col-hotKeys .bot-nub{
+	background:#fa7793;
+}
+
+/*星座链接*/
+.starRow2 .detail,.starCol .star_chose a:hover{ color:#fa7793; }
+
+.s-hot .hot-con{ border-color:#fa7793; }
+
+/*搜索�?新闻热点*/
+.m-search,.s-hot .hot-con .cur{ background:#fde9ee; }
+.s-hot .hot-con .bot-nub{background:#fa7793;}
+
+
+/* 图标 */
+ul.col-row02 li, #botNavi ul li span, .morCrt a, ul.colTitle, span#mcLft, span#mcRgt,ul.colnavi li span ,.scroCtr a, .tilTxt .tilIcon, .btmc_con .btmc_la, .btmc_con .btmc_ra, .ecRow .ecTilTxt .ecTilIcon
+,ul.col-row02 li, #botNavi ul li span, .morCrt a, ul.colTitle, span#mcLft, span#mcRgt,.s-hot .hot-clock,.topbar .wel ul li.mcol a.home:hover, .header .notice,#ldMore,
+.footer .copyright .appleDownload, .footer .copyright .azDownload,.youqingContent .subject,.menutop{
+	background-image: url(../../images/theme/icon-love.png);
+}
+
+.header .notice {
+	background-position: -236px -69px;
+}
+.topbar .wel ul li.mcol a.home:hover{
+	background-position: -232px -36px;
+}
+#ldMore{
+	background-position: -232px 0px;
+}
+#ldMore.my{
+	background-position: -253px 0px;
+}
+/*LOGO*/
+/*.header .logo {
+	background-image: url(../../../../../images/theme/shopping_logo.png);
+	 _background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=noscale,src="../../../../../images/theme/shopping_logo.png");
+}*/
+
+ul.fcolnavi .active a,ul.fcolnavi .active em{background: #fa7793 !important;color:#fff;}
+.menus .select{border-top-color:#fa7793}
+.m-search-tab .active {background: #fa7793}

@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+.table_td_left {
+	text-align:left;
+}
+
+.table_td_right {
+	text-align:right;
+}
+
+.table_td_center {
+	text-align:center;
+}
+
+td {
+padding:4px;
+}

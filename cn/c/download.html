@@ -1,0 +1,819 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!--根据硬件设备尺寸获取自适应屏幕大小-->
+<meta name="viewport" content="width=device-width" initial-scale="1" maximum-scale="2">
+<title>Tool321</title>
+<link href="../../css/style_css.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="wrapper">
+  <!--Header start here-->
+  <!--Header end here  -->
+  
+  <!--Section Baidu Start here-->
+  <header>
+    <!--Weather Plug  http://cj.weather.com.cn  -->
+    <div id="header">
+      <div style="float:left">
+        <h2 style="margin:0; padding:0;"><a style=" text-decoration:none;" href="http://www.tool321.com">Tool<span style="color:red">3</span><span style="color:#FFEB63">2</span><span style="color:blue">1</span>.com</a></h2>
+        <h6><a href="../../c/record.html">Beta V0.31.0.0</a></h6>
+        <h6><a href="http://www.tool321.com">中</a>/<a href="../../c/en/index.html">En</a></h6>
+        <h5 style="margin:0; padding:0;">一个专注生产力和效率工具的导航网站</h5>
+      </div>
+      <div style="width:30%" id="weather">
+        <script type="text/javascript" src="http://ext.weather.com.cn/101494.js"></script>
+      </div>
+      <div style="width:40%" id="right_header">
+        <li class="horizontal"><a href="#">换肤beta</a></li>
+        <li class="horizontal"><a href="../../c/login.php">登陆beta</a></li>
+        <li class="horizontal"><a href="http://www.hao123.com/redian/sheshouyef.htm" target="_blank">设为主页</a></li>
+        <li class="horizontal"><a href="http://hao.360.cn/iexiufu360xiufu.html">主页修复</a></li>
+        <li class="horizontal"><a href="http://www.51wnl.com/" target="_blank">万年历</a></li>
+      </div>
+    </div>
+  </header>
+  <section id="baidu">
+<form  onsubmit="return baiduWithHttps(this)" action="http://www.baidu.com/baidu" target="_blank" >
+  <input name="tn" type="hidden" value="SE_zzsearchcode_shhzc78w">
+    <a href="https://www.baidu.com/" target="_blank">
+        <img src="https://www.baidu.com/img/baidu_jgylogo3.gif" alt="Baidu" align="center" border="0">
+    </a>
+    
+    <input type="text"  onfocus="checkHttps" name="word"  size="80"  height="large">
+    <input type="submit" value="百度搜索" width="20%">
+</form>
+
+<script src="http://s1.bdstatic.com/r/www/cache/global/js/BaiduHttps_20150714_zhanzhang.js"></script>
+<script>
+    function checkHttps () {
+        BaiduHttps.useHttps();    
+    };
+    function baiduWithHttps (formname) {
+        var data = BaiduHttps.useHttps();
+        if (data.s === 0) {
+            return true;
+        }
+        else {
+            formname.action = 'https://www.baidu.com/baidu' + '?ssl_s=1&ssl_c' + data.ssl_code;
+            return true;
+        }
+    };
+</script>
+
+</section>
+
+<!--Section Baidu End here -->
+
+<!--Section DesignLibrary start here-->
+
+
+
+<!--Section Office Start here-->
+ <section id="office">
+   <table>
+     <caption>
+     Download
+     </caption>
+     <tbody>
+       <tr>
+         <th width="23" scope="col">No.</th>
+         <th width="78" scope="col">&nbsp;</th>
+         <th width="78" scope="col">Class</th>
+         <th width="145" scope="col"><a href="https://products.office.com/products" target="_blank">Microsoft      </a></th>
+         <th width="89" scope="col">Top1</th>
+         <th width="64" scope="col">Top2</th>
+         <th width="80" scope="col">Top3</th>
+         <th width="70" scope="col">Top4</th>
+         <th width="67" scope="col">Top5</th>
+         <th width="83" scope="col">Top6</th>
+         <th width="105" scope="col">Top7</th>
+         <th width="105" scope="col">Top8</th>
+        </tr>
+       <tr>
+         <th scope="row">1</th>
+         <td>&gt;&gt;</td>
+         <td>下载网站</td>
+         <td>软件下载</td>
+         <td><a href="http://rj.baidu.com" target="_blank">百度软件</a></td>
+         <td><a href="http://soft.hao123.com" target="_blank" class="cellhightlight">HAO123下载</a></td>
+         <td>&nbsp;</td>
+         <td><a href="http://www.pconline.com.cn" target="_blank">太平洋电脑网</a></td>
+         <td><a href="http://www.duote.com" target="_blank">多特软件站（2345）</a></td>
+         <td><a href="http://xiazai.zol.com.cn/" target="_blank">中关村在线</a></td>
+         <td><a href="http://www.crsky.com" target="_blank">非凡软件站</a></td>
+         <td><a href="http://www.onlinedown.net" target="_blank">华军软件园</a></td>
+        </tr>
+       <tr>
+         <th scope="row">&nbsp;</th>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td><a href="http://download.pchome.net" target="_blank">PChome</a></td>
+         <td>IT之家</td>
+         <td><a href="http://www.pc6.com" target="_blank">PC6</a></td>
+         <td><a href="http://baoku.360.cn" target="_blank">360软件宝库</a></td>
+         <td><a href="http://xiazai.sogou.com" target="_blank">搜狗软件</a></td>
+         <td><a href="http://www.skycn.com" target="_blank">天空软件站</a></td>
+         <td><a href="http://down.it168.com" target="_blank">IT168</a></td>
+        </tr>
+       <tr>
+         <th scope="row">&nbsp;</th>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>1965<a href="http://www.newasp.net/" target="_blank">新云软件园</a></td>
+         <td><a href="http://down.tech.sina.com.cn" target="_blank">新浪下载</a></td>
+         <td><a href="http://www.xiazaiba.com" target="_blank">下载吧</a></td>
+         <td><a href="http://www.xdowns.com" target="_blank">绿色软件联盟</a></td>
+         <td><a href="http://mydown.yesky.com" target="_blank">天极下载</a></td>
+         <td><a href="http://www.cr173.com" target="_blank">西西软件园</a></td>
+         <td>&nbsp;</td>
+       </tr>
+       <tr>
+         <th scope="row">&nbsp;</th>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>APP下载</td>
+         <td>百度手机助手</td>
+         <td><a href="https://www.wandoujia.com">豌豆荚</a></td>
+         <td>360应用市场</td>
+         <td>应用宝</td>
+         <td>安智市场</td>
+         <td>安卓市场</td>
+         <td>应用汇</td>
+         <td>小米应用</td>
+       </tr>
+       <tr>
+         <th scope="row">&nbsp;</th>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>华为应用</td>
+         <td>搜狗市场</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+       </tr>
+       <tr>
+         <th scope="row">2</th>
+         <td>&gt;&gt;</td>
+         <td>下载工具</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td><a href="http://www.oldversion.com" target="_blank" class="cellhightlight">Oldversion旧版本</a></td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+        </tr>
+       <tr>
+         <th scope="row">3</th>
+         <td>&gt;&gt;</td>
+         <td>国外</td>
+         <td>&nbsp;</td>
+         <td>巴西 <a href="http://ultradownloads.com.br" target="_blank">ultradownloads</a></td>
+         <td><p>西班牙<a href="http://en.softonic.com">softonic</a></p></td>
+         <td>AVIRA</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+        </tr>
+       <tr>
+         <th scope="row">4</th>
+         <td>&gt;&gt;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+        </tr>
+       <tr>
+         <th scope="row">5</th>
+         <td>&gt;&gt;</td>
+         <td>协议</td>
+         <td>&nbsp;</td>
+         <td>HTML5</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+        </tr>
+       <tr>
+         <th scope="row">&nbsp;</th>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>GNU</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+       </tr>
+       <tr>
+         <th scope="row">6</th>
+         <td>&gt;&gt;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+        </tr>
+       <tr>
+         <th scope="row">&nbsp;</th>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+       </tr>
+       <tr>
+         <th scope="row">7</th>
+         <td>&gt;&gt;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+        </tr>
+       <tr>
+         <th scope="row">8</th>
+         <td>&gt;&gt;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+        </tr>
+       <tr>
+         <th scope="row">&nbsp;</th>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+       </tr>
+       <tr>
+         <th scope="row">9</th>
+         <td>&gt;&gt;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+        </tr>
+       <tr>
+         <th scope="row">10</th>
+         <td>&gt;&gt;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+        </tr>
+       <tr>
+         <th scope="row">11</th>
+         <td>&gt;&gt;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+        </tr>
+       <tr>
+         <th scope="row">12</th>
+         <td>&gt;&gt;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+        </tr>
+       <tr>
+         <th scope="row">13</th>
+         <td>&gt;&gt;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+        </tr>
+       <tr>
+         <th scope="row">14</th>
+         <td>&gt;&gt;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+        </tr>
+       <tr>
+         <th scope="row">15</th>
+         <td>&gt;&gt;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+        </tr>
+       <tr>
+         <th scope="row">16</th>
+         <td>&gt;&gt;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+       </tr>
+       <tr>
+         <th scope="row">&nbsp;</th>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+       </tr>
+       <tr>
+         <th scope="row">&nbsp;</th>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+       </tr>
+       <tr>
+         <th scope="row">&nbsp;</th>
+         <td>&gt;&gt;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+       </tr>
+       <tr>
+         <th scope="row">17</th>
+         <td>&gt;&gt;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+        </tr>
+       <tr>
+         <th scope="row">18</th>
+         <td>&gt;&gt;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+        </tr>
+       <tr>
+         <th scope="row">19</th>
+         <td>&gt;&gt;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+       </tr>
+       <tr>
+         <th scope="row">20</th>
+         <td>&gt;&gt;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+       </tr>
+       <tr>
+         <th scope="row">&nbsp;</th>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+       </tr>
+       <tr>
+         <th scope="row">&nbsp;</th>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+       </tr>
+       <tr>
+         <th scope="row">&nbsp;</th>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+       </tr>
+       <tr>
+         <th scope="row">21</th>
+         <td>&gt;&gt;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+       </tr>
+       <tr>
+         <th scope="row">&nbsp;</th>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+       </tr>
+       <tr>
+         <th scope="row">22</th>
+         <td>&gt;&gt;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+       </tr>
+       <tr>
+         <th scope="row">23</th>
+         <td>&gt;&gt;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+       </tr>
+       <tr>
+         <th scope="row">24</th>
+         <td>&gt;&gt;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+       </tr>
+       <tr>
+         <th scope="row">25</th>
+         <td>&gt;&gt;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+       </tr>
+       <tr>
+         <th scope="row">26</th>
+         <td>&gt;&gt;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+       </tr>
+       <tr>
+         <th scope="row">&nbsp;</th>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+       </tr>
+       <tr>
+         <th scope="row">27</th>
+         <td>&gt;&gt;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+       </tr>
+       <tr>
+         <th scope="row">28</th>
+         <td>&gt;&gt;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+       </tr>
+       <tr>
+         <th scope="row">29</th>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+       </tr>
+       <tr>
+         <th scope="row">30</th>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+       </tr>
+     </tbody>
+   </table>
+ </section>
+ <footer>
+   <section id="Platform">
+     <table>
+       <caption>
+         <h7>适用平台</h7>
+        </caption>
+       <tbody>
+         <tr>
+           <th scope="col">OS</th>
+           <th colspan="3" scope="col"><a href="http://windows.microsoft.com/en-us/windows/downloads" target="_blank">windows</a></th>
+           <th scope="col">MAC</th>
+           <th colspan="2" scope="col">iOS</th>
+           <th colspan="3" scope="col">Android</th>
+           <th scope="col">HTML5</th>
+           <th scope="col">Linux</th>
+           <th scope="col">Chromebook</th>
+         </tr>
+         <tr>
+           <th scope="row">Provider</th>
+           <td colspan="3" bgcolor="#2D8EED" style="text-align: center">Microsoft</td>
+           <td colspan="3" bgcolor="#F3F3F3" style="text-align: center">Apple</td>
+           <td colspan="3" bgcolor="#03AA00" style="text-align: center">Google</td>
+           <td bgcolor="#008EEA" style="text-align: center">W3C</td>
+           <td bgcolor="#FA0004">&nbsp;</td>
+           <td bgcolor="#F6FA00">&nbsp;</td>
+         </tr>
+         <tr>
+           <th scope="row"><a href="http://www.uc.cn/ucbrowser/download/" target="_blank">icon</a></th>
+           <td><img src="../../img/icon/Platform/Icon_PC_116x81.png" width="116" height="81" alt=""/></td>
+           <td><img src="../../img/icon/Platform/Icon_WindowsPhone_40x82.png" width="40" height="82" alt=""/></td>
+           <td><img src="../../img/icon/Platform/Icon_WindowsTablet_94x60.png" width="94" height="60" alt=""/></td>
+           <td><img src="../../img/icon/Platform/Icon_Mac_99x82.png" width="99" height="82" alt=""/></td>
+           <td><img src="../../img/icon/Platform/Icon_iPhone_33x69.png" width="33" height="69" alt=""/></td>
+           <td><img src="../../img/icon/Platform/Icon_iPad_84x59.png" width="84" height="59" alt=""/></td>
+           <td><img src="../../img/icon/Platform/Icon_AndroidPhone_40x78.png" width="40" height="78" alt=""/></td>
+           <td><img src="../../img/icon/Platform/Icon_AndroidTablet_85x62.png" width="85" height="62" alt=""/></td>
+           <td>&nbsp;</td>
+           <td><img src="../../img/icon/Platform/html5.png" width="90" height="102" alt=""/></td>
+           <td>&nbsp;</td>
+           <td><img src="../../img/icon/Platform/chromebook.jpg" width="120" height="88" alt=""/></td>
+         </tr>
+         <tr>
+           <th scope="row">Plateform</th>
+           <td><a href="http://www.windows.com" target="_blank">PC</a></td>
+           <td><a href="http://windows.microsoft.com/zh-cn/windows-10/how-to-get-windows-10-mobile" target="_blank">WP</a></td>
+           <td>Surface</td>
+           <td><a href="https://developer.apple.com/osx/download/" target="_blank">OS X EI</a></td>
+           <td>iPhone</td>
+           <td>iPad</td>
+           <td>Phone</td>
+           <td>Pad</td>
+           <td>Home</td>
+           <td>IE,Firefox,Safari</td>
+           <td>&nbsp;</td>
+           <td>Chrome</td>
+         </tr>
+       </tbody>
+     </table>
+   </section>
+   <!--QUALIFICAITON INFORMATION-->
+   <div id="footer">
+     <ul>
+       <li><a href="../../c/about.html" target="_blank">关于</a></li>
+       <li><a href="../../c/siteassetlibrary.html" target="_blank">网站设计财富库</a></li>
+       <li><a href="../../c/wordpress/index.php" target="_blank"> 个人博客 </a></li>
+     </ul>
+     <ul>
+       <li>&copy;Copyright Reserved 引用请注明来自tool321.com</li>
+       <li>Author:Horseback</li>
+       <li>QQ:1415948426</li>
+       <li><a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=qNzHx8Sbmpno2dmGy8fF" style="text-decoration:none;">意见反馈</a></li>
+       <li><a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=qNzHx8Sbmpno2dmGy8fF" style="text-decoration:none;">提交登录或者定制</a></li>
+       <li>
+         <!-- #BeginDate format:IS1m -->2016-02-17  13:30<!-- #EndDate -->
+       </li>
+       <li>
+         <!--CNZZ统计-->
+         <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1257102666'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1257102666%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
+       </li>
+     </ul>
+     <ul>
+       <a href="http://www.miibeian.gov.cn" target="_blank">粤ICP备15117589号</a>
+     </ul>
+   </div>
+ </footer>
+ 
+ <!--Section Office End here-->
+ 
+ <!--Section Plateform start here-->
+<!--Plateform End here--></div>
+</body>
+</html>

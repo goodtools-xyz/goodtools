@@ -1,0 +1,242 @@
+		#main_frame_1 h2 {
+			height:28px;
+			line-height:28px
+		}
+		.text-changting,.text-bangdan strong,.text-suoying strong,.text-fenlei strong {
+			background:url(img/T108GlXc0RXXXXXXXX-200-440.jpg) -11px -106px no-repeat;
+			text-indent:-9999em
+		}
+		.text-changting {
+			background-position:-11px -106px;
+			margin-left:24px
+		}
+		.text-bangdan strong,.text-suoying strong,.text-fenlei strong {
+			display:block;
+			width:72px;
+			margin:0 auto;
+			height:28px
+		}
+		.text-bangdan strong {
+			background-position:-11px -6px
+		}
+		.text-suoying strong {
+			background-position:-11px -36px
+		}
+		.text-fenlei strong {
+			background-position:-11px -70px
+		}
+		.music-sites-recommend {
+			padding:5px 9px;
+			font-family:"\5b8b\4f53"
+		}
+		.music-sites-recommend li {
+			float:left
+		}
+		.music-sites-recommend a {
+			display:block;
+			height:32px;
+			width:118px;
+			line-height:32px;
+			font-size:14px;
+			color:#2b7bad;
+			text-indent:15px
+		}
+		.media-iframe {
+			position:relative
+		}
+		#windowOpenMedia {
+			outline:0;
+			text-indent:30px;
+			width:103px;
+			height:23px;
+			line-height:23px;
+			position:absolute;
+			right:-225px;
+			top:-26px;
+			display:block;
+			background:url(img/T108GlXc0RXXXXXXXX-200-440.jpg) -99px -8px no-repeat;
+			cursor:pointer;
+			color:#969595
+		}
+		#windowOpenMedia:hover {
+			color:#6c6d6c;
+			text-decoration:none;
+			background-position:-99px -33px
+		}
+		.media-iframe {
+			float:left;
+			/*padding:8px;*/
+			width:756px;
+			height:518px
+		}
+		.media-iframe iframe {
+			width:750px;
+			height:518px
+		}
+		.media-list {
+			float:left;
+			margin-left:-1px;
+			width:221px;
+			height:518px;
+			overflow-y:scroll;
+			/*padding:8px 0;*/
+			overflow-x:hidden
+		}
+		.media-list li {
+			height:62px;
+			padding-bottom:4px;
+			cursor:pointer
+		}
+		.media-list li i {
+			float:left;
+			display:block;
+			height:50px;
+			width:50px;
+			margin:7px 12px 0 17px;
+			_display:inline
+		}
+		.media-list li p {
+			float:left;
+			width:115px
+		}
+		.media-list li strong {
+			display:block;
+			font-size:14px;
+			color:#2b7bad;
+			font-weight:400;
+			padding-top:8px;
+			padding-bottom:6px
+		}
+		.media-list li span {
+			color:#999
+		}
+		.media-list li:hover strong {
+			color:#fa5900
+		}
+		.media-list li:hover span {
+			color:#fa5900
+		}
+		.media-list .on {
+			background:url(img/T108GlXc0RXXXXXXXX-200-440.jpg) -3px -144px no-repeat
+		}
+		.icon-xm {
+			background:url(img/T108GlXc0RXXXXXXXX-200-440.jpg) -21px -217px no-repeat
+		}
+		.icon-yt {
+			background:url(img/T108GlXc0RXXXXXXXX-200-440.jpg) -76px -217px no-repeat
+		}
+		.icon-kg {
+			background:url(img/T108GlXc0RXXXXXXXX-200-440.jpg) -134px -217px no-repeat
+		}
+		.icon-yy {
+			background:url(img/T108GlXc0RXXXXXXXX-200-440.jpg) -21px -272px no-repeat
+		}
+		.icon-kw {
+			background:url(img/T108GlXc0RXXXXXXXX-200-440.jpg) -77px -272px no-repeat
+		}
+		.icon-db {
+			background:url(img/T108GlXc0RXXXXXXXX-200-440.jpg) -134px -272px no-repeat
+		}
+		.icon-qq {
+			background:url(img/T108GlXc0RXXXXXXXX-200-440.jpg) -21px -328px no-repeat
+		}
+		.icon-xmdt {
+			background:url(img/T108GlXc0RXXXXXXXX-200-440.jpg) -77px -328px no-repeat
+		}
+		.icon-kwdt {
+			background:url(img/T108GlXc0RXXXXXXXX-200-440.jpg) -134px -328px no-repeat
+		}
+		.icon-kgdt {
+			background:url(img/T108GlXc0RXXXXXXXX-200-440.jpg) -20px -384px no-repeat
+		}
+		.icon-ting {
+			background:url(img/T1eOqDXoVEXXXXXXXX-48-48.jpg) 1px 1px no-repeat
+		}
+		.icon-duomi {
+			background:url(img/T1fOmDXgJHXXXXXXXX-50-50.png) 1px 1px no-repeat
+		}
+		.icon-9ku {
+			background:url(img/T1g3iFXdxdXXXXXXXX-48-48.gif) 0 0 no-repeat
+		}
+		#stopBtn {
+			width:422px;
+			height:228px;
+			display:block;
+			margin:0 auto;
+			background:#e1e1e1;
+			cursor:pointer;
+			background:url(img/T1PSamXhXUXXXXXXXX-421-460.png) 0 0 no-repeat
+		}
+		#stopBtn span {
+			color:#eaeaea;
+			padding-top:163px;
+			text-align:center;
+			display:block;
+			margin:0 auto;
+			width:421px
+		}
+		#stopBtnWrap {
+			width:750px;
+			height:384px;
+			display:block;
+			background:#e1e1e1;
+			padding-top:134px
+		}
+		#stopBtnWrap a:hover {
+			background:url(img/T1PSamXhXUXXXXXXXX-421-460.png) 0 -232px no-repeat;
+			color:#fff;
+			text-decoration:none
+		}
+		#stopBtnWrap a:hover span {
+		
+			color:#fff
+		}
+		.other-music-info {
+			padding-top:20px;
+			padding-bottom:10px;
+			border-bottom:1px solid #e1e1e1
+		}
+		.other-music-info dl {
+			float:left;
+			width:329px;
+			background:url(img/T108GlXc0RXXXXXXXX-200-440.jpg) 328px 0 no-repeat
+		}
+		.other-music-info .first dd {
+			padding-left:70px;
+			padding-right:30px
+		}
+		.other-music-info .middle dd {
+			padding-left:76px;
+			padding-right:24px
+		}
+		.other-music-info .last {
+			background:0
+		}
+		.other-music-info .last dd {
+			padding-left:83px;
+			padding-right:0
+		}
+		.other-music-info dt {
+			height:38px;
+			text-align:center;
+			background-color:#39F;
+			background:url(img/T108GlXc0RXXXXXXXX-200-440.jpg) 75px 34px no-repeat
+		}
+		.other-music-info dd {
+			width:229px;
+			height:155px;
+			padding:0 50px;
+			margin-left:0
+		}
+		.other-music-info a {
+			font-size:14px;
+			width:114px;
+			height:30px;
+			line-height:30px;
+			color:#2b7bad;
+			display:block;
+			float:left;
+			_display:inline;
+			text-align:left;
+			background:0
+		}	

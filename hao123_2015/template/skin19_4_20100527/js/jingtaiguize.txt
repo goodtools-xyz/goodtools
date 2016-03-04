@@ -1,0 +1,11 @@
+//说明： {#原始模版路径||功能||调用路径#}
+{#f_m_login.html||用户登陆||html/index.asp#}
+{#f_m_members.html||用户中心||html/index.asp#}
+{#f_feedback.html||反馈信息||html/index.asp#}
+{#f_feedback_ok.html||反馈信息-Ok||html/index.asp#}
+{#IndexGouwu.htm$$utf-8||首页--购物||html/index.asp#}
+{#IndexYule.htm$$utf-8||首页--娱乐||html/index.asp#}
+{#m_sethomepage.html||设为主页||html/index.asp#}
+{#m_more.html||地方网站||html/index.asp#}
+{#qingtiancms_n1.js||qingtiancms_n1.js||html/index.asp#}
+{#qingtiancms_m.js||qingtiancms_m.js||html/index.asp#}

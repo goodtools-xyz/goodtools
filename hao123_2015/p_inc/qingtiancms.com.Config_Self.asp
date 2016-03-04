@@ -1,0 +1,18 @@
+<%
+ G_qTcms_Com_16_Time = ""
+ G_qTcms_Com_16_City = ""
+ G_qTcms_Com_16_Pifu = "green"
+ G_qTcms_Com_16_lie = ""
+ G_qTcms_Com_16_mz = ""
+ G_qTcms_Com_16_tj2 = ""
+ G_qTcms_Com_16_yq = "1"
+ G_qTcms_Com_16_qq = "2"
+ G_qTcms_Com_16_sosuo_q = "baidu"
+ G_qTcms_Com_16_mkuai = "*, xinwen, junshi"
+ G_qTcms_Com_16_right_mz = "48"
+ G_qTcms_Com_16_qingtiancms_b_b1 = "2"
+ G_qTcms_Com_16_qingtiancms_b_b2 = "2"
+ G_qTcms_Com_16_qingtiancms_b_b3 = "2"
+ G_qTcms_Com_16_qingtiancms_b_c1 = "Íø¹º¸üÓÅ»Ý"
+ G_qTcms_Com_16_qingtiancms_b_c2 = "ÐÝÏÐÓéÀÖ°É"
+%>

@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<LINK href="../css/style.css" rel=stylesheet type=text/css>
+<title>HTML/JS转换工具</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+
+</head>
+<body>
+<script language="javascript" type="text/javascript" >
+ function rechange(){
+ re.value=oresult.value.replace(/document.writeln\("/g,"").replace(/"\);/g,"").replace(/\\\"/g,"\"").replace(/\\\'/g,"\'").replace(/\\\//g,"\/").replace(/\\\\/g,"\\")
+ }
+ function change(){
+ oresult2.value="document.writeln(\""+osource.value.replace(/\\/g,"\\\\").replace(/\//g,"\\/").replace(/\'/g,"\\\'").replace(/\"/g,"\\\"").split('\r\n').join("\");\ndocument.writeln(\"")+"\");"
+ }
+ function $(id){return document.getElementById(id)}
+</script>
+<table border="0" width="100%" cellpadding="2" cellspacing="1" height="130" class="border">
+  <tr bgcolor="#39867B"> 
+    <th height="25" colspan="2" nowrap> HTML/JS转换工具</td>
+  </th>
+
+    <tr>
+      <td  height=23 class="forumRow" colspan="2">
+请将html源代码或待添加的广告代码拷贝到下面表单中: <br>
+  <textarea style="width:100%;" cols="100" rows=12 id="osource" onpropertychange="change()" ></textarea>
+	  </td>
+    </tr>
+    <tr>
+      <td  height=23 class="forumRow" colspan="2">
+  <br>
+  <font color="#FF0000">下面表单中是相应转换好的JS代码，(双击下面表单复制): </font><br />
+  <textarea style="width:100%;" cols="100" rows=12 id="oresult2" title="双击复制" ondblclick="this.select();window.clipboardData.setData('text',this.value);"></textarea>
+	  </td>
+    </tr>
+</table>
+
+
+</body>
+</html>

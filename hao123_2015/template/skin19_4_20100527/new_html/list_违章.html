@@ -1,0 +1,252 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+{self}列表页头部.html{/self}
+<link rel='stylesheet' href='../js/public4/rebuild/js/weizhang/p.css' />
+<base target="_blank" />
+</head>
+<body>
+{self}列表页头部2.html{/self}
+<div class="wrapper">
+	{self}列表页头部3.html{/self}
+	<div class="comRowGuid" id="main_frame_2">
+		{qt_Loop:List19 1,37,1}
+		<dl class="">{if:"{qt:n_title1}"<>""}<dt><a href="{qt:n_gotourl}" target="_blank">{qt:n_title1}</a></dt>{end if}<dd>{qt:n_content}</dd></dl>
+		<div class="shr"></div>
+		{/qt_Loop}	
+		{qt_Loop:type3 0,50,10,{qt:m_type1}}
+		<dl>
+			<dt><a>{qt:m_type_name}</a></dt>
+			<dd>
+				<table>
+				<tr>{qt_Loop:urlList}<td><a href="{qt:md_url}">{bif:"{qt:md_pic}"<>""}<img width="16" height="16" class="img" src="{qt:md_pic}">{else}<img width="16" height="16" class="img" src="../images/ico/ie.gif">{bend if}{qt:mdname_1_color}</a></td>{bif:{qt:md_i} mod 6=0}</tr><tr>{bend if}{/qt_Loop:urlList}</tr>
+				</table>
+			</dd>
+		</dl> 
+		<div class="shr"></div>
+		{/qt_Loop}
+		{qt:ListContent3 {qt:m_type1}}
+		{self}列表页底部2.html{/self}
+		{qt_Loop:List19 1,38,1}
+		<div class="shr"></div>
+		<dl class="">{if:"{qt:n_title1}"<>""}<dt><a href="{qt:n_gotourl}" target="_blank">{qt:n_title1}</a></dt>{end if}<dd>{qt:n_content}</dd></dl>
+		{/qt_Loop}		
+	</div>
+	<div class="line"></div>
+	<div class="comRowGuid" id="main_frame_2">
+
+
+
+
+<script>
+function ar(v){
+	var arr="a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z".split(",");
+	var b="";
+	for(var i=0;i<arr.length;i++){
+		if(document.getElementById(arr[i])){
+			document.getElementById(arr[i]).className="ar_aa";
+		}
+	}
+	if(document.getElementById(v)){
+		document.getElementById(v).className="ar_bb";
+	}	
+}
+</script>
+
+<div id="sites" class="span25 gmodule">
+ 
+ <div id="sites1" class="site-nav">
+    <div class="map-center">
+    <img src="../images/other/map.gif" width="531" height="448" usemap="#map" alt="">
+      <map name="map" id="js_map_areas">
+	  
+		<area shape="rect" rel="安徽" coords="399, 261, 430, 277" href="#a" target="_self" onClick="ar('a')">
+	  	<area shape="rect" rel="北京" coords="386, 157, 415, 172" href="#b" target="_self" onClick="ar('b')">
+        <area shape="rect" rel="天津" coords="398, 176, 429, 190" href="#t" target="_self" onClick="ar('t')">
+        <area shape="rect" rel="上海" coords="452, 267, 480, 284" href="#s" target="_self" onClick="ar('s')">
+        <area shape="rect" rel="江苏" coords="423, 238, 452, 256" href="#j" target="_self" onClick="ar('j')">
+        <area shape="rect" rel="浙江" coords="431, 292, 462, 310" href="#z" target="_self" onClick="ar('z')">
+        <area shape="rect" rel="湖北" coords="346, 276, 377, 296" href="#h" target="_self" onClick="ar('h')">
+        <area shape="rect" rel="广东" coords="366, 362, 398, 380" href="#g" target="_self" onClick="ar('g')">
+        <area shape="rect" rel="陕西" coords="308, 244, 337, 262" href="#s" target="_self" onClick="ar('s')">
+        <area shape="rect" rel="四川" coords="239, 280, 277, 303" href="#s" target="_self" onClick="ar('s')">
+        <area shape="rect" rel="重庆" coords="292, 292, 321, 311" href="#c" target="_self" onClick="ar('c')">
+        <area shape="rect" rel="辽宁" coords="435, 140, 465, 157" href="#l" target="_self" onClick="ar('l')">
+        <area shape="rect" rel="黑龙江" coords="449, 68, 500, 91" href="#h" target="_self" onClick="ar('h')">
+        <area shape="rect" rel="湖南" coords="342, 319, 376, 337" href="#h" target="_self" onClick="ar('h')">
+        
+        <area shape="rect" rel="山西" coords="341, 208, 370, 226" href="#s" target="_self" onClick="ar('s')">
+        <area shape="rect" rel="吉林" coords="457,111,489,129" href="#j" target="_self" onClick="ar('j')">
+        <area shape="rect" rel="福建" coords="413, 330, 450, 350" href="#f" target="_self" onClick="ar('f')">
+        <area shape="rect" rel="河南" coords="355, 240, 385, 258" href="#h" target="_self" onClick="ar('h')">
+        <area shape="rect" rel="河北" coords="365, 188, 396, 204" href="#h" target="_self" onClick="ar('h')">
+        <area shape="rect" rel="内蒙古" coords="290, 160, 337, 182" href="#n" target="_self" onClick="ar('n')">
+        <area shape="rect" rel="江西" coords="391, 307, 419, 321" href="#j" target="_self" onClick="ar('j')">
+        <area shape="rect" rel="广西" coords="322, 365, 355, 384" href="#g" target="_self" onClick="ar('g')">
+        <area shape="rect" rel="海南" coords="310, 420, 341, 442" href="#h" target="_self" onClick="ar('h')">
+        <area shape="rect" rel="贵州" coords="297, 328, 323, 347" href="#g" target="_self" onClick="ar('g')">
+        <area shape="rect" rel="云南" coords="235, 356, 264, 379" href="#y" target="_self" onClick="ar('y')">
+        <area shape="rect" rel="西藏" coords="99, 256, 132, 275" href="#x" target="_self" onClick="ar('x')">
+        <area shape="rect" rel="甘肃" coords="193, 166, 224, 185" href="#g" target="_self" onClick="ar('g')">
+        <area shape="rect" rel="青海" coords="179, 214, 216, 234" href="#q" target="_self" onClick="ar('q')">
+        <area shape="rect" rel="宁夏" coords="282, 204, 314, 224" href="#n" target="_self" onClick="ar('n')">
+        <area shape="rect" rel="新疆" coords="96, 137, 133, 161" href="#x" target="_self" onClick="ar('x')">
+        <area shape="rect" rel="山东" coords="393, 210, 425, 226" href="#s" target="_self" onClick="ar('s')">
+        <area shape="rect" rel="澳门" coords="361, 394, 389, 407" href="#a" target="_self" onClick="ar('a')">
+        <area shape="rect" rel="香港" coords="398, 379, 431, 395" href="#x" target="_self" onClick="ar('x')">
+        <area shape="rect" rel="台湾" coords="457, 362, 485, 376" href="#t" target="_self" onClick="ar('t')">
+      </map>
+     </div>
+    </div>
+    
+    <div id="site2" class="site-nav">
+    <div class="wrap">
+
+      <div id="city_index"> <strong>按省/直辖市/地区查找：</strong> <a href="#a" target="_self">A</a> <a href="#b" target="_self">B</a> <a href="#c" target="_self">C</a> <a href="#f" target="_self">F</a> <a href="#g" target="_self">G</a> <a href="#h" target="_self">H</a> <a href="#j" target="_self">J</a> <a href="#l" target="_self">L</a> <a href="#n" target="_self">N</a> <a href="#s" target="_self">Q</a> <a href="#s" target="_self">S</a> <a href="#t" target="_self">T</a> <a href="#x" target="_self">X</a> <a href="#y" target="_self">Y</a> <a href="#z" target="_self">Z</a> </div>
+      <dl id="city_list">
+        <dt id="a">A</dt>
+        <dd>
+          <h5>安徽</h5>
+          <p> <a target="_blank" href="http://www.ahjtxx.com/query/">安徽省统一查询网址 </a> <a target="_blank" href="http://www.hfjjzd.gov.cn/Find.asp">合肥 </a> <a target="_blank" href="http://www.wuhu96598.gov.cn/">芜湖</a> <a target="_blank" href="http://www.huangshan.gov.cn/HsDriver/HomePage/MotoPecc.aspx">黄山</a> <a target="_blank" href="http://jjzd.mas.gov.cn/">马鞍山</a> <a target="_blank" href="http://www.ahhnjj.net/">淮南</a> <a target="_blank" href="http://www.ahczjj.gov.cn/">滁州</a> <a target="_blank" href="http://www.lajjzd.gov.cn/">六安</a> <a target="_blank" href="http://www.bbjj.gov.cn/">蚌埠</a> <a target="_blank" href="http://www.tljjzd.gov.cn/">铜陵</a> <a target="_blank" href="http://www.aqjj.gov.cn/AQWebQuery/">安庆</a> <a target="_blank" href="http://www.xcjjzd.gov.cn:802/Main.aspx?fzjg=P">宣城</a> <a target="_blank" href="http://www.ahjtxx.com/query/">阜阳</a> <a target="_blank" href="http://www.ahbzjj.cn/">亳州</a> <a target="_blank" href="http://www.hbjjzd.cn/hbwfcx/Main.aspx?fzjg=F">淮北</a> <a target="_blank" href="http://www.chizhou.gov.cn/">池州</a> <a target="_blank" href="http://www.ahszjj.gov.cn/">宿州</a></p>
+        </dd>
+        <dt id="b">B</dt>
+        <dd class="odd">
+          <h5>北京</h5>
+          <p> <a target="_blank" href="http://www.bjjtgl.gov.cn/publish/portal0/tab72/">北京</a> </p>
+        </dd>
+        <dt id="c">C</dt>
+        <dd>
+          <h5>重庆</h5>
+          <p> <a target="_blank" href="http://www.cqjg.gov.cn/DriverFind.html">重庆</a> </p>
+        </dd>
+        <dt id="f">F</dt>
+        <dd class="odd">
+          <h5>福建</h5>
+          <p> <a target="_blank" href="http://jjcx.fjgat.gov.cn:800/jdcwfcx.aspx">福建省统一查询网址</a> <a target="_blank" href="http://jxj.fuzhou.gov.cn/">福州</a> <a target="_blank" href="http://www.qz122.gov.cn/">泉州</a> <a target="_blank" href="http://www.fjsmjj.com/">三明</a> <a target="_blank" href="http://ga.longyan.gov.cn/">龙岩</a> <a target="_blank" href="http://www.xmjj.gov.cn/">厦门</a> <a target="_blank" href="http://zzjjzd.zhangzhou.gov.cn/">漳州</a> <a target="_blank" href="http://www.fjjt.gov.cn/gzcx/">南平</a> <a target="_blank" href="http://www.fjput110.gov.cn/">莆田</a> <a target="_blank" href="http://ndjj.ndwww.cn/">宁德</a> </p>
+        </dd>
+        <dt id="g">G</dt>
+        <dd>
+          <h5>甘肃</h5>
+          <p> <a target="_blank" href="http://www.gsgajt.gov.cn/">甘肃省统一查询网址</a> <a target="_blank" href="http://www.tsjjzd.com/">天水</a> <a target="_blank" href="http://www.jygsgaj.gov.cn/">嘉峪关</a> <a target="_blank" href="http://www.jqsgaj.gov.cn/">酒泉</a> </p>
+        </dd>
+        <dd class="odd">
+          <h5>广东</h5>
+          <p> <a target="_blank" href="http://www.gzjd.gov.cn/cgs/html/hall/index.html">广州</a><a target="_blank" href="http://www.stc.gov.cn/WSBS/XXCX/JSRCX/201310/t20131030_442.htm">深圳</a><a target="_blank" href="http://www.gddg110.cn/publicfiles/business/htmlfiles/dgjch/s14385/list.htm">东莞 </a><a target="_blank" href="http://202.105.183.61/tvis/">珠海</a><a target="_blank" href="http://www.fsgajj.cn/fsjj/wsfwdt/wzxx/sel_transgress.aspx">佛山 </a><a target="_blank" href="http://www.gdzs110.gov.cn/">中山 </a><a target="_blank" href="http://www.gdhzcgs.com/Illegal.aspx">惠州</a><a target="_blank" href="http://www.qyga.gov.cn/searchCarInfo/">清远 </a><a target="_blank" href="http://www.zqga.gov.cn/">肇庆 </a><a target="_blank" href="http://219.129.94.123:9080/sgjj/">韶关</a><a target="_blank" href="http://www.cztp.gov.cn/">潮州</a><a target="_blank" href="http://www.jyjj.gov.cn/wzcxjg1.asp">揭阳</a><a target="_blank" href="http://www.gdst110.gov.cn/query/searchJtwf.html">汕头</a><a target="_blank" href="http://mmjj.maoming.gov.cn/">茂名</a><a target="_blank" href="http://www.jmjgj.gov.cn/">江门</a><a target="_blank" href="http://www.gdhzcgs.com/Illegal.aspx">阳江</a><a target="_blank" href="http://jj.gdga.gov.cn/wzss/searchwzss.jsp">湛江</a><a target="_blank" href="http://www.gdsw110.gov.cn/">汕尾</a><a target="_blank" href="http://www.yfga.gov.cn/website/newdeptemps/gaj/index.jsp?topid=009001054">云浮</a><a target="_blank" href="http://mzjj.meizhou.com/">梅州</a> </p>
+        <dd>
+          <h5>广西</h5>
+          <p> <a target="_blank" href="http://www.gxjtaq.com/">广西统一查询网址</a> <a target="_blank" href="http://www.nncgs.com/html/zbhp/index.html">南宁</a> <a target="_blank" href="http://www.gg122.com/Index.html">贵港</a> <a target="_blank" href="http://www.lz122.gov.cn/">柳州</a> <a target="_blank" href="http://www.gl122.com/">桂林</a> <a target="_blank" href="http://www.wz110.cn/">梧州</a> <a target="_blank" href="http://bh.gxjtaq.com/">北海</a> <a target="_blank" href="http://www.fcgjj.com/">防城港</a> <a target="_blank" href="http://www.gxqzjj.cn/">钦州</a> <a target="_blank" href="http://www.yljtaqw.com/">玉林</a><a target="_blank" href="http://www.hzjtaq.com/">贺州</a> <a target="_blank" href="http://www.lb122.com/">来宾</a> <a target="_blank" href="http://www.hzjtaq.com/">崇左</a> </p>
+        </dd>
+        <dd class="odd">
+          <h5>贵州</h5>
+          <p> <a target="_blank" href="http://www.gzjjzd.gov.cn/search.php">贵州省统一查询网址</a> </p>
+        </dd>
+        <dt id="h">H</dt>
+        <dd>
+          <h5>海南</h5>
+          <p> <a target="_blank" href="http://www.hkjxj.gov.cn/php/wei_zcx.php">海口</a> <a target="_blank" href="http://hainanjj.gov.cn/">海南省统一查询网址</a> </p>
+        </dd>
+        <dd class="odd">
+          <h5>河北</h5>
+          <p> <a target="_blank" href="http://www.sjzgaj.gov.cn/">石家庄</a><a target="_blank" href="http://www.bdcgs.com">保定</a><a target="_blank" href="http://www.tscg.gov.cn/">唐山</a><a target="_blank" href="http://www.qhdjtgl.com.cn/">秦皇岛</a><a target="_blank" href="http://www.hdjj.com.cn/">邯郸</a><a target="_blank" href="http://www.xtjdcjsr.com/">邢台</a><a target="_blank" href="http://www.cdjj.gov.cn/">承德</a><a target="_blank" href="http://0317.weizhangwang.com/">沧州</a><a target="_blank" href="http://www.lf.gov.cn/">廊坊</a><a target="_blank" href="http://www.hsjtaq.gov.cn/">衡水</a><a target="_blank" href="http://www.zjkjjw.com.cn/">张家口</a>  </p>
+        </dd>
+        <dd>
+          <h5>河南</h5>
+          <p> <a target="_blank" href="http://www2.zzjtgl.com/include/driverQ.aspx">郑州</a> <a target="_blank" href="http://smx.shangdu.com/wzcl/">三门峡</a><a target="_blank" href="http://www.lyjjzd.com/">洛阳</a><a target="_blank" href="http://www.jzga.gov.cn/wzcx/lookup.aspx">焦作</a><a target="_blank" href="http://www.hebi.gov.cn/gonggongfuwu/weizhangcheliangchaxun/">鹤壁</a><a target="_blank" href="http://www.puyang.gov.cn/wmjdcwz.asp">濮阳</a><a target="_blank" href="http://www.xcjjw.gov.cn/">许昌</a><a target="_blank" href="http://sqrb.com.cn/sqjj/sqwzcx.htm">商丘</a><a target="_blank" href="http://www.nydzjc.com/">南阳</a><a target="_blank" href="http://www.zkgajj.com/">周口 </a><a target="_blank" href="http://218.29.234.5:8081/">驻马店</a><a target="_blank" href="http://www2.zzjtgl.com/include/driverQ.aspx">信阳</a><a target="_blank" href="http://www.jycgs.com/">济源</a><a target="_blank" href="http://www.pdsjj.gov.cn/">平顶山</a><a target="_blank" href="http://www.anyangdx.com/Web_Asking.aspx">安阳</a> <a target="_blank" href="http://www.kfpolice.com/web/default.aspx">开封</a> <a target="_blank" href="http://www.xxcgs.com/searchs/cheweifa.aspx">新乡</a> </p>
+        </dd>
+        <dd class="odd">
+          <h5>黑龙江</h5>
+          <p> <a target="_blank" href="http://www.hljjj.gov.cn:8081/">哈尔滨</a><a target="_blank" href="http://www.jtaqxx.com//">齐齐哈尔</a><a target="_blank" href="http://www.hljjj.gov.cn:8081/">大庆</a><a target="_blank" href="http://jms122.cn/Default.aspx">佳木斯</a> <a target="_blank" href="http://www.qthjj.gov.cn/">七台河</a> </p>
+        </dd>
+        <dd>
+          <h5>湖北</h5>
+          <p> <a target="_blank" href="http://www.hbsjg.gov.cn/hubeijiaoguan_weizhangxinxichaxun">湖北省统一查询网址</a><a target="_blank" href="http://www.whjg.gov.cn">武汉</a><a target="_blank" href="http://www.hsjj.gov.cn/">黄石</a><a target="_blank" href="http://xfwfcx.com/">襄阳</a><a target="_blank" href="http://www.hbsydx.com/">十堰</a><a target="_blank" href="http://www.yichang.gov.cn/col/col3062/">宜昌</a><a target="_blank" href="http://www.hbxgjj.com/">孝感</a><a target="_blank" href="http://www.sz122.net/query.html">随州</a> <a target="_blank" href="http://www.jzjtgl.com/">荆州</a></p>
+        </dd>
+        <dd class="odd">
+          <h5>湖南</h5>
+          <p> <a target="_blank" href="http://www.hnjj.gov.cn/">湖南省统一查询网址</a> <a target="_blank" href="http://www.hncsjj.gov.cn/QueryJDCWZ.aspx">长沙</a><a target="_blank" href="http://220.170.158.124/home.jsp">益阳 </a><a target="_blank" href="http://www.cdjjzd.gov.cn/">常德</a><a target="_blank" href="http://www.sysgajj.gov.cn/">邵阳</a><a target="_blank" href="http://so.jtjc.cn/">株洲</a><a target="_blank" href="http://www.xtsems.com/">湘潭</a><a target="_blank" href="http://www.hnhyjj.gov.cn/HYJJXXW/">衡阳</a><a target="_blank" href="http://so.jtjc.cn/">岳阳</a><a target="_blank" href="http://so.jtjc.cn/">郴州</a><a target="_blank" href="http://so.jtjc.cn/">娄底</a><a target="_blank" href="http://so.jtjc.cn/">永州</a><a target="_blank" href="http://www.hhjjzd.gov.cn/">怀化</a><a target="_blank" href="http://gajj.zjj.gov.cn/govmach/gajj/">张家界</a><a target="_blank" href="http://www.hnhyjj.gov.cn/">衡阳</a> </p>
+        <dt id="j">J</dt>
+        <dd>
+          <h5>吉林</h5>
+          <p> <a target="_blank" href="http://jljj.cn/">吉林省统一查询网址</a> <a target="_blank" href="http://www.ccjg.gov.cn/">长春</a> <a target="_blank" href="http://www.jlsjj.gov.cn/">吉林</a><a target="_blank" href="http://www.jllyga.gov.cn/">辽源</a><a target="_blank" href="http://www.jlzxz.com/c/Index.asp">白山</a><a target="_blank" href="http://www.syjjzd.com/">松原</a><a target="_blank" href="http://www.ybjg.gov.cn/">延边</a><a target="_blank" href="http://www.bcjjzd.com/web/qx/cl.asp">白城</a><a target="_blank" href="http://www.spjjzd.com/">四平</a><a target="_blank" href="http://www.thjj.com.cn/">通化</a> </p>
+        </dd>
+        <dd class="odd">
+          <h5>江苏</h5>
+          <p> <a target="_blank" href="http://www.njjg.gov.cn/www/njjg/index.htm">南京</a> <a target="_blank" href="http://58.210.126.206:9091/QueryVD_test001/">苏州</a><a target="_blank" href="http://jxj.wuxi.gov.cn/">无锡 </a><a target="_blank" href="http://www.xzjgw.com/">徐州</a><a target="_blank" href="http://czjxj.czinfo.net/dzjccx.htm">常州</a><a target="_blank" href="http://www.ntjxj.com/InternetWeb/">南通</a><a target="_blank" href="http://gaj.huaian.gov.cn/">淮安</a><a target="_blank" href="http://www.ycga.gov.cn/default.php?mod=c&s=sscfe6a82">盐城</a> <a target="_blank" href="http://www.yangzhou.gov.cn/qtyy/service/jtwz.jsp">扬州</a> <a target="_blank" href="http://www.lygjg.net/">连云港</a><a target="_blank" href="http://www.zjcgs.gov.cn/">镇江</a> <a target="_blank" href="http://www.tzpolice.gov.cn/">泰州</a><a target="_blank" href="http://www.sqjg.net/Index.html">宿迁</a> </p>
+        <dd>
+          <h5>江西</h5>
+          <p> <a target="_blank" href="http://jx.jxhld.gov.cn:8088/zhcx/web/car_jsp/car_wf.jsp">南昌</a><a target="_blank" href="http://www.jxhld.gov.cn/">萍乡</a><a target="_blank" href="http://www.jjjj.com.cn/">九江</a><a target="_blank" href="http://www.jdzjj.gov.cn/">景德镇</a><a target="_blank" href="http://www.jagajj.gov.cn/">吉安</a><a target="_blank" href="http://www.xyga.gov.cn/web/index.php">新余</a><a target="_blank" href="http://www.srjxj.com/home.asp">上饶</a><a target="_blank" href="http://www.ytsgaj.gov.cn/">鹰潭</a><a target="_blank" href="http://www.gzjjdd.com/xb/">赣州</a><a target="_blank" href="http://www.jxfzgaj.gov.cn/">抚州</a><a target="_blank" href="http://www.jxhld.gov.cn/">宜春</a> </p>
+        </dd>
+        <dt id="l">L</dt>
+        <dd class="odd">
+          <h5>辽宁</h5>
+          <p> <a target="_blank" href="http://www.sygajj.gov.cn/">沈阳</a><a target="_blank" href="http://jiaotong.runsky.com/">大连</a><a target="_blank" href="http://www.asgajj.com/">鞍山</a><a target="_blank" href="http://www.bxgaggfwpt.gov.cn/">本溪</a><a target="_blank" href="http://www.dd122.com/">丹东 </a><a target="_blank" href="http://www.jzgajx.com/page/4WebService.aspx">锦州</a><a target="_blank" href="http://www.ykgaw.gov.cn/">营口</a><a target="_blank" href="http://218.24.200.244/">阜新</a><a target="_blank" href="http://www.liaoyang.gov.cn/mhclwgcx/index.htm">辽阳</a><a target="_blank" href="http://jjd.panjin.gov.cn/">盘锦</a><a target="_blank" href="http://www.zgcy.gov.cn/car_seek/">朝阳</a><a target="_blank" href="http://www.hldgajjzd.com/sjcx/Index.asp">葫芦岛</a><a target="_blank" href="http://www.fsjjzd.gov.cn/">抚顺</a><a target="_blank" href="http://www.tljj.gov.cn/">铁岭</a> </p></dd>
+        <dt id="n">N</dt>
+        <dd>
+          <h5>内蒙古</h5>
+          <p> <a target="_blank" href="http://cgs.hhhtgajt.com/">呼和浩特</a><a target="_blank" href="http://www.btjj.gov.cn/">包头</a><a target="_blank" href="http://jjzd.nmgat.gov.cn/Query.jsp">赤峰</a><a target="_blank" href="http://jjzd.nmgat.gov.cn/Query.jsp">通辽</a><a target="_blank" href="http://www.wlcbcgs.cn/">乌兰察布</a><a target="_blank" href="http://www.ordosgajj.gov.cn/">鄂尔多斯</a><a target="_blank" href="http://www.bsgajj.gov.cn/">巴彦淖尔</a> </p>
+        </dd>
+        <dd class="odd">
+          <h5>宁夏</h5>
+          <p> <a target="_blank" href="http://www.nxjj.gov.cn/sys/jdcwzGuest_displayAll.act?flag=true">银川</a><a target="_blank" href="http://www.nxwzga.gov.cn/">吴忠</a><a target="_blank" href="http://www.szssjj.gov.cn/">石嘴山</a><a target="_blank" href="http://www.nxjj.gov.cn/sys/jdcwzGuest_displayAll.act?flag=true">固原</a><a target="_blank" href="http://www.nxjj.gov.cn/sys/jdcwzGuest_displayAll.act">中卫</a> </p>
+        </dd>
+        <dt id="q">Q</dt>
+        <dd>
+          <h5>青海</h5>
+          <p> <a target="_blank" href="http://www.qh.xinhuanet.com/trafficxn/search.htm">西宁</a> </p>
+        </dd>
+        <dt id="s">S</dt>
+        <dd class="odd">
+          <h5>山东</h5>
+          <p> <a target="_blank" href="http://www.jnjj.com/">济南</a><a target="_blank" href="http://www.ytjj.gov.cn/">烟台</a><a target="_blank" href="http://218.58.65.23/select/WZQuery.asp">青岛</a><a target="_blank" href="http://www.whdzjc.com/index/main.xhtml">威海</a><a target="_blank" href="http://www.lyjj.net/">临沂</a><a target="_blank" href="http://60.211.179.22:9080/wscgs/home.jsp">济宁</a><a target="_blank" href="http://jj.dycar.net/">东营</a><a target="_blank" href="http://www.zbjj.gov.cn/">淄博 </a><a target="_blank" href="http://www.lcjxj.com/">聊城</a><a target="_blank" href="http://60.213.185.51:9080/wsyy/viovehcx.do">泰安</a><a target="_blank" href="http://zfzx.laiwu.gov.cn/wz/">莱芜</a><a target="_blank" href="http://58.59.39.43:9080/wscgs/home.jsp">日照</a><a target="_blank" href="http://www.bzwscgs.com:9080/wscgs/">滨州</a><a target="_blank" href="http://www.wfcgs.com/wscgs/home.jsp">潍坊</a><a target="_blank" href="http://60.213.185.51:9080/wsyy/viovehcx.do">泰山</a><a target="_blank" href="http://www.sdzzjj.com/">枣庄</a> <a target="_blank" href="http://123.130.246.26:9080/wscgs/home.jsp">菏泽</a> <a target="_blank" href="http://www.dzjiaojing.com/Index.html">德州</a></p>
+        <dd>
+          <h5>山西</h5>
+          <p> <a target="_blank" href="http://www.sxgajj.gov.cn/">山西省统一查询网址</a> <a target="_blank" href="http://www.tyjj.gov.cn/">太原 </a><a target="_blank" href="http://www.dtjj.com.cn/">大同</a><a target="_blank" href="http://www.yqgabmfw.gov.cn/site/default.aspx">阳泉</a><a target="_blank" href="http://www.czsgaj.gov.cn/">长治</a><a target="_blank" href="http://www.sxjzjj.com/">晋中</a><a target="_blank" href="http://www.jc122.com/wzcx.html">晋城</a><a target="_blank" href="http://www.ycjjzd.com/index_gb.asp">运城</a><a target="_blank" href="http://www.lfjjzd.gov.cn/">临汾</a><a target="_blank" href="http://www.llgaj.gov.cn/site/default.aspx">吕梁</a><a target="_blank" href="http://www.sxgajj.gov.cn/">忻州</a> </p>
+        </dd>
+        <dd class="odd">
+          <h5>陕西</h5>
+          <p> <a target="_blank" href="http://www.xianjj.gov.cn/">西安 </a><a target="_blank" href="http://www.wnsjj.cn/">渭南 </a><a target="_blank" href="http://www.xyjjzd.gov.cn/">咸阳</a><a target="_blank" href="http://www.tc122.com/">铜川</a><a target="_blank" href="http://cx.akjjzd.gov.cn/">安康</a><a target="_blank" href="http://gov.baojinews.com/jiaojing/index.htm">宝鸡</a><a target="_blank" href="http://sljj.sl163.com/">商洛 </a><a target="_blank" href="http://www.0912158.com/jtwz/index.html">榆林</a> <a target="_blank" href="http://www.yajjzd.com/">延安</a></p>
+        </dd>
+        <dd>
+          <h5>上海</h5>
+          <p> <a target="_blank" href="http://www.shjtaq.com/zwfg/dzjc_new.asp">上海</a> </p>
+        </dd>
+        <dd class="odd">
+          <h5>四川</h5>
+          <p> <a target="_blank" href="http://www.scjj.gov.cn/">四川省统一查询网址</a><a target="_blank" href="http://www.cdjg.gov.cn/">成都</a><a target="_blank" href="http://www.myjtaq.com/newsmore.asp?ClassID=29">绵阳</a><a target="_blank" href="http://www.zg122.gov.cn/index/">自贡</a><a target="_blank" href="http://www.scjj.gov.cn:8636/">攀枝花</a><a target="_blank" href="http://www.sclzjj.gov.cn/">泸州 </a><a target="_blank" href="http://www.scjj.gov.cn/sp_test.htm">遂宁</a><a target="_blank" href="http://www.scgyjj.gov.cn/">广元</a><a target="_blank" href="http://www.scybjj.com/">宜宾</a><a target="_blank" href="http://www.dz169.org/">达州</a><a target="_blank" href="http://ncsjj.gov.cn/">南充</a><a target="_blank" href="http://www.dyjj.gov.cn/">德阳</a><a target="_blank" href="http://www.sczyjj.gov.cn/">资阳</a><a target="_blank" href="http://zt.beiww.com/html/node_3080.htm">雅安</a><a target="_blank" href="http://www.scnjjj.gov.cn/">内江</a><a target="_blank" href="http://www.scjj.gov.cn/sp_test.htm">乐山</a><a target="_blank" href="http://www.bz122.gov.cn/">巴中</a><a target="_blank" href="http://www.scjj.gov.cn/sp_test.htm">眉山</a><a target="_blank" href="http://www.scjj.gov.cn/sp_test.htm">阿坝</a><a target="_blank" href="http://www.scjj.gov.cn/sp_test.htm">甘孜</a> <a target="_blank" href="http://www.lsjj.gov.cn/">凉山</a> <a target="_blank" href="http://www.scgajj.gov.cn/Web/InfoQuery.aspx">广安</a> </p>
+        </dd>
+        <dt id="t">T</dt>
+        <dd>
+          <h5>天津</h5>
+          <p> <a target="_blank" href="http://www.tjits.cn/wfcx/index.asp">天津</a> </p>
+        </dd>
+        <dt id="x">X</dt>
+        <dd  class="odd">
+          <h5>新疆</h5>
+          <p> <a target="_blank" href="http://124.117.209.131:8088/WebVeh/WfQuery/JdcWfQuery/Search.aspx">新疆统一查询网址</a><a target="_blank" href="http://www.xj163.cn/tools/car/">乌鲁木齐</a> <a target="_blank" href="http://www.xjbzjj.com/default.asp">巴州</a><a target="_blank" href="http://www.xjylcar.com/">伊犁</a><a target="_blank" href="http://124.117.209.131:8088/WebVeh/WfQuery/JdcWfQuery/Search.aspx">克拉玛依</a></p>
+        </dd>
+        <dt id="y">Y</dt>
+        <dd>
+          <h5>云南</h5>
+          <p> <a target="_blank" href="http://www.km122.cn/query/Inquiry.html">昆明</a><a target="_blank" href="http://wzcx.pecc.cn ">普洱</a><a target="_blank" href="http://www.dhjjxx.com/">德宏</a><a target="_blank" href="http://www.qjjj.gov.cn:88/query.aspx">曲靖</a><a target="_blank" href="http://www.hhjj.gov.cn/">红河</a><a target="_blank" href="http://www.zt122.cn/">昭通</a> </p>
+        <dt id="z">Z</dt>
+        <dd  class="odd">
+          <h5>浙江</h5>
+          <p> <a target="_blank" href="http://www.hzti.com/service/qry/peccancy.aspx?type=2&node=248">杭州</a><a target="_blank" href="http://wf.nbjj.gov.cn/">宁波</a><a target="_blank" href="http://www.wzsjj.cn/">温州 </a><a target="_blank" href="http://jjzd.jxgaj.gov.cn/">嘉兴</a><a target="_blank" href="http://www.hzjxj.com/">湖州</a><a target="_blank" href="http://wscgs.sxga.gov.cn">绍兴</a><a target="_blank" href="http://www.jhga.gov.cn/">金华</a><a target="_blank" href="http://www.police.zhoushan.gov.cn/interaction_wfsearch.aspx">舟山</a><a target="_blank" href="http://www.tzga.gov.cn/tzjjwwcx/">台州</a><a target="_blank" href="http://61.153.62.58/login.spr">丽水 </a><a target="_blank" href="http://www.ywga.gov.cn/">义乌 </a><a target="_blank" href="http://gaj.qz.gov.cn/qzgaj/">衢州 </a> </p>
+        </dd>
+      </dl>
+    </div>
+  </div>
+</div>
+
+	</div>
+	<div class="line"></div>
+			{self}列表页底部.html{/self}
+</div>	
+{self}列表页底部js.html{/self}	
+
+{self}底部.html{/self}
+<div id="costom1"align="center">
+<a href="http://www.panxinyou.com/" target="_blank"><img src="http://www.go569.com/uploads/allimg/150306/1_2256283491.gif" border=0 /></a>
+</div>
+</body></html>

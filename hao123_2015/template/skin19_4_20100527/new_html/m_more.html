@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>地方服务 - {qt:G_WEBNAME}</title>
+<meta name="keywords" content="{qt:G_KEY},地方服务" />
+<link type="text/css" rel="stylesheet" href="../js/public4/rebuild/css/style.css" />
+<script src="../js/public4/rebuild/js/swords_gb.js"></script>
+<script language="javascript">var qtcmsdd={t:"{qt:indexurl}template/{qt:G_moban}/js/",d:"{qt:indexurl}",taobao:"{qt:G_lm_taobao2}",mm:"{qt:pageone f_m_members.html}",ml:"{qt:pageone f_m_login.html}",mf:"{qt:pageone f_feedback.html}",wn:"{qt:G_WEBNAME}",wu:"{qt:G_WEBURL}",sogou:"{qt:G_lm_sogou_s}"}</script>
+<base target="_blank" />
+</head>
+<body>
+{self}列表页头部2.html{/self}
+<div class="wrapper">
+	<div class="categorys">
+		<dl>
+			{-qt_Loop:Alltype2 0,50,10}
+			{aif:{qt:m-_i}<=4}
+			<dt>{qt:ListName1 {qt:m_type_id1}}</dt>
+			<dd>{qt_Loop:type2 0,50,10,{qt:m_type_id1}}<a href="{qt:m_type_url}" target="_self">{qt:m_type_name}</a>{/qt_Loop}</dd>
+			{aend if}
+			{/-qt_Loop}
+		</dl>
+	</div>
+	<div class="header clearfix">
+		<h1 class="logo"><a href="{qt:G_WEBURL}">地方服务</a></h1>
+		<h2 class="logo">地方服务</h2>
+		<ul class="searKeyWord"><li><a href="{qt:##新闻}">最新新闻</a></li><li><a href="{qt:##电影}">电影</a></li><li><a href="{qt:##小游戏}">游戏</a></li><li><a href="{qt:##音乐}">音乐</a></li><li><a href="{qt:##小说}">小说</a></li><li><a href="{qt:##团购}">团购</a></li></ul>
+		<div class="searcha"><form id="searForm" action="http://www.baidu.com/s" method="get" target="_blank"><span>百度<i></i></span><ul><li rel="baidu">百度</li><li rel="sogou">搜狗</li></ul><input id="innerTxt" type="text" value="" name="wd" /><button type="submit">搜索</button><input type="hidden" name="ie" value="gbk" /></form></div>
+	</div>
+	<div class="comRowGuid">
+		<div style="text-align:center">
+			<img border="0" usemap="#Map" src="../images/other/map.png" />
+		</div>
+
+		{self}列表页底部2.html{/self}
+	</div>
+	<div class="line"></div>
+			{self}列表页底部.html{/self}
+</div>	
+{self}列表页底部js.html{/self}	
+			{self}底部.html{/self}
+			<map name="Map">
+				<area alt="北京" href="{qt:##北京}" target="_blank" coords="350,138,386,156" shape="rect">
+				<area alt="天津" href="{qt:##天津}" target="_blank" coords="380,166,414,182" shape="rect">
+				<area alt="上海" href="{qt:##上海}" target="_blank" coords="432,243,467,262" shape="rect">
+				<area alt="重庆" href="{qt:##重庆}" target="_blank" coords="290,262,325,280" shape="rect">
+				<area alt="河北" href="{qt:##河北}" target="_blank" coords="346,172,378,188" shape="rect">
+				<area alt="山西" href="{qt:##山西}" target="_blank" coords="318,183,348,202" shape="rect">
+				<area alt="内蒙古" href="{qt:##内蒙古}" target="_blank" coords="345,108,393,128" shape="rect">
+				<area alt="辽宁" href="{qt:##辽宁}" target="_blank" coords="400,124,438,143" shape="rect">
+				<area alt="吉林" href="{qt:##吉林}" target="_blank" coords="422,98,462,117" shape="rect">
+				<area alt="黑龙江" href="{qt:##黑龙江}" target="_blank" coords="420,53,471,78" shape="rect">
+				<area alt="江苏" href="{qt:##江苏}" target="_blank" coords="402,220,420,255" shape="rect">
+				<area alt="浙江" href="{qt:##浙江}" target="_blank" coords="410,262,430,297" shape="rect">
+				<area alt="安徽" href="{qt:##安徽}" target="_blank" coords="380,235,400,268" shape="rect">
+				<area alt="福建" href="{qt:##福建}" target="_blank" coords="397,296,418,331" shape="rect">
+				<area alt="江西" href="{qt:##江西}" target="_blank" coords="370,283,388,318" shape="rect">
+				<area alt="山东" href="{qt:##山东}" target="_blank" coords="371,192,403,213" shape="rect">
+				<area alt="河南" href="{qt:##河南}" target="_blank" coords="332,224,368,245" shape="rect">
+				<area alt="湖北" href="{qt:##湖北}" target="_blank" coords="326,255,359,274" shape="rect">
+				<area alt="湖南" href="{qt:##湖南}" target="_blank" coords="322,290,359,312" shape="rect">
+				<area alt="广东" href="{qt:##广东}" target="_blank" coords="352,340,386,357" shape="rect">
+				<area alt="广西" href="{qt:##广西}" target="_blank" coords="299,340,332,360" shape="rect">
+				<area alt="海南" href="{qt:##海南}" target="_blank" coords="309,395,348,415" shape="rect">
+				<area alt="四川" href="{qt:##四川}" target="_blank" coords="236,260,270,283" shape="rect">
+				<area alt="贵州" href="{qt:##贵州}" target="_blank" coords="281,308,313,328" shape="rect">
+				<area alt="云南" href="{qt:##云南}" target="_blank" coords="222,332,255,354" shape="rect">
+				<area alt="陕西" href="{qt:##陕西}" target="_blank" coords="301,221,320,254" shape="rect">
+				<area alt="甘肃" href="{qt:##甘肃}" target="_blank" coords="177,153,210,173" shape="rect">
+				<area alt="青海" href="{qt:##青海}" target="_blank" coords="169,201,205,223" shape="rect">
+				<area alt="宁夏" href="{qt:##宁夏}" target="_blank" coords="274,183,294,216" shape="rect">
+				<area alt="新疆" href="{qt:##新疆}" target="_blank" coords="80,135,119,160" shape="rect">
+				<area alt="西藏" href="{qt:##西藏}" target="_blank" coords="82,245,121,270" shape="rect">
+				<area alt="香港" href="{qt:##香港}" target="_blank" coords="375,355,410,375" shape="rect">
+				<area alt="澳门" href="{qt:##澳门}" target="_blank" coords="345,370,380,390" shape="rect">
+				<area alt="台湾" href="{qt:##台湾}" target="_blank" coords="432,315,450,355" shape="rect">
+			</map>
+<div id="costom1"align="center">
+<a href="http://www.panxinyou.com/" target="_blank"><img src="http://www.go569.com/uploads/allimg/150306/1_2256283491.gif" border=0 /></a>
+</div>			
+</body>
+</html>
+

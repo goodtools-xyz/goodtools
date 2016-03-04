@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+{self}列表页头部.html{/self}
+<base target="_blank" />
+</head>
+<body>
+{self}列表页头部2.html{/self}
+<div class="wrapper">
+	{self}列表页头部3.html{/self}
+	<div class="comRowGuid" id="main_frame_2">
+		{qt_Loop:List19 1,37,1}
+		<dl class="">{if:"{qt:n_title1}"<>""}<dt><a href="{qt:n_gotourl}" target="_blank">{qt:n_title1}</a></dt>{end if}<dd>{qt:n_content}</dd></dl>
+		<div class="shr"></div>
+		{/qt_Loop}	
+		{qt_Loop:type3 0,50,10,{qt:m_type1}}
+		<dl>
+			<dt><a>{qt:m_type_name}</a></dt>
+			<dd>
+				<table>
+				<tr>{qt_Loop:urlList}<td><a href="{qt:md_url}">{bif:"{qt:md_pic}"<>""}<img width="16" height="16" class="img" src="{qt:md_pic}">{else}<img width="16" height="16" class="img" src="../images/ico/ie.gif">{bend if}{qt:mdname_1_color}</a></td>{bif:{qt:md_i} mod 6=0}</tr><tr>{bend if}{/qt_Loop:urlList}</tr>
+				</table>
+			</dd>
+		</dl> 
+		<div class="shr"></div>
+		{/qt_Loop}
+		{qt:ListContent3 {qt:m_type1}}
+		{self}列表页底部2.html{/self}
+		{qt_Loop:List19 1,38,1}
+		<div class="shr"></div>
+		<dl class="">{if:"{qt:n_title1}"<>""}<dt><a href="{qt:n_gotourl}" target="_blank">{qt:n_title1}</a></dt>{end if}<dd>{qt:n_content}</dd></dl>
+		{/qt_Loop}		
+	</div>
+	<div class="line"></div>
+	<div class="comRowGuid" id="main_frame_2">
+<iframe frameborder="0" scrolling="no" src="http://ext.weather.com.cn/home/channel1.aspx?gid=531354257374230d3cc8198f" width="100%" height="700" style="background-color: rgb(238, 238, 238);"></iframe>	
+	</div>
+	<div class="line"></div>
+	<div style="clear:both"></div>
+	{self}列表页底部.html{/self}
+</div>	
+{self}列表页底部js.html{/self}	
+{self}底部.html{/self}
+<div id="costom1"align="center">
+<a href="http://www.panxinyou.com/" target="_blank"><img src="http://www.go569.com/uploads/allimg/150306/1_2256283491.gif" border=0 /></a>
+</div>
+</body></html>

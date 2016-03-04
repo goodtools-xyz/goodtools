@@ -1,0 +1,16 @@
+	<div class="categorys">
+		<dl>
+			{-qt_Loop:Alltype2 0,50,10}
+			{aif:{qt:m-_i}<=4}
+			<dt>{qt:ListName1 {qt:m_type_id1}}</dt>
+			<dd>{qt_Loop:type2 0,19,10,{qt:m_type_id1}}<a href="{qt:m_type_url}" target="_self">{qt:m_type_name}</a>{/qt_Loop}</dd>
+			{aend if}
+			{/-qt_Loop}
+		</dl>
+	</div>
+	<div class="header clearfix">
+		<h1 class="logo"><a href="{qt:G_WEBURL}">{qt:ListName2 {qt:m_type1}}</a></h1>
+		<h2 class="logo">{qt:ListName2 {qt:m_type1}}</h2>
+		<ul class="searKeyWord">{qt_Loop:List19 1,42,6}<li><a href="{qt:n_gotourl}">{qt:nd_title1_color}</a></li>{/qt_Loop}</ul>
+		<div class="searcha"><form id="searForm" action="http://www.baidu.com/s" method="get" target="_blank"><span>百度<i></i></span><ul><li rel="baidu">百度</li><li rel="sogou">搜狗</li></ul><input id="innerTxt" type="text" value="" name="wd" /><button type="submit">搜索</button><input type="hidden" name="ie" value="gbk" /></form></div>
+	</div>
