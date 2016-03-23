@@ -224,3 +224,8 @@ footer {
 		display:inline;
 		margin:10px;
 	}
+
+.img20 { width: 20%;
+	height: 20%;
+	margin: auto;
+}

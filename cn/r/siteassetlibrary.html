@@ -3,25 +3,115 @@
 <head>
 <meta charset="UTF-8">
 <meta name="keywords" content="站长，工具，网站建设，财富库，工具箱">
+<meta name="description" content="应该是目前国内最新的在线站长工具，汇集许多站长在线构件，快速搭建你的网站。">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<base target="_blank">
 <title>Tool321</title>
-<style type="text/css">
-</style>
+
 <link href="/css/style_css.css" rel="stylesheet" type="text/css">
+<!-- 新 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<!-- Include a Sidr bundled CSS theme -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.sidr/2.2.1/stylesheets/jquery.sidr.dark.min.css">
+
+
+
 </head>
 
 <body>
-<div id="wrapper">
-<header>
-<h1><a href="http://www.tool321.com">Tool321</a></h1>
-    <nav>
-    <a href="/cn/index.html">首页</a>
-    <a href="/about.html" target="_blank">关于</a>
-    <a href="http://www.aliyun.com" target="_blank">管理台登陆</a>
-    <a href="/wordpress/index.php" target="_blank"> 个人博客 </a>
-    <a href="/record/record.html">建站日志</a>
-    </nav>
-</header>
+<div class="container-fluid">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Tool321</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="https://www.berriart.com/sidr/">Sidr <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">标准分类表 <span class="caret"></span></a>
+          <ul class="dropdown-menu" id="existing-content-menu">
+            <li><a href="/cn/c/toolcategory.html">Tool Category 标准产品分类目录表</a></li>
+            <li><a href="/cn/r/rolecategory.html">Role Category 标准人员角色目录表</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="/link.html">友情链接</a></li>
+          </ul>
+        </li>
+      </ul>
+	<form class="navbar-form navbar-left" role="search" onsubmit="return baiduWithHttps(this)" action="http://www.baidu.com/baidu" target="_blank">
+        <div class="form-group">
+          <input name="tn" type="hidden" value="SE_zzsearchcode_shhzc78w">
+          <input type="text"  onfocus="checkHttps" name="word"  size="30">
+        </div>
+        <button type="submit" class="btn btn-default">百度一下</button>
+      </form>
+      <script type="text/javascript">(function(){document.write(unescape('%3Cdiv id="bdcs"%3E%3C/div%3E'));
+		var bdcs = document.createElement('script');
+		bdcs.type = 'text/javascript';
+		bdcs.async = true;bdcs.src = 'http://znsv.baidu.com/customer_search/api/js?sid=8864642521338909810' + '&plate_url=' + encodeURIComponent(window.location.href) + '&t=' + Math.ceil(new Date()/3600000);
+		var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(bdcs, s);})();
+		</script>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://www.aliyun.com">管理台登陆</a></li>
+        <li class="dropdown">
+          <a href="/about.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">关于<span class="caret"></span></a>
+          <ul class="dropdown-menu" id="remote-content-menu">
+            <li><a href="/wordpress/index.php">个人博客</a></li>
+            <li><a href="http://weibo.com/tool321">微博</a></li>
+            <li><a href="/record/record.html">建站日志</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="/about.html">关于</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<ol class="breadcrumb">
+  <li><a href="/cn/index.html">首页</a></li>
+  <li><a href="#">个人工具</a></li>
+  <li class="active">站长工具库</li>
+</ol>
+<!--sidr https://www.berriart.com/sidr/-->
+<a id="simple-menu" href="#sidr">Toggle menu</a>
+
+<div id="sidr">
+  <!-- Your content -->
+  <ul>
+    <li><a href="#">List 1</a></li>
+    <li class="active"><a href="#">List 2</a></li>
+    <li><a href="#">List 3</a></li>
+  </ul>
+</div>
+
+<script>
+$(document).ready(function() {
+  $('#simple-menu').sidr();
+});
+</script>
+<!--sidr https://www.berriart.com/sidr/-->
+
 
 <section id="task">
   <table>
@@ -130,17 +220,7 @@
     </table>
   </div>
 </section>
-<section id="navigation">
-  <div align="left">
-    <ul>
-      <li><a href="../c/toolcategory.html">Tool Category 标准产品分类目录表</a></li>
-      <li><a href="rolecategory.html">Role Category 人员角色目录表</a></li>
-      <li><a href="../i/certification.html">Certification 注册认证</a></li>
-      <li><a href="../i/statisticsdata.html">Statistics Data 统计数据</a></li>
-      <li><a href="../../link.html">Link 友情链接</a></li>
-    </ul>
-  </div>
-</section>
+
 <section id="SiteAssetLibrary">
   <table>
     <caption>
@@ -287,7 +367,7 @@
         <td><a href="http://sharebutton.net" target="_blank">Share button</a></td>
         <td><a href="http://www.smartmenus.org">开源菜单插件smartmenus</a></td>
         <td><a href="https://flattr.com/">flattr-支持原创捐款插件</a></td>
-        <td>&nbsp;</td>
+        <td><a href="http://changyan.kuaizhan.com">畅言--评论插件</a></td>
         <td>&nbsp;</td>
       </tr>
       <tr>
@@ -299,9 +379,9 @@
         <td>评论参与插件</td>
         <td><a href="https://disqus.com">Disqus</a></td>
         <td><a href="http://duoshuo.com">多说</a></td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
+        <td>菜单</td>
+        <td><a href="https://www.berriart.com/sidr/">Side menu</a></td>
+        <td><a href=""></a></td>
       </tr>
       <tr>
         <th scope="row">&nbsp;</th>
@@ -506,7 +586,7 @@
         <td><a href="http://www.sitestar.cn/">建站之星</a></td>
         <td><a href="http://www.wqdian.com/" class="cellhightlight">微企点</a></td>
         <td><a href="https://www.myportfolio.com" class="cellhightlight">Adobe Portfolio</a></td>
-        <td>&nbsp;</td>
+        <td><a href="http://www.ih5.cn">H5--网页制作第一工具</a></td>
         <td>&nbsp;</td>
         <td>&nbsp;</td>
         <td>&nbsp;</td>
@@ -631,15 +711,9 @@
     </tbody>
   </table>
  </section>
- 
- <section id="Platform"> </section>
+
 <footer> <!--QUALIFICAITON INFORMATION-->
   <div id="footer">
-    <ul>
-      <li><a href="../../about.html" target="_blank">关于</a></li>
-      <li><a href="siteassetlibrary.html" target="_blank">网站设计财富库</a></li>
-      <li><a href="../../wordpress/index.php" target="_blank"> 个人博客 </a></li>
-    </ul>
     <ul>
       <li>&copy;Copyright Reserved 引用请注明来自tool321.com</li>
       <li>Author:Horseback</li>
@@ -659,6 +733,10 @@
     </ul>
   </div>
 </footer>
-</div>
+<!-- Include jQuery -->
+    <script src="//cdn.jsdelivr.net/jquery/2.2.0/jquery.min.js"></script>
+    <!-- Include the Sidr JS -->
+    <script src="//cdn.jsdelivr.net/jquery.sidr/2.2.1/jquery.sidr.min.js"></script>
+	</div>
 </body>
 </html>
