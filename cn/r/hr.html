@@ -1,913 +1,530 @@
 <!doctype html>
 <html>
-<head>
-<meta charset="UTF-8">
-<meta name="keywords" content="HR，人力资源，导航，navigation,tool,工具，最好的">
-<!--根据硬件设备尺寸获取自适应屏幕大小-->
-<!--站长站点提交验证-->
-<title>Tool321_专注生产力和效率工具</title>
-<link rel="stylesheet" type="text/css" href="../../css/style_css.css">
 
-<!--百度统计-->
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "//hm.baidu.com/hm.js?e0e6f8f53657221249552bb9c50214bb";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="HR，人力资源，导航，navigation,tool,工具，最好的">
+	<!--根据硬件设备尺寸获取自适应屏幕大小-->
+	<!--站长站点提交验证-->
+	<title>HR_人力资源生产力和效率工具</title>
+	<link rel="stylesheet" type="text/css" href="/css/style_css.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<base target="_blank">
+	<!-- 新 Bootstrap 核心 CSS 文件 -->
+	<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link href="/css/style_css.css" rel="stylesheet" type="text/css">
+	<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+	<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+	<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+
+	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+	<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-<div id="wrapper">
-<!--Header start here-->
-<!--Header end here  -->
+	<div class="container-fluid">
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="/">Tool<span style="color:red">3</span><span style="color:#FFEB63">2</span><span style="color:blue">1</span>.com</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">V0.2.0.0 <span class="sr-only">(current)</span></a></li>
+						<li><a href="#">Link</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">标准分类表 <span class="caret"></span></a>
+							<ul class="dropdown-menu" id="existing-content-menu">
+								<li><a href="/cn/c/toolcategory.html">Tool Category 标准产品分类目录表</a></li>
+								<li><a href="/cn/r/rolecategory.html">Role Category 标准人员角色目录表</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="/link.html">友情链接</a></li>
+							</ul>
+						</li>
+					</ul>
+					<form class="navbar-form navbar-left" role="search" onsubmit="return baiduWithHttps(this)" action="http://www.baidu.com/baidu" target="_blank">
+						<div class="form-group">
+							<input name="tn" type="hidden" value="SE_zzsearchcode_shhzc78w">
+							<input type="text" onfocus="checkHttps" name="word" size="20">
+						</div>
+						<button type="submit" class="btn btn-default">百度一下</button>
+					</form>
+					<script type="text/javascript">
+						(function () {
+							document.write(unescape('%3Cdiv id="bdcs"%3E%3C/div%3E'));
+							var bdcs = document.createElement('script');
+							bdcs.type = 'text/javascript';
+							bdcs.async = true;
+							bdcs.src = 'http://znsv.baidu.com/customer_search/api/js?sid=8864642521338909810' + '&plate_url=' + encodeURIComponent(window.location.href) + '&t=' + Math.ceil(new Date() / 3600000);
+							var s = document.getElementsByTagName('script')[0];
+							s.parentNode.insertBefore(bdcs, s);
+						})();
+					</script>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="http://www.aliyun.com">管理台登陆</a></li>
+						<li class="dropdown">
+							<a href="/about.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">关于<span class="caret"></span></a>
+							<ul class="dropdown-menu" id="remote-content-menu">
+								<li><a href="/wordpress/index.php">个人博客</a></li>
+								<li><a href="http://weibo.com/tool321">微博</a></li>
+								<li><a href="/record/record.html">建站日志</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="/about.html">关于</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container-fluid -->
+		</nav>
+
+		<ol class="breadcrumb">
+			<li><a href="/cn/index.html">首页</a></li>
+			<li><a href="#">职业领域工具</a></li>
+			<li class="active">人力资源工具库</li>
+		</ol>
 
 
+		<!--Section Office Start here-->
+		<section id="office">
+			<table>
+				<caption>
+					HR 人力资源
+				</caption>
+				<tbody>
+					<tr>
+						<th width="23" scope="col">No.</th>
+						<th width="78" scope="col">&nbsp;</th>
+						<th width="78" scope="col">Class</th>
+						<th width="145" scope="col"><a href="https://products.office.com/products" target="_blank">HOT</a></th>
+						<th width="89" scope="col">Top1</th>
+						<th width="64" scope="col">Top2</th>
+						<th width="80" scope="col">Top3</th>
+						<th width="70" scope="col">Top4</th>
+						<th width="67" scope="col">Top5</th>
+						<th width="83" scope="col">Top6</th>
+						<th width="105" scope="col">Top7</th>
+						<th width="105" scope="col">Top8</th>
+					</tr>
+					<tr>
+						<th scope="row">1</th>
+						<td>&gt;&gt;</td>
+						<td>行业标准</td>
+						<td>&nbsp;</td>
+						<td><a href="http://hao.chochina.com" class="cellhightlight">HR网址之家</a></td>
+						<td><a href="http://www.hrsalon.org/sites/" target="_blank" class="cellhightlight">HR沙龙网址</a></td>
+						<td><a href="http://www.ah12333.com/hrdh.html">人力资源网址</a></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<th scope="row">&nbsp;</th>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>Korn/Ferry International </td>
+						<td>Heidrick &amp; Struggles </td>
+						<td>ATOZ Consultants </td>
+						<td>Egon Zehnder International </td>
+						<td>Roland Berger International </td>
+						<td>A.T. Kearney Executive Search </td>
+						<td>Sterling Human Resource Consulting </td>
+						<td>EMDS consulting</td>
+					</tr>
+					<tr>
+						<th scope="row">&nbsp;</th>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>United Resource Networks </td>
+						<td>Uniland Development</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<th scope="row">2</th>
+						<td><a href="http://www.kaixin001.com/repaste/3519380_633676685.html" target="_blank">&gt;&gt;</a></td>
+						<td>猎头公司</td>
+						<td>&nbsp;</td>
+						<td>Michal Page</td>
+						<td>卓礼</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>瀚德猎头</td>
+						<td>万宝盛华</td>
+						<td>英特猎头</td>
+						<td>海德思哲</td>
+					</tr>
+					<tr>
+						<th scope="row">&nbsp;</th>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>埃摩森咨询</td>
+						<td>大瀚咨询</td>
+						<td>沃锐人才</td>
+						<td>锐仕方达</td>
+						<td>海仕国际</td>
+						<td>任仕达</td>
+						<td>科锐国际</td>
+						<td>展动力</td>
+					</tr>
+					<tr>
+						<th scope="row">3</th>
+						<td>&gt;&gt;</td>
+						<td>协会</td>
+						<td><a href="http://www.hra.org.cn" target="_blank">北京中外企业人力资源协会</a></td>
+						<td>英<a href="http://www.cipd.co.uk" target="_blank">CIPD1913</a></td>
+						<td><a href="https://en.wikipedia.org/wiki/List_of_human_resource_management_associations" target="_blank" class="cellhightlight">国外人力资源协会清单</a></td>
+						<td><a href="http://www.shrm.org" target="_blank">美SHRM1948</a></td>
+						<td>美<a href="http://humanresources.org" target="_blank">NHRA1951</a></td>
+						<td>美<a href="http://www.worldatwork.org" target="_blank">worldatwork1955</a></td>
+						<td>港<a href="http://www.hkihrm.org" target="_blank">HRM1977</a></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<th scope="row">&nbsp;</th>
+						<td>&nbsp;</td>
+						<td>名站</td>
+						<td>&nbsp;</td>
+						<td>印<a href="http://www.hr.com//en/webcasts_events/webcasts/archived_webcasts_podcasts/using-workforce-analytics-to-deliver-on-your-busin_igb63r3y.html" target="_blank">HR.COM</a></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<th scope="row">4</th>
+						<td>&gt;&gt;</td>
+						<td><a href="http://baike.baidu.com/link?url=xCRwr6NlFQOqX8qTO1rNATZ1dcUL2qKysswrwhbcndDZaDOqf14PKhgFq1zBfc274-ARpklK7V6UpCi5L4Izd_" target="_blank">HR六大模块</a></td>
+						<td>&nbsp;</td>
+						<td><a href="http://www.beisen.com" class="cellhightlight">北森</a></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<th scope="row">5</th>
+						<td>&gt;&gt;</td>
+						<td>人力资源规划</td>
+						<td>&nbsp;</td>
+						<td><a href="http://zhaopin.baidu.com/" target="_blank" class="cellhightlight">百度招聘</a></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<th scope="row">&nbsp;</th>
+						<td>&nbsp;</td>
+						<td>招聘与配置</td>
+						<td><a href="http://www.hao123.com/zhaopin/wangzhi" target="_blank">HAO123传统招聘</a></td>
+						<td><a href="http://www.pinbot.me" target="_blank">聘宝</a></td>
+						<td><a href="http://www.lagou.com" target="_blank">拉勾网</a></td>
+						<td><a href="http://www.dajie.com" target="_blank">大街网</a></td>
+						<td><a href="http://www.linkedin.com" target="_blank">Linkedin领英</a></td>
+						<td><a href="http://100offer.com/" target="_blank">100offer</a></td>
+						<td><a href="http://www.neitui.me" target="_blank">内推互联网</a></td>
+						<td><a href="http://www.bosszhipin.com" target="_blank">boss直聘</a></td>
+						<td><a href="http://cn.indeed.com" target="_blank">indeed</a></td>
+					</tr>
+					<tr>
+						<th scope="row">8</th>
+						<td>&gt;&gt;</td>
+						<td></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td><a href="http://www.allegisglobalsolutions.com/zh-cn">Allegisglobal</a></td>
+						<td><a href="http://www.talent2.com">Talent2</a></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<th scope="row">&nbsp;</th>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td class="cellhightlight">P2P众包</td>
+						<td><a href="http://www.zbj.com" target="_blank">猪八戒威客</a></td>
+						<td><a href="http://www.taskcn.com" target="_blank">任务中国</a></td>
+						<td><a href="http://www.680.com" target="_blank">时间财富</a></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<th scope="row">&nbsp;</th>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>人才测评</td>
+						<td><a href="http://www.renaren.com">人啊人</a></td>
+						<td><a href="http://www.chinatest.com.cn">中国国家人才测评网</a></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<th scope="row">&nbsp;</th>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td><a href="http://www.liepin.com" target="_blank">猎聘网</a></td>
+						<td><a href="http://www.hunteron.com" target="_blank">猎上网</a></td>
+						<td>Hudson</td>
+						<td><a href="http://smashfly.com" target="_blank" class="cellhightlight">smashfly</a></td>
+						<td><a href="http://www.hunterplus.net">猎萌</a></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<th scope="row">&nbsp;</th>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>求职节目</td>
+						<td><a href="http://www.iqiyi.com/a_19rrgubjm5.html" target="_blank">职来职往</a></td>
+						<td><a href="http://www.iqiyi.com/zongyi/fnms.html" target="_blank">非你莫属</a></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<th scope="row">6</th>
+						<td>&gt;&gt;</td>
+						<td>薪酬福利</td>
+						<td>薪酬</td>
+						<td><a href="http://www.joyowo.com" target="_blank">金柚网</a></td>
+						<td><a href="http://www.gov.cn/zhengce/content/2015-12/12/content_10398.htm" target="_blank">居住证暂行条例20151126</a></td>
+						<td>社会信用体系建设规划纲要</td>
+						<td><a href="http://www.kanzhun.com" target="_blank" class="cellhightlight">看准网</a></td>
+						<td><a href="http://www.wopayroll.com" target="_blank" class="cellhightlight">我薪网</a></td>
+						<td>&nbsp;</td>
+						<td><a href="http://www.ikang.com" target="_blank">爱康国宾</a></td>
+						<td><a href="http://www.ciming.com" target="_blank">慈铭体检</a></td>
+					</tr>
+					<tr>
+						<th scope="row">&nbsp;</th>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>福利</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<th scope="row">&nbsp;</th>
+						<td>&nbsp;</td>
+						<td>培训与开发</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<th scope="row">7</th>
+						<td>&gt;&gt;</td>
+						<td>绩效管理</td>
+						<td>考勤</td>
+						<td>&nbsp;</td>
+						<td><a href="http://www.xiaobuwq.com" target="_blank">小步外勤</a></td>
+						<td><a href="http://www.mncats.com" target="_blank">猫宁智能</a></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<th scope="row">8</th>
+						<td>&gt;&gt;</td>
+						<td>员工关系</td>
+						<td>&nbsp;</td>
+						<td class="cellhightlight">&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<th scope="row">&nbsp;</th>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<th scope="row">9</th>
+						<td>行政</td>
+						<td>信用</td>
+						<td>企业信用查询</td>
+						<td><a href="http://www.qichacha.com" target="_blank" class="cellhightlight">企查查</a></td>
+						<td><a href="http://www.x315.com" target="_blank">信用视界</a></td>
+						<td><a href="http://www.qixin007.com" target="_blank">启信宝</a></td>
+						<td><a href="http://www.pbccrc.org.cn" target="_blank" class="cellhightlight">央行征信中心</a></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<th scope="row">10</th>
+						<td>&nbsp;</td>
+						<td>资产</td>
+						<td><a href="http://www.hao123.com/fangchan" target="_blank">HAO123房产</a></td>
+						<td><a href="http://www.52mf.com.cn" target="_blank">魔方</a></td>
+						<td>贝客 </td>
+						<td>青客</td>
+						<td>自如寓</td>
+						<td>自如友家</td>
+						<td>寓见</td>
+						<td>可寓</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<th scope="row">11</th>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td><a href="http://earth.google.com" target="_blank">搜房网</a></td>
+						<td>如家逗号</td>
+						<td>优客逸家</td>
+						<td>蘑菇</td>
+						<td>小螺趣租</td>
+						<td>窝趣</td>
+						<td>城家</td>
+						<td><a href="https://youplus.cc" target="_blank">You+优家</a></td>
+						<td><a href="http://www.52tuanzu.com" target="_blank" class="cellhightlight">团租小窝</a></td>
+					</tr>
+					<tr>
+						<th scope="row">&nbsp;</th>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<th scope="row">12</th>
+						<td>&gt;&gt;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
 
-<section id="logo">
-  <h1 align="left" ><a href="http://www.tool321.com">Tool321</a></h1>
-  <h3 align="left">一个专注生产力和效率工具的导航网站</h3>
-</section>
-<section id="task">
-  <table>
-    <caption>
-      task
-      </caption>
-    <tbody>
-      <tr>
-        <th width="23" scope="col">No.</th>
-        <th width="78" scope="col">&nbsp;</th>
-        <th width="78" scope="col">Class</th>
-        <th width="145" scope="col">&nbsp;</th>
-        <th width="89" scope="col">Top1</th>
-        <th width="64" scope="col">Top2</th>
-        <th width="80" scope="col">Top3</th>
-        <th width="70" scope="col">Top4</th>
-        <th width="67" scope="col">Top5</th>
-        <th width="83" scope="col">Top6</th>
-        <th width="105" scope="col">Top7</th>
-        <th width="105" scope="col">Top8</th>
-      </tr>
-      <tr>
-        <th scope="row">1</th>
-        <td>&gt;&gt;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-      </tr>
-      <tr>
-        <th scope="row">&nbsp;</th>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td class="cellhightlight">&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-      </tr>
-    </tbody>
-  </table>
-  <p align="left">&nbsp;</p>
-</section> 
+				</tbody>
+			</table>
+		</section>
+		<footer>
+			<!--QUALIFICAITON INFORMATION-->
+			<div id="footer">
+				<ul>
+					<li><a href="../../r/about.html" target="_blank">关于</a></li>
+					<li><a href="../../r/siteassetlibrary.html" target="_blank">网站设计财富库</a></li>
+					<li><a href="../../r/wordpress/index.php" target="_blank"> 个人博客 </a></li>
+				</ul>
+				<ul>
+					<li>&copy;Copyright Reserved 引用请注明来自tool321.com</li>
+					<li>Author:Horseback</li>
+					<li>QQ:1415948426</li>
+					<li><a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=qNzHx8Sbmpno2dmGy8fF" style="text-decoration:none;">意见反馈</a></li>
+					<li><a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=qNzHx8Sbmpno2dmGy8fF" style="text-decoration:none;">提交登录或者定制</a></li>
+					<li>
+						<!-- #BeginDate format:IS1m -->2016-03-02 22:07
+						<!-- #EndDate -->
+					</li>
+					<li>
+						<!--CNZZ统计-->
+						<script type="text/javascript">
+							var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+							document.write(unescape("%3Cspan id='cnzz_stat_icon_1257102666'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1257102666%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+						</script>
+					</li>
+				</ul>
+				<ul>
+					<a href="http://www.miibeian.gov.cn" target="_blank">粤ICP备15117589号</a>
+				</ul>
+			</div>
+		</footer>
 
+		<!--Section Office End here-->
 
-<!--Section Baidu Start here-->
-<section id="baidu">
-<form  onsubmit="return baiduWithHttps(this)" action="http://www.baidu.com/baidu" target="_blank" >
-    <input name="tn" type="hidden" value="SE_zzsearchcode_shhzc78w">
-    <a href="https://www.baidu.com/" target="_blank">
-        <img src="https://www.baidu.com/img/baidu_jgylogo3.gif" alt="Baidu" align="center" border="0">
-    </a>
-    
-    <input type="text"  onfocus="checkHttps" name="word"  size="80"  height="large">
-    <input type="submit" value="百度搜索" width="20%">
-</form>
-
-<script src="http://s1.bdstatic.com/r/www/cache/global/js/BaiduHttps_20150714_zhanzhang.js"></script>
-<script>
-    function checkHttps () {
-        BaiduHttps.useHttps();    
-    };
-    function baiduWithHttps (formname) {
-        var data = BaiduHttps.useHttps();
-        if (data.s === 0) {
-            return true;
-        }
-        else {
-            formname.action = 'https://www.baidu.com/baidu' + '?ssl_s=1&ssl_c' + data.ssl_code;
-            return true;
-        }
-    };
-</script>
-
-</section>
-
-<!--Section Baidu End here -->
-
-<!--Section DesignLibrary start here-->
-
-
-
-<!--Section Office Start here-->
- <section id="office">
-   <table>
-     <caption>
-     HR 人力资源
-     </caption>
-     <tbody>
-       <tr>
-         <th width="23" scope="col">No.</th>
-         <th width="78" scope="col">&nbsp;</th>
-         <th width="78" scope="col">Class</th>
-         <th width="145" scope="col"><a href="https://products.office.com/products" target="_blank">HOT</a></th>
-         <th width="89" scope="col">Top1</th>
-         <th width="64" scope="col">Top2</th>
-         <th width="80" scope="col">Top3</th>
-         <th width="70" scope="col">Top4</th>
-         <th width="67" scope="col">Top5</th>
-         <th width="83" scope="col">Top6</th>
-         <th width="105" scope="col">Top7</th>
-         <th width="105" scope="col">Top8</th>
-        </tr>
-       <tr>
-         <th scope="row">1</th>
-         <td>&gt;&gt;</td>
-         <td>行业标准</td>
-         <td>&nbsp;</td>
-         <td><a href="http://hao.chochina.com" class="cellhightlight">HR网址之家</a></td>
-         <td><a href="http://www.hrsalon.org/sites/" target="_blank" class="cellhightlight">HR沙龙网址</a></td>
-         <td><a href="http://www.ah12333.com/hrdh.html">人力资源网址</a></td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-        </tr>
-       <tr>
-         <th scope="row">&nbsp;</th>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>Korn/Ferry International </td>
-         <td>Heidrick &amp; Struggles </td>
-         <td>ATOZ Consultants </td>
-         <td>Egon Zehnder International </td>
-         <td>Roland Berger International </td>
-         <td>A.T. Kearney Executive Search </td>
-         <td>Sterling Human Resource Consulting </td>
-         <td>EMDS consulting</td>
-        </tr>
-       <tr>
-         <th scope="row">&nbsp;</th>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>United Resource Networks </td>
-         <td>Uniland Development</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-       </tr>
-       <tr>
-         <th scope="row">2</th>
-         <td><a href="http://www.kaixin001.com/repaste/3519380_633676685.html" target="_blank">&gt;&gt;</a></td>
-         <td>猎头公司</td>
-         <td>&nbsp;</td>
-         <td>Michal Page</td>
-         <td>卓礼</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>瀚德猎头</td>
-         <td>万宝盛华</td>
-         <td>英特猎头</td>
-         <td>海德思哲</td>
-        </tr>
-       <tr>
-         <th scope="row">&nbsp;</th>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>埃摩森咨询</td>
-         <td>大瀚咨询</td>
-         <td>沃锐人才</td>
-         <td>锐仕方达</td>
-         <td>海仕国际</td>
-         <td>任仕达</td>
-         <td>科锐国际</td>
-         <td>展动力</td>
-       </tr>
-       <tr>
-         <th scope="row">3</th>
-         <td>&gt;&gt;</td>
-         <td>协会</td>
-         <td><a href="http://www.hra.org.cn" target="_blank">北京中外企业人力资源协会</a></td>
-         <td>英<a href="http://www.cipd.co.uk" target="_blank">CIPD1913</a></td>
-         <td><a href="https://en.wikipedia.org/wiki/List_of_human_resource_management_associations" target="_blank" class="cellhightlight">国外人力资源协会清单</a></td>
-         <td><a href="http://www.shrm.org" target="_blank">美SHRM1948</a></td>
-         <td>美<a href="http://humanresources.org" target="_blank">NHRA1951</a></td>
-         <td>美<a href="http://www.worldatwork.org" target="_blank">worldatwork1955</a></td>
-         <td>港<a href="http://www.hkihrm.org" target="_blank">HRM1977</a></td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-        </tr>
-       <tr>
-         <th scope="row">&nbsp;</th>
-         <td>&nbsp;</td>
-         <td>名站</td>
-         <td>&nbsp;</td>
-         <td>印<a href="http://www.hr.com//en/webcasts_events/webcasts/archived_webcasts_podcasts/using-workforce-analytics-to-deliver-on-your-busin_igb63r3y.html" target="_blank">HR.COM</a></td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-       </tr>
-       <tr>
-         <th scope="row">4</th>
-         <td>&gt;&gt;</td>
-         <td><a href="http://baike.baidu.com/link?url=xCRwr6NlFQOqX8qTO1rNATZ1dcUL2qKysswrwhbcndDZaDOqf14PKhgFq1zBfc274-ARpklK7V6UpCi5L4Izd_" target="_blank">HR六大模块</a></td>
-         <td>&nbsp;</td>
-         <td><a href="http://www.beisen.com" class="cellhightlight">北森</a></td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-        </tr>
-       <tr>
-         <th scope="row">5</th>
-         <td>&gt;&gt;</td>
-         <td>人力资源规划</td>
-         <td>&nbsp;</td>
-         <td><a href="http://zhaopin.baidu.com/" target="_blank" class="cellhightlight">百度招聘</a></td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-        </tr>
-       <tr>
-         <th scope="row">&nbsp;</th>
-         <td>&nbsp;</td>
-         <td>招聘与配置</td>
-         <td><a href="http://www.hao123.com/zhaopin/wangzhi" target="_blank">HAO123传统招聘</a></td>
-         <td><a href="http://www.pinbot.me" target="_blank">聘宝</a></td>
-         <td><a href="http://www.lagou.com" target="_blank">拉勾网</a></td>
-         <td><a href="http://www.dajie.com" target="_blank">大街网</a></td>
-         <td><a href="http://www.linkedin.com" target="_blank">Linkedin领英</a></td>
-         <td><a href="http://100offer.com/" target="_blank">100offer</a></td>
-         <td><a href="http://www.neitui.me" target="_blank">内推互联网</a></td>
-		 <td><a href="http://www.bosszhipin.com" target="_blank">boss直聘</a></td>
-         <td><a href="http://cn.indeed.com" target="_blank">indeed</a></td>
-        </tr>
-       <tr>
-         <th scope="row">8</th>
-         <td>&gt;&gt;</td>
-         <td></td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td><a href="http://www.allegisglobalsolutions.com/zh-cn">Allegisglobal</a></td>
-         <td><a href="http://www.talent2.com">Talent2</a></td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-        </tr>
-       <tr>
-         <th scope="row">&nbsp;</th>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td class="cellhightlight">P2P众包</td>
-         <td><a href="http://www.zbj.com" target="_blank">猪八戒威客</a></td>
-         <td><a href="http://www.taskcn.com" target="_blank">任务中国</a></td>
-         <td><a href="http://www.680.com" target="_blank">时间财富</a></td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-       </tr>
-       <tr>
-         <th scope="row">&nbsp;</th>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>人才测评</td>
-         <td><a href="http://www.renaren.com">人啊人</a></td>
-         <td><a href="http://www.chinatest.com.cn">中国国家人才测评网</a></td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-       </tr>
-       <tr>
-         <th scope="row">&nbsp;</th>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td><a href="http://www.liepin.com" target="_blank">猎聘网</a></td>
-         <td><a href="http://www.hunteron.com" target="_blank">猎上网</a></td>
-         <td>Hudson</td>
-         <td><a href="http://smashfly.com" target="_blank" class="cellhightlight">smashfly</a></td>
-         <td><a href="http://www.hunterplus.net">猎萌</a></td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-       </tr>
-       <tr>
-         <th scope="row">&nbsp;</th>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>求职节目</td>
-         <td><a href="http://www.iqiyi.com/a_19rrgubjm5.html" target="_blank">职来职往</a></td>
-         <td><a href="http://www.iqiyi.com/zongyi/fnms.html" target="_blank">非你莫属</a></td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-       </tr>
-       <tr>
-         <th scope="row">6</th>
-         <td>&gt;&gt;</td>
-         <td>薪酬福利</td>
-         <td>薪酬</td>
-         <td><a href="http://www.joyowo.com" target="_blank">金柚网</a></td>
-         <td><a href="http://www.gov.cn/zhengce/content/2015-12/12/content_10398.htm" target="_blank">居住证暂行条例20151126</a></td>
-         <td>社会信用体系建设规划纲要</td>
-         <td><a href="http://www.kanzhun.com" target="_blank" class="cellhightlight">看准网</a></td>
-         <td><a href="http://www.wopayroll.com" target="_blank" class="cellhightlight">我薪网</a></td>
-         <td>&nbsp;</td>
-         <td><a href="http://www.ikang.com" target="_blank">爱康国宾</a></td>
-         <td><a href="http://www.ciming.com" target="_blank">慈铭体检</a></td>
-        </tr>
-       <tr>
-         <th scope="row">&nbsp;</th>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>福利</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-       </tr>
-       <tr>
-         <th scope="row">&nbsp;</th>
-         <td>&nbsp;</td>
-         <td>培训与开发</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-        </tr>
-       <tr>
-         <th scope="row">7</th>
-         <td>&gt;&gt;</td>
-         <td>绩效管理</td>
-         <td>考勤</td>
-         <td>&nbsp;</td>
-         <td><a href="http://www.xiaobuwq.com" target="_blank">小步外勤</a></td>
-         <td><a href="http://www.mncats.com" target="_blank">猫宁智能</a></td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-        </tr>
-       <tr>
-         <th scope="row">8</th>
-         <td>&gt;&gt;</td>
-         <td>员工关系</td>
-         <td>&nbsp;</td>
-         <td class="cellhightlight">&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-        </tr>
-       <tr>
-         <th scope="row">&nbsp;</th>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-       </tr>
-       <tr>
-         <th scope="row">9</th>
-         <td>行政</td>
-         <td>信用</td>
-         <td>企业信用查询</td>
-         <td><a href="http://www.qichacha.com" target="_blank" class="cellhightlight">企查查</a></td>
-         <td><a href="http://www.x315.com" target="_blank">信用视界</a></td>
-         <td><a href="http://www.qixin007.com" target="_blank">启信宝</a></td>
-         <td><a href="http://www.pbccrc.org.cn" target="_blank" class="cellhightlight">央行征信中心</a></td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-        </tr>
-       <tr>
-         <th scope="row">10</th>
-         <td>&nbsp;</td>
-         <td>资产</td>
-         <td><a href="http://www.hao123.com/fangchan" target="_blank">HAO123房产</a></td>
-         <td><a href="http://www.52mf.com.cn" target="_blank">魔方</a></td>
-         <td>贝客 </td>
-         <td>青客</td>
-         <td>自如寓</td>
-         <td>自如友家</td>
-         <td>寓见</td>
-         <td>可寓</td>
-         <td>&nbsp;</td>
-        </tr>
-       <tr>
-         <th scope="row">11</th>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td><a href="http://earth.google.com" target="_blank">搜房网</a></td>
-         <td>如家逗号</td>
-         <td>优客逸家</td>
-         <td>蘑菇</td>
-         <td>小螺趣租</td>
-         <td>窝趣</td>
-         <td>城家</td>
-         <td><a href="https://youplus.cc" target="_blank">You+优家</a></td>
-         <td><a href="http://www.52tuanzu.com" target="_blank" class="cellhightlight">团租小窝</a></td>
-        </tr>
-       <tr>
-         <th scope="row">&nbsp;</th>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-       </tr>
-       <tr>
-         <th scope="row">12</th>
-         <td>&gt;&gt;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-        </tr>
-       <tr>
-         <th scope="row">13</th>
-         <td>&gt;&gt;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-        </tr>
-       <tr>
-         <th scope="row">14</th>
-         <td>&gt;&gt;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-        </tr>
-       <tr>
-         <th scope="row">15</th>
-         <td>&gt;&gt;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-        </tr>
-       <tr>
-         <th scope="row">16</th>
-         <td>&gt;&gt;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-       </tr>
-       <tr>
-         <th scope="row">&nbsp;</th>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-       </tr>
-       <tr>
-         <th scope="row">&nbsp;</th>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-       </tr>
-       <tr>
-         <th scope="row">&nbsp;</th>
-         <td>&gt;&gt;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-       </tr>
-       <tr>
-         <th scope="row">17</th>
-         <td>&gt;&gt;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-        </tr>
-       <tr>
-         <th scope="row">18</th>
-         <td>&gt;&gt;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-        </tr>
-       <tr>
-         <th scope="row">19</th>
-         <td>&gt;&gt;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-       </tr>
-       <tr>
-         <th scope="row">20</th>
-         <td>&gt;&gt;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-       </tr>
-       <tr>
-         <th scope="row">&nbsp;</th>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-       </tr>
-       <tr>
-         <th scope="row">&nbsp;</th>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-       </tr>
-       <tr>
-         <th scope="row">&nbsp;</th>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-       </tr>
-       <tr>
-         <th scope="row">21</th>
-         <td>&gt;&gt;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-       </tr>
-       <tr>
-         <th scope="row">&nbsp;</th>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-       </tr>
-       <tr>
-         <th scope="row">22</th>
-         <td>&gt;&gt;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-       </tr>
-       <tr>
-         <th scope="row">23</th>
-         <td>&gt;&gt;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-       </tr>
-       <tr>
-         <th scope="row">24</th>
-         <td>&gt;&gt;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-       </tr>
-       <tr>
-         <th scope="row">25</th>
-         <td>&gt;&gt;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-       </tr>
-       <tr>
-         <th scope="row">26</th>
-         <td>&gt;&gt;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-       </tr>
-       <tr>
-         <th scope="row">&nbsp;</th>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-       </tr>
-       <tr>
-         <th scope="row">27</th>
-         <td>&gt;&gt;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-       </tr>
-       <tr>
-         <th scope="row">28</th>
-         <td>&gt;&gt;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-       </tr>
-       <tr>
-         <th scope="row">29</th>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-       </tr>
-       <tr>
-         <th scope="row">30</th>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-       </tr>
-     </tbody>
-   </table>
- </section>
- <footer>
-   <!--QUALIFICAITON INFORMATION-->
-   <div id="footer">
-     <ul>
-       <li><a href="../../r/about.html" target="_blank">关于</a></li>
-       <li><a href="../../r/siteassetlibrary.html" target="_blank">网站设计财富库</a></li>
-       <li><a href="../../r/wordpress/index.php" target="_blank"> 个人博客 </a></li>
-     </ul>
-     <ul>
-       <li>&copy;Copyright Reserved 引用请注明来自tool321.com</li>
-       <li>Author:Horseback</li>
-       <li>QQ:1415948426</li>
-       <li><a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=qNzHx8Sbmpno2dmGy8fF" style="text-decoration:none;">意见反馈</a></li>
-       <li><a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=qNzHx8Sbmpno2dmGy8fF" style="text-decoration:none;">提交登录或者定制</a></li>
-       <li>
-         <!-- #BeginDate format:IS1m -->2016-03-02  22:07<!-- #EndDate -->
-       </li>
-       <li>
-         <!--CNZZ统计-->
-         <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1257102666'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1257102666%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
-       </li>
-     </ul>
-     <ul>
-       <a href="http://www.miibeian.gov.cn" target="_blank">粤ICP备15117589号</a>
-     </ul>
-   </div>
- </footer>
- 
- <!--Section Office End here-->
- 
- <!--Section Plateform start here-->
-<!--Plateform End here-->
+		<!--Section Plateform start here-->
+		<!--Plateform End here-->
 
 
-</div>
+	</div>
 </body>
+
 </html>
