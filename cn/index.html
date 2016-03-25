@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="zh">
+<html lang=zh xmlns:wb="http://open.weibo.com/wb">
 
 <head>
 	<meta charset="UTF-8">
@@ -7,7 +7,7 @@
 	<meta name="author" content="马背岭，Horseback">
 	<meta name="description" content="由从事质量十年的一个专业职业人创建，主要是为了解决自己频繁试用各种最新工具而建，目的在于减少自己的搜索量，直达工具在线使用页面或者下载页面。收集了目前各个领域里的最好工具，方便自己的同时，方便所有互联网的使用者" />
 	<base target="_blank">
-	<!--根据硬件设备尺寸获取自适应屏幕大小-->
+	<!--根据硬件设备尺寸获取自适应屏幕小-->
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<!--根据移动设备自动跳转到相应的移动网站-->
 	<!--用户可方便地通过 Windows 启动磁贴来查找和固定您的网页-->
@@ -67,6 +67,10 @@
 		})();
 	</script>
 	<!-- Growing I/O -->
+<!--	sina openAPI js-->
+<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=3338588483" type="text/javascript" charset="utf-8"></script>
+<!--debug mode-->
+<!--<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=YOUR APPKEY&debug=true" type="text/javascript" charset="utf-8"></script>-->
 </head>
 
 <body>
@@ -95,6 +99,17 @@
 
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="/cn/i/statisticsdata.html"><span class="glyphicon glyphicon-stats" aria-hidden="true">&nbsp;</span>趋势·统计数据</a></li>
+<!--						<li><a href=""><wb:login-button type="5,5" onlogin="login" onlogout="logout">登陆</wb:login-button></a></li>-->
+
+						<script>
+						function login(o) {
+    alert(o.screen_name)
+}
+
+function logout() {
+    alert('logout');
+}
+						</script>
 						<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user" aria-hidden="true">&nbsp;</span>个人类型<span class="caret"></span></a>
 							<ul class="dropdown-menu">
 								<li><a href="">体育迷</a></li>
@@ -108,7 +123,23 @@
 								<li><a href="http://www.AIESEC.org">青年志愿者</a></li>
 							</ul>
 						</li>
-
+						<li><span id="wb_connect_btn"><a href="https://api.weibo.com/oauth2/authorize?client_id=3338588483&redirect_uri=http://www.tool321.com">登陆</a></span></li>
+<script>
+						WB2.anyWhere(function (W) {
+    W.widget.connectButton({
+        id: "wb_connect_btn",
+        type: '6,5',
+        callback: {
+            login: function (o) { //登录后的回调函数
+                alert("login: " + o.screen_name)
+            },
+            logout: function () { //退出后的回调函数
+                alert('logout');
+            }
+        }
+    });
+});
+						</script>
 						<li class="dropdown">
 							<a href="/about.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-info-sign" aria-hidden="true">&nbsp;</span>关于<span class="caret"></span></a>
 							<ul class="dropdown-menu">
@@ -118,12 +149,12 @@
 								<li><a href="/about.html">关于</a></li>
 							</ul>
 						</li>
-						<li><a href="/en/index.html"><span class="label label-lg label-danger">English</span></a></li>
+						<li><a href="/en/index.html"><span class="label label-lg label-danger">英文版</span></a></li>
 					</ul>
 				</div>
 				<!-- /.navbar-collapse -->
 			</div>
-			<!-- /.container-fluid -->
+			<!--/.container-fluid -->
 		</nav>
 		<div class="row">
 			<!--			<div class="col-lg-1 visible-lg"></div>-->
@@ -1225,7 +1256,5 @@
 	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 	<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
 	<script src="offcanvas.js"></script>
-	</div>
 </body>
-
 </html>
