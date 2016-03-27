@@ -92,14 +92,16 @@
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="/cn/index_old.html">旧版首页<span class="sr-only">(current)</span></a></li>
+						<li class="active">
+							<script type="text/javascript" src="http://ext.weather.com.cn/101494.js"></script>
+						</li>
 					</ul>
 
 
 
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="/cn/i/statisticsdata.html"><span class="glyphicon glyphicon-stats" aria-hidden="true">&nbsp;</span>趋势·统计数据</a></li>
-<!--						<li><a href=""><wb:login-button type="5,5" onlogin="login" onlogout="logout">登陆</wb:login-button></a></li>-->
+						<li><a href=""><wb:login-button type="5,5" onlogin="login" onlogout="logout">登陆</wb:login-button></a></li>
 
 						<script>
 						function login(o) {
@@ -123,23 +125,6 @@ function logout() {
 								<li><a href="http://www.AIESEC.org">青年志愿者</a></li>
 							</ul>
 						</li>
-						<li><span id="wb_connect_btn"><a href="https://api.weibo.com/oauth2/authorize?client_id=3338588483&redirect_uri=http://www.tool321.com">登陆</a></span></li>
-<script>
-						WB2.anyWhere(function (W) {
-    W.widget.connectButton({
-        id: "wb_connect_btn",
-        type: '6,5',
-        callback: {
-            login: function (o) { //登录后的回调函数
-                alert("login: " + o.screen_name)
-            },
-            logout: function () { //退出后的回调函数
-                alert('logout');
-            }
-        }
-    });
-});
-						</script>
 						<li class="dropdown">
 							<a href="/about.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-info-sign" aria-hidden="true">&nbsp;</span>关于<span class="caret"></span></a>
 							<ul class="dropdown-menu">
@@ -156,6 +141,7 @@ function logout() {
 			</div>
 			<!--/.container-fluid -->
 		</nav>
+
 		<div class="row">
 			<!--			<div class="col-lg-1 visible-lg"></div>-->
 			<div class="col-md-3">
@@ -243,7 +229,7 @@ function logout() {
 								</tr>
 								<tr class="warning">
 									<td><a href="http://www.58.com" target="_blank">58同城</a>&#8226;<a href="http://www.ganji.com" target="_blank">赶集</a></td>
-									<td><a href="<htt></htt>ps://www.itjuzi.com" target="_blank">IT橙子</a>&#8226;<a href="http://www.36kr.com">36氪</a></td>
+									<td><a href="<http://www.itjuzi.com" target="_blank">IT橙子</a>&#8226;<a href="http://www.36kr.com">36氪</a></td>
 									<td><a href="http://www.tudou.com" target="_blank">土豆网</a>&#8226;<a href="http://www.renren.com" target="_blank">人人网</a></td>
 									<td><a href="http://www.xinhuanet.com" target="_blank">新华</a>&#8226;<a href="http://www.people.com.cn" target="_blank">人民</a></td>
 									<td><a href="http://www.autohome.com.cn" target="_blank">汽车之家</a></td>
