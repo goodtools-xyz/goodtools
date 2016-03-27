@@ -1,512 +1,808 @@
 <!doctype html>
-<html>
+<html lang=zh xmlns:wb="http://open.weibo.com/wb">
+
 <head>
-<meta charset="UTF-8">
-<!--根据硬件设备尺寸获取自适应屏幕大小-->
-<!--站长站点提交验证-->
-<meta name="360-site-verification" content="8fb0c7b602d87018755d10242ca87afe" />
-<meta name="sogou_site_verification" content="vO4LIbCuYE"/>
-<meta name="msvalidate.01" content="79F2BE573267F59FFA0632E82340CD70" />
-<meta name="google-site-verification" content="bt0cWLzL4InHABaKZW2Vw1UMd5wbhBL8WeOXpIbe3f0" />
-<title>Tool321_专注生产力和效率工具</title>
-<link href="../../css/style_css.css" rel="stylesheet" type="text/css">
+	<meta charset="UTF-8">
+	<meta name="keywords" content="不一样，生产力,效率,工具,导航,正版，云端，在线，入口，different,productivity,efficiency,tool,navigation,SAAS,online，entrance">
+	<meta name="author" content="马背岭，Horseback">
+	<meta name="description" content="由从事质量十年的一个专业职业人创建，主要是为了解决自己频繁试用各种最新工具而建，目的在于减少自己的搜索量，直达工具在线使用页面或者下载页面。收集了目前各个领域里的最好工具，方便自己的同时，方便所有互联网的使用者" />
+	<base target="_blank">
+	<!--根据硬件设备尺寸获取自适应屏幕小-->
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!--根据移动设备自动跳转到相应的移动网站-->
+	<!--用户可方便地通过 Windows 启动磁贴来查找和固定您的网页-->
+	<meta name="msapplication-TileColor" content="#123456" />
+	<meta name="msapplication-square150x150logo" content="square.png" />
+
+	<title>Tool321_专注生产力和效率工具</title>
+	<link href="/css/style_css.css" rel="stylesheet" type="text/css">
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<!--<link href="../css/style_css.css" rel="stylesheet" type="text/css">-->
+
+	<!-- jQuery -->
+	<script src="http://code.jquery.com/jquery-2.2.0.js" type="text/javascript"></script>
+	<!-- SmartMenus jQuery plugin
+		<script src="/script/jquery.smartmenus.js" type="text/javascript"></script>
+		<!-- SmartMenus jQuery init
+		<script type="text/javascript">
+			$(function() {
+				$('#main-menu').smartmenus({
+					subMenusSubOffsetX: 1,
+					subMenusSubOffsetY: -8
+				});
+			});
+		</script>
+ -->
+	<!-- 新 Bootstrap 核心 CSS 文件 -->
+	<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+	<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+	<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+	<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+
+	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+	<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<!-- SmartMenus core CSS (required) -->
+	<!--<link href="../css/smart_menu_css/sm-core-css.css" rel="stylesheet" type="text/css">-->
+	<!--<link href="../css/smart_menu_css/sm-blue/sm-blue.css" rel="stylesheet" type="text/css">-->
+	<!-- "sm-blue" menu theme (optional, you can use your own CSS, too) -->
+
+	<!--Growing I/O-->
+	<script type='text/javascript'>
+		var _vds = _vds || [];
+		window._vds = _vds;
+		(function () {
+			_vds.push(['setAccountId', 'b60421688f19e848']);
+			(function () {
+				var vds = document.createElement('script');
+				vds.type = 'text/javascript';
+				vds.async = true;
+				vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(vds, s);
+			})();
+		})();
+	</script>
+	<!-- Growing I/O -->
+	<!--	sina openAPI js-->
+	<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=3338588483" type="text/javascript" charset="utf-8"></script>
+	<!--debug mode-->
+	<!--<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=YOUR APPKEY&debug=true" type="text/javascript" charset="utf-8"></script>-->
 </head>
 
 <body>
-<div id="wrapper">
-  <header>
-    <!--Weather Plug  http://cj.weather.com.cn  -->
-    <div id="header">
-      <div style="float:left">
-        <h2 style="margin:0; padding:0;"><a style=" text-decoration:none;" href="http://www.tool321.com">Tool<span style="color:red">3</span><span style="color:#FFEB63">2</span><span style="color:blue">1</span>.com</a></h2>
-        <h6><a href="../../c/record.html">Beta V0.33.0.0</a></h6>
-        <h6><a href="http://www.tool321.com">中</a>/<a href="../../c/en/index.html">En</a></h6>
-        <h5 style="margin:0; padding:0;">一个专注生产力和效率工具的导航网站</h5>
-      </div>
-      <div style="width:30%" id="weather">
-        <script type="text/javascript" src="http://ext.weather.com.cn/101494.js"></script>
-      </div>
-      <div style="width:40%" id="right_header">
-        <li class="horizontal"><a href="http://blog.sina.com.cn/tool321">帮助beta</a></li>
-        <li class="horizontal"><a href="#">换肤beta</a></li>
-        <li class="horizontal"><a href="../../c/login.php">登陆beta</a></li>
-        <li class="horizontal"><a href="http://www.hao123.com/redian/sheshouyef.htm" target="_blank">设为主页</a></li>
-        <li class="horizontal"><a href="http://hao.360.cn/iexiufu360xiufu.html">主页修复</a></li>
-        <li class="horizontal"><a href="http://www.51wnl.com/" target="_blank">万年历</a></li>
-      </div>
-    </div>
-  </header>
 
-  <!--Header start here--><!--Header end here  -->
-<!--Section Baidu Start here-->
-<section id="Baidu">
-<script type="text/javascript">(function(){document.write(unescape('%3Cdiv id="bdcs"%3E%3C/div%3E'));
-var bdcs = document.createElement('script');
-bdcs.type = 'text/javascript';
-bdcs.async = true;bdcs.src = 'http://znsv.baidu.com/customer_search/api/js?sid=8864642521338909810' + '&plate_url=' + encodeURIComponent(window.location.href) + '&t=' + Math.ceil(new Date()/3600000);
-var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(bdcs, s);})();
-</script>
+	<div class="container-fluid">
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="/index.html">Tool<span style="color:red">3</span><span style="color:#FFEB63">2</span><span style="color:blue">1</span>.com&nbsp;&nbsp;<span class="small">Beta V0.54</span></a>
+				</div>
 
-<form  onsubmit="return baiduWithHttps(this)" action="http://www.baidu.com/baidu" target="_blank" >
-    <input name="tn" type="hidden" value="SE_zzsearchcode_shhzc78w">
-    <a href="https://www.baidu.com/" target="_blank">
-        <img src="https://www.baidu.com/img/baidu_jgylogo3.gif" alt="Baidu" align="center" border="0">
-    </a>
-    
-    <input type="text"  onfocus="checkHttps" name="word"  size="80"  height="large">
-    <input type="submit" value="百度搜索" width="20%">
-</form>
-
-<script src="http://s1.bdstatic.com/r/www/cache/global/js/BaiduHttps_20150714_zhanzhang.js"></script>
-<script>
-    function checkHttps () {
-        BaiduHttps.useHttps();    
-    };
-    function baiduWithHttps (formname) {
-        var data = BaiduHttps.useHttps();
-        if (data.s === 0) {
-            return true;
-        }
-        else {
-            formname.action = 'https://www.baidu.com/baidu' + '?ssl_s=1&ssl_c' + data.ssl_code;
-            return true;
-        }
-    };
-</script>
-
-</section>
-
-<!--Section Baidu End here -->
-
-<!--Section DesignLibrary start here-->
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="active">
+							<script type="text/javascript" src="http://ext.weather.com.cn/101494.js"></script>
+						</li>
+					</ul>
 
 
 
-<!--Section Office Start here-->
- <section id="office">
-   <table>
-     <caption>
-     互联网入口-搜索引擎大全
-     </caption>
-     <tbody>
-       <tr>
-         <th width="23" scope="col">No.</th>
-         <th width="78" scope="col">更多</th>
-         <th width="78" scope="col">Class</th>
-         <th width="145" scope="col"><a href="https://products.office.com/products" target="_blank">Microsoft      </a></th>
-         <th width="89" scope="col">Top1</th>
-         <th width="64" scope="col">Top2</th>
-         <th width="80" scope="col">Top3</th>
-         <th width="70" scope="col">Top4</th>
-         <th width="67" scope="col">Top5</th>
-         <th width="83" scope="col">Top6</th>
-         <th width="105" scope="col">Top7</th>
-         <th width="105" scope="col">Top8</th>
-        </tr>
-       <tr>
-         <th scope="row">1</th>
-         <td><a href="http://www.sowang.com" target="_blank" class="cellhightlight">搜索网址大全</a></td>
-         <td>综合搜索</td>
-         <td><a href="http://cn.bing.com" target="_blank">必应</a></td>
-         <td><a href="http://www.baidu.com" target="_blank">百度</a></td>
-         <td><a href="http://www.haosou.com" target="_blank">360好搜</a><a href="http://www.google.com" target="_blank"></a></td>
-         <td><a href="http://www.chinaso.com" target="_blank">中国搜索</a></td>
-         <td><a href="http://www.youdao.com" target="_blank">有道搜索</a></td>
-         <td><a href="https://www.sogou.com" target="_blank">搜狗</a><a href="http://www.youdao.com" target="_blank"></a></td>
-         <td class="cellhightlight"><a href="http://www.dmoz.org" target="_blank">Dmoz人工目录</a></td>
-         <td><a href="http://so.chongbuluo.com/" class="cellhightlight">虫部落·快搜</a></td>
-         <td><a href="http://www.googto.com" target="_blank">Gooto搜索</a></td>
-        </tr>
-       <tr>
-         <th scope="row">&nbsp;</th>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td><a href="http://www.bing.com" target="_blank">Bing </a></td>
-         <td><a href="http://www.google.com" target="_blank">Google</a><a href="http://xueshu.baidu.com" target="_blank"></a></td>
-         <td><a href="https://www.yandex.ru" target="_blank">俄Yandex</a></td>
-         <td><a href="https://sg.search.yahoo.com" target="_blank">Yahoo</a><a href="https://www.sogou.com" target="_blank"></a></td>
-         <td>韩<a href="http://www.naver.com/" target="_blank">Naver</a></td>
-         <td><a href="http://www.ask.com/" target="_blank">美Ask.com</a></td>
-         <td><a href="http://www.looksmart.com/" target="_blank" class="cellhightlight">美目录looksmart</a></td>
-         <td><a href="http://www.itechzero.com/">Techzero</a></td>
-         <td><a href="http://www.douban.com" target="_blank"></a></td>
-       </tr>
-       <tr>
-         <th scope="row">2</th>
-         <td>&nbsp;</td>
-         <td>图片</td>
-         <td><a href="http://cn.bing.com/images" target="_blank">Bing imag</a></td>
-         <td><a href="http://stu.baidu.com" target="_blank">百度识图</a></td>
-         <td><a href="http://image.baidu.com" target="_blank">百度图片</a></td>
-         <td><a href="http://images.google.com" target="_blank">谷歌图片</a></td>
-         <td><a href="http://pic.sogou.com" target="_blank">搜狗图片</a></td>
-         <td><a href="http://image.haosou.com" target="_blank">好搜图片</a></td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-        </tr>
-       <tr>
-         <th scope="row">3</th>
-         <td>&nbsp;</td>
-         <td>地图</td>
-         <td><a href="http://cn.bing.com/ditu/" target="_blank">必应地图</a></td>
-         <td><a href="http://www.google.cn/maps" target="_blank">谷歌地图</a></td>
-         <td><a href="http://map.baidu.com" target="_blank">百度地图</a></td>
-         <td><a href="http://map.sogou.com" target="_blank">搜狗地图</a></td>
-         <td><a href="http://map.amap.com" target="_blank">高德地图</a></td>
-         <td><a href="http://map.qq.com" target="_blank">腾讯地图</a></td>
-         <td><a href="http://www.mapbar.com" target="_blank">图吧地图</a></td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-       </tr>
-       <tr>
-         <th scope="row">&nbsp;</th>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td><a href="http://earth.google.com" target="_blank">谷歌地球</a></td>
-         <td><a href="http://www.o.cn" target="_blank" class="cellhightlight">都市圈3D城市地图</a></td>
-         <td><a href="http://www.edushi.com/mapcity.html" target="_blank">E都市3D地图</a></td>
-         <td><a href="http://ditu.city8.com" target="_blank">城市吧街景</a></td>
-         <td><a href="http://www.tianditu.com" target="_blank">天地图</a></td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-       </tr>
-       <tr>
-         <th scope="row">4</th>
-         <td>&nbsp;</td>
-         <td>网盘</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td><a href="http://www.xilinjie.com" target="_blank">西林街</a></td>
-         <td><a href="http://so.baiduyun.me" target="_blank">百度网盘搜</a></td>
-         <td><a href="http://www.zhaofile.com" target="_blank">找文件</a></td>
-         <td><a href="http://www.wangpansou.cn" target="_blank">网盘搜索</a></td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-       </tr>
-       <tr>
-         <th scope="row">5</th>
-         <td>&nbsp;</td>
-         <td>FTP</td>
-         <td>&nbsp;</td>
-         <td><a href="http://grid.ustc.edu.cn" target="_blank">Grid FTP</a></td>
-         <td><a href="http://search.ipcn.org" target="_blank">IPCN教育网FTP</a></td>
-         <td><a href="http://maze.tianwang.com" target="_blank">北大天网搜索</a></td>
-         <td><a href="http://www.filesearching.com" target="_blank">Filesearching</a></td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-       </tr>
-       <tr>
-         <th scope="row">&nbsp;</th>
-         <td>&nbsp;</td>
-         <td>BT</td>
-         <td>&nbsp;</td>
-         <td><a href="http://www.btfuli.com/">BT福利</a></td>
-         <td>VeryCD</td>
-         <td><a href="http://thepiratebay.se/">海盗湾bt</a></td>
-         <td><a href="https://kat.cr/">kat.cr(Alexa:77)</a></td>
-         <td><a href="Torrentz.eu">Torrentz.eu</a></td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-       </tr>
-       <tr>
-         <th scope="row">&nbsp;</th>
-         <td>&nbsp;</td>
-         <td>百科</td>
-         <td>&nbsp;</td>
-         <td><a href="http://baike.baidu.com" target="_blank">百度百科</a></td>
-         <td><a href="http://zh.wikipedia.org" target="_blank">维基百科</a></td>
-         <td><a href="https://www.wikipedia.org" target="_blank">Wikipedia</a></td>
-         <td><a href="http://www.baike.com" target="_blank">互动百科</a></td>
-         <td><a href="http://baike.haosou.com" target="_blank">好搜百科</a></td>
-         <td><a href="http://wiki.mbalib.com" target="_blank">MBA智库百科</a></td>
-         <td><a href="http://baike.sogou.com" target="_blank">搜狗百科</a></td>
-         <td><a href="http://baike.chinaso.com" target="_blank">国搜百科</a></td>
-       </tr>
-       <tr>
-         <th scope="row">&nbsp;</th>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td><a href="http://www.a-hospital.com" target="_blank" class="cellhightlight">A+医学百科</a></td>
-         <td><a href="http://plato.stanford.edu" target="_blank" class="cellhightlight">Stanford Encyclopedia of Philosophy</a></td>
-         <td><a href="https://www.wikimedia.org/" target="_blank" class="cellhightlight">Wikimedia</a></td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-       </tr>
-       <tr>
-         <th scope="row">&nbsp;</th>
-         <td>&nbsp;</td>
-         <td>问答</td>
-         <td>&nbsp;</td>
-         <td><a href="http://zhidao.baidu.com/">百度知道</a></td>
-         <td><a href="https://www.zhihu.com/">知乎</a></td>
-         <td><a href="https://www.quora.com/">Quora</a></td>
-         <td><a href="http://stackoverflow.com">stackoverflow</a></td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-       </tr>
-       <tr>
-         <th scope="row">6</th>
-         <td>&nbsp;</td>
-         <td>学术</td>
-         <td>&nbsp;</td>
-         <td><a href="http://xueshu.baidu.com" target="_blank">百度学术</a></td>
-         <td><a href="http://scholar.google.com" target="_blank">Google Scholar</a></td>
-         <td><a href="http://scholar.cnki.net" target="_blank">中国知网CNKI</a></td>
-         <td><a href="http://www.sciinfo.cn" target="_blank">万方学术搜索</a></td>
-         <td><a href="http://xueshu.haosou.com" target="_blank">好搜学术</a></td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-        </tr>
-       <tr>
-         <th scope="row">&nbsp;</th>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td><a href="http://lib.mayiso.com/e/action/ShowInfo.php?classid=51&id=700" target="_blank">中文所有数据库入口</a></td>
-         <td><a href="http://lib.mayiso.com/e/action/ShowInfo.php?classid=52&id=701" target="_blank">西文所有数据库入口</a></td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-       </tr>
-       <tr>
-         <th scope="row">7</th>
-         <td>&nbsp;</td>
-         <td>书目</td>
-         <td>&nbsp;</td>
-         <td><a href="http://www.douban.com" target="_blank">豆瓣</a></td>
-         <td><a href="../../class/books.google.com" target="_blank">谷歌图书</a></td>
-         <td><a href="http://www.nlc.gov.cn" target="_blank">中国国家图书馆</a></td>
-         <td><a href="http://www.loc.gov" target="_blank">美国国家图书馆</a></td>
-         <td><a href="http://library.ust.hk" target="_blank">香港科技大学图书馆</a></td>
-         <td><a href="https://sc.lcsd.gov.hk" target="_blank">香港公共图书馆</a></td>
-         <td><a href="http://www.duxiu.com" target="_blank">读秀</a></td>
-         <td><a href="http://www.lib.cuhk.edu.hk" target="_blank">港中大图书馆</a></td>
-        </tr>
-       <tr>
-         <th scope="row">8</th>
-         <td><a href="http://www.soopat.com.cn/" target="_blank">&gt;&gt;</a></td>
-         <td>专利</td>
-         <td><a href="http://www.soopat.com.cn/" target="_blank" class="cellhightlight">Soopat专利导航</a></td>
-         <td><a href="http://www.pss-system.gov.cn" target="_blank"><strong>中国专利检索</strong></a></td>
-         <td><a href="http://www.uspto.gov/patent" target="_blank">美国专利检索</a></td>
-         <td><a href="http://www.epo.org/searching.html" target="_blank">欧洲专利</a></td>
-         <td><a href="http://www.jpo.go.jp/" target="_blank">日本专利</a></td>
-         <td><a href="http://www.ipindia.nic.in/" title="暂时打不开" target="_blank"><strong>印度专利</strong></a></td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-        </tr>
-       <tr>
-         <th scope="row">9</th>
-         <td>&nbsp;</td>
-         <td>商标</td>
-         <td>&nbsp;</td>
-         <td><a href="http://sbj.saic.gov.cn/sbcx/" target="_blank"><strong>商标查询</strong></a></td>
-         <td><a href="http://www.uspto.gov/trademark" target="_blank">美国商标</a></td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-       </tr>
-       <tr>
-         <th scope="row">10</th>
-         <td>&nbsp;</td>
-         <td>购物</td>
-         <td><a href="http://www.etao.com" target="_blank">一淘比价</a></td>
-         <td><a href="http://www.taobao.com" target="_blank">淘宝</a></td>
-         <td><a href="http://www.jd.com" target="_blank">京东</a></td>
-         <td><a href="http://www.alibaba.cn" target="_blank">阿里巴巴</a></td>
-         <td><a href="http://www.amazon.cn" target="_blank">亚马逊</a></td>
-         <td><a href="http://www.dangdang.com" target="_blank">当当</a></td>
-         <td><a href="https://www.tmall.com" target="_blank">天猫</a></td>
-         <td><p><a href="http://www.amazon.com" target="_blank">Amazon</a></p></td>
-         <td><a href="http://www.ebay.com/" target="_blank">ebay</a></td>
-        </tr>
-       <tr>
-         <th scope="row">&nbsp;</th>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>团购</td>
-         <td><a href="http://www.nuomi.com" target="_blank">百度糯米</a></td>
-         <td><a href="http://www.meituan.com" target="_blank">美团</a></td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-       </tr>
-       <tr>
-         <th scope="row">&nbsp;</th>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td><a href="http://www.suning.com" target="_blank">苏宁易购</a></td>
-         <td><a href="http://www.gome.com.cn" target="_blank">国美在线</a></td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-       </tr>
-       <tr>
-         <th scope="row">&nbsp;</th>
-         <td>&nbsp;</td>
-         <td>本机搜索</td>
-         <td><a href="http://cn.bing.com/clientdownload/bingbar" target="_blank">必应工具栏</a></td>
-         <td><a href="http://zhuomian.baidu.com" target="_blank">百度桌面</a></td>
-         <td><a href="http://bar.baidu.com" target="_blank">百度工具栏</a></td>
-         <td><a href="http://toolbar.google.com/" target="_blank">谷歌工具栏</a></td>
-         <td><a href="http://www.alexa.com/toolbar" target="_blank">Alexa工具栏</a></td>
-         <td><a href="http://toolbar.youdao.com" target="_blank">有道工具栏</a></td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-       </tr>
-       <tr>
-         <th scope="row">&nbsp;</th>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td><a href="http://www.voidtools.com/" target="_blank">voidtools</a></td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-       </tr>
-       <tr>
-         <th scope="row">11</th>
-         <td>&nbsp;</td>
-         <td>微信搜索</td>
-         <td>&nbsp;</td>
-         <td><a href="http://weixin.sogou.com" target="_blank">搜狗微信</a></td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-        </tr>
-       <tr>
-         <th scope="row">&nbsp;</th>
-         <td>&nbsp;</td>
-         <td>人才搜索</td>
-         <td>&nbsp;</td>
-         <td><a href="http://zhaopin.baidu.com/" target="_blank" class="cellhightlight">百度招聘</a></td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-        </tr>
-       <tr>
-         <th scope="row">0</th>
-         <td>&nbsp;</td>
-         <td><a href="http://news.xinhuanet.com/newmedia/2010-04/23/c_1251441.htm" target="_blank">搜索技巧培训</a></td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-       </tr>
-       <tr>
-         <th scope="row">&nbsp;</th>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-        </tr>
-       <tr>
-         <th scope="row">&nbsp;</th>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-        </tr>
-     </tbody>
-   </table>
- </section>
- 
- <section>
- <div align="center">
- <p>搜索引擎排名</p>
- <div id="search_engine-CN-monthly-201411-201511-bar" width="600" height="400" style="width:600px; height: 400px;"></div><!-- You may change the values of width and height above to resize the chart --><p>Source: <a href="http://gs.statcounter.com/#search_engine-CN-monthly-201411-201511-bar">StatCounter Global Stats - Search Engine Market Share</a></p><script type="text/javascript" src="http://www.statcounter.com/js/fusioncharts.js"></script><script type="text/javascript" src="http://gs.statcounter.com/chart.php?search_engine-CN-monthly-201411-201511-bar"></script>
- </div>
- </section>
- <footer> <!--QUALIFICAITON INFORMATION-->
-   <div id="footer">
-     <ul>
-       <li><a href="../../c/about.html" target="_blank">关于</a></li>
-       <li><a href="../../c/siteassetlibrary.html" target="_blank">网站设计财富库</a></li>
-       <li><a href="../../c/wordpress/index.php" target="_blank"> 个人博客 </a></li>
-     </ul>
-     <ul>
-       <li>&copy;Copyright Reserved 引用请注明来自tool321.com</li>
-       <li>Author:Horseback</li>
-       <li>QQ:1415948426</li>
-       <li><a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=qNzHx8Sbmpno2dmGy8fF" style="text-decoration:none;">意见反馈</a></li>
-       <li><a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=qNzHx8Sbmpno2dmGy8fF" style="text-decoration:none;">提交登录或者定制</a></li>
-       <li>
-         <!-- #BeginDate format:IS1m -->2016-02-26  15:58<!-- #EndDate -->
-       </li>
-       <li>
-         <!--CNZZ统计-->
-         <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1257102666'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1257102666%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
-       </li>
-     </ul>
-     <ul>
-       <a href="http://www.miibeian.gov.cn" target="_blank">粤ICP备15117589号</a>
-     </ul>
-   </div>
- </footer>
- 
- <!--Section Office End here-->
- 
- <!--Section Plateform start here-->
-<!--Plateform End here--></div>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="/cn/i/statisticsdata.html"><span class="glyphicon glyphicon-stats" aria-hidden="true">&nbsp;</span>趋势·统计数据</a></li>
+						<li>
+							<a href="">
+								<wb:login-button type="5,5" onlogin="login" onlogout="logout">登陆</wb:login-button>
+							</a>
+						</li>
+
+						<script>
+							function login(o) {
+								alert(o.screen_name)
+							}
+
+							function logout() {
+								alert('logout');
+							}
+						</script>
+						<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user" aria-hidden="true">&nbsp;</span>个人类型<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="">体育迷</a></li>
+								<li><a href="#">自由职业者</a></li>
+								<li><a href="#">摄影爱好者</a></li>
+								<li><a href="/cn/r/traveler.html">旅行爱好者</a></li>
+								<li><a href="/cn/r/musicfans.html">音乐发烧友</a></li>
+								<li><a href="/cn/r/hr.html">求职者</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="#">学生</a></li>
+								<li><a href="http://www.AIESEC.org">青年志愿者</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="/about.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-info-sign" aria-hidden="true">&nbsp;</span>关于<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="/wordpress/">博客</a></li>
+								<li><a href="http://weibo.com/tool321">微博</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="/about.html">关于</a></li>
+							</ul>
+						</li>
+						<li><a href="/en/index.html"><span class="label label-lg label-danger">英文版</span></a></li>
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!--/.container-fluid -->
+		</nav>
+
+		<div class="row">
+			<!--			<div class="col-lg-1 visible-lg"></div>-->
+			<div class="col-md-3">
+				<!--				<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">-->
+				<div class="list-group">
+					<a href="#" class="list-group-item active"><span class="glyphicon glyphicon-th-list" aria-hidden="true">&nbsp;</span>NEW·新上线工具页面</a>
+					<a href="/cn/r/siteassetlibrary.html" class="list-group-item">站长工具</a>
+					<a href="/cn/i/thinktank.html" class="list-group-item">TOP全球智库-中国智库</a>
+					<a href="/cn/r/systemmanager.html" class="list-group-item">系统管理员工具</a>
+					<a href="/cn/r/quality.html" class="list-group-item">质量工程师工具</a>
+					<a href="/cn/r/hr.html" class="list-group-item">HR-人力资源工具</a>
+					<a href="/cn/r/uidesigner.html" class="list-group-item">前端设计师</a>
+					<a href="/cn/r/tester.html" class="list-group-item">测试工程师</a>
+					<a href="/cn/i/informationtechnology.html" class="list-group-item">IT行业</a>
+					<a href="http://pm123.itfarmer.com.cn/" class="list-group-item">产品经理</a>
+				</div>
+
+				<!--				</div>-->
+
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title"><span class="glyphicon glyphicon-fire" aria-hidden="true">&nbsp;</span>一周热门工具</h3>
+					</div>
+					<div class="panel-body">
+						<div class="caption">
+							<h3>初创公司工具</h3>
+							<p>可能是国内第一个初创公司工具导航页面，辑录适用于国内的初创公司工具，云时代增进你的创新力和效率，专注客户品质和市场增长。</p>
+							<p><a href="/cn/i/starup.html" class="btn btn-primary" role="button">Go</a> <a href="#" class="btn btn-default" role="button">Read More</a></p>
+						</div>
+						<div class="caption">
+							<h3>PDF神器：Smallpdf</h3>
+							<p>PDF工具中的开源免费“瑞士军刀”，PDF转Word，Excel，PPT，100%无损转换，破解，合并，分割PDF一站俱全。</p>
+							<p><a href="http://www.smallpdf.com" class="btn btn-primary" role="button">Go</a> <a href="http://www.tool321.com/wordpress/2016/01/06/%E6%9C%80%E5%A5%BD%E7%9A%84pdf%E5%9C%A8%E7%BA%BF%E6%97%A0%E6%8D%9F%E8%BD%AC%E6%8D%A2%E5%85%8D%E8%B4%B9%E5%B7%A5%E5%85%B7smallpdf/" class="btn btn-default" role="button">评测报告</a></p>
+						</div>
+						<div class="caption">
+							<h3>亿方云-企业文件管理专家</h3>
+							<p>文件管理-团队协作-移动办公-安全保障-后台管理,支持100＋种格式的文件在线预览,包括常见办公文件以及PSD、DWG、AI等专业文件。</p>
+							<p><a href="#" class="btn btn-primary" role="button">Go</a></p>
+						</div>
+						<div class="caption">
+							<h3>自助旅行，说走就走：世界各国旅行官方旅游网站导航</h3>
+							<p>Tool321汇集世界各国官方的旅游网站及在线自助签证网址导航，来一场说走就走的旅行，世界不大，就在脚下。</p>
+							<p><a href="/cn/r/traveler.html" class="btn btn-primary" role="button">Go</a> </p>
+						</div>
+					</div>
+				</div>
+				<!--weibo -->
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title"><span class="glyphicon glyphicon-fire" aria-hidden="true">&nbsp;</span>微博实时</h3>
+					</div>
+					<div class="panel-body">
+						<iframe width="100%" height="550" class="share_self" frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=1&ptype=1&speed=0&skin=5&isTitle=0&noborder=0&isWeibo=1&isFans=0&uid=5821029838&verifier=df3373a9&dpc=1"></iframe>
+					</div>
+				</div>
+				<!--weibo	-->
+			</div>
+			<div class="col-md-9">
+				<!--			热站-->
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title"><span class="glyphicon glyphicon-hand-right" aria-hidden="true">&nbsp;</span>热站</h3>
+					</div>
+					<div class="panel-body">
+						<table class="table table-striped table-condensed">
+							<tbody>
+								<tr class="active">
+									<td><a href="https://www.baidu.com" target="_blank">百度</a>&#8226;<a href="http://www.zhihu.com" target="_blank">知乎</a></td>
+									<td>
+										<a href="https://www.taobao.com" target="_blank"><img src="http://www.taobao.com/favicon.ico" alt="" width="16" height="16">淘宝</a>&#8226;<a href="http://www.jd.com" target="_blank">京东</a></td>
+									<td>
+										<a href="http://www.sina.com.cn" target="_blank"><img src="http://www.sina.com.cn/favicon.ico" alt="sina" width="16" height="16">新浪</a>&#8226;<a href="http://www.weibo.com" target="_blank">微博</a></td>
+									<td><a href="http://www.qq.com" target="_blank">腾讯</a><a href="http://www.163.com" target="_blank">&#8226;网易</a></td>
+									<td><a href="http://www.sohu.com" target="_blank">搜狐</a></td>
+								</tr>
+								<tr class="success">
+									<td><a href="http://www.youku.com" target="_blank">优酷</a>&#8226;<a href="http://www.iqiyi.com" target="_blank">爱奇艺</a></td>
+									<td>
+										<a href="https://www.tmall.com"><img src="http://www.tmall.com/favicon.ico" alt="sina" width="16" height="16">天猫&#8226;</a><a href="http://www.toolmall.com" target="_blank">土猫网</a></td>
+									<td><a href="http://www.ctrip.com" target="_blank">携程</a>&#8226;<a href="http://www.qunar.com" target="_blank">去哪儿</a></td>
+									<td><a href="http://www.eastmoney.com" target="_blank">东方财富</a>&#8226;<a href="http://www.hao123.com/bank" target="_blank">银行</a></td>
+									<td>
+										<a href="https://www.hao123.com" target="_blank"><img src="http://www.hao123.com/favicon.ico" alt="hao123" width="16" height="16">Hao123</a>
+									</td>
+								</tr>
+								<tr class="warning">
+									<td><a href="http://www.58.com" target="_blank">58同城</a>&#8226;<a href="http://www.ganji.com" target="_blank">赶集</a></td>
+									<td><a href="<http://www.itjuzi.com" target="_blank">IT橙子</a>&#8226;<a href="http://www.36kr.com">36氪</a></td>
+									<td><a href="http://www.tudou.com" target="_blank">土豆网</a>&#8226;<a href="http://www.renren.com" target="_blank">人人网</a></td>
+									<td><a href="http://www.xinhuanet.com" target="_blank">新华</a>&#8226;<a href="http://www.people.com.cn" target="_blank">人民</a></td>
+									<td><a href="http://www.autohome.com.cn" target="_blank">汽车之家</a></td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="jumbotron">
+							<h3><a href="http://www.tool321.com/wordpress/2016/03/19/%e6%88%91%e6%98%af%e8%8b%b9%e6%9e%9c%e8%81%94%e5%90%88%e5%88%9b%e5%a7%8b%e4%ba%ba%ef%bc%8c%e9%97%ae%e6%88%91%e4%b8%80%e5%88%87%e4%bd%a0%e6%83%b3%e9%97%ae%e7%9a%84/">我是苹果联合创始人史蒂夫·沃兹尼亚克，问我一切你想问的</a></h3>
+							<p>苹果联合创始人史蒂夫·沃兹尼亚克(Steve Wozniak)2016年3月17日在Reddit发起“什么都能问”的活动。</p>
+							<ul class="list-unstyled">
+								<li>Q:1985年离开苹果之后是否还允许去苹果？</li>
+								<li>Q:如何看待近期FBI与苹果的审判？</li>
+								<li>Q:一生中最有趣的恶作剧是哪个？</li>
+								<li>Q:...</li>
+							</ul>
+
+						</div>
+					</div>
+				</div>
+				<!--				热站-->
+
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title"><span class="glyphicon glyphicon-star" aria-hidden="true">&nbsp;</span>选择您感兴趣的领域</h3>
+					</div>
+					<div class="panel-body">
+						<!-- Split button -->
+						<div class="btn-group">
+							<button type="button" class="btn btn-info">行业领域</button>
+							<button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<span class="caret"></span>
+								<span class="sr-only">Toggle Dropdown</span>
+							</button>
+							<ul class="dropdown-menu">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="#">Separated link</a></li>
+							</ul>
+						</div>
+						<div class="btn-group">
+							<button type="button" class="btn btn-success">职业领域</button>
+							<button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<span class="caret"></span>
+								<span class="sr-only">Toggle Dropdown</span>
+							</button>
+							<ul class="dropdown-menu">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="#">Separated link</a></li>
+							</ul>
+						</div>
+						<div class="btn-group">
+							<button type="button" class="btn btn-warning">公司类型</button>
+							<button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<span class="caret"></span>
+								<span class="sr-only">Toggle Dropdown</span>
+							</button>
+							<ul class="dropdown-menu">
+								<li><a href="#">初创公司</a></li>
+								<li><a href="#">成长型公司</a></li>
+								<li><a href="#">变革型公司</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="#">公司分类标准</a></li>
+							</ul>
+						</div>
+						<div class="btn-group">
+							<button type="button" class="btn btn-danger">新概念领域</button>
+							<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<span class="caret"></span>
+								<span class="sr-only">Toggle Dropdown</span>
+							</button>
+							<ul class="dropdown-menu">
+								<li><a href="/cn/i/industry4.0.html">工业4.0/中国制造2025</a></li>
+								<li><a href="/link.html">物联网</a></li>
+								<li><a href="/link.html">人工智能</a></li>
+								<li><a href="/link.html">量子计算</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="/link.html">大数据</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="#">One mre separated link</a></li>
+							</ul>
+						</div>
+
+						<!--	百度-->
+						<div class="btn-group">
+
+							<!--		-->
+
+							<form class="navbar-form navbar-left" role="search" onsubmit="return baiduWithHttps(this)" action="http://www.baidu.com/baidu" target="_blank">
+								<div class="form-group">
+									<input name="tn" type="hidden" value="SE_zzsearchcode_shhzc78w">
+									<input type="text" onfocus="checkHttps" name="word" size="60">
+								</div>
+								<button type="submit" class="btn btn-default">百度一下</button>
+							</form>
+							<script type="text/javascript">
+								(function () {
+									document.write(unescape('%3Cdiv id="bdcs"%3E%3C/div%3E'));
+									var bdcs = document.createElement('script');
+									bdcs.type = 'text/javascript';
+									bdcs.async = true;
+									bdcs.src = 'http://znsv.baidu.com/customer_search/api/js?sid=8864642521338909810' + '&plate_url=' + encodeURIComponent(window.location.href) + '&t=' + Math.ceil(new Date() / 3600000);
+									var s = document.getElementsByTagName('script')[0];
+									s.parentNode.insertBefore(bdcs, s);
+								})();
+							</script>
+						</div>
+
+						<!--		百度-->
+
+					</div>
+				</div>
+
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title"><span class="glyphicon glyphicon-print" aria-hidden="true">&nbsp;</span>互联网入口-搜索引擎大全</h3>
+					</div>
+					<div class="panel-body">
+						<table>
+							<caption>
+							</caption>
+							<tbody>
+								<tr>
+									<th width="23" scope="col">No.</th>
+									<th width="78" scope="col">更多</th>
+									<th width="78" scope="col">Class</th>
+									<th width="145" scope="col"><a href="https://products.office.com/products" target="_blank">Microsoft      </a></th>
+									<th width="89" scope="col">Top1</th>
+									<th width="64" scope="col">Top2</th>
+									<th width="80" scope="col">Top3</th>
+									<th width="70" scope="col">Top4</th>
+									<th width="67" scope="col">Top5</th>
+									<th width="83" scope="col">Top6</th>
+									<th width="105" scope="col">Top7</th>
+									<th width="105" scope="col">Top8</th>
+								</tr>
+								<tr>
+									<th scope="row">1</th>
+									<td><a href="http://www.sowang.com" target="_blank" class="cellhightlight">搜索网址大全</a></td>
+									<td>综合搜索</td>
+									<td><a href="http://cn.bing.com" target="_blank">必应</a></td>
+									<td><a href="http://www.baidu.com" target="_blank">百度</a></td>
+									<td><a href="http://www.haosou.com" target="_blank">360好搜</a>
+										<a href="http://www.google.com" target="_blank"></a>
+									</td>
+									<td><a href="http://www.chinaso.com" target="_blank">中国搜索</a></td>
+									<td><a href="http://www.youdao.com" target="_blank">有道搜索</a></td>
+									<td><a href="https://www.sogou.com" target="_blank">搜狗</a>
+										<a href="http://www.youdao.com" target="_blank"></a>
+									</td>
+									<td class="cellhightlight"><a href="http://www.dmoz.org" target="_blank">Dmoz人工目录</a></td>
+									<td><a href="http://so.chongbuluo.com/" class="cellhightlight">虫部落·快搜</a></td>
+									<td><a href="http://www.googto.com" target="_blank">Gooto搜索</a></td>
+								</tr>
+								<tr>
+									<th scope="row">&nbsp;</th>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td><a href="http://www.bing.com" target="_blank">Bing </a></td>
+									<td><a href="http://www.google.com" target="_blank">Google</a>
+										<a href="http://xueshu.baidu.com" target="_blank"></a>
+									</td>
+									<td><a href="https://www.yandex.ru" target="_blank">俄Yandex</a></td>
+									<td><a href="https://sg.search.yahoo.com" target="_blank">Yahoo</a>
+										<a href="https://www.sogou.com" target="_blank"></a>
+									</td>
+									<td>韩<a href="http://www.naver.com/" target="_blank">Naver</a></td>
+									<td><a href="http://www.ask.com/" target="_blank">美Ask.com</a></td>
+									<td><a href="http://www.looksmart.com/" target="_blank" class="cellhightlight">美目录looksmart</a></td>
+									<td><a href="http://www.itechzero.com/">Techzero</a></td>
+									<td>
+										<a href="http://www.douban.com" target="_blank"></a>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">2</th>
+									<td>&nbsp;</td>
+									<td>图片</td>
+									<td><a href="http://cn.bing.com/images" target="_blank">Bing imag</a></td>
+									<td><a href="http://stu.baidu.com" target="_blank">百度识图</a></td>
+									<td><a href="http://image.baidu.com" target="_blank">百度图片</a></td>
+									<td><a href="http://images.google.com" target="_blank">谷歌图片</a></td>
+									<td><a href="http://pic.sogou.com" target="_blank">搜狗图片</a></td>
+									<td><a href="http://image.haosou.com" target="_blank">好搜图片</a></td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+								</tr>
+								<tr>
+									<th scope="row">3</th>
+									<td>&nbsp;</td>
+									<td>地图</td>
+									<td><a href="http://cn.bing.com/ditu/" target="_blank">必应地图</a></td>
+									<td><a href="http://www.google.cn/maps" target="_blank">谷歌地图</a></td>
+									<td><a href="http://map.baidu.com" target="_blank">百度地图</a></td>
+									<td><a href="http://map.sogou.com" target="_blank">搜狗地图</a></td>
+									<td><a href="http://map.amap.com" target="_blank">高德地图</a></td>
+									<td><a href="http://map.qq.com" target="_blank">腾讯地图</a></td>
+									<td><a href="http://www.mapbar.com" target="_blank">图吧地图</a></td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+								</tr>
+								<tr>
+									<th scope="row">&nbsp;</th>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td><a href="http://earth.google.com" target="_blank">谷歌地球</a></td>
+									<td><a href="http://www.o.cn" target="_blank" class="cellhightlight">都市圈3D城市地图</a></td>
+									<td><a href="http://www.edushi.com/mapcity.html" target="_blank">E都市3D地图</a></td>
+									<td><a href="http://ditu.city8.com" target="_blank">城市吧街景</a></td>
+									<td><a href="http://www.tianditu.com" target="_blank">天地图</a></td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+								</tr>
+								<tr>
+									<th scope="row">4</th>
+									<td>&nbsp;</td>
+									<td>网盘</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td><a href="http://www.xilinjie.com" target="_blank">西林街</a></td>
+									<td><a href="http://so.baiduyun.me" target="_blank">百度网盘搜</a></td>
+									<td><a href="http://www.zhaofile.com" target="_blank">找文件</a></td>
+									<td><a href="http://www.wangpansou.cn" target="_blank">网盘搜索</a></td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+								</tr>
+								<tr>
+									<th scope="row">5</th>
+									<td>&nbsp;</td>
+									<td>FTP</td>
+									<td>&nbsp;</td>
+									<td><a href="http://grid.ustc.edu.cn" target="_blank">Grid FTP</a></td>
+									<td><a href="http://search.ipcn.org" target="_blank">IPCN教育网FTP</a></td>
+									<td><a href="http://maze.tianwang.com" target="_blank">北大天网搜索</a></td>
+									<td><a href="http://www.filesearching.com" target="_blank">Filesearching</a></td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+								</tr>
+								<tr>
+									<th scope="row">&nbsp;</th>
+									<td>&nbsp;</td>
+									<td>BT</td>
+									<td>&nbsp;</td>
+									<td><a href="http://www.btfuli.com/">BT福利</a></td>
+									<td>VeryCD</td>
+									<td><a href="http://thepiratebay.se/">海盗湾bt</a></td>
+									<td><a href="https://kat.cr/">kat.cr(Alexa:77)</a></td>
+									<td><a href="Torrentz.eu">Torrentz.eu</a></td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+								</tr>
+								<tr>
+									<th scope="row">&nbsp;</th>
+									<td>&nbsp;</td>
+									<td>百科</td>
+									<td>&nbsp;</td>
+									<td><a href="http://baike.baidu.com" target="_blank">百度百科</a></td>
+									<td><a href="http://zh.wikipedia.org" target="_blank">维基百科</a></td>
+									<td><a href="https://www.wikipedia.org" target="_blank">Wikipedia</a></td>
+									<td><a href="http://www.baike.com" target="_blank">互动百科</a></td>
+									<td><a href="http://baike.haosou.com" target="_blank">好搜百科</a></td>
+									<td><a href="http://wiki.mbalib.com" target="_blank">MBA智库百科</a></td>
+									<td><a href="http://baike.sogou.com" target="_blank">搜狗百科</a></td>
+									<td><a href="http://baike.chinaso.com" target="_blank">国搜百科</a></td>
+								</tr>
+								<tr>
+									<th scope="row">&nbsp;</th>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td><a href="http://www.a-hospital.com" target="_blank" class="cellhightlight">A+医学百科</a></td>
+									<td><a href="http://plato.stanford.edu" target="_blank" class="cellhightlight">Stanford Encyclopedia of Philosophy</a></td>
+									<td><a href="https://www.wikimedia.org/" target="_blank" class="cellhightlight">Wikimedia</a></td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+								</tr>
+								<tr>
+									<th scope="row">&nbsp;</th>
+									<td>&nbsp;</td>
+									<td>问答</td>
+									<td>&nbsp;</td>
+									<td><a href="http://zhidao.baidu.com/">百度知道</a></td>
+									<td><a href="https://www.zhihu.com/">知乎</a></td>
+									<td><a href="https://www.quora.com/">Quora</a></td>
+									<td><a href="http://stackoverflow.com">stackoverflow</a></td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+								</tr>
+								<tr>
+									<th scope="row">6</th>
+									<td>&nbsp;</td>
+									<td>学术</td>
+									<td>&nbsp;</td>
+									<td><a href="http://xueshu.baidu.com" target="_blank">百度学术</a></td>
+									<td><a href="http://scholar.google.com" target="_blank">Google Scholar</a></td>
+									<td><a href="http://scholar.cnki.net" target="_blank">中国知网CNKI</a></td>
+									<td><a href="http://www.sciinfo.cn" target="_blank">万方学术搜索</a></td>
+									<td><a href="http://xueshu.haosou.com" target="_blank">好搜学术</a></td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+								</tr>
+								<tr>
+									<th scope="row">&nbsp;</th>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td><a href="http://lib.mayiso.com/e/action/ShowInfo.php?classid=51&id=700" target="_blank">中文所有数据库入口</a></td>
+									<td><a href="http://lib.mayiso.com/e/action/ShowInfo.php?classid=52&id=701" target="_blank">西文所有数据库入口</a></td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+								</tr>
+								<tr>
+									<th scope="row">7</th>
+									<td>&nbsp;</td>
+									<td>书目</td>
+									<td>&nbsp;</td>
+									<td><a href="http://www.douban.com" target="_blank">豆瓣</a></td>
+									<td><a href="../../class/books.google.com" target="_blank">谷歌图书</a></td>
+									<td><a href="http://www.nlc.gov.cn" target="_blank">中国国家图书馆</a></td>
+									<td><a href="http://www.loc.gov" target="_blank">美国国家图书馆</a></td>
+									<td><a href="http://library.ust.hk" target="_blank">香港科技大学图书馆</a></td>
+									<td><a href="https://sc.lcsd.gov.hk" target="_blank">香港公共图书馆</a></td>
+									<td><a href="http://www.duxiu.com" target="_blank">读秀</a></td>
+									<td><a href="http://www.lib.cuhk.edu.hk" target="_blank">港中大图书馆</a></td>
+								</tr>
+								<tr>
+									<th scope="row">8</th>
+									<td><a href="http://www.soopat.com.cn/" target="_blank">&gt;&gt;</a></td>
+									<td>专利</td>
+									<td><a href="http://www.soopat.com.cn/" target="_blank" class="cellhightlight">Soopat专利导航</a></td>
+									<td><a href="http://www.pss-system.gov.cn" target="_blank"><strong>中国专利检索</strong></a></td>
+									<td><a href="http://www.uspto.gov/patent" target="_blank">美国专利检索</a></td>
+									<td><a href="http://www.epo.org/searching.html" target="_blank">欧洲专利</a></td>
+									<td><a href="http://www.jpo.go.jp/" target="_blank">日本专利</a></td>
+									<td><a href="http://www.ipindia.nic.in/" title="暂时打不开" target="_blank"><strong>印度专利</strong></a></td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+								</tr>
+								<tr>
+									<th scope="row">9</th>
+									<td>&nbsp;</td>
+									<td>商标</td>
+									<td>&nbsp;</td>
+									<td><a href="http://sbj.saic.gov.cn/sbcx/" target="_blank"><strong>商标查询</strong></a></td>
+									<td><a href="http://www.uspto.gov/trademark" target="_blank">美国商标</a></td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+								</tr>
+								<tr>
+									<th scope="row">10</th>
+									<td>&nbsp;</td>
+									<td>购物</td>
+									<td><a href="http://www.etao.com" target="_blank">一淘比价</a></td>
+									<td><a href="http://www.taobao.com" target="_blank">淘宝</a></td>
+									<td><a href="http://www.jd.com" target="_blank">京东</a></td>
+									<td><a href="http://www.alibaba.cn" target="_blank">阿里巴巴</a></td>
+									<td><a href="http://www.amazon.cn" target="_blank">亚马逊</a></td>
+									<td><a href="http://www.dangdang.com" target="_blank">当当</a></td>
+									<td><a href="https://www.tmall.com" target="_blank">天猫</a></td>
+									<td>
+										<p><a href="http://www.amazon.com" target="_blank">Amazon</a></p>
+									</td>
+									<td><a href="http://www.ebay.com/" target="_blank">ebay</a></td>
+								</tr>
+								<tr>
+									<th scope="row">&nbsp;</th>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>团购</td>
+									<td><a href="http://www.nuomi.com" target="_blank">百度糯米</a></td>
+									<td><a href="http://www.meituan.com" target="_blank">美团</a></td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+								</tr>
+								<tr>
+									<th scope="row">&nbsp;</th>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td><a href="http://www.suning.com" target="_blank">苏宁易购</a></td>
+									<td><a href="http://www.gome.com.cn" target="_blank">国美在线</a></td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+								</tr>
+								<tr>
+									<th scope="row">&nbsp;</th>
+									<td>&nbsp;</td>
+									<td>本机搜索</td>
+									<td><a href="http://cn.bing.com/clientdownload/bingbar" target="_blank">必应工具栏</a></td>
+									<td><a href="http://zhuomian.baidu.com" target="_blank">百度桌面</a></td>
+									<td><a href="http://bar.baidu.com" target="_blank">百度工具栏</a></td>
+									<td><a href="http://toolbar.google.com/" target="_blank">谷歌工具栏</a></td>
+									<td><a href="http://www.alexa.com/toolbar" target="_blank">Alexa工具栏</a></td>
+									<td><a href="http://toolbar.youdao.com" target="_blank">有道工具栏</a></td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+								</tr>
+								<tr>
+									<th scope="row">&nbsp;</th>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td><a href="http://www.voidtools.com/" target="_blank">voidtools</a></td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+								</tr>
+								<tr>
+									<th scope="row">11</th>
+									<td>&nbsp;</td>
+									<td>微信搜索</td>
+									<td>&nbsp;</td>
+									<td><a href="http://weixin.sogou.com" target="_blank">搜狗微信</a></td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+								</tr>
+								<tr>
+									<th scope="row">&nbsp;</th>
+									<td>&nbsp;</td>
+									<td>人才搜索</td>
+									<td>&nbsp;</td>
+									<td><a href="http://zhaopin.baidu.com/" target="_blank" class="cellhightlight">百度招聘</a></td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+								</tr>
+								<tr>
+									<th scope="row">0</th>
+									<td>&nbsp;</td>
+									<td><a href="http://news.xinhuanet.com/newmedia/2010-04/23/c_1251441.htm" target="_blank">搜索技巧培训</a></td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+								</tr>
+								<tr>
+									<th scope="row">&nbsp;</th>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+								</tr>
+								<tr>
+									<th scope="row">&nbsp;</th>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<section>
+			<div align="center">
+				<p>搜索引擎排名</p>
+				<div id="search_engine-CN-monthly-201411-201511-bar" width="600" height="400" style="width:600px; height: 400px;"></div>
+				<!-- You may change the values of width and height above to resize the chart -->
+				<p>Source: <a href="http://gs.statcounter.com/#search_engine-CN-monthly-201411-201511-bar">StatCounter Global Stats - Search Engine Market Share</a></p>
+				<script type="text/javascript" src="http://www.statcounter.com/js/fusioncharts.js"></script>
+				<script type="text/javascript" src="http://gs.statcounter.com/chart.php?search_engine-CN-monthly-201411-201511-bar"></script>
+			</div>
+		</section>
+		<footer>
+			<!--QUALIFICAITON INFORMATION-->
+			<div id="footer">
+				<ul>
+					<li><a href="../../c/about.html" target="_blank">关于</a></li>
+					<li><a href="../../c/siteassetlibrary.html" target="_blank">网站设计财富库</a></li>
+					<li><a href="../../c/wordpress/index.php" target="_blank"> 个人博客 </a></li>
+				</ul>
+				<ul>
+					<li>&copy;Copyright Reserved 引用请注明来自tool321.com</li>
+					<li>Author:Horseback</li>
+					<li>QQ:1415948426</li>
+					<li><a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=qNzHx8Sbmpno2dmGy8fF" style="text-decoration:none;">意见反馈</a></li>
+					<li><a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=qNzHx8Sbmpno2dmGy8fF" style="text-decoration:none;">提交登录或者定制</a></li>
+					<li>
+						<!-- #BeginDate format:IS1m -->2016-02-26 15:58
+						<!-- #EndDate -->
+					</li>
+					<li>
+						<!--CNZZ统计-->
+						<script type="text/javascript">
+							var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+							document.write(unescape("%3Cspan id='cnzz_stat_icon_1257102666'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1257102666%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+						</script>
+					</li>
+				</ul>
+				<ul>
+					<a href="http://www.miibeian.gov.cn" target="_blank">粤ICP备15117589号</a>
+				</ul>
+			</div>
+		</footer>
+
+		<!--Section Office End here-->
+
+		<!--Section Plateform start here-->
+		<!--Plateform End here-->
+	</div>
 </body>
+
 </html>
