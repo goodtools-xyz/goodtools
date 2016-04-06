@@ -173,6 +173,7 @@ tr:hover {
 	
 th {
 	background-color:#F6F6F6;
+	width: 300px;
 }
 
 
@@ -192,6 +193,10 @@ a {
 	margin-left: auto;
 	margin-right: auto;
  }
+a:linked
+{
+	color: #FFAA00;
+}
 a:hover
 {
 	text-decoration: underline;
