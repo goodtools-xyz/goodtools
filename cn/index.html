@@ -50,7 +50,15 @@
 	<!--<link href="../css/smart_menu_css/sm-core-css.css" rel="stylesheet" type="text/css">-->
 	<!--<link href="../css/smart_menu_css/sm-blue/sm-blue.css" rel="stylesheet" type="text/css">-->
 	<!-- "sm-blue" menu theme (optional, you can use your own CSS, too) -->
-
+<script>
+		$(function () {
+			$('.nav-tabs > li').mouseover( function(){
+    $(this).find('a').tabs('show');
+  });
+  $('.nav-tabs > li').mouseout( function(){
+    $(this).find('a').tabs('hide');
+  });
+	</script>
 	<!--Growing I/O-->
 	<script type='text/javascript'>
 		var _vds = _vds || [];
@@ -358,25 +366,22 @@
 						<h3 class="panel-title"><span class="glyphicon glyphicon-print" aria-hidden="true">&nbsp;</span>常用生产力办公工具导航</h3>
 					</div>
 					<div class="panel-body">
-						<ul class="nav nav-tabs" role="tablist" id="Tabs1">
-							<li role="presentation" class="active"><a href="#interface" aria-controls="interface" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-search" aria-hidden="true">&nbsp;</span>互联网入口</a></li>
-							<li role="presentation"><a href="#document" aria-controls="document" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-pencil" aria-hidden="true">&nbsp;</span>文档</a></li>
-							<li role="presentation"><a href="#communication" aria-controls="communication" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-phone" aria-hidden="true">&nbsp;</span>沟通</a></li>
-							<li role="presentation"><a href="#reading" aria-controls="reading" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-eye-open" aria-hidden="true">&nbsp;</span>阅读</a></li>
-							<li role="presentation"><a href="#system" aria-controls="systemm" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-cog" aria-hidden="true">&nbsp;</span>系统</a></li>
-							<li role="presentation"><a href="#developer" aria-controls="developer" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-apple" aria-hidden="true">&nbsp;</span>开发圈</a></li>
-
+						<ul class="nav nav-tabs" role="tablist" >
+							<li role="presentation" class="active"><a href="#tabs1" aria-controls="tabs1" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-search" aria-hidden="true">&nbsp;</span>互联网入口</a></li>
+							<li role="presentation"><a href="#tabs2" aria-controls="tabs2" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-pencil" aria-hidden="true">&nbsp;</span>文档</a></li>
+							<li role="presentation"><a href="#tabs3" aria-controls="tabs3" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-phone" aria-hidden="true">&nbsp;</span>沟通</a></li>
+							<li role="presentation"><a href="#tabs4" aria-controls="tabs4" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-eye-open" aria-hidden="true">&nbsp;</span>阅读</a></li>
+							<li role="presentation"><a href="#tabs5" aria-controls="tabs5" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-cog" aria-hidden="true">&nbsp;</span>系统</a></li>
+							<li role="presentation"><a href="#tabs6" aria-controls="tabs6" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-apple" aria-hidden="true">&nbsp;</span>开发圈</a></li>
 						</ul>
-
 						<div class="tab-content">
-							<div role="tabpanel" class="tab-pane active" id="interface">
+							<div role="tabpanel" class="tab-pane active" id="tabs1">
 								<div class="table-responsive">
 									<table class="table table-striped">
 										<tbody>
 											<tr>
 												<th>工具类别</th>
 												<th class="warning">微软 Microsoft</th>
-
 											</tr>
 											<tr>
 												<th><span class="glyphicon glyphicon-search" aria-hidden="true">&nbsp;</span><a href="/cn/c/searchengine.html">搜索</a></th>
@@ -543,7 +548,7 @@
 									</table>
 								</div>
 							</div>
-							<div role="tabpanel" class="tab-pane" id="document">
+							<div role="tabpanel" class="tab-pane" id="tabs2">
 								<div class="table-responsive">
 									<table class="table table-striped">
 										<tbody>
@@ -758,7 +763,7 @@
 									</table>
 								</div>
 							</div>
-							<div role="tabpanel" class="tab-pane" id="communication">
+							<div role="tabpanel" class="tab-pane" id="tabs3">
 								<div class="table-responsive">
 									<table class="table table-striped">
 										<tbody>
@@ -975,7 +980,7 @@
 									</table>
 								</div>
 							</div>
-							<div role="tabpanel" class="tab-pane" id="reading">
+							<div role="tabpanel" class="tab-pane" id="tabs4">
 								<div class="table-responsive">
 									<table class="table table-striped">
 										<tbody>
@@ -1102,7 +1107,7 @@
 									</table>
 								</div>
 							</div>
-							<div role="tabpanel" class="tab-pane" id="system">
+							<div role="tabpanel" class="tab-pane" id="tabs5">
 								<div class="table-responsive">
 									<table class="table table-striped">
 										<tbody>
@@ -1203,7 +1208,7 @@
 									</table>
 								</div>
 							</div>
-							<div role="tabpanel" class="tab-pane" id="developer">
+							<div role="tabpanel" class="tab-pane" id="tabs6">
 								<div class="table-responsive">
 									<table class="table table-striped">
 										<tbody>
@@ -1286,6 +1291,7 @@
 									</table>
 								</div>
 							</div>
+
 						</div>
 
 					</div>

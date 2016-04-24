@@ -1,11 +1,84 @@
 <!doctype html>
-<html>
+<html lang=zh xmlns:wb="http://open.weibo.com/wb">
+
 <head>
-<meta charset="UTF-8">
-<title>bootstrap</title>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="不一样，生产力,效率,工具,导航,正版，云端，在线，入口，different,productivity,efficiency,tool,navigation,SAAS,online，entrance">
+	<meta name="author" content="马背岭，Horseback">
+	<meta name="description" content="由从事质量十年的一个专业职业人创建，主要是为了解决自己频繁试用各种最新工具而建，目的在于减少自己的搜索量，直达工具在线使用页面或者下载页面。收集了目前各个领域里的最好工具，方便自己的同时，方便所有互联网的使用者" />
+	<base target="_blank">
+	<!--根据硬件设备尺寸获取自适应屏幕小-->
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!--根据移动设备自动跳转到相应的移动网站-->
+	<!--用户可方便地通过 Windows 启动磁贴来查找和固定您的网页-->
+	<meta name="msapplication-TileColor" content="#123456" />
+	<meta name="msapplication-square150x150logo" content="square.png" />
+
+	<title>Tool321_专注生产力和效率工具</title>
+	<link href="/css/style_css.css" rel="stylesheet" type="text/css">
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+
+	<!-- 新 Bootstrap 核心 CSS 文件 -->
+	<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.0.0/normalize.css">
+
+
+	<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+	<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+	<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+
+	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+	<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<script>
+		$(function () {
+					$('.nav-tabs > li').mouseover(function () {
+						$(this).find('a').tab('show');
+					});
+					$('.nav-tabs > li').mouseout(function () {
+						$(this).find('a').tab('hide');
+					});
+	</script>
 </head>
 
 <body>
+	<ul class="nav nav-tabs">
 
+		<li class="active"><a href="#tab1">Home</a></li>
+
+		<li><a href="#tab2">Profile</a></li>
+
+		<li><a href="#tab3">Messages</a></li>
+
+		<li><a href="#tab4">Account</a></li>
+
+	</ul>
+
+	<div class="tab-content">
+		<div class="tab-pane fade active" id="tab1">
+			TAB1 CONTENT
+		</div>
+		<div class="tab-pane fade active" id="tab2">
+			TAB2 OTHER CONTENT
+
+		</div>
+
+		<div class="tab-pane fade active" id="tab3">
+
+			TAB3 MORE CONTENT
+
+		</div>
+
+		<div class="tab-pane fade active" id="tab4">
+
+			TAB4 SO MUCH CONTENT
+
+		</div>
+
+	</div>
 </body>
+
 </html>
