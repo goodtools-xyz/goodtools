@@ -143,8 +143,6 @@ section {
 	}
 
 th,td {
-	cellspacing: 0px;
-	cellpadding: 2px;
 	/*max-width:150px;*/
 	max-height: 100px;
 	padding: 1px 4px;
@@ -173,7 +171,7 @@ tr:hover {
 	
 th {
 	background-color:#F6F6F6;
-	width: 300px;
+	width:150px;
 }
 
 
