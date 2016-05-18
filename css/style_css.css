@@ -191,7 +191,7 @@ a {
 	margin-left: auto;
 	margin-right: auto;
  }
-a:linked
+a:visited
 {
 	color: #FFAA00;
 }
