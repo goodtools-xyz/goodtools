@@ -41,8 +41,9 @@
 							<a class="nav-link" href="/about.html">About</a>
 						</li>
 						<li>
-							<form class="form-inline pull-xs-right">
-								<input class="form-control" type="text" placeholder="Search">
+							<form class="form-inline pull-xs-right" role="search" onsubmit="return baiduWithHttps(this)" action="http://www.baidu.com/baidu" target="_blank">
+								<input class="form-control" type="text" placeholder="Search" onfocus="checkHttps"  name="word" size="60">
+								<input name="tn" type="hidden" value="SE_zzsearchcode_shhzc78w">
 								<button class="btn btn-success-outline" type="submit">Search</button>
 							</form>
 						</li>
