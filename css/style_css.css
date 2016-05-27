@@ -149,6 +149,7 @@ th,td {
 	border-spacing: 0px 0px;
 	border: thin solid #E0E0E0;
 	font-size: 14px;
+    word-wrap: break-word;
   }
   
 
