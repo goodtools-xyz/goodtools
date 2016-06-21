@@ -191,7 +191,7 @@
                                     <td><a href="http://www.ctrip.com" target="_blank">携程</a>&#8226;<a href="http://www.qunar.com" target="_blank">去哪儿</a></td>
                                     <td><a href="http://www.eastmoney.com" target="_blank">东方财富</a>&#8226;<a href="http://www.hao123.com/bank" target="_blank">银行</a></td>
                                     <td>
-                                        <a href="https://www.hao123.com" target="_blank"><img src="http://www.hao123.com/favicon.ico" alt="hao123" width="16" height="16">Hao123</a>
+                                        <a href="https://www.hao123.com" target="_blank"><img src="http://www.hao123.com/favicon.ico" alt="hao123" width="16" height="16">Hao123</a>&nbsp;<a href="http://www.zbj.com/"><img src="http://www.zbj.com/favicon.ico" alt="hao123" width="16" height="16">猪八戒</a>
                                     </td>
                                 </tr>
                                 <tr class="warning">
@@ -277,44 +277,49 @@
                             </ul>
                         </div>
 
-                        <!--	百度-->
-                        <div class="btn-group">
 
-                            <!--		-->
-
-                            <form class="navbar-form navbar-left" role="search" onsubmit="return baiduWithHttps(this)" action="http://www.baidu.com/baidu" target="_blank">
-                                <div class="form-group">
-                                    <input name="tn" type="hidden" value="SE_zzsearchcode_shhzc78w">
-                                    <input type="text" onfocus="checkHttps" name="word" size="40">
-                                </div>
-                                <button type="submit" class="btn btn-default">百度一下</button>
-                            </form>
-                            <script type="text/javascript">
-                                (function () {
-                                    document.write(unescape('%3Cdiv id="bdcs"%3E%3C/div%3E'));
-                                    var bdcs = document.createElement('script');
-                                    bdcs.type = 'text/javascript';
-                                    bdcs.async = true;
-                                    bdcs.src = 'http://znsv.baidu.com/customer_search/api/js?sid=8864642521338909810' + '&plate_url=' + encodeURIComponent(window.location.href) + '&t=' + Math.ceil(new Date() / 3600000);
-                                    var s = document.getElementsByTagName('script')[0];
-                                    s.parentNode.insertBefore(bdcs, s);
-                                })();
-                            </script>
-                        </div>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-header">
                         <i class="fa fa-print fa-lg" aria-hidden="true"></i>&nbsp;常用生产力办公工具导航
                     </div>
-                    <div class="card-block" id="tabs">
+
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-expanded="true">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-expanded="false">Profile</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#messages" role="tab" aria-controls="messages" aria-expanded="false">Messages</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-expanded="false">Settings</a>
+  </li>
+</ul>
+
+<div class="tab-content">
+  <div class="tab-pane active" id="home" role="tabpanel">...</div>
+  <div class="tab-pane" id="profile" role="tabpanel">...</div>
+  <div class="tab-pane" id="messages" role="tabpanel">...</div>
+  <div class="tab-pane" id="settings" role="tabpanel">...</div>
+</div>
+
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show')
+  })
+</script>
+                    <div class="card-block">
                         <ul class="nav nav-tabs" role="tablist">
-                            <li class="nav-item"><a class="nav-link active" href="#tabs1" aria-controls="tabs1" role="tab" data-toggle="tab"><i class="fa fa-search fa-lg" aria-hidden="true">&nbsp;互联网入口</i></a></li>
-                            <li class="nav-item"><a href="#tabs2" aria-controls="tabs2" role="tab" data-toggle="tab"><i class="fa fa-pencil-square-o fa-lg" aria-hidden="true">文档·办公</i></a></li>
-                            <li class="nav-item"><a href="#tabs3" aria-controls="tabs3" role="tab" data-toggle="tab"><i class="fa fa-users fa-lg" aria-hidden="true">&nbsp;沟通·协作</i></a></li>
-                            <li class="nav-item"><a href="#tabs4" aria-controls="tabs4" role="tab" data-toggle="tab"><i class="fa fa-book fa-lg" aria-hidden="true">&nbsp;阅读·电子书</i></a></li>
-                            <li class="nav-item"><a href="#tabs5" aria-controls="tabs5" role="tab" data-toggle="tab"><i class="fa fa-gear fa-lg" aria-hidden="true">&nbsp;系统</i></a></li>
-                            <li class="nav-item"><a href="#tabs6" aria-controls="tabs6" role="tab" data-toggle="tab"><i class="fa fa-code fa-lg" aria-hidden="true">&nbsp;开发圈</i></a></li>
+                            <li class="nav-item"><a class="nav-link active" href="#tabs1" role="tab"><i class="fa fa-search fa-lg" aria-hidden="true">&nbsp;互联网入口</i></a></li>
+                            <li class="nav-item"><a class="nav-link" href="#tabs2" role="tab"><i class="fa fa-pencil-square-o fa-lg" aria-hidden="true">文档·办公</i></a></li>
+                            <li class="nav-item"><a  class="nav-link" href="#tabs3" role="tab"><i class="fa fa-users fa-lg" aria-hidden="true">&nbsp;沟通·协作</i></a></li>
+                            <li class="nav-item"><a  class="nav-link" href="#tabs4" role="tab"><i class="fa fa-book fa-lg" aria-hidden="true">&nbsp;阅读·电子书</i></a></li>
+                            <li class="nav-item"><a  class="nav-link"  href="#tabs5" role="tab"><i class="fa fa-gear fa-lg" aria-hidden="true">&nbsp;系统</i></a></li>
+                            <li class="nav-item"><a  class="nav-link" href="#tabs6" role="tab" ><i class="fa fa-code fa-lg" aria-hidden="true">&nbsp;开发圈</i></a></li>
                         </ul>
                         <div class="tab-content">
                             <div role="tabpanel" class="tab-pane active" id="tabs1">
