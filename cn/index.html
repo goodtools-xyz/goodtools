@@ -50,15 +50,15 @@
     <!--<link href="../css/smart_menu_css/sm-core-css.css" rel="stylesheet" type="text/css">-->
     <!--<link href="../css/smart_menu_css/sm-blue/sm-blue.css" rel="stylesheet" type="text/css">-->
     <!-- "sm-blue" menu theme (optional, you can use your own CSS, too) -->
+
     <script>
-        $(function () {
-                    $('.nav-tabs > li').mouseover(function () {
-                        $(this).find('a').tabs('show');
-                    });
-                    $('.nav-tabs > li').mouseout(function () {
-                        $(this).find('a').tabs('hide');
-                    });
-    </script>
+  $(function() {
+    $( "#tabs" ).tabs({
+      event: "mouseover"
+    });
+  });
+  </script>
+
     <!--Growing I/O-->
     <script type='text/javascript'>
         var _vds = _vds || [];
@@ -299,9 +299,9 @@
                                 <span class="sr-only">Toggle Dropdown</span>
                             </button>
                             <ul class="dropdown-menu">
-                                <li><a href="#">金融·投资</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
+                                <li><a href="/cn/i/finance.html">金融·投资</a></li>
+                                <li><a href="/cn/i/informationtechnology.html">IT</a></li>
+                                <li><a href="/cn/i/b2b.html">B2B</a></li>
                                 <li role="separator" class="divider"></li>
                                 <li><a href="/cn/i/industry.html">行业领域分类表</a></li>
                             </ul>
@@ -315,7 +315,7 @@
                             <ul class="dropdown-menu">
                                 <li><a href="#">投资者</a></li>
                                 <li><a href="/cn/r/marketing.html">营销</a></li>
-                                <li><a href="#">Something else here</a></li>
+                                <li><a href="/cn/r/dataengineer.html">数据工程师</a></li>
                                 <li role="separator" class="divider"></li>
                                 <li><a href="/cn/r/role.html">标准角色分类表</a></li>
                             </ul>
@@ -382,7 +382,7 @@
                     <div class="panel-heading">
                         <h3 class="panel-title"><i class="fa fa-print fa-lg" aria-hidden="true"></i>&nbsp;常用生产力办公工具导航</h3>
                     </div>
-                    <div class="panel-body">
+                    <div class="panel-body" id="tabs">
                         <ul class="nav nav-tabs" role="tablist">
                             <li role="presentation" class="active"><a href="#tabs1" aria-controls="tabs1" role="tab" data-toggle="tab"><i class="fa fa-search fa-lg" aria-hidden="true">&nbsp;互联网入口</i></a></li>
                             <li role="presentation"><a href="#tabs2" aria-controls="tabs2" role="tab" data-toggle="tab"><i class="fa fa-pencil-square-o fa-lg" aria-hidden="true">文档·办公</i></a></li>
