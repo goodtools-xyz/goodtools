@@ -233,3 +233,26 @@ footer {
 	height: 20%;
 	margin: auto;
 }
+
+.z-layer
+{
+    z-index: 420;
+    position: absolute;
+    top: 189px;
+    border: solid 1px #a1a1a1;
+    left: 50%;
+    margin-left: -500px;
+    width: 998px;
+    background: #f4f4f4;
+}
+
+#clicktotop
+{
+    z-index: 100;
+    display:block;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background: #f4f4f4;
+    width:30px;
+    }
