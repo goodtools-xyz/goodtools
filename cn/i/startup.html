@@ -1,542 +1,583 @@
 <!doctype html>
 <html>
+
 <head>
-<meta charset="UTF-8">
-<!--根据硬件设备尺寸获取自适应屏幕大小-->
-<meta name="viewport" content="width=device-width" initial-scale="1" maximum-scale="2">
-<meta name="keywords" content="初创，企业，公司，创业，工具，效率，生产力，软件，APP,导航">
-<meta name="description" content="初创公司工具，第一个专为国内初创公司打造的工具页面">
-<base target="_blank">
-<title>初创公司工具</title>
-<link href="/css/style_css.css" rel="stylesheet" type="text/css">
-<!-- 新 Bootstrap 核心 CSS 文件 -->
-<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <!--根据硬件设备尺寸获取自适应屏幕大小-->
+    <meta name="viewport" content="width=device-width" initial-scale="1" maximum-scale="2">
+    <meta name="keywords" content="初创，企业，公司，创业，工具，效率，生产力，软件，APP,导航">
+    <meta name="description" content="初创公司工具，第一个专为国内初创公司打造的工具页面">
+    <base target="_blank">
+    <title>初创公司工具</title>
+    <link href="/css/style_css.css" rel="stylesheet" type="text/css">
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
-<!-- 可选的Bootstrap主题文件（一般不用引入） -->
-<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <!-- 可选的Bootstrap主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 
-<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
-<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
 
-<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
 
 <body>
 
-<nav class="navbar navbar-default">
-			<div class="container-fluid">
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="/index.html">Tool<span style="color:red">3</span><span style="color:#FFEB63">2</span><span style="color:blue">1</span>.com&nbsp;&nbsp;<span class="small">Beta V0.54</span></a>
-				</div>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/index.html">Tool<span style="color:red">3</span><span style="color:#FFEB63">2</span><span style="color:blue">1</span>.com&nbsp;&nbsp;<span class="small">Beta V0.54</span></a>
+            </div>
 
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav">
-						<li class="active">
-							<script type="text/javascript" src="http://ext.weather.com.cn/101494.js"></script>
-						</li>
-					</ul>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <script type="text/javascript" src="http://ext.weather.com.cn/101494.js"></script>
+                    </li>
+                </ul>
 
 
 
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="/cn/i/statisticsdata.html"><span class="glyphicon glyphicon-stats" aria-hidden="true">&nbsp;</span>趋势·统计数据</a></li>
-						<li><a href=""><wb:login-button type="5,5" onlogin="login" onlogout="logout">登陆</wb:login-button></a></li>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/cn/i/statisticsdata.html"><span class="glyphicon glyphicon-stats" aria-hidden="true">&nbsp;</span>趋势·统计数据</a></li>
+                    <li>
+                        <a href="">
+                            <wb:login-button type="5,5" onlogin="login" onlogout="logout">登陆</wb:login-button>
+                        </a>
+                    </li>
 
-						<script>
-						function login(o) {
-    alert(o.screen_name)
-}
+                    <script>
+                        function login(o) {
+                            alert(o.screen_name)
+                        }
 
-function logout() {
-    alert('logout');
-}
-						</script>
-						<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user" aria-hidden="true">&nbsp;</span>个人类型<span class="caret"></span></a>
-							<ul class="dropdown-menu">
-								<li><a href="">体育迷</a></li>
-								<li><a href="#">自由职业者</a></li>
-								<li><a href="#">摄影爱好者</a></li>
-								<li><a href="/cn/r/traveler.html">旅行爱好者</a></li>
-								<li><a href="/cn/r/musicfans.html">音乐发烧友</a></li>
-								<li><a href="/cn/r/hr.html">求职者</a></li>
-								<li role="separator" class="divider"></li>
-								<li><a href="#">学生</a></li>
-								<li><a href="http://www.AIESEC.org">青年志愿者</a></li>
-							</ul>
-						</li>
-						<li class="dropdown">
-							<a href="/about.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-info-sign" aria-hidden="true">&nbsp;</span>关于<span class="caret"></span></a>
-							<ul class="dropdown-menu">
-								<li><a href="/wordpress/">博客</a></li>
-								<li><a href="http://weibo.com/tool321">微博</a></li>
-								<li role="separator" class="divider"></li>
-								<li><a href="/about.html">关于</a></li>
-							</ul>
-						</li>
-						<li><a href="/en/index.html"><span class="label label-lg label-danger">英文版</span></a></li>
-					</ul>
-				</div>
-				<!-- /.navbar-collapse -->
-			</div>
-			<!--/.container-fluid -->
-		</nav>
+                        function logout() {
+                            alert('logout');
+                        }
+                    </script>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user" aria-hidden="true">&nbsp;</span>个人类型<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="">体育迷</a></li>
+                            <li><a href="#">自由职业者</a></li>
+                            <li><a href="#">摄影爱好者</a></li>
+                            <li><a href="/cn/r/traveler.html">旅行爱好者</a></li>
+                            <li><a href="/cn/r/musicfans.html">音乐发烧友</a></li>
+                            <li><a href="/cn/r/hr.html">求职者</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">学生</a></li>
+                            <li><a href="http://www.AIESEC.org">青年志愿者</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="/about.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-info-sign" aria-hidden="true">&nbsp;</span>关于<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/wordpress/">博客</a></li>
+                            <li><a href="http://weibo.com/tool321">微博</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="/about.html">关于</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/en/index.html"><span class="label label-lg label-danger">英文版</span></a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!--/.container-fluid -->
+    </nav>
 
-<ol class="breadcrumb">
-  <li><a href="/" target="_blank">首页</a></li>
-  <li><a href="#">企业级工具</a></li>
-  <li class="active">初创公司</li>
-</ol>
+    <ol class="breadcrumb">
+        <li><a href="/" target="_blank">首页</a></li>
+        <li><a href="#">企业级工具</a></li>
+        <li class="active">初创公司</li>
+    </ol>
 
-<ul class="nav nav-tabs nav-justified">
-  <li role="presentation" class="active"><a href="#">工具介绍</a></li>
-  <li role="presentation"><a href="#tool_navigation" target="default">工具导航</a></li>
-  <li role="presentation"><a href="#friend_link" target="default">友情链接</a></li>
-</ul>
+    <ul class="nav nav-tabs nav-justified">
+        <li role="presentation" class="active"><a href="#">工具介绍</a></li>
+        <li role="presentation"><a href="#tool_navigation" target="default">工具导航</a></li>
+        <li role="presentation"><a href="#friend_link" target="default">友情链接</a></li>
+    </ul>
 
-<div class="jumbotron">
-  <h1>初创公司工具</h1>
-  <p>也许是国内第一个初创公司工具导航，在开始使用这些工具之前，也许您可以在我的博客上先阅读下关于这些工具的入门介绍</p>
-  <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"></a><a href="#" class="bds_tsina" data-cmd="tsina"></a><a href="#" class="bds_tqq" data-cmd="tqq"></a><a href="#" class="bds_renren" data-cmd="renren"></a><a href="#" class="bds_weixin" data-cmd="weixin"></a></div>
-<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdPic":"","bdStyle":"0","bdSize":"16"},"share":{},"image":{"viewList":["qzone","tsina","tqq","renren","weixin"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
-  <p><a class="btn btn-primary btn-lg" href="http://www.tool321.com/wordpress/2016/03/14/初创公司工具/" role="button">工具介绍</a></p>
-</div>
-
-<div class="container-fluid">
-
-<div class="table-responsive">
-  <table id="tool_navigation" class="table">
-    <!-- On rows -->
-  <tbody>
-<tr class="success">
-<!-- On cells (`td` or `th`) -->
-
-  <td>公司注册</td>
-  <td><a href="http://wsdj.saic.gov.cn/saicetpsweb/jsp/login/login1.jsp">国家工商局网上注册</a></td>
-  <td><a href="http://www.pbccrc.org.cn">央行个人征信记录查询</a></td>
-  <td></td>
-  <td></td>
-  </tr>
-<tr class="warning">
-  <td>团队招募</td>
-  <td><a href="http://liaoyuan.io">燎原</a></td>
-  <td><a href="http://www.ycpai.com/">缘创派</a></td>
-  <td><a href="http://www.dakashuo.com/">大咖说</a></td>
-  <td></td>
-</tr>
-<tr class="danger">
-  <td class="active">融资</td>
-  <td class="warning"><a href="https://www.itjuzi.com">IT橙子</a></td>
-  <td class="success"><a href="http://newseed.pedaily.cn/">新芽</a></td>
-  <td class="danger"><a href="http://www.hao123.com/zhongchou">Hao123众筹</a></td>
-  <td class="info">...</td>
-</tr>
-<tr class="info">
-  <td>事务管理</td>
-  <td><a href="http://realmacsoftware.com/clear/">Clear to do </a></td>
-  <td><a href="/cn/index.html">Tool321-事务管理</a></td>
-  <td></td>
-  <td></td>
-</tr>
-<tr class="active">
-  <td>公司资质</td>
-  <td>企业信用查询</td>
-  <td><a href="http://www.qixin007.com" target="_blank">启信宝</a></td>
-  <td><a href="http://www.qichacha.com">企查查</a></td>
-
-  <td><a href="http://gsxt.saic.gov.cn">全国企业信用信息公示系统</a></td>
-</tr>
-<tr class="active">
-	<td></td>
-	<td></td>
-	<td><a href="http://www.x315.com" target="_blank">信用视界</a></td>
-	<td><a href="http://www.creditchina.gov.cn">信用中国</a></td>
-	<td></td>
-</tr>
-<tr class="active">
-	<th></th>
-	<td>法务</td>
-	<td><a href="http://jianfabang.com">简法帮</a></td>
-	<td><a href=""></a></td>
-	<td></td>
-</tr>
- <tr class="warning">
-  <td>行政后勤</td>
-  <td>众包，外包</td>
-  <td><a href="http://www.zbj.com">猪八戒网</a></td>
-  <td><a href="http://www.taskcn.com">任务中国</a></td>
-  <td><a href="http://www.163wk.com"></a>威客导航</td>
-</tr>
-	<tr class="warning">
-		<td></td>
-		<td>创客空间</td>
-		<td><a href="http://www.wework.com">Wework</a></td>
-		<td><a href="http://www.3wnb.com/" target="_blank">3W</a></td>
-		<td><a href="https://www.ycombinator.com/">Y-combinator</a></td>
-	</tr>
- <tr class="danger">
-  <td class="active">人力资源</td>
-  <td class="warning">招聘</td>
-  <td class="success"><a href="/cn/r/hr.html">Tool321-人力资源</a></td>
-  <td class="danger"><a href="http://www.hao123.com/zhaopin/wangzhi">传统招聘</a></td>
-  <td class="info">...</td>
-</tr>
-	<tr class="danger">
-	<td class="active"></td>
-	<td class="warning">薪酬</td>
-	<td class="warning"><a href="http://www.wopayroll.com">我薪网</a></td>
-	<td></td>
-	<td></td>
-	  </tr>
-	  <tr class="danger">
-	  <td class="active"></td>
-	  <td class="warning">考勤</td>
-	  <td><a href="http://www.xiaobuwq.com">小步外勤</a></td>
-       <td><a href="http://www.mncats.com">猫宁智能</a></td>
-	  <td></td>
-	  </tr>
- <tr class="success">
-  <td>网站建设</td>
-  <td><a href="/cn/r/siteassetlibrary.html">Tool321站长一站式工具库</a></td>
-  <td></td>
-  <td>...</td>
-  <td>...</td>
-</tr>
- <tr class="info">
-	 <td>产品发布</td>
-	  <td><a href="http://next.36kr.com">36kr Next</a></td>
-	  <td><a href="https://www.producthunt.com/" class="cellhightlight">Product Hunt</a></td>
-	  <td><a href="https://news.ycombinator.com/">Hacker news</a></td>
-	  <td><a href="http://promotehour.com/" class="cellhightlight">Promotehour</a></td>
-	  </tr>
-        <tr class="info">
-        <td></td>
-        <td><a href="http://today.itjuzi.com/">Today</a></td>
-         <td><a href="http://betalist.com/">betalist</a></td>
-         <td><a href="http://www.demo8.com/">Demo8</a></td>
-         <td><a href="http://mindstore.io/">Mindstore</a></td>
-</tr>
- <tr class="warning">
-  <td>财务管理</td>
-  <td>差旅报销</td>
-  <td><a href="http://www.kuaileplus.com/">快乐+</a></td>
-  <td><a href="http://www.concur.com.cn">concur</a></td>
-  <td>...</td>
-</tr>
- <tr class="danger">
-  <td>市场营销</td>
-  <td><a href="/cn/index.html">Tool321市场营销</a></td>
-  <td></td>
-  <td>...</td>
-  <td>...</td>
-</tr>
- <tr class="info">
-  <td class="active">创业媒介</td>
-     <td><a href="http://36kr.com">36kr</a></td>
-	 <td><a href="http://www.huxiu.com">虎嗅</a></td>
-	 <td><a href="http://www.leiphone.com">雷锋网</a></td>
-	 <td><a href="http://cn.engadget.com">瘾科技</a></td>
-</tr>
-	<tr class="info">
-	 <td></td>
-	 <td><a href="http://www.iheima.com">i黑马</a></td>
-	 <td><a href="http://www.tmtpost.com">钛媒体</a></td>
-	 <td><a href="http://www.ikanchai.com">砍柴网</a></td>
-	 <td><a href="http://www.geekpark.net">极客公园</a></td>
-	</tr>
-     <tr class="info">
-     <td></td>
-	 <td><a href="http://www.lieyunwang.com">猎云网</a></td>
-	 <td><a href="http://www.sootoo.com">速途网</a></td>
-	 <td><a href="http://www.guidingtech.com">Guidingtech</a></td>
-	 <td><a href="">2015IT媒体排名</a></td>
-	  </tr>
-<tr class="success">
-  <td>客户服务</td>
-  <td><a href="/cn/index.html">Tool321客户服务</a></td>
-  <td></td>
-  <td>...</td>
-  <td>...</td>
-</tr>
-<tr class="info">
-  <td>办公软件</td>
-  <td><a href="/cn/index.html">Tool321办公软件</a></td>
-  <td></td>
-  <td>...</td>
-  <td>...</td>
-</tr>
-<tr class="warning">
-  <td>团队协作</td>
-  <td><a href="/cn/index.html">Tool321团队协作工具</a></td>
-  <td><a href="http://www.dingtalk.com">钉钉</a></td>
-  <td>...</td>
-  <td>...</td>
-</tr>
-<tr class="danger">
-  <td>文件管理</td>
-  <td><a href="/cn/r/configulator.html">Tool321配置管理工具</a></td>
-  <td><a href="http://www.fangcloud.com​">亿方云</a></td>
-  <td>...</td>
-  <td>...</td>
-</tr>
- <tr class="active">
-	<!-- On cells (`td` or `th`) -->
-  <td id="friend_link" class="active">友情链接</td>
-  <td><a href="http://steveblank.com/tools-and-blogs-for-entrepreneurs/">UC Berkeley的创业教授Steve Blank</a></td>
-  <td><a href="https://entrepreneur-tools.zeef.com/keyhanimo">Entrepreneur-tools.zeef</a></td>
-  <td><a href="http://www.toolwatcher.com/">Toolwatcher</a></td>
-  <td><a href="http://toolbird.com/">Toolbird</a></td>
-</tr>
-  <tr class="active">
-      <td></td>
-      <td><a href="http://www.miit.gov.cn/n11293472/n11295074/">工信部中小企业局</a></td>
-      <td><a href="http://www.szsmb.gov.cn/">深圳市中小企业服务署</a></td>
-      <td><a href="http://www.ssme.gov.cn/">上海中小企业服务互动平台</a></td>
-      <td><a href="http://www.ca-sme.org/">中国中小企业协会</a></td>
-  </tr>
-	  </tbody>
-  </table>
-</div>
-
-<div class="page-header">
-  <h1>工具介绍 <small>增进你的效率和生产力</small></h1>
-</div>
-
- <div class="row">
-
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img src="/img/T.png" alt="...">
-      <div class="caption">
-        <h3>公司注册</h3>
-        <p>你需要一个好的名字，然后在网上工商局查一查还可以注册吗，在线注册，你就上路了。</p>
-        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-      </div>
+    <div class="jumbotron">
+        <h1>初创公司工具</h1>
+        <p>也许是国内第一个初创公司工具导航，在开始使用这些工具之前，也许您可以在我的博客上先阅读下关于这些工具的入门介绍</p>
+        <div class="bdsharebuttonbox">
+            <a href="#" class="bds_more" data-cmd="more"></a>
+            <a href="#" class="bds_qzone" data-cmd="qzone"></a>
+            <a href="#" class="bds_tsina" data-cmd="tsina"></a>
+            <a href="#" class="bds_tqq" data-cmd="tqq"></a>
+            <a href="#" class="bds_renren" data-cmd="renren"></a>
+            <a href="#" class="bds_weixin" data-cmd="weixin"></a>
+        </div>
+        <script>
+            window._bd_share_config = {
+                "common": {
+                    "bdSnsKey": {}
+                    , "bdText": ""
+                    , "bdMini": "2"
+                    , "bdPic": ""
+                    , "bdStyle": "0"
+                    , "bdSize": "16"
+                }
+                , "share": {}
+                , "image": {
+                    "viewList": ["qzone", "tsina", "tqq", "renren", "weixin"]
+                    , "viewText": "分享到："
+                    , "viewSize": "16"
+                }
+                , "selectShare": {
+                    "bdContainerClass": null
+                    , "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"]
+                }
+            };
+            with(document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+        </script>
+        <p><a class="btn btn-primary btn-lg" href="http://www.tool321.com/wordpress/2016/03/14/初创公司工具/" role="button">工具介绍</a></p>
     </div>
-  </div>
 
-   <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img src="/img/T.png" alt="...">
-      <div class="caption">
-        <h3>团队招募</h3>
-        <p>创业第一事，寻找你的团队和合伙人，那么你可以使用燎原，缘创派等这些创业社交软件，在路上，发现和你志同道合的伙伴。</p>
-        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-      </div>
+    <div class="container-fluid">
+
+        <div class="table-responsive">
+            <table id="tool_navigation" class="table">
+                <!-- On rows -->
+                <tbody>
+                    <tr class="success">
+                        <!-- On cells (`td` or `th`) -->
+
+                        <td>公司注册</td>
+                        <td><a href="http://wsdj.saic.gov.cn/saicetpsweb/jsp/login/login1.jsp">国家工商局网上注册</a></td>
+                        <td><a href="http://www.pbccrc.org.cn">央行个人征信记录查询</a></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="warning">
+                        <td>团队招募</td>
+                        <td><a href="http://liaoyuan.io">燎原</a></td>
+                        <td><a href="http://www.ycpai.com/">缘创派</a></td>
+                        <td><a href="http://www.dakashuo.com/">大咖说</a></td>
+                        <td></td>
+                    </tr>
+                    <tr class="danger">
+                        <td class="active">融资</td>
+                        <td class="warning"><a href="https://www.itjuzi.com">IT橙子</a></td>
+                        <td class="success"><a href="http://newseed.pedaily.cn/">新芽</a></td>
+                        <td class="danger"><a href="http://www.hao123.com/zhongchou">Hao123众筹</a></td>
+                        <td class="info">...</td>
+                    </tr>
+                    <tr class="info">
+                        <td>事务管理</td>
+                        <td><a href="http://realmacsoftware.com/clear/">Clear to do </a></td>
+                        <td><a href="/cn/index.html">Tool321-事务管理</a></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="active">
+                        <td>公司资质</td>
+                        <td>企业信用查询</td>
+                        <td><a href="http://www.qixin007.com" target="_blank">启信宝</a></td>
+                        <td><a href="http://www.qichacha.com">企查查</a></td>
+
+                        <td><a href="http://gsxt.saic.gov.cn">全国企业信用信息公示系统</a></td>
+                    </tr>
+                    <tr class="active">
+                        <td></td>
+                        <td></td>
+                        <td><a href="http://www.x315.com" target="_blank">信用视界</a></td>
+                        <td><a href="http://www.creditchina.gov.cn">信用中国</a></td>
+                        <td></td>
+                    </tr>
+                    <tr class="active">
+                        <th></th>
+                        <td>法务</td>
+                        <td><a href="http://jianfabang.com">简法帮</a></td>
+                        <td><a href=""></a></td>
+                        <td></td>
+                    </tr>
+                    <tr class="warning">
+                        <td>行政后勤</td>
+                        <td>众包，外包</td>
+                        <td><a href="http://www.zbj.com">猪八戒网</a></td>
+                        <td><a href="http://www.taskcn.com">任务中国</a></td>
+                        <td><a href="http://www.163wk.com">威客导航</a></td>
+                    </tr>
+                    <tr class="warning">
+                        <td></td>
+                        <td>创客空间</td>
+                        <td><a href="http://www.wework.com">Wework</a></td>
+                        <td><a href="http://www.3wnb.com/" target="_blank">3W</a></td>
+                        <td><a href="https://www.ycombinator.com/">Y-combinator</a></td>
+                    </tr>
+                    <tr class="danger">
+                        <td class="active">人力资源</td>
+                        <td class="warning">招聘</td>
+                        <td class="success"><a href="/cn/r/hr.html">Tool321-人力资源</a></td>
+                        <td class="danger"><a href="http://www.hao123.com/zhaopin/wangzhi">传统招聘</a></td>
+                        <td class="info">...</td>
+                    </tr>
+                    <tr class="danger">
+                        <td class="active"></td>
+                        <td class="warning">薪酬</td>
+                        <td class="warning"><a href="http://www.wopayroll.com">我薪网</a></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="danger">
+                        <td class="active"></td>
+                        <td class="warning">考勤</td>
+                        <td><a href="http://www.xiaobuwq.com">小步外勤</a></td>
+                        <td><a href="http://www.mncats.com">猫宁智能</a></td>
+                        <td></td>
+                    </tr>
+                    <tr class="success">
+                        <td>网站建设</td>
+                        <td><a href="/cn/r/siteassetlibrary.html">Tool321站长一站式工具库</a></td>
+                        <td></td>
+                        <td>...</td>
+                        <td>...</td>
+                    </tr>
+                    <tr class="info">
+                        <td>产品发布</td>
+                        <td><a href="http://next.36kr.com">36kr Next</a></td>
+                        <td><a href="https://www.producthunt.com/" class="cellhightlight">Product Hunt</a></td>
+                        <td><a href="https://news.ycombinator.com/">Hacker news</a></td>
+                        <td><a href="http://promotehour.com/" class="cellhightlight">Promotehour</a></td>
+                    </tr>
+                    <tr class="info">
+                        <td></td>
+                        <td><a href="http://today.itjuzi.com/">Today</a></td>
+                        <td><a href="http://betalist.com/">betalist</a></td>
+                        <td><a href="http://www.demo8.com/">Demo8</a></td>
+                        <td><a href="http://mindstore.io/">Mindstore</a></td>
+                    </tr>
+                    <tr class="warning">
+                        <td>财务管理</td>
+                        <td>差旅报销</td>
+                        <td><a href="http://www.kuaileplus.com/">快乐+</a></td>
+                        <td><a href="http://www.concur.com.cn">concur</a></td>
+                        <td>...</td>
+                    </tr>
+                    <tr class="danger">
+                        <td>市场营销</td>
+                        <td><a href="/cn/index.html">Tool321市场营销</a></td>
+                        <td></td>
+                        <td>...</td>
+                        <td>...</td>
+                    </tr>
+                    <tr class="info">
+                        <td class="active">创业媒介</td>
+                        <td><a href="http://36kr.com">36kr</a></td>
+                        <td><a href="http://www.huxiu.com">虎嗅</a></td>
+                        <td><a href="http://www.leiphone.com">雷锋网</a></td>
+                        <td><a href="http://cn.engadget.com">瘾科技</a></td>
+                    </tr>
+                    <tr class="info">
+                        <td></td>
+                        <td><a href="http://www.iheima.com">i黑马</a></td>
+                        <td><a href="http://www.tmtpost.com">钛媒体</a></td>
+                        <td><a href="http://www.ikanchai.com">砍柴网</a></td>
+                        <td><a href="http://www.geekpark.net">极客公园</a></td>
+                    </tr>
+                    <tr class="info">
+                        <td></td>
+                        <td><a href="http://www.lieyunwang.com">猎云网</a></td>
+                        <td><a href="http://www.sootoo.com">速途网</a></td>
+                        <td><a href="http://www.guidingtech.com">Guidingtech</a></td>
+                        <td><a href="">2015IT媒体排名</a></td>
+                    </tr>
+                    <tr class="success">
+                        <td>客户服务</td>
+                        <td><a href="/cn/index.html">Tool321客户服务</a></td>
+                        <td></td>
+                        <td>...</td>
+                        <td>...</td>
+                    </tr>
+                    <tr class="info">
+                        <td>办公软件</td>
+                        <td><a href="/cn/index.html">Tool321办公软件</a></td>
+                        <td></td>
+                        <td>...</td>
+                        <td>...</td>
+                    </tr>
+                    <tr class="warning">
+                        <td>团队协作</td>
+                        <td><a href="/cn/index.html">Tool321团队协作工具</a></td>
+                        <td><a href="http://www.dingtalk.com">钉钉</a></td>
+                        <td>...</td>
+                        <td>...</td>
+                    </tr>
+                    <tr class="danger">
+                        <td>文件管理</td>
+                        <td><a href="/cn/r/configulator.html">Tool321配置管理工具</a></td>
+                        <td><a href="http://www.fangcloud.com​">亿方云</a></td>
+                        <td>...</td>
+                        <td>...</td>
+                    </tr>
+                    <tr class="active">
+                        <!-- On cells (`td` or `th`) -->
+                        <td id="friend_link" class="active">友情链接</td>
+                        <td><a href="http://steveblank.com/tools-and-blogs-for-entrepreneurs/">UC Berkeley的创业教授Steve Blank</a></td>
+                        <td><a href="https://entrepreneur-tools.zeef.com/keyhanimo">Entrepreneur-tools.zeef</a></td>
+                        <td><a href="http://www.toolwatcher.com/">Toolwatcher</a></td>
+                        <td><a href="http://toolbird.com/">Toolbird</a></td>
+                    </tr>
+                    <tr class="active">
+                        <td></td>
+                        <td><a href="http://www.miit.gov.cn/n11293472/n11295074/">工信部中小企业局</a></td>
+                        <td><a href="http://www.szsmb.gov.cn/">深圳市中小企业服务署</a></td>
+                        <td><a href="http://www.ssme.gov.cn/">上海中小企业服务互动平台</a></td>
+                        <td><a href="http://www.ca-sme.org/">中国中小企业协会</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="page-header">
+            <h1>工具介绍 <small>增进你的效率和生产力</small></h1>
+        </div>
+
+        <div class="row">
+
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="/img/T.png" alt="...">
+                    <div class="caption">
+                        <h3>公司注册</h3>
+                        <p>你需要一个好的名字，然后在网上工商局查一查还可以注册吗，在线注册，你就上路了。</p>
+                        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="/img/T.png" alt="...">
+                    <div class="caption">
+                        <h3>团队招募</h3>
+                        <p>创业第一事，寻找你的团队和合伙人，那么你可以使用燎原，缘创派等这些创业社交软件，在路上，发现和你志同道合的伙伴。</p>
+                        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="/img/T.png" alt="...">
+                    <div class="caption">
+                        <h3>融资</h3>
+                        <p>有好的点子，还在默默打拼，no，天天看到那么多投融资新闻，恩，只需要一个国内最大融资数据平台的“橙子IT”就可以帮你搞定你的财源！</p>
+                        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="/img/T4.png" alt="...">
+                    <div class="caption">
+                        <h3>事务管理</h3>
+                        <p>你很忙，开始创业的你会有很多的杂事，那么一款简洁高效的事务管理工具会让你井井有条，小编向你推荐clear to do,虽然收费，但没有更清爽简洁的了</p>
+                        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="/img/T4.png" alt="...">
+                    <div class="caption">
+                        <h3>公司资质</h3>
+                        <p>别忘了你的企业信用，在开始2B的合作之前，也别忘了对家公司的背景调查，否则，也许你可能倒在被“信用”毁掉的路上。</p>
+                        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="/img/T4.png" alt="...">
+                    <div class="caption">
+                        <h3>行政后勤</h3>
+                        <p>找办公场地，找网站设计，甚至于是垃圾处理，后勤的烦琐事繁杂，可你可没有那么多资源来请那么多人来替你做事，没事，众包模式下你有强大的随时待命的第三方支援。</p>
+                        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="/img/T5.png" alt="...">
+                    <div class="caption">
+                        <h3>人力资源</h3>
+                        <p>招聘，薪酬福利，绩效考勤，培训六大模块，迅速招募和培养你的团队。</p>
+                        <p><a href="/cn/r/hr.html" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="/img/T5.png" alt="...">
+                    <div class="caption">
+                        <h3>网站建设</h3>
+                        <p>...</p>
+                        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="/img/T5.png" alt="...">
+                    <div class="caption">
+                        <h3>产品发布</h3>
+                        <p>酒香不怕巷子深，NO,互联网时代，你需要烧出第一把火，那么新产品发布平台为人所知，开始传播是你成功的第一步，Promotehour一键帮你发布到全球50多个顶级新产品平台，轻松！</p>
+                        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="/img/T6.png" alt="...">
+                    <div class="caption">
+                        <h3>财务管理</h3>
+                        <p>...</p>
+                        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="/img/T6.png" alt="...">
+                    <div class="caption">
+                        <h3>市场营销</h3>
+                        <p>...</p>
+                        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="/img/T6.png" alt="...">
+                    <div class="caption">
+                        <h3>创业媒介</h3>
+                        <p>你需要被报道，你也需要想知道别的创业者在路上都创造了什么，你需要沉浸于创业的氛围中，那么上创业媒体吧，抛弃新浪，网易，凤凰网，拥抱创业新闻，编写你的第一篇推广文章，你成了</p>
+                        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="/img/T2.png" alt="...">
+                    <div class="caption">
+                        <h3>客户服务</h3>
+                        <p>...</p>
+                        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="/img/T2.png" alt="...">
+                    <div class="caption">
+                        <h3>办公软件</h3>
+                        <p>云计算，SAAS,互联网+星火燎原的时代有太多免费的在线的办公工具能让你随时随地搞笑的办公，用用Tool321首页的办公工具吧，一键打开，所有办公工具在手</p>
+                        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="/img/T2.png" alt="...">
+                    <div class="caption">
+                        <h3>团队协作</h3>
+                        <p>...</p>
+                        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="/img/T3.png" alt="...">
+                    <div class="caption">
+                        <h3>文件管理</h3>
+                        <p>文件就是你的资产！源代码赶紧用SVN，普通的OFFICE文件，现在有云方案了，用亿方云。 </p>
+                        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <!--Header start here-->
+        <!--Header end here  -->
+
+
+
+
+
+        <!--Section Baidu Start here-->
+        <section id="baidu">
+
+
+            <script src="http://s1.bdstatic.com/r/www/cache/global/js/BaiduHttps_20150714_zhanzhang.js"></script>
+            <script>
+                function checkHttps() {
+                    BaiduHttps.useHttps();
+                };
+
+                function baiduWithHttps(formname) {
+                    var data = BaiduHttps.useHttps();
+                    if (data.s === 0) {
+                        return true;
+                    } else {
+                        formname.action = 'https://www.baidu.com/baidu' + '?ssl_s=1&ssl_c' + data.ssl_code;
+                        return true;
+                    }
+                };
+            </script>
+
+        </section>
+
+        <!--Section Baidu End here -->
+
+
+        <footer>
+            <!--QUALIFICAITON INFORMATION-->
+            <div id="footer">
+                <ul>
+                    <li>&copy;Copyright Reserved 引用请注明来自tool321.com</li>
+                    <li>Author:Horseback</li>
+                    <li>QQ:1415948426</li>
+                    <li><a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=qNzHx8Sbmpno2dmGy8fF" style="text-decoration:none;">意见反馈</a></li>
+                    <li><a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=qNzHx8Sbmpno2dmGy8fF" style="text-decoration:none;">提交登录或者定制</a></li>
+                    <li>
+                        <!-- #BeginDate format:IS1m -->2016-02-20 16:57
+                        <!-- #EndDate -->
+                    </li>
+                    <li>
+                        <!--CNZZ统计-->
+                        <script type="text/javascript">
+                            var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+                            document.write(unescape("%3Cspan id='cnzz_stat_icon_1257102666'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1257102666%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+                        </script>
+                    </li>
+                </ul>
+                <ul>
+                    <a href="http://www.miibeian.gov.cn" target="_blank">粤ICP备15117589号</a>
+                </ul>
+            </div>
+        </footer>
+
+        <!--Section Office End here-->
+
+        <!--Section Plateform start here-->
+        <!--Plateform End here-->
     </div>
-  </div>
-
-   <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img src="/img/T.png" alt="...">
-      <div class="caption">
-        <h3>融资</h3>
-        <p>有好的点子，还在默默打拼，no，天天看到那么多投融资新闻，恩，只需要一个国内最大融资数据平台的“橙子IT”就可以帮你搞定你的财源！</p>
-        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img src="/img/T4.png" alt="...">
-      <div class="caption">
-        <h3>事务管理</h3>
-        <p>你很忙，开始创业的你会有很多的杂事，那么一款简洁高效的事务管理工具会让你井井有条，小编向你推荐clear to do,虽然收费，但没有更清爽简洁的了</p>
-        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img src="/img/T4.png" alt="...">
-      <div class="caption">
-        <h3>公司资质</h3>
-        <p>别忘了你的企业信用，在开始2B的合作之前，也别忘了对家公司的背景调查，否则，也许你可能倒在被“信用”毁掉的路上。</p>
-        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img src="/img/T4.png" alt="...">
-      <div class="caption">
-        <h3>行政后勤</h3>
-        <p>找办公场地，找网站设计，甚至于是垃圾处理，后勤的烦琐事繁杂，可你可没有那么多资源来请那么多人来替你做事，没事，众包模式下你有强大的随时待命的第三方支援。</p>
-        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img src="/img/T5.png" alt="...">
-      <div class="caption">
-        <h3>人力资源</h3>
-        <p>招聘，薪酬福利，绩效考勤，培训六大模块，迅速招募和培养你的团队。</p>
-        <p><a href="/cn/r/hr.html" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img src="/img/T5.png" alt="...">
-      <div class="caption">
-        <h3>网站建设</h3>
-        <p>...</p>
-        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img src="/img/T5.png" alt="...">
-      <div class="caption">
-        <h3>产品发布</h3>
-        <p>酒香不怕巷子深，NO,互联网时代，你需要烧出第一把火，那么新产品发布平台为人所知，开始传播是你成功的第一步，Promotehour一键帮你发布到全球50多个顶级新产品平台，轻松！</p>
-        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img src="/img/T6.png" alt="...">
-      <div class="caption">
-        <h3>财务管理</h3>
-        <p>...</p>
-        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img src="/img/T6.png" alt="...">
-      <div class="caption">
-        <h3>市场营销</h3>
-        <p>...</p>
-        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img src="/img/T6.png" alt="...">
-      <div class="caption">
-        <h3>创业媒介</h3>
-        <p>你需要被报道，你也需要想知道别的创业者在路上都创造了什么，你需要沉浸于创业的氛围中，那么上创业媒体吧，抛弃新浪，网易，凤凰网，拥抱创业新闻，编写你的第一篇推广文章，你成了</p>
-        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img src="/img/T2.png" alt="...">
-      <div class="caption">
-        <h3>客户服务</h3>
-        <p>...</p>
-        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img src="/img/T2.png" alt="...">
-      <div class="caption">
-        <h3>办公软件</h3>
-        <p>云计算，SAAS,互联网+星火燎原的时代有太多免费的在线的办公工具能让你随时随地搞笑的办公，用用Tool321首页的办公工具吧，一键打开，所有办公工具在手</p>
-        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img src="/img/T2.png" alt="...">
-      <div class="caption">
-        <h3>团队协作</h3>
-        <p>...</p>
-        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img src="/img/T3.png" alt="...">
-      <div class="caption">
-        <h3>文件管理</h3>
-        <p>文件就是你的资产！源代码赶紧用SVN，普通的OFFICE文件，现在有云方案了，用亿方云。 </p>
-        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-      </div>
-    </div>
-  </div>
-
-
-</div>
-  <!--Header start here-->
-<!--Header end here  -->
-
-
-
-
-
-<!--Section Baidu Start here-->
-<section id="baidu">
-
-
-<script src="http://s1.bdstatic.com/r/www/cache/global/js/BaiduHttps_20150714_zhanzhang.js"></script>
-<script>
-    function checkHttps () {
-        BaiduHttps.useHttps();
-    };
-    function baiduWithHttps (formname) {
-        var data = BaiduHttps.useHttps();
-        if (data.s === 0) {
-            return true;
-        }
-        else {
-            formname.action = 'https://www.baidu.com/baidu' + '?ssl_s=1&ssl_c' + data.ssl_code;
-            return true;
-        }
-    };
-</script>
-
-</section>
-
-<!--Section Baidu End here -->
-
-
- <footer> <!--QUALIFICAITON INFORMATION-->
-   <div id="footer">
-     <ul>
-       <li>&copy;Copyright Reserved 引用请注明来自tool321.com</li>
-       <li>Author:Horseback</li>
-       <li>QQ:1415948426</li>
-       <li><a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=qNzHx8Sbmpno2dmGy8fF" style="text-decoration:none;">意见反馈</a></li>
-       <li><a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=qNzHx8Sbmpno2dmGy8fF" style="text-decoration:none;">提交登录或者定制</a></li>
-       <li>
-         <!-- #BeginDate format:IS1m -->2016-02-20  16:57<!-- #EndDate -->
-       </li>
-       <li>
-         <!--CNZZ统计-->
-         <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1257102666'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1257102666%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
-       </li>
-     </ul>
-     <ul>
-       <a href="http://www.miibeian.gov.cn" target="_blank">粤ICP备15117589号</a>
-     </ul>
-   </div>
- </footer>
-
- <!--Section Office End here-->
-
- <!--Section Plateform start here-->
-<!--Plateform End here--></div>
 </body>
+
 </html>
