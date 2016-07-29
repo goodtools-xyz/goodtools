@@ -256,6 +256,7 @@ footer {
 .goto-box {
     position: fixed;
     bottom: 20px;
+    right: 0px;
 }
 .social-link {
     width: 50px;
