@@ -257,6 +257,7 @@ footer {
     position: fixed;
     bottom: 20px;
     right: 0px;
+    z-index: 199;
 }
 .social-link {
     width: 50px;
