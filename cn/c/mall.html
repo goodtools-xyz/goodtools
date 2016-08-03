@@ -10,11 +10,11 @@
     <!--用户可方便地通过 Windows 启动磁贴来查找和固定您的网页-->
     <meta name="msapplication-TileColor" content="#123456" />
     <meta name="msapplication-square150x150logo" content="square.png" />
-    <title>官方商城--Tool321</title>
+    <title>商城·购物</title>
     <link href="/css/style_css.css" rel="stylesheet" type="text/css">
     <meta name="keywords" content="官方商城,工具,导航,正版，云端，在线，入口，different,productivity,efficiency,tool,navigation,SAAS,online，entrance">
     <meta name="author" content="马背岭，Horseback">
-    <meta name="description" content="p2p工具，由从事质量十年的一个专业职业人创建，主要是为了解决自己频繁试用各种最新工具而建，目的在于减少自己的搜索量，直达工具在线使用页面或者下载页面。收集了目前各个领域里的最好工具，方便自己的同时，方便所有互联网的使用者" />
+    <meta name="description" content="购物商城" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.0.0/normalize.css"> </head>
@@ -28,28 +28,16 @@
                 <li class="nav-item"> <a class="nav-link" href="/cn/r/rolecategory.html">Your role</a> </li>
                 <li class="nav-item"> <a class="nav-link" href="/about.html">About</a> </li>
             </ul>
-            <form class="form-inline pull-xs-right">
-                <input class="form-control" type="text" onfocus="checkHttps" placeholder="Search">
+            <form class="form-inline pull-xs-right" role="search" onsubmit="return baiduWithHttps(this)" action="http://www.baidu.com/baidu" target="_blank">
+                <input class="form-control" type="text" placeholder="Search" onfocus="checkHttps" name="word" size="30">
                 <input name="tn" type="hidden" value="SE_zzsearchcode_shhzc78w">
-                <!--			<input type="text" onfocus="checkHttps" name="word" size="60">-->
                 <button class="btn btn-success-outline" type="submit">百度一下</button>
-                <script type="text/javascript">
-                    (function () {
-                        document.write(unescape('%3Cdiv id="bdcs"%3E%3C/div%3E'));
-                        var bdcs = document.createElement('script');
-                        bdcs.type = 'text/javascript';
-                        bdcs.async = true;
-                        bdcs.src = 'http://znsv.baidu.com/customer_search/api/js?sid=8864642521338909810' + '&plate_url=' + encodeURIComponent(window.location.href) + '&t=' + Math.ceil(new Date() / 3600000);
-                        var s = document.getElementsByTagName('script')[0];
-                        s.parentNode.insertBefore(bdcs, s);
-                    })();
-                </script>
             </form>
         </nav>
         <ol class="breadcrumb" style="margin-bottom: 5px;">
-            <li><a href="/">Home</a></li>
-            <li><a href="/">Category</a></li>
-            <li class="active">Mall</li>
+            <li><a href="/cn/">首页</a></li>
+            <li><a href="/cn/index.html">工具分类</a></li>
+            <li class="active">商城</li>
         </ol>
         <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-8">
@@ -64,13 +52,25 @@
                             <td></td>
                             <td></td>
                         </tr>
+                        <tr>
+                            <th></th>
+                            <th>购物参考</th>
+                            <td><a href="http://www.china-10.com/">十大品牌网</a></td>
+                            <td><a href="http://www.etao.com">一淘网</a></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
             <div class="col-xs-6 col-md-4">
                 <div class="card">
                     <div class="card-header">相关工具页面推荐</div>
-                    <div class="list-group"> <a href="/cn/i/b2b.html" class="list-group-item active">B2B</a> <a href="/cn/i/p2p.html" class="list-group-item">P2P</a>
+                    <div class="list-group">
+                        <a href="/cn/i/b2b.html" class="list-group-item active">B2B</a>
+                         <a href="/cn/i/p2p.html" class="list-group-item">P2P</a>
+
                         <a href="#" class="list-group-item"></a>
                         <a href="#" class="list-group-item"></a>
                         <a href="#" class="list-group-item"></a>
