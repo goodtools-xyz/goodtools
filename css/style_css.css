@@ -311,15 +311,7 @@ footer li {
     th {
         display: none;
     }
-    .col-md-9 {
-        margin: auto;
-    }
-    .row {
-        margin: auto;
-    }
-    .container-fluid {
-        margin: auto;
-    }
+
     .form-inline {
         display: none;
     }
