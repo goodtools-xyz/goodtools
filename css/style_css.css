@@ -160,6 +160,9 @@ td {
     font-size: 14px;
     word-wrap: break-word;
 }
+td a {
+    text-align: center;
+}
 
 table {
     word-break: !important;
