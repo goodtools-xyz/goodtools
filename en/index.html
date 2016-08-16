@@ -16,13 +16,6 @@
     <!--  font-awesome -->
     <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
-    <!--linkedin API-->
-    <script type="text/javascript" src="//platform.linkedin.com/in.js">
-        api_key: 75 n0e29vl1cx01
-        onLoad: Linkedin.init
-        authorize: true
-        lang: en_US
-    </script>
 </head>
 
 <body>
@@ -33,19 +26,8 @@
                 <li class="nav-item"> <a class="nav-link" href="/about.html">About</a> </li>
                 <li class="nav-item"> <a class="nav-link" href="/en/i/statisticsdata.html">Trend·Statistics</a></li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/login/login.html">
-                        <wb:login-button type="5,5" onlogin="login" onlogout="logout">Login</wb:login-button>
-                    </a>
+                    <a class="nav-link" href="/login/login.html">Login</a>
                 </li>
-                <script>
-                    function login(o) {
-                        alert(o.screen_name)
-                    }
-
-                    function logout() {
-                        alert('logout');
-                    }
-                </script>
             </ul>
             <form class="form-inline pull-xs-right" method="get" action="http://www.google.com/search" target="_blank">
                 <input class="form-control" type="text" placeholder="Search" name="q" size="31" maxlength="255" value="">
@@ -538,7 +520,7 @@
                                             <td><a href="https://getpocket.com" target="_blank" class="cellhightlight">Pocket</a></td>
                                         </tr>
                                         <tr>
-                                            <th>RSS</th>
+                                            <th><a href="http://www.ranker.com/">Ebook</a></th>
                                             <th>&nbsp;</th>
                                             <td><a href="http://www.inoreader.com" target="_blank">inoreader</a></td>
                                             <td><a href="http://reader.youdao.com" target="_blank">Youdao reader</a></td>
