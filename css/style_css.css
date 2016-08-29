@@ -152,14 +152,16 @@ section {
 
 th,
 td {
-    /*max-width:150px;*/
+    max-width:150px;
     max-height: 100px;
     padding: 1px 4px;
     border-spacing: 0px 0px;
     border: thin solid #E0E0E0;
     font-size: 14px;
     word-wrap: break-word;
+    text-align: center;
 }
+
 td a {
     text-align: center;
 }
@@ -207,7 +209,7 @@ a {
 }
 
 a:visited {
-    color: #FFAA00;
+/*    color: #FFAA00;*/
 }
 
 a:hover {
@@ -314,7 +316,6 @@ footer li {
     th {
         display: none;
     }
-
     .form-inline {
         display: none;
     }
