@@ -152,7 +152,7 @@ section {
 
 th,
 td {
-    max-width:150px;
+    max-width: 150px;
     max-height: 100px;
     padding: 1px 4px;
     border-spacing: 0px 0px;
@@ -185,9 +185,11 @@ tr:hover {
     background-color: #F0F0F0;
 }
 
-th {
-    background-color: #F0F0A0;
+th,
+th a {
+    background-color: darkorange;
     width: 110px;
+    color: white;
 }
 
 
@@ -209,7 +211,7 @@ a {
 }
 
 a:visited {
-/*    color: #FFAA00;*/
+    /*    color: #FFAA00;*/
 }
 
 a:hover {
