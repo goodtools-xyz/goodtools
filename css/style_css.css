@@ -186,10 +186,11 @@ tr:hover {
 }
 
 th,
-th a {
+tr th a {
     background-color: darkorange;
     width: 110px;
     color: white;
+    text-align: center;
 }
 
 

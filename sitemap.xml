@@ -7,166 +7,657 @@
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 <url>
-  <loc>http://www.tool321.com/cn/index.html</loc>
-  <lastmod>2016-05-3 T02:02:04+00:00</lastmod>
-  <changefreq>hourly</changefreq>
+  <loc>http://tool321.com/cn/index.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>http://www.tool321.com/cn/i/statisticsdata.html</loc>
-  <lastmod>2016-03-30T02:02:04+00:00</lastmod>
-  <changefreq>hourly</changefreq>
+  <loc>http://tool321.com/cn/i/statisticsdata.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.tool321.com/cn/r/traveler.html</loc>
-  <lastmod>2016-03-30T02:02:04+00:00</lastmod>
-  <changefreq>hourly</changefreq>
+  <loc>http://tool321.com/cn/i/industry.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.tool321.com/cn/r/musicfans.html</loc>
-  <lastmod>2016-03-30T02:02:04+00:00</lastmod>
-  <changefreq>hourly</changefreq>
+  <loc>http://tool321.com/cn/i/informationtechnology.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.tool321.com/cn/r/hr.html</loc>
-  <lastmod>2016-03-30T02:02:04+00:00</lastmod>
-  <changefreq>hourly</changefreq>
+  <loc>http://tool321.com/cn/i/realestate.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.tool321.com/cn/r/webmaster.html</loc>
-  <lastmod>2016-03-30T02:02:04+00:00</lastmod>
-  <changefreq>hourly</changefreq>
+  <loc>http://tool321.com/cn/i/finance.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.tool321.com/cn/i/thinktank.html</loc>
-  <lastmod>2016-03-30T02:02:04+00:00</lastmod>
-  <changefreq>hourly</changefreq>
+  <loc>http://tool321.com/cn/i/entertainment.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.tool321.com/cn/r/systemmanager.html</loc>
-  <lastmod>2016-03-30T02:02:04+00:00</lastmod>
-  <changefreq>hourly</changefreq>
+  <loc>http://tool321.com/cn/i/electron.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.tool321.com/cn/r/quality.html</loc>
-  <lastmod>2016-05-10T02:02:04+00:00</lastmod>
-  <changefreq>hourly</changefreq>
-  <priority>0.90</priority>
-</url>
-<url>
-  <loc>http://www.tool321.com/cn/r/uidesigner.html</loc>
-  <lastmod>2016-03-30T02:02:04+00:00</lastmod>
-  <changefreq>hourly</changefreq>
+  <loc>http://tool321.com/cn/r/rolecategory.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.tool321.com/cn/r/tester.html</loc>
-  <lastmod>2016-03-30T02:02:04+00:00</lastmod>
-  <changefreq>hourly</changefreq>
+  <loc>http://tool321.com/cn/r/marketing.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.tool321.com/cn/i/informationtechnology.html</loc>
-  <lastmod>2016-03-30T02:02:04+00:00</lastmod>
-  <changefreq>hourly</changefreq>
+  <loc>http://tool321.com/cn/r/quality.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.tool321.com/cn/i/startup.html</loc>
-  <lastmod>2016-03-30T02:02:04+00:00</lastmod>
-  <changefreq>hourly</changefreq>
+  <loc>http://tool321.com/cn/r/hr.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.tool321.com/cn/i/industry4.0.html</loc>
-  <lastmod>2016-03-30T02:02:04+00:00</lastmod>
-  <changefreq>hourly</changefreq>
+  <loc>http://tool321.com/cn/r/uidesigner.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.tool321.com/cn/c/searchengine.html</loc>
-  <lastmod>2016-03-30T02:02:04+00:00</lastmod>
-  <changefreq>hourly</changefreq>
+  <loc>http://tool321.com/cn/r/tester.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.tool321.com/cn/c/database.html</loc>
-  <lastmod>2016-03-30T02:02:04+00:00</lastmod>
-  <changefreq>hourly</changefreq>
+  <loc>http://tool321.com/cn/i/corporation.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.tool321.com/cn/c/surfing.html</loc>
-  <lastmod>2016-03-30T02:02:04+00:00</lastmod>
-  <changefreq>hourly</changefreq>
+  <loc>http://tool321.com/cn/i/startup.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.tool321.com/cn/c/blog.html</loc>
-  <lastmod>2016-03-30T02:02:04+00:00</lastmod>
-  <changefreq>hourly</changefreq>
+  <loc>http://tool321.com/cn/i/growup.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.tool321.com/cn/c/download.html</loc>
-  <lastmod>2016-03-30T02:02:04+00:00</lastmod>
-  <changefreq>hourly</changefreq>
+  <loc>http://tool321.com/cn/i/thinktank.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.tool321.com/cn/c/toolcategory.html</loc>
-  <lastmod>2016-03-30T02:02:04+00:00</lastmod>
-  <changefreq>hourly</changefreq>
+  <loc>http://tool321.com/cn/i/qualification.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/i/industry4.0.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/i/cloud.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/i/iot.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/i/b2b.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/r/dataengineer.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/c/searchengine.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/c/surfing.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/c/mp.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/c/safety.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/c/download.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/c/mall.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/c/appstore.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/c/pay.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/c/voice.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/c/cloudoffice.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/c/note.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/c/clouddisk.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/c/email.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/c/calender.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/c/task.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/c/explorer.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/c/word.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/c/notepad.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/c/excel.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/c/form.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/c/powerpoint.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/c/flowchart.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/c/skype.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/c/sharepoint.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/c/oa.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/c/crm.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/c/bi.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/c/erp.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/c/database.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/c/projectmanagement.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/c/publication.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/c/creative.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/c/webpager.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/c/finance.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/c/dictionary.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/c/ebook.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/c/photo.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/c/vedio.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/c/media.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/c/music.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/c/ide.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/c/developer.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/c/news.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/c/academy.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/c/operationsystem.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/c/server.php</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/c/input.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/c/winzip.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/c/virtualmachine.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/i/steel.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.tool321.com/cn/r/rolecategory.html</loc>
-  <lastmod>2016-03-30T02:02:04+00:00</lastmod>
-  <changefreq>hourly</changefreq>
+  <loc>http://tool321.com/cn/i/food.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.tool321.com/cn/index_bootstrapt.html</loc>
-  <lastmod>2016-03-30T02:02:04+00:00</lastmod>
-  <changefreq>hourly</changefreq>
+  <loc>http://tool321.com/cn/i/auto.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.tool321.com/cn/i/certification.html</loc>
-  <lastmod>2016-03-30T02:02:04+00:00</lastmod>
-  <changefreq>hourly</changefreq>
-  <priority>0.64</priority>
-</url>
-
-<url>
-  <loc>http://www.tool321.com/cn/i/industry.html</loc>
-  <lastmod>2016-03-30T02:02:04+00:00</lastmod>
-  <changefreq>hourly</changefreq>
+  <loc>http://tool321.com/cn/i/machinery.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.tool321.com/cn/r/appdeveloper.html</loc>
-  <lastmod>2016-03-30T02:02:04+00:00</lastmod>
-  <changefreq>hourly</changefreq>
+  <loc>http://tool321.com/cn/i/advertisement.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.tool321.com/cn/r/configulator.html</loc>
-  <lastmod>2016-03-30T02:02:04+00:00</lastmod>
-  <changefreq>hourly</changefreq>
+  <loc>http://tool321.com/cn/i/education.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.tool321.com/cn/r/trader.html</loc>
-  <lastmod>2016-03-30T02:02:04+00:00</lastmod>
-  <changefreq>hourly</changefreq>
+  <loc>http://tool321.com/cn/i/engineering.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/i/consulting.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/i/aero.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/i/logistics.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/i/environment.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/i/chemical.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/i/mining.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/i/gov.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/r/projectmanager.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/r/appdeveloper.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/r/configulator.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/r/productmanager.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/r/systemmanager.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/r/webmaster.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/r/accountant.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/r/trader.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/r/lawer.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/r/researcher.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/r/topmanagement.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/r/traveler.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/r/musicfans.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/i/certification.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/r/doc/asq-qualityterminology.doc</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/c/toolcategory.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/index_bootstrapt.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/c/blog.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/i/p2p.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/km/country.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://tool321.com/cn/r/siteassetlibrary.html</loc>
+  <lastmod>2016-08-29T08:50:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
   <priority>0.51</priority>
 </url>
 </urlset>
