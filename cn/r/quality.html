@@ -40,11 +40,6 @@
             })();
         })();
     </script>
-    <!-- Growing I/O -->
-    <!--	sina openAPI js-->
-    <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=3338588483" type="text/javascript" charset="utf-8"></script>
-    <!--debug mode-->
-    <!--<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=YOUR APPKEY&debug=true" type="text/javascript" charset="utf-8"></script>-->
 </head>
 
 <body>
@@ -64,19 +59,11 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="/cn/i/statisticsdata.html"><span class="glyphicon glyphicon-stats" aria-hidden="true">&nbsp;</span>趋势·统计数据</a></li>
                         <li>
-                            <a href="">
-                                <wb:login-button type="5,5" onlogin="login" onlogout="logout">登陆</wb:login-button>
+                            <a href="/login/login.html">
+                               登陆
                             </a>
                         </li>
-                        <script>
-                            function login(o) {
-                                alert(o.screen_name)
-                            }
 
-                            function logout() {
-                                alert('logout');
-                            }
-                        </script>
                         <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user" aria-hidden="true">&nbsp;</span>个人类型<span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="">体育迷</a></li>
@@ -623,7 +610,7 @@
                                 <th>国外</th>
                                 <td><a href="http://elsmar.com/Forums">Elsmar</a></td>
                                 <td><a href="http://www.qualityforumonline.com/">Quality Forum</a></td>
-                                <td></td>
+                                <td><a href="http://www.iaq2015.com/">World Quality Forum</a></td>
                                 <td></td>
                                 <td></td>
                             </tr>
@@ -633,16 +620,16 @@
                                 <td><a href="https://www.apqc.org/" target="_blank">美国生产力和质量中心</a>&nbsp;<a href="">Wiki</a></td>
                                 <td><a href="http://www.apo-tokyo.org/">APO-亚洲生产力</a></td>
                                 <td><a href="">北京大学 质量与竞争力中心</a></td>
-                                <td><a href="http://www.whuiqds.com/">武汉大学质量发展战略研究院</a></td>
                                 <td></td>
                             </tr>
                             <tr>
-                                <th>研究所</th>
-                                <th>日本</th>
+                                <th>研究院</th>
+                                <th></th>
+                                <td><a href="http://www.iaqweb.net/">IAQ 国际质量科学院</a></td>
+                                <td><a href="http://www.whuiqds.com/">武汉大学质量发展战略研究院</a></td>
+                                <td><a href="http://www.saqm.org.cn/">上海质量科学管理研究院</a></td>
                                 <td><a href="http://www.iso-mi.com">ISOマネジメント研究所</a></td>
                                 <td><a href="http://www.juse.or.jp">日本科学技术联盟</a></td>
-                                <td></td>
-                                <td></td>
                                 <td></td>
                             </tr>
                             <tr>
@@ -665,12 +652,12 @@
                             </tr>
                             <tr>
                                 <th></th>
-                                <th></th>
-                                <td>方法</td>
-                                <td>六西格玛</td>
+                                <th>行业</th>
+                                <td><a href="http://www.harrington-institute.com/">Harrington-Institute</a></td>
+                                <td><a href="http://www.gregoryhwatson.eu/">Gregoryhwatson</a></td>
                                 <td>精益生产</td>
                                 <td>标准化</td>
-                                <td></td>
+                                <td>六西格玛</td>
                             </tr>
                             <tr>
                                 <th scope="row">CMMI</th>
@@ -1042,8 +1029,8 @@
                                 <td></td>
                             </tr>
                             <tr>
-                                <th><a href="http://www.iaqweb.net/">IAQ 国际质量科学院</a></th>
-                                <th>质量名人</th>
+                                <th></th>
+                                <th><a href="http://www.qualitygurus.com/">质量大师</a></th>
                                 <td>泰勒（Frederick W. Taylor）&nbsp;<a href="">百科</a>&nbsp;<a href="https://en.wikipedia.org/wiki/Frederick_Winslow_Taylor">Wiki</a></td>
                                 <td>休哈特（Walter Shewart）：统计质量控制 &nbsp; <a href="http://baike.baidu.com/link?url=UxtaMcfajYU00fmQO_GvaTYthBsfgtN1FOEmPK3OXiMROw4DezkQT6wWmHVGYp3oBNSLylKep-58IXImOSOmQq">百科</a>&nbsp;<a href="https://en.wikipedia.org/wiki/Walter_A._Shewhart">Wiki</a></td>
                                 <td>戴明（W.Edwards）：PDCA循环和14条法则 &nbsp; <a href="http://baike.baidu.com/link?url=-9pLvbnEl_oC6iw1Ce4fAYg9IgrjsVyM4Ixb10iySQUX4IzlnFKaSaNGbtfoK537PQ5ZJxKqy15i2-7vlsF-Aq">百科</a>&nbsp;<a href="https://en.wikipedia.org/wiki/W._Edwards_Deming">Wiki</a></td>
@@ -1061,7 +1048,7 @@
                             </tr>
                             <tr>
                                 <th></th>
-                                <th></th>
+                                <th>国内</th>
                                 <td>刘源张 &nbsp; <a href="http://baike.baidu.com/link?url=vqaDAWQzS9CkIE0JJVRta5bmKraPl4sEbw8PQanOT1bsuH97gwWg-DoTYlambI9NHWy78Rz8oTP-mLIM2AINhK">百科</a>&nbsp;<a href="https://en.wikipedia.org/wiki/Liu_Yuanzhang">Wiki</a></td>
                                 <td>邓绩&nbsp;<a href="">百科</a>&nbsp;<a href="">Wiki</a></td>
                                 <td>徐济超&nbsp;<a href="http://baike.baidu.com/link?url=LOflfckptT_wmU4aYZzgKcTmlxGRZRVWHoRq5EpIqXkLXt_WVR_KvTStdxp_pjocpvXS2jXjZJIH0JZZLPmLU_">百科</a>&nbsp;<a href="">Wiki</a></td>
@@ -1072,8 +1059,8 @@
                                 <th></th>
                                 <th></th>
                                 <td>何桢 &nbsp;<a href="http://baike.baidu.com/link?url=KTsz-XO4Xoi1nqZcnQWDQb4uV6LgT2fFBCWaLVHJnJMUO-t6Xe2C3vuCr2WVYsDvuPVduBpWtlBf56sUFElTn9cfw0-_QxeErCSqanYpWhG">百科</a>&nbsp;<a href="">Wiki</a></td>
-                                <td></td>
-                                <td></td>
+                                <td><a href="http://baike.baidu.com/link?url=ioCRnBsRdTUdTPERxbFOAJvIohyTA7vYpptFozrvOzjGXGLwADRs-PQUtTWLlv96ozYHXxyw4188i6hCJRUSNq">唐晓芬</a></td>
+                                <td><a href="">Gang Zhang</a></td>
                                 <td></td>
                                 <td></td>
                             </tr>
