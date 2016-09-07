@@ -1,0 +1,4 @@
+﻿User-agent:*
+Disallow:
+
+Sitemap: http://www.tool321.com/cn/index.html/sitemap.xml
