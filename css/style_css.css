@@ -185,17 +185,20 @@ tr:hover {
     background-color: #F0F0F0;
 }
 
-th:nth-child(1),
-tr th a {
+th:nth-child(1) {
     background-color: darkorange;
     width: 110px;
     color: white;
     text-align: center;
 }
 
-th:nth-child(2)
-{
-    background-color: navajowhite;
+tr th a {
+    text-decoration-color: white;
+    color: white;
+}
+
+th:nth-child(2) {
+    background-color: orange;
     width: 110px;
     color: white;
     text-align: center;
@@ -324,9 +327,14 @@ footer li {
     .col-md-3 {
         display: none;
     }
-    th {
+    td:nth-last-child(1) {
         display: none;
     }
+/*    不显示最后一个cell的内容，当屏幕尺寸小的时候*/
+    th:nth-child(2) {
+        display: none;
+    }
+    /*    不显示第二个th的内容，当屏幕尺寸小的时候*/
     .form-inline {
         display: none;
     }
