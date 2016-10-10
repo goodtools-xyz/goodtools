@@ -185,9 +185,17 @@ tr:hover {
     background-color: #F0F0F0;
 }
 
-th,
+th:nth-child(1),
 tr th a {
     background-color: darkorange;
+    width: 110px;
+    color: white;
+    text-align: center;
+}
+
+th:nth-child(2)
+{
+    background-color: navajowhite;
     width: 110px;
     color: white;
     text-align: center;
