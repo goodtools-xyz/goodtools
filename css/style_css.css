@@ -327,10 +327,7 @@ footer li {
     .col-md-3 {
         display: none;
     }
-    td:nth-last-child(1) {
-        display: none;
-    }
-/*    不显示最后一个cell的内容，当屏幕尺寸小的时候*/
+
     th:nth-child(2) {
         display: none;
     }
