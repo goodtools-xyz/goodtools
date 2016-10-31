@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh">
 
 <head>
     <!-- Required meta tags always come first -->
@@ -11,73 +11,82 @@
     <base target="_blank">
     <title>开发者中心</title>
     <link href="/css/style_css.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.0.0/normalize.css"> </head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous"> </head>
 
 <body>
     <div class="container-fluid">
         <div class="row">
-            <nav class="navbar navbar-light navbar-fixed-top bg-faded"> <a class="navbar-brand" href="/index.html">Tool<span style="color:red">3</span><span style="color:#FFEB63">2</span><span style="color:blue">1</span>.com&nbsp;&nbsp;<span class="small">Beta V0.61</span></a>
-                <ul class="nav navbar-nav">
-                    <li class="nav-item active"> <a class="nav-link" href="/en/index.html"><span class="label label-lg label-danger">英文版</span><span class="sr-only">(current)</span></a> </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/cn/i/statisticsdata.html"> <i class="fa fa-line-chart fa-lg" aria-hidden="true"></i>&nbsp;趋势·统计数据</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="">
-                            <wb:login-button type="5,5" onlogin="login" onlogout="logout">登陆</wb:login-button>
-                        </a>
-                    </li>
-                    <li class="nav-item"> <a class="nav-link" href="/about.html">About</a> </li>
-                </ul>
-                <form class="form-inline pull-xs-right" role="search" onsubmit="return baiduWithHttps(this)" action="http://www.baidu.com/baidu" target="_blank">
-                    <input class="form-control" type="text" placeholder="Search" onfocus="checkHttps" name="word" size="40">
-                    <input name="tn" type="hidden" value="SE_zzsearchcode_shhzc78w">
-                    <button class="btn btn-success-outline" type="submit">百度一下</button>
-                </form>
+            <nav class="navbar navbar-light navbar-fixed-top bg-faded">
+                <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation"> &#9776; </button>
+                <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2"> <a class="navbar-brand" href="/index.html">Tool<span style="color:red">3</span><span style="color:#FFEB63">2</span><span style="color:blue">1</span>.com&nbsp;&nbsp;<span class="small">Beta V0.78</span></a>
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item active"> <a class="nav-link" href="/en/index.html"><span class="tag tag-lg tag-danger">English</span><span class="sr-only">(current)</span></a> </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/cn/i/statisticsdata.html"> <i class="fa fa-line-chart fa-lg" aria-hidden="true"></i>&nbsp;趋势·统计数据</a>
+                        </li>
+                        <li class="nav-item"> <a class="nav-link" href="/login/login.html">登陆</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="/about.html">About</a> </li>
+                    </ul>
+                    <form class="form-inline float-xs-right" role="search" onsubmit="return baiduWithHttps(this)" action="http://www.baidu.com/baidu" target="_blank">
+                        <input class="form-control" type="text" placeholder="Search" onfocus="checkHttps" name="word" size="40">
+                        <!--                    <input name="tn" type="hidden" value="SE_zzsearchcode_shhzc78w">-->
+                        <button class="btn btn-outline-success" type="submit">百度一下</button>
+                    </form>
+                </div>
             </nav>
             <br/>
             <br/>
             <br/>
             <ol class="breadcrumb" style="margin-bottom: 5px;">
-                <li><a href="/">首页</a></li>
-                <li><a href="/cn/">工具分类</a></li>
-                <li class="active">开发者中心</li>
+                <li class="breadcrumb-item"><a href="/">首页</a></li>
+                <li class="breadcrumb-item"><a href="/cn/">工具分类</a></li>
+                <li class="breadcrumb-item active">开发者中心</li>
             </ol>
             <br/>
+            <div class="col-md-2"></div>
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header"> Developer role list </div>
+                    <div class="card-header">开发者中心</div>
                     <div class="card-block">
                         <div class="table-responsive">
                             <table class="table table-sm">
                                 <tbody>
+
                                     <tr>
-                                        <th>常用</th>
+                                        <th></th>
+                                        <th>社区</th>
+                                        <td><a href="http://www.csdn.net" target="_blank">CSDN</a></td>
+                                        <td><a href="http://www.cnblogs.com/" target="_blank" class="cellhightlight">博客园</a></td>
+                                        <td><a href="http://www.oschina.net/">开源中国</a></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th>问答</th>
+                                        <th>国内</th>
+                                        <td><a href="https://segmentfault.com">Segmentfault</a></td>
+                                        <td><a href="https://cnodejs.org">Cnode</a></td>
+                                        <td><a href="https://www.zhihu.com/">知乎</a></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th></th>
+                                        <th>国外</th>
+                                        <td><a href="http://stackoverflow.com">Stackoverflow</a></td>
+                                        <td><a href="https://www.quora.com/">Quora</a></td>
+                                        <td><a href="http://www.idganswers.com/">IDG answers</a></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th>代码工具</th>
                                         <th></th>
                                         <td><a href="https://searchcode.com/">Searchcode</a></td>
-                                        <td><a href="http://www.oschina.net/">开源中国</a></td>
-                                        <td><a href="http://webfullstack.me/">工具导航</a></td>
+                                        <td><a href="http://sourceforge.net" target="_blank">Sourceforge</a></td>
+                                        <td><a href="https://www.phacility.com/">phacility</a></td>
+                                        <td><a href="http://fbinfer.com/">fbinfer</a></td>
                                         <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <th></th>
-                                        <th>问答</th>
-                                        <td><a href="http://stackoverflow.com">Stackoverflow</a></td>
-                                        <td><a href="https://cnodejs.org">Cnode</a></td>
-                                        <td><a href="http://www.idganswers.com/">IDG answers</a></td>
-                                        <td><a href="https://www.zhihu.com/">知乎</a></td>
-                                        <td><a href="https://www.quora.com/">Quora</a></td>
-                                    </tr>
-                                    <tr>
-                                        <th></th>
-                                        <th><a href="/cn/r/appdeveloper.html">App developer</a></th>
-                                        <td class="td1"><a href="/cn/r/uidesigner.html">Web developer</a></td>
-                                        <td class="td2">Software developer</td>
-                                        <td class="td3">Hardware developer</td>
-                                        <td class="td4"></td>
-                                        <td class="td5"></td>
                                     </tr>
                                     <tr>
                                         <th><a href="/cn/r/developer.html">开发者中心</a></th>
@@ -116,65 +125,31 @@
                                         <td><a href="http://www.cebit.com.cn">CEBIT</a></td>
                                     </tr>
                                     <tr>
-                                        <th></th>
-                                        <th></th>
-                                        <td><a href="http://sourceforge.net" target="_blank">Sourceforge</a></td>
-                                        <td><a href="http://www.csdn.net" target="_blank">CSDN</a></td>
-                                        <td><a href="http://www.cnblogs.com/" target="_blank" class="cellhightlight">博客园</a></td>
-                                        <td></td>
-                                        <td></td>
+                                        <th>站内相关</th>
+                                        <th>开发者</th>
+                                        <td class="td1"><a href="/cn/r/uidesigner.html">前端工程师</a></td>
+                                        <td><a href="/cn/r/appdeveloper.html">App developer</a></td>
+                                        <td class="td3"><a href="/cn/r/hwengineer.html">硬件工程师</a></td>
+                                        <td><a href="/cn/r/swengineer.html">软件架构师</a></td>
+                                        <td class="td4"><a href="/cn/r/productmanager.html">产品经理</a></td>
                                     </tr>
                                     <tr>
                                         <th></th>
-                                        <th>软件设计</th>
-                                        <td><a href="https://www.thoughtworks.com/products" target="_blank">Throughtworks</a></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
+                                        <th>领域</th>
+                                        <td><a href="/link.html">新概念</a></td>
+                                        <td><a href="/cn/i/industry4.0.html">工业4.0</a></td>
+                                        <td><a href="/cn/i/cloud.html">云计算</a></td>
+                                        <td><a href="/cn/i/iot.html">物联网</a></td>
+                                        <td><a href="/en/i/smartcity.html">智慧城市</a></td>
                                     </tr>
                                     <tr>
-                                        <th>代码走查</th>
+                                        <th>其它</th>
                                         <th></th>
-                                        <td><a href="https://www.phacility.com/">phacility</a></td>
-                                        <td><a href="http://fbinfer.com/">fbinfer</a></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <th></th>
-                                        <th>javascript</th>
-                                        <td><a href="https://flowtype.org/">flow</a></td>
+                                        <td><a href="http://webfullstack.me/">工具导航</a></td>
                                         <td></td>
                                         <td></td>
                                         <td></td>
                                         <td></td>
-                                    </tr>
-                                    <tr>
-                                        <th></th>
-                                        <th>隔离运行环境</th>
-                                        <td><a href="http://www.docker.com" target="_blank" class="cellhightlight">DOCKER</a></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <th></th>
-                                        <th>在线集成开发环境</th>
-                                        <td><a href="https://www.icecoder.net" target="_blank">icecoder</a></td>
-                                        <td><a href="https://orion.eclipse.org" target="_blank">Eclipse Orino</a></td>
-                                        <td><a href="http://codiad.com" target="_blank">Codiad</a></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <th></th>
-                                        <th>软件架构师</th>
-                                        <td>容器</td>
-                                        <td>DOCKER</td>
-                                        <td><a href="http://stackengine.com" target="_blank">stackengine</a></td>
-                                        <td> <a href="https://www.icecoder.net" target="_blank">icecoder</a> </td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -183,10 +158,7 @@
                     <!--					-->
                 </div>
             </div>
-            <!--				the end of col-md-8-->
-            <div class="col-md-4">
-                <div class="list-group"> <a href="#" class="list-group-item active">Relative page</a> <a href="http://hao.199it.com/" class="list-group-item">hao.199it.com/</a> <a href="/en/i/thinktank.html" class="list-group-item">Top thinktank worldwide</a> <a href="#" class="list-group-item">Organization</a> <a href="#" class="list-group-item">物联网</a> </div>
-            </div>
+            <div class="col-md-2"></div>
         </div>
         <footer>
             <!--QUALIFICAITON INFORMATION-->
