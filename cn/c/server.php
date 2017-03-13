@@ -53,6 +53,15 @@
                 <tr>
                     <th></th>
                     <th></th>
+                    <td><a href="http://www.163yun.com/">网易云</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th></th>
                     <td><a href="http://www.west.cn/">西部数码</a></td>
                     <td><a href="https://www.qingcloud.com/">青云</a></td>
                     <td><a href="http://www.qiniu.com" target="_blank">七牛</a></td>
