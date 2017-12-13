@@ -3,6 +3,9 @@ html {
     background-color: carbon;
 }
 
+nav {
+    position: fixed;
+}
 #wrapper {
     margin: 0px;
     min-width: 800px;
