@@ -6,6 +6,7 @@ html {
 nav {
     position: fixed;
 }
+
 #wrapper {
     margin: 0px;
     min-width: 800px;
@@ -17,6 +18,10 @@ header {
     margin-left: auto;
     margin-bottom: 0px;
     min-width: 800px;
+}
+#carouselExampleIndicators
+{background-image: url(/img/banner.JPG)
+
 }
 
 #header {
@@ -326,11 +331,10 @@ footer li {
     border-radius: 4px;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1120px) {
     .col-md-3 {
         display: none;
     }
-
     th:nth-child(2) {
         display: none;
     }
@@ -342,6 +346,9 @@ footer li {
 
 @media screen and (max-width: 800px) {
     .form-inline {
+        display: none;
+    }
+    .navbar-nav {
         display: none;
     }
 }
