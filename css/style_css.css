@@ -19,9 +19,18 @@ header {
     margin-bottom: 0px;
     min-width: 800px;
 }
-#carouselExampleIndicators
-{background-image: url(/img/banner.JPG)
 
+#carouselExampleIndicators {
+    background-image: url(/img/banner.JPG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-inner {
+    height: 400px;
 }
 
 #header {
