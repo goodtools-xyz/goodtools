@@ -5,7 +5,7 @@ html {
 
 nav {
     position: fixed;
-}
+    }
 
 #wrapper {
     margin: 0px;
@@ -20,19 +20,19 @@ header {
     min-width: 800px;
 }
 
-#carouselExampleIndicators {
+.carousel-item {
+    height: 350px;
     background-image: url(/img/banner.JPG);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 100%;
     width: 100%;
-}
+    }
 
-.carousel-inner {
-    height: 400px;
-}
+.slide {
+    width:auto;
 
+}
 #header {
     height: 50px;
     border-bottom: thin solid #E0E0E0;
