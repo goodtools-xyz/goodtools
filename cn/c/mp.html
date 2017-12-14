@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>自媒体导航-Tool321,专注工具导航</title>
+    <title>Tool321自媒体导航</title>
     <meta name="keywords" content="自媒体注册，博客，微博，blog，导航，自媒体导航，自媒体管理">
     <meta name="description" content="自媒体作者一站式工具导航平台，自媒体注册，后台管理网址导航--Tool321.com">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -33,7 +33,7 @@
 
 <body>
     <nav class="navbar sticky-top  navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="/index.html">Tool<span style="color:red">3</span><span style="color:#FFEB63">2</span><span style="color:blue">1</span>.com&nbsp;&nbsp;<span class="small">Beta V0.88</span></a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="/index.html">Tool<span style="color:red">3</span><span style="color:#FFEB63">2</span><span style="color:blue">1</span>.com&nbsp;&nbsp;<span class="small">Beta V0.89</span></a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
@@ -46,10 +46,14 @@
                 <li class="nav-item"> <a class="nav-link" href="/about.html">About</a> </li>
             </ul>
 
-            <form class="form-inline my-2 my-lg-0 float-xs-right" role="search" onsubmit="return baiduWithHttps(this)" action="http://www.baidu.com/baidu" target="_blank">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search" onfocus="checkHttps" name="word" size="40" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">百度一下</button>
+            <form class="form-inline my-2 my-lg-0 float-xs-right" role="search" action="/cms/e/sch/index.php" method="GET" name="search_news" id="search_news" target="_blank">
+                <input class="form-control mr-sm-2" type="text" placeholder="站内工具搜索" value="" onfocus="checkHttps" name="keyboard" id="keyboard" size="20" aria-label="Search">
+
+
+                <!--                <input type="submit" name="Submit22" value="搜索" />-->
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" name="Submit22" value="搜索">搜工具</button>
             </form>
+
         </div>
     </nav>
 
