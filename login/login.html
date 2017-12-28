@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Tool321 Login</title>
+    <title>Tool321 登录/注册</title>
     <meta name="keywords" content="Tool321,login,enroll">
     <meta name="description" content="Tool321 login">
     <base target="_blank">
@@ -15,9 +15,9 @@
     <script type='text/javascript'>
         var _vds = _vds || [];
         window._vds = _vds;
-        (function () {
+        (function() {
             _vds.push(['setAccountId', 'b60421688f19e848']);
-            (function () {
+            (function() {
                 var vds = document.createElement('script');
                 vds.type = 'text/javascript';
                 vds.async = true;
@@ -26,6 +26,7 @@
                 s.parentNode.insertBefore(vds, s);
             })();
         })();
+
     </script>
 </head>
 
@@ -46,10 +47,15 @@
         <!--        action="/example/html5/demo_form.asp" -->
         <div>
             <p>功能正在开发中，欢迎收藏网址关注。--Tool321，专注效率和生产力工具</p>
-            <form method="get"> Name：
+            <form method="post" action="conduct.php"> Name：
                 <input type="email" name="user_email" placeholder="input your email" required="required" /> Password：
                 <input type="password" name="password" placeholder="password" required="required" />
                 <input type="submit" value="login" name="login" /> <a href="/login/help.html">Forget the password?</a> </form>
+                <ul>
+                    <li><a href="https://oapi.dingtalk.com/connect/qrconnect?appid=dingoanobgxi6mcrgq49mq&response_type=code&scope=snsapi_login&state=STATE&redirect_uri=http://tool321.com">使用钉钉扫码登录</a></li>
+                    <li><a href="https://open.weixin.qq.com/connect/oauth2/authorize?appid=ww63b212f636803f4d&redirect_uri=http://tool321.com&response_type=code&scope=snsapi_base&agentid=AGENTID&state=STATE#wechat_redirect">使用企业微信扫码登录</a></li>
+
+                </ul>
         </div>
         <footer>
             <!--QUALIFICAITON INFORMATION-->
@@ -69,6 +75,7 @@
                         <script type="text/javascript">
                             var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
                             document.write(unescape("%3Cspan id='cnzz_stat_icon_1257102666'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1257102666%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+
                         </script>
                     </li>
                 </ul>
