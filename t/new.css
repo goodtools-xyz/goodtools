@@ -2294,6 +2294,7 @@ select:focus {
     .comment-like {
         margin: 20px 13px 0 0
     }
+
     .comment-more {
         float: left;
         width: 100px
@@ -3775,6 +3776,7 @@ a.product-sidebar-up {
     .product-sidebar {
         display: none
     }
+
     .product,
     .comments {
         margin-left: 0
@@ -4056,10 +4058,12 @@ a.product-sidebar-up {
         height: 100px;
         position: relative
     }
+
     .user-info {
         float: left;
         margin-left: 26px
     }
+
     .user-follow {
         float: right
     }
@@ -4071,14 +4075,17 @@ a.product-sidebar-up {
         height: 90px;
         margin: 0 auto
     }
+
     .user-avatar .avatar {
         width: 100px;
         height: 100px
     }
+
     .user-info {
         margin: 12px 0;
         text-align: center
     }
+
     .user-follow {
         margin: 0 auto
     }
@@ -4204,10 +4211,12 @@ li.active .col .tab-label {
         table-layout: fixed;
         margin: 0 auto
     }
+
     .tabs li {
         display: table-cell;
         padding: 0 20px
     }
+
     .col {
         display: table-cell;
         text-align: center
@@ -4219,6 +4228,7 @@ li.active .col .tab-label {
         width: 100%;
         display: block
     }
+
     .col {
         width: 100%;
         display: block;
@@ -4713,14 +4723,17 @@ body {
         padding: 0 2% 30px;
         width: 50%
     }
+
     .list-grid .list-item .cover,
     .list-grid .list-item .create-item {
         width: 100%
     }
+
     .list-grid .list-item .list-fav {
         top: 5%;
         right: 10%
     }
+
     .list-grid .list-item .cover-meta {
         max-width: 85%
     }
@@ -4826,34 +4839,42 @@ body {
         margin: 0 auto;
         width: 490px
     }
+
     .list-sets .list-item {
         padding: 10px
     }
+
     .list-sets .list-item .list-fav {
         top: 20px;
         right: 20px
     }
+
     .list-sets .list-item:nth-child(2):not(:last-child) {
         margin: 0;
         padding: 0
     }
+
     .list-sets .list-item:nth-child(2):not(:last-child) .list-fav {
         top: 10px;
         right: 10px
     }
+
     .list-sets .list-item:first-child .cover,
     .list-sets .list-item:last-child .cover {
         width: 144px;
         height: 162px
     }
+
     .list-sets .list-item:nth-last-child(2):first-child .cover,
     .list-sets .list-item:nth-child(2):last-child .cover {
         width: 225px;
         height: 162px
     }
+
     .list-sets .list-item:first-child:last-child {
         margin: 0 55px
     }
+
     .list-sets .list-item:first-child:last-child .cover {
         width: 360px;
         height: 162px
@@ -4868,32 +4889,39 @@ body {
         width: 90%;
         top: 180px
     }
+
     .list-sets .list-item {
         position: relative;
         width: 44%;
         margin: 0 3%;
         padding: 0
     }
+
     .list-sets .list-item:nth-child(3):nth-last-child(1),
     .list-sets .list-item:nth-child(2):nth-last-child(2) {
         width: 46%;
         margin: 0 2%
     }
+
     .list-sets .list-item:nth-child(1):nth-last-child(3) {
         display: none
     }
+
     .list-sets .list-item:nth-child(1):nth-last-child(1) {
         margin: 0 28%
     }
+
     .list-sets .list-item .cover {
         position: relative;
         width: 100%;
         height: 162px
     }
+
     .list-sets .list-item .list-fav {
         top: 5%;
         right: 5%
     }
+
     .list-sets .list-item .cover-meta {
         max-width: 85%
     }
@@ -5049,6 +5077,7 @@ body {
     .list-sort .list-brilliant {
         display: inline-block
     }
+
     .list-sort .list-hot-ul {
         display: none
     }
@@ -5175,22 +5204,27 @@ body {
         margin-left: auto;
         margin-right: auto
     }
+
     .list-page-header .list-page-content .list-page-avatar-people {
         display: none
     }
+
     .list-page-header .list-page-content .list-page-info {
         float: none;
         text-align: center
     }
+
     .list-page-header .list-page-content .list-fav-btn {
         float: none;
         width: 110px;
         margin-left: auto;
         margin-right: auto
     }
+
     .list-page-header .list-page-content .list-fav-btn a.fav-btn {
         margin-top: 10px
     }
+
     .list-page-header .list-page-content .list-fav-btn span {
         margin-top: 10px;
         text-align: center
@@ -5210,21 +5244,26 @@ body {
         margin-left: auto;
         margin-right: auto
     }
+
     .list-page-header .list-page-content.self .list-page-avatar {
         display: none
     }
+
     .list-page-header .list-page-content.self .list-page-info {
         display: block
     }
+
     .list-page-header .list-page-content.self .list-fav-btn {
         float: none;
         width: 110px;
         margin-left: auto;
         margin-right: auto
     }
+
     .list-page-header .list-page-content.self .list-fav-btn a.fav-btn {
         margin-top: 10px
     }
+
     .list-page-header .list-page-content.self .list-fav-btn span {
         margin-top: 10px;
         text-align: center
@@ -5447,6 +5486,7 @@ body {
         margin-bottom: 10px;
         margin-right: 10px
     }
+
     .list-page-btns .submit-btn.right {
         margin-left: 0
     }
@@ -5519,10 +5559,12 @@ body {
     .list-page-meta {
         margin-top: 70px
     }
+
     .list-page-meta .share {
         width: 100%;
         margin: 0 auto
     }
+
     .list-page-meta .list-stats {
         display: none
     }
@@ -5876,9 +5918,11 @@ a.modal-close:hover {
     .modal-sidebar {
         display: none
     }
+
     .modal-content {
         width: 100%
     }
+
     .modal-responsive-close {
         display: block;
         z-index: 101;
@@ -6611,8 +6655,7 @@ div.popup {
     display: block
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-only screen and (min-device-pixel-ratio: 1.5) {
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
     .search-page .home_page_icon {
         background: url(home_page@2x.png) no-repeat left top;
         background-size: 47px
@@ -7915,9 +7958,7 @@ div[contenteditable=true]:focus {
     background: rgba(0, 0, 0, 0.8)
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-only screen and (min--moz-device-pixel-ratio: 1.5),
-only screen and (min-device-pixel-ratio: 1.5) {
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
     #fancybox-loading,
     .fancybox-close,
     .fancybox-prev span,
@@ -7925,6 +7966,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
         background-image: url(//rs-assets.b0.upaiyun.com/assets/fancybox/source/fancybox_sprite@2x-bb0069bc777ad3fbaae9b601bd432f8c.png);
         background-size: 44px 152px
     }
+
     #fancybox-loading div {
         background-image: url(//rs-assets.b0.upaiyun.com/assets/fancybox/source/fancybox_loading@2x-c8b9bd974da136d4b39ab105fbf422ac.gif);
         background-size: 24px 24px
@@ -8013,7 +8055,6 @@ only screen and (min-device-pixel-ratio: 1.5) {
 #nprogress .bar {
     background: #948CF1
 }
-
 
 #nprogress .peg {
     -moz-box-shadow: 0 0 10px #948CF1, 0 0 5px #948CF1;
