@@ -2,18 +2,19 @@
 <!DOCTYPE html>
 <html data-online="true" data-user-id="198358" data-portable-device="false" >
 <head>
-<title>NEXT | 不错过任何一个新工具</title>
+<title>NewTool | 不错过任何一个新工具</title>
 <link rel="stylesheet" media="all" href="//rs-assets.b0.upaiyun.com/assets/application-42c32762eecd4d5bbe1bf9fbe93ec812.css" data-turbolinks-track="true" />
 <!-- meta -->
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="renderer" content="webkit">
 <link rel="shortcut icon" href="/favicon.ico">
+<link rel=""
 
 <!-- info -->
-<meta name="author" content="36Kr">
-<meta name="description" content="NEXT - 不错过任何一个新工具">
-<meta name="keywords" content="NEXT，新工具，创业，互联网工具，Startup">
+<meta name="author" content="Tool321">
+<meta name="description" content="NewTool - 不错过任何一个新工具">
+<meta name="keywords" content="NewTool，新工具，创业，互联网工具，Startup">
 <link rel="author" href="/humans.txt">
 
 <!--iOS -->
@@ -74,7 +75,7 @@
   <header class="topbar top_v2">
   <h1 class="brand">
     <a id="logo" class="logo" href="/">
-      NEXT
+      NewTool
 </a>    <span class="slogan">不错过任何一个新工具</span>
   </h1>
 
@@ -269,7 +270,7 @@
 </li>
 
   <li class="product-mark">
-    <div class="mark" title="Love2.io 的团队成员已经入驻 NEXT，你的评论反馈会被关注和回复">
+    <div class="mark" title="Love2.io 的团队成员已经入驻 NewTool，你的评论反馈会被关注和回复">
       <i class="marks mark-founder"></i>
     </div>
   </li>
@@ -324,7 +325,7 @@
 </li>
 
   <li class="product-mark">
-    <div class="mark" title="享租 的团队成员已经入驻 NEXT，你的评论反馈会被关注和回复">
+    <div class="mark" title="享租 的团队成员已经入驻 NewTool，你的评论反馈会被关注和回复">
       <i class="marks mark-founder"></i>
     </div>
   </li>
@@ -451,7 +452,7 @@
 </li>
 
   <li class="product-mark">
-    <div class="mark" title="Rigis 的团队成员已经入驻 NEXT，你的评论反馈会被关注和回复">
+    <div class="mark" title="Rigis 的团队成员已经入驻 NewTool，你的评论反馈会被关注和回复">
       <i class="marks mark-founder"></i>
     </div>
   </li>
@@ -515,7 +516,7 @@
 </li>
 
   <li class="product-mark">
-    <div class="mark" title="朋来 的团队成员已经入驻 NEXT，你的评论反馈会被关注和回复">
+    <div class="mark" title="朋来 的团队成员已经入驻 NewTool，你的评论反馈会被关注和回复">
       <i class="marks mark-founder"></i>
     </div>
   </li>
@@ -755,7 +756,7 @@
 </li>
 
   <li class="product-mark">
-    <div class="mark" title="乐课网 的团队成员已经入驻 NEXT，你的评论反馈会被关注和回复">
+    <div class="mark" title="乐课网 的团队成员已经入驻 NewTool，你的评论反馈会被关注和回复">
       <i class="marks mark-founder"></i>
     </div>
   </li>
@@ -884,7 +885,7 @@
 </li>
 
   <li class="product-mark">
-    <div class="mark" title="轻流学院 的团队成员已经入驻 NEXT，你的评论反馈会被关注和回复">
+    <div class="mark" title="轻流学院 的团队成员已经入驻 NewTool，你的评论反馈会被关注和回复">
       <i class="marks mark-founder"></i>
     </div>
   </li>
@@ -1397,8 +1398,8 @@
 </form>  </div>
   <div class="row cf">
     <div class="copyright">
-      <p>&copy; 2014-2015 <strong>NEXT</strong>. All Rights Reserved. A <a href="http://www.36kr.com">36Kr</a> product.</p>
-      <p class="">上 NEXT，每天刷新更酷的生活方式。查看 <a href="/about">FAQ</a> / <a href="/feedback">反馈建议</a></p>
+      <p>&copy; 2014-2015 <strong>NewTool</strong>. All Rights Reserved. A <a href="http://www.36kr.com">Tool321</a> product.</p>
+      <p class="">上 NewTool，每天刷新更酷的生活方式。查看 <a href="/about">FAQ</a> / <a href="/feedback">反馈建议</a></p>
     </div>
 
     <div class="footer-follow">
