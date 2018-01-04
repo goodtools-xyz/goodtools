@@ -5,7 +5,7 @@
       <webServer id="cd07f0b0-18f4-47bc-9769-cf321a2021b9" name="tool321" url="http://qxu1194690288.my3w.com">
         <fileTransfer host="qxu1194690288.my3w.com" port="21" rootFolder="/htdocs">
           <advancedOptions>
-            <advancedOptions dataProtectionLevel="Private" />
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" />
           </advancedOptions>
           <option name="port" value="21" />
         </fileTransfer>
