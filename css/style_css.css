@@ -340,6 +340,26 @@ footer li {
     border-radius: 4px;
 }
 
+@media (min-width: 1550px) {
+
+}
+
+@media (min-width: 1200px) {
+
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (max-width: 640px) {
+
+}
+
 @media screen and (max-width: 1120px) {
     .col-md-3 {
         display: none;
