@@ -188,7 +188,9 @@
 
                         <form class="simple_form form-margin-top" id="new_note" data-remote="true" data-type="html"
                               data-toggle="fetch" data-target=".popup_content" action="/posts" accept-charset="UTF-8"
-                              method="post"><input name="utf8" value="✓" type="hidden"><input name="authenticity_token"
+                              method="post">
+                            <input name="utf8" value="✓" type="hidden">
+                            <input name="authenticity_token"
                                                                                               value="2eVamDcu89lYN0EKEGIOSltvb8RwsPfcByEXpCIQxniUCfx6Svnet38dpgguXhvb0kOqa1VtmpBOBZjwmEeb4Q=="
                                                                                               type="hidden">
 
@@ -198,16 +200,16 @@
                                                                         name="note[source]" id="note_source"
                                                                         type="hidden"></div>
                             <div class="form-group string required note_title"><label class="string required"
-                                                                                      for="note_title">产品名称</label><input
+                                                                                      for="note_title">工具名称</label><input
                                         class="string required form-control input-small" required="required"
                                         aria-required="true" placeholder="如：Startup Base" name="note[title]"
                                         id="note_title" type="text"></div>
-                            <div class="form-group url required note_url"><label class="url required" for="note_url">产品官网</label><input
+                            <div class="form-group url required note_url"><label class="url required" for="note_url">工具官网</label><input
                                         class="string url required form-control input-small" required="required"
                                         aria-required="true" placeholder="以 http:// 开头的有效网址" name="note[url]"
                                         id="note_url" type="url"></div>
                             <div class="form-group text required note_summary"><label class="text required"
-                                                                                      for="note_summary">一句话描述这个产品</label><textarea
+                                                                                      for="note_summary">一句话描述这个工具</label><textarea
                                         class="text required form-control input-small" required="required"
                                         aria-required="true" name="note[summary]" id="note_summary"></textarea>
                                 <p class="help-block">请精简描述, 36字以内</p></div>
