@@ -196,9 +196,9 @@
 
                             <input name="force" id="force" type="hidden">
 
-                            <div class="hide hidden note_source"><input value="direct" class="hidden form-control"
-                                                                        name="note[source]" id="note_source"
-                                                                        type="hidden"></div>
+                            <div class="hide hidden note_source">
+                                <input value="direct" class="hidden form-control" name="note[source]" id="note_source"
+                                       type="hidden"></div>
                             <div class="form-group string required note_title"><label class="string required"
                                                                                       for="note_title">工具名称</label><input
                                         class="string required form-control input-small" required="required"
@@ -216,6 +216,20 @@
 
                             <button name="button" type="submit" class="btn submit product-btn">提交</button>
                         </form>
+                        <?php
+                        $name = $_POST['user_email'];
+                        $password = $_POST['password'];
+
+                        $con = mysql_connect("qdm208731188.my3w.com", "qdm208731188", "funnsy716057");
+                        mysql_select_db('qdm208731188_db');
+                        if (!$con) {
+                            die('Could not connect: ' . mysql_error());
+                        }
+                        mysql_select_db("my_db", $con);
+                        mysql_query("INSERT INTO tool321_user (user_email, user_password) VALUES ('$name','$password')");
+                        mysql_close($con);
+                        echo "$name,感谢您提交新的工具，Tool321！";
+                        ?>
                     </div>
                     <div class="note-similars">
                     </div>
