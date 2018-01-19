@@ -4,14 +4,12 @@
     <title>NewTool | 不错过任何一个新工具</title>
     <link rel="stylesheet" media="all"
           href="//rs-assets.b0.upaiyun.com/assets/application-42c32762eecd4d5bbe1bf9fbe93ec812.css"
-          data-turbolinks-track="true"/>
+          data-turbolinks-track="true">
     <!-- meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="renderer" content="webkit">
     <link rel="shortcut icon" href="/favicon.ico">
-    <link rel=""
-
     <!-- info -->
     <meta name="author" content="Tool321">
     <meta name="description" content="NewTool - 不错过任何一个新工具">
@@ -165,7 +163,7 @@
                             </div>
                         </a></li>
                     <li>
-                        <a class="create_btn popup new-product" href="post.php">
+                        <a class="create_btn popup new-product" href="add.php">
                             <i class="icon_plus"></i> 分享新工具
                         </a></li>
                 </ul>
