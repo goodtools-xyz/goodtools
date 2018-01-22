@@ -70,11 +70,14 @@
 </head>
 <body class="">
 <!--[if lt IE 9]>
-  <div class="for-ie-suckers">
+<div class="for-ie-suckers">
     <div class="row">
-      <b>36<del>0</del>氪安全卫士提醒您：</b>您的 IE 浏览器不被支持。试试其他的：<a href="http://www.google.com/chrome">Google 浏览器</a>、<a href="http://firefox.com.cn/">火狐浏览器</a>、<a href="http://www.apple.com.cn/safari/">Safari</a>
+        <b>36
+            <del>0</del>
+            氪安全卫士提醒您：</b>您的 IE 浏览器不被支持。试试其他的：<a href="http://www.google.com/chrome">Google 浏览器</a>、<a
+            href="http://firefox.com.cn/">火狐浏览器</a>、<a href="http://www.apple.com.cn/safari/">Safari</a>
     </div>
-  </div>
+</div>
 <![endif]-->
 
 <div class="container" id='container'>
