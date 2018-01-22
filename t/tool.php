@@ -176,20 +176,12 @@
                     </a></li>
             </ul>
         </div>
-        <section class="post">
-            <div class="date" title="2017年12月28日">
-				  <span class="cal">
-					  <i class="month">Dec</i>
-						 <i class="day">28</i>
-				  </span>
-                <small>12月28日</small>
-            </div>
 
-            <?php
-header("Content-type: text/html;charset=utf-8");
+        <?php
+        header("Content-type: text/html;charset=utf-8");
 
             $con = mysql_connect("qdm208731188.my3w.com", "qdm208731188", "funnsy716057");
-mysql_select_db('qdm208731188_db');
+        mysql_select_db('qdm208731188_db');
 if (!$con) {
     die('Could not connect: ' . mysql_error());
 }
@@ -198,7 +190,17 @@ mysql_query("set names utf8;");
 
 
             $result = mysql_query("SELECT * FROM tool321_tool");
-
+        $row = mysql_fetch_array($result);
+        //                日期
+        echo '<section class="post">';
+        echo "<div class='date' title=" . $row['tool_add_datetime'] . ">";
+        echo '<span class="cal">';
+        echo '<i class="month">Dec</i>';
+        echo '<i class="day">28</i>';
+        echo '</span>';
+        echo "<small>" . $row['tool_add_datetime'] . "</small>";
+        echo '</div>';
+        //                日期
 
             while($row = mysql_fetch_array($result)) {
 

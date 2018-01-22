@@ -4,13 +4,8 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3c228d5b-1319-4e0d-826e-c6585e79145d" name="Default" comment="v0.91 php tool add page added">
-      <change beforePath="" afterPath="$PROJECT_DIR$/t/profile.php" />
-      <change beforePath="$PROJECT_DIR$/.idea/tool321.iml" afterPath="$PROJECT_DIR$/.idea/tool321.iml" />
+    <list default="true" id="3c228d5b-1319-4e0d-826e-c6585e79145d" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/cn/c/ebook.html" afterPath="$PROJECT_DIR$/cn/c/ebook.html" />
-      <change beforePath="$PROJECT_DIR$/en/c/ebook.html" afterPath="$PROJECT_DIR$/en/c/ebook.html" />
-      <change beforePath="$PROJECT_DIR$/t/new.php" afterPath="$PROJECT_DIR$/t/new.php" />
       <change beforePath="$PROJECT_DIR$/t/tool.php" afterPath="$PROJECT_DIR$/t/tool.php" />
     </list>
     <ignored path="q/cmmi-v2.0-partner-update.pdf" />
@@ -53,7 +48,44 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="tool.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/t/tool.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="193" column="28" lean-forward="true" selection-start-line="193" selection-start-column="28" selection-end-line="193" selection-end-column="28" />
+              <folding>
+                <marker date="1516609471016" expanded="true" signature="2464:2756" ph="..." />
+                <marker date="1516609471016" expanded="true" signature="2486:2747" ph="..." />
+                <marker date="1516609471016" expanded="true" signature="2498:2555" ph="..." />
+                <marker date="1516609471016" expanded="true" signature="2632:2683" ph="..." />
+                <marker date="1516609471016" expanded="true" signature="8258:8284" ph="SELECT * FRO... tool321_tool" />
+                <marker date="1516609471016" expanded="true" signature="10084:10106" ph="..." />
+                <marker date="1516609471016" expanded="true" signature="11047:11225" ph="..." />
+                <marker date="1516609471016" expanded="true" signature="11464:11734" ph="..." />
+                <marker date="1516609471016" expanded="true" signature="11814:11847" ph="..." />
+                <marker date="1516609471016" expanded="true" signature="12070:12272" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/t/new.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="261">
+              <caret line="467" column="20" lean-forward="true" selection-start-line="467" selection-start-column="20" selection-end-line="467" selection-end-column="20" />
+              <folding>
+                <marker date="1516602139033" expanded="true" signature="3461:3747" ph="..." />
+                <marker date="1516602139033" expanded="true" signature="3483:3740" ph="..." />
+                <marker date="1516602139033" expanded="true" signature="3495:3548" ph="..." />
+                <marker date="1516602139033" expanded="true" signature="3625:3676" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -243,7 +275,7 @@
       <workItem from="1516237923791" duration="533000" />
       <workItem from="1516348580451" duration="2482000" />
       <workItem from="1516600706506" duration="198000" />
-      <workItem from="1516601230344" duration="6479000" />
+      <workItem from="1516601230344" duration="8121000" />
     </task>
     <task id="LOCAL-00001" summary="code beautify">
       <created>1514855464157</created>
@@ -329,11 +361,18 @@
       <option name="project" value="LOCAL" />
       <updated>1516348735434</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="v0.92 php tool page demo to display the list finished">
+      <created>1516607872871</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1516607872871</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27712000" />
+    <option name="totallyTimeSpent" value="29354000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -346,6 +385,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.49394855" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5121029" order="7" side_tool="true" content_ui="tabs" />
@@ -354,7 +394,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.49092284" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30257186" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30257186" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -425,7 +465,9 @@
     <MESSAGE value="item adjust" />
     <MESSAGE value="add wework" />
     <MESSAGE value="v0.91 php tool add page added" />
-    <option name="LAST_COMMIT_MESSAGE" value="v0.91 php tool add page added" />
+    <MESSAGE value="v0.92 php tool page demo to display the list finished" />
+    <MESSAGE value="v0.93 php tool page demo to display the date para" />
+    <option name="LAST_COMMIT_MESSAGE" value="v0.93 php tool page demo to display the date para" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -438,14 +480,16 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1516607739713" expanded="true" signature="2464:2716" ph="..." />
-            <marker date="1516607739713" expanded="true" signature="2486:2707" ph="..." />
-            <marker date="1516607739713" expanded="true" signature="8401:8427" ph="SELECT * FRO... tool321_tool" />
-            <marker date="1516607739713" expanded="true" signature="9570:9584" ph="..." />
-            <marker date="1516607739713" expanded="true" signature="10429:10607" ph="..." />
-            <marker date="1516607739713" expanded="true" signature="10831:11101" ph="..." />
-            <marker date="1516607739713" expanded="true" signature="11175:11206" ph="..." />
-            <marker date="1516607739713" expanded="true" signature="11420:11622" ph="..." />
+            <marker date="1516609471016" expanded="true" signature="2464:2756" ph="..." />
+            <marker date="1516609471016" expanded="true" signature="2486:2747" ph="..." />
+            <marker date="1516609471016" expanded="true" signature="2498:2555" ph="..." />
+            <marker date="1516609471016" expanded="true" signature="2632:2683" ph="..." />
+            <marker date="1516609471016" expanded="true" signature="8258:8284" ph="SELECT * FRO... tool321_tool" />
+            <marker date="1516609471016" expanded="true" signature="10084:10106" ph="..." />
+            <marker date="1516609471016" expanded="true" signature="11047:11225" ph="..." />
+            <marker date="1516609471016" expanded="true" signature="11464:11734" ph="..." />
+            <marker date="1516609471016" expanded="true" signature="11814:11847" ph="..." />
+            <marker date="1516609471016" expanded="true" signature="12070:12272" ph="..." />
           </folding>
         </state>
       </provider>
@@ -455,7 +499,6 @@
         <state relative-caret-position="3287">
           <caret line="173" column="10" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="173" selection-end-column="10" />
           <folding>
-            <element signature="n#div#0;n#li#0;n#ul#0;n#section#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <marker date="1516602139033" expanded="true" signature="3461:3747" ph="..." />
             <marker date="1516602139033" expanded="true" signature="3483:3740" ph="..." />
             <marker date="1516602139033" expanded="true" signature="3495:3548" ph="..." />
@@ -700,29 +743,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/t/tool.php">
+    <entry file="file://$PROJECT_DIR$/t/profile.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="267" column="26" lean-forward="true" selection-start-line="267" selection-start-column="26" selection-end-line="267" selection-end-column="26" />
-          <folding>
-            <marker date="1516607739713" expanded="true" signature="2464:2716" ph="..." />
-            <marker date="1516607739713" expanded="true" signature="2486:2707" ph="..." />
-            <marker date="1516607739713" expanded="true" signature="8401:8427" ph="SELECT * FRO... tool321_tool" />
-            <marker date="1516607739713" expanded="true" signature="9570:9584" ph="..." />
-            <marker date="1516607739713" expanded="true" signature="10429:10607" ph="..." />
-            <marker date="1516607739713" expanded="true" signature="10831:11101" ph="..." />
-            <marker date="1516607739713" expanded="true" signature="11175:11206" ph="..." />
-            <marker date="1516607739713" expanded="true" signature="11420:11622" ph="..." />
-          </folding>
+        <state relative-caret-position="114">
+          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/t/new.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="579" column="66" lean-forward="true" selection-start-line="579" selection-start-column="66" selection-end-line="579" selection-end-column="66" />
+        <state relative-caret-position="261">
+          <caret line="467" column="20" lean-forward="true" selection-start-line="467" selection-start-column="20" selection-end-line="467" selection-end-column="20" />
           <folding>
-            <element signature="n#div#0;n#li#0;n#ul#0;n#section#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <marker date="1516602139033" expanded="true" signature="3461:3747" ph="..." />
             <marker date="1516602139033" expanded="true" signature="3483:3740" ph="..." />
             <marker date="1516602139033" expanded="true" signature="3495:3548" ph="..." />
@@ -731,11 +764,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/t/profile.php">
+    <entry file="file://$PROJECT_DIR$/t/tool.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-          <folding />
+        <state relative-caret-position="234">
+          <caret line="193" column="28" lean-forward="true" selection-start-line="193" selection-start-column="28" selection-end-line="193" selection-end-column="28" />
+          <folding>
+            <marker date="1516609471016" expanded="true" signature="2464:2756" ph="..." />
+            <marker date="1516609471016" expanded="true" signature="2486:2747" ph="..." />
+            <marker date="1516609471016" expanded="true" signature="2498:2555" ph="..." />
+            <marker date="1516609471016" expanded="true" signature="2632:2683" ph="..." />
+            <marker date="1516609471016" expanded="true" signature="8258:8284" ph="SELECT * FRO... tool321_tool" />
+            <marker date="1516609471016" expanded="true" signature="10084:10106" ph="..." />
+            <marker date="1516609471016" expanded="true" signature="11047:11225" ph="..." />
+            <marker date="1516609471016" expanded="true" signature="11464:11734" ph="..." />
+            <marker date="1516609471016" expanded="true" signature="11814:11847" ph="..." />
+            <marker date="1516609471016" expanded="true" signature="12070:12272" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
