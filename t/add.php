@@ -44,6 +44,8 @@
 
     <meta property='og:type' content='webpage'/>
 
+	<script type="text/javascript" src="jquery.i18n.properties-1.0.9.js"></script>
+
 </head>
 <body>
 <div class="popup_cont" style="opacity: 1; top: 30px; left: 424.5px;">
@@ -83,9 +85,7 @@
                         </div>
                         <div class="form-group text required note_summary">
                             <label class="text required" for="note_summary">一句话描述这个工具</label>
-                            <textarea class="text required form-control input-small" required="required"
-                                      aria-required="true" name="tool_introduction" id="note_summary">
-									</textarea>
+                            <textarea class="text required form-control input-small" required="required" aria-required="true" name="tool_introduction" id="note_summary"></textarea>	
                             <p class="help-block">请精简描述, 36字以内</p>
                         </div>
 

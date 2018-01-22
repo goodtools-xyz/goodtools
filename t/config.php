@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="zh-cn">
 <head>
-    <title>NewTool</title>
+    <title>NewTool| Query | Configuration</title>
     <link rel="stylesheet" media="all"
           href="//rs-assets.b0.upaiyun.com/assets/application-42c32762eecd4d5bbe1bf9fbe93ec812.css"
           data-turbolinks-track="true">
@@ -43,8 +43,6 @@
     <link rel="dns-prefetch" href="//platform.twitter.com">
 
     <meta property='og:type' content='webpage'/>
-
-    <script type="text/javascript" src="jquery.i18n.properties-1.0.9.js"></script>
 
 </head>
 
