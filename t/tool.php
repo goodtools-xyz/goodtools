@@ -198,7 +198,9 @@ mysql_query("set names utf8;");
         echo '<i class="month">Dec</i>';
         echo '<i class="day">28</i>';
         echo '</span>';
-        echo "<small>" . $row['tool_add_datetime'] . "</small>";
+        echo "<small>";
+        echo date("m-d", $row['tool_add_datetime']);
+        echo "</small>";
         echo '</div>';
         //                日期
 
@@ -208,13 +210,13 @@ mysql_query("set names utf8;");
                 echo '<li class="item product-item ">';
                 echo "<div class='posts-group cf'>";
                 echo "<div class='upvote' data-note-id=" . $row['tool_id'] . ">";
-                echo "<a class='upvote-link vote-up' rel='nofollow' data-method='put'  href='/posts/40438/vote?ok_url=%2Fposts'>";
+                echo "<a class='upvote-link vote-up' rel='nofollow' data-method='put'  href='vote.php'>";
                 echo "<i class='upvote-arrow'>";
                 echo "</i>";
                 echo "<span class='vote-count'>" . $row['tool_voted_count'] . "</span>";
                 echo "</a>";
                 echo "</div>";
-                echo "<div class=product-url'><a class='post-url' target='_blank' title='otao.me' ref='nofollow' data-client='null' href=" . $row['tool_url'] . ">" . $row['tool_name'] . "</a></div>";
+                echo "<div class=product-url'><a class='post-url' target='_blank' title=" . $row['tool_url'] . " ref='nofollow' data-client='null' href=" . $row['tool_url'] . ">" . $row['tool_name'] . "</a></div>";
 //  echo "<br>";
                 echo "<span class='post-tagline'>" . $row['tool_introduction'] . "</span>";
                 echo "<ul class='product-meta right'>";
