@@ -63,23 +63,7 @@ mysql_select_db("my_db", $con);
 mysql_query("set names utf8;");
 mysql_query("INSERT INTO tool321_tool (tool_name, tool_url,tool_introduction) VALUES ('$tool_name','$tool_url','$tool_introduction')");
 echo "感谢您提交工具 $tool_name";
-
-
-$result = mysql_query("SELECT * FROM tool321_tool");
-
-
-
-while($row = mysql_fetch_array($result))
-  {
-  echo "<ul class='product-list reorderable'>";
-  echo "<li class='item product-item '><a href=" . $row['tool_url'] . ">" . $row['tool_name'] . "</a></li>";
-  echo "<span class='post-tagline'>" . $row['tool_introduction'] . "</span>";
-  echo "</ul>";
-  }
-
-
-
 mysql_close($con);
-
+echo "<script>location.href='tool.php';</script>";
 ?>
 
