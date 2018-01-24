@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="zh-cn">
 <head>
-    <title>NewTool| Query | Configuration</title>
+    <title>NewTool</title>
     <link rel="stylesheet" media="all"
           href="//rs-assets.b0.upaiyun.com/assets/application-42c32762eecd4d5bbe1bf9fbe93ec812.css"
           data-turbolinks-track="true">
@@ -44,13 +44,18 @@
 
     <meta property='og:type' content='webpage'/>
 
+    <script type="text/javascript" src="jquery.i18n.properties-1.0.9.js"></script>
+
 </head>
 
 <body class="">
 <!--[if lt IE 9]>
   <div class="for-ie-suckers">
     <div class="row">
-      <b>36<del>0</del>氪安全卫士提醒您：</b>您的 IE 浏览器不被支持。试试其他的：<a href="http://www.google.com/chrome">Google 浏览器</a>、<a href="http://firefox.com.cn/">火狐浏览器</a>、<a href="http://www.apple.com.cn/safari/">Safari</a>
+        <b>Tool321
+            <del>0</del>
+            安全卫士提醒您：</b>您的 IE 浏览器不被支持。试试其他的：<a href="http://www.google.com/chrome">Google 浏览器</a>、<a
+            href="http://firefox.com.cn/">火狐浏览器</a>、<a href="http://www.apple.com.cn/safari/">Safari</a>
     </div>
   </div>
 <![endif]-->
@@ -149,11 +154,34 @@
             </div>
         </div>
     </div>
-<?php
-header("Content-type: text/html;charset=utf-8");
 
-$con = mysql_connect("qdm208731188.my3w.com", "qdm208731188", "funnsy716057");
-mysql_select_db('qdm208731188_db');
+    <div class="content row row-wider" id="content">
+
+
+        <div class="post-sort" id="category_swicher">
+            <ul class='post-hot-ul'>
+                <li>
+                    <a class="post-hot right" href="/posts?sort=hot">
+                        最热 <i class="down_arrow"></i>
+                    </a>
+                    <ul class="dropdown post-dropdown">
+                        <li>
+                            <a href="/posts?sort=latest">最新</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="post-mainland right " href="/posts/categories/internal">
+                        <i class="tick-circle"></i> 国内
+                    </a></li>
+            </ul>
+        </div>
+
+        <?php
+        header("Content-type: text/html;charset=utf-8");
+
+        $con = mysql_connect("qdm208731188.my3w.com", "qdm208731188", "funnsy716057");
+        mysql_select_db('qdm208731188_db');
 if (!$con) {
     die('Could not connect: ' . mysql_error());
 }
@@ -161,23 +189,100 @@ mysql_select_db("my_db", $con);
 mysql_query("set names utf8;");
 
 
-$result = mysql_query("SELECT * FROM tool321_tool");
+        $result = mysql_query("SELECT * FROM tool321_tool");
+        $row = mysql_fetch_array($result);
+        //                日期
+        echo '<section class="post">';
+        echo "<div class='date' title=" . $row['tool_add_datetime'] . ">";
+        echo '<span class="cal">';
+        echo '<i class="month">Dec</i>';
+        echo '<i class="day">28</i>';
+        echo '</span>';
+        echo "<small>";
+        echo $row['tool_add_datetime'];
+        echo "</small>";
+        echo '</div>';
+        //                日期
+
+        while ($row = mysql_fetch_array($result)) {
+
+            echo "<ul class='product-list reorderable'>";
+            echo '<li class="item product-item ">';
+            echo "<div class='posts-group cf'>";
+            echo "<div class='upvote' data-note-id=" . $row['tool_id'] . ">";
+            echo "<a class='upvote-link vote-up' rel='nofollow' data-method='put'  href='vote.php";
+            echo "<i class='upvote-arrow'>";
+            echo "</i>";
+            echo "<span class='vote-count'>" . $row['tool_voted_count'] . "</span>";
+            echo "</a>";
+            echo "</div>";
+            echo "<div class=product-url'><a class='post-url' target='_blank' title=" . $row['tool_url'] . " ref='nofollow' data-client='null' href=" . $row['tool_url'] . ">" . $row['tool_name'] . "</a></div>";
+//  echo "<br>";
+            echo "<span class='post-tagline'>" . $row['tool_introduction'] . "</span>";
+            echo "<ul class='product-meta right'>";
+            echo "<li class='product-collect'>";
+            echo "<div class='mark'>";
+            echo '<a class="popup" href="/posts/collections/to_add?note_id=40449">';
+            echo ' <i class="marks mark-collect mark-collect-hide"></i>';
+            echo '</a>';
+            echo '</div>';
+
+            echo "</li>";
+
+            echo "<li class='product-mark'>";
+            echo '<div class="mark" title="的团队成员已经入驻 NewTool，你的评论反馈会被关注和回复">';
+            echo '<i class="marks mark-founder"></i>';
+            echo '</div>';
+            echo "</li>";
+
+            echo "<li class='product-mark'>";
+            echo '<div class="mark" title="适用于 iOS 平台">';
+            echo '<i class="marks mark-ios"></i>';
+            echo '</div>';
+            echo "</li>";
+
+            echo "<li class='product-mark'>";
+            echo '<div class="mark" title="适用于 iOS 平台">';
+            echo '<i class="marks mark-android"></i>';
+            echo '</div>';
+            echo "</li>";
+
+            echo '<li class="product-avatar">';
+            echo '<div class="user-image">';
+            echo '<a class="user-image-link" href="/users/8865">';
+            echo '<img class="avatar " src="https://rs-images.b0.upaiyun.com/uploads/user/avatar/8865/b91ea628-d372-47c8-b37c-eb6972e348aa.png!50x50" alt="B91ea628 d372 47c8 b37c eb6972e348aa" width="60" height="60"/>';
+            echo '</a>';
+            echo '</div>';
+
+            echo '<div class="user-tooltip">';
+            echo '<a class="user-image-link" href="/users/8865">';
+            echo '<img class="avatar avatar-big"
+                                             src="https://rs-images.b0.upaiyun.com/uploads/user/avatar/8865/b91ea628-d372-47c8-b37c-eb6972e348aa.png!50x50"
+                                             alt="B91ea628 d372 47c8 b37c eb6972e348aa" width="120" height="120"/>';
+            echo '</a>';
+            echo '<h3 class="user-nickname">' . $row['tool_creator'] . '</h3>';
+            echo '<h4 class="user-title">Horseback<br></h4>';
+            echo '<p class="user-bio">牛叉 - Designer</p>';
+            echo '<a data-following-text="已关注" data-follow-text="关注" data-user-id="116"
+                                       data-toggle="follow" class="follow-btn" data-remote="true" rel="nofollow"
+                                       data-method="post" href="/users/116/follow">关注</a>';
+            echo '</div>';
+
+            echo '<div class="product-comment">';
+            echo '<a target="_blank" class="product-comments" data-toggle="modal-remote" href="/posts/40438?ok_url=%2Fposts#comments">4</a>';
+            echo '</div>';
+            echo "</li>";
+
+            echo "</ul>";
+            echo "</li>";
+            echo "</ul>";
+
+        }
 
 
+        mysql_close($con);
 
-while($row = mysql_fetch_array($result))
-  {
-  echo "<ul class='product-list reorderable'>";
-  echo "<li class='item product-item '><a href=" . $row['tool_url'] . ">" . $row['tool_name'] . "</a></li>";
-  echo "<span class='post-tagline'>" . $row['tool_introduction'] . "</span>";
-
-  echo "</ul>";
-  }
-
-
-
-mysql_close($con);
-
-?>
+        ?>
+        </section>
 </div>
 </body>
