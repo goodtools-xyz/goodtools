@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="zh-cn">
 <head>
-    <title>NewTool</title>
+    <title>NewTool | Tool321 </title>
     <link rel="stylesheet" media="all"
           href="//rs-assets.b0.upaiyun.com/assets/application-42c32762eecd4d5bbe1bf9fbe93ec812.css"
           data-turbolinks-track="true">
