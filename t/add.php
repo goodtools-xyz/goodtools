@@ -45,6 +45,7 @@
     <meta property='og:type' content='webpage'/>
 
 	<script type="text/javascript" src="jquery.i18n.properties-1.0.9.js"></script>
+    <script type="text/javascript" src="tool.js"></script>
 
 </head>
 <body>

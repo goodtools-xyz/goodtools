@@ -45,6 +45,7 @@
     <meta property='og:type' content='webpage'/>
 
     <script type="text/javascript" src="jquery.i18n.properties-1.0.9.js"></script>
+	<script src="//rs-assets.b0.upaiyun.com/assets/application-d63b5399e1ba247d4f5e0a676a5a6d41.js" data-turbolinks-track="true"></script>
 
 </head>
 
