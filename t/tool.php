@@ -35,8 +35,6 @@
           href="//rs-assets.b0.upaiyun.com/assets/apple-touch-icon-144x144-precomposed-2571dd51f7ccb3a6a533e9aa812f29d2.png">
     <link rel="apple-touch-icon-precomposed" sizes="180x180"
           href="//rs-assets.b0.upaiyun.com/assets/apple-touch-icon-180x180-precomposed-8170abf429725528622d216ae0843bdd.png">
-
-    <!-- Prefetch -->
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     <link rel="dns-prefetch" href="//google-analytics.com">
     <link rel="dns-prefetch" href="//www.google-analytics.com">
@@ -47,6 +45,8 @@
     <script type="text/javascript" src="jquery.i18n.properties-1.0.9.js"></script>
     <script type="text/javascript" src="tool.js"></script>
 	<script src="//rs-assets.b0.upaiyun.com/assets/application-d63b5399e1ba247d4f5e0a676a5a6d41.js" data-turbolinks-track="true"></script>
+	<script type="text/javascript" src="/js/baidutongji.js"></script>
+	<script type="text/javascript" src="/js/cnzz.js"></script>
 
 </head>
 
@@ -287,4 +287,5 @@ mysql_query("set names utf8;");
             ?>
         </section>
 </div>
+
 </body>
