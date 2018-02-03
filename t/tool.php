@@ -219,7 +219,7 @@ mysql_query("set names utf8;");
                 echo "</a>";
                 echo "</div>";
                 echo "<div class=product-url'><a class='post-url' target='_blank' title=" . $row['tool_url'] . " ref='nofollow' data-client='null' href=" . $row['tool_url'] . ">" . $row['tool_name'] . "</a></div>";
-//  echo "<br>";
+
                 echo "<span class='post-tagline'>" . $row['tool_introduction'] . "</span>";
                 echo "<ul class='product-meta right'>";
                 echo "<li class='product-collect'>";

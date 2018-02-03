@@ -86,7 +86,7 @@
                         </div>
                         <div class="form-group text required note_summary">
                             <label class="text required" for="note_summary">一句话描述这个工具</label>
-                            <textarea class="text required form-control input-small" required="required" aria-required="true" name="tool_introduction" id="note_summary"></textarea>	
+                            <textarea class="text required form-control input-small" required="required" aria-required="true" name="tool_introduction" id="note_summary" maxlength="36"></textarea>	
                             <p class="help-block">请精简描述, 36字以内</p>
                         </div>
 
