@@ -192,17 +192,21 @@
    
 		$result = mysql_query("SELECT * FROM tool321_tool ORDER BY tool_add_datetime DESC");
         //$row = mysql_fetch_array($result);
-        //                日期
+		
+		
+        //                日期显示循环
+		//for($riqi=0; $riqi<=10; $riqi--)
+		//{ //日期循环开始符
         echo '<section class="post">';
-        echo "<div class='date' title=" . $result['tool_add_datetime'] . ">";
+        echo "<div class='date' title=" . date("Y-m-d") . ">";
         echo '<span class="cal">';
-        echo '<i class="month">Dec</i>';
-        echo '<i class="day">28</i>';
+        echo '<i class="month">' . date("M") . '</i>';
+        echo '<i class="day">' . date("j") . '</i>';
         echo '</span>';
-        echo "<!-- <small>";
+        echo "<small>";
 		//按日期进行分节
-        echo date("m-d", $row['tool_add_datetime']);
-        echo "</small> -->";
+        echo date("n") . "月" . date("j") ."日";
+        echo "</small>";
         echo '</div>';
         //                日期
 
@@ -283,9 +287,11 @@
                 echo "</li>";
                 
 
-            }
+            } 
+			//工具条目循环截止符
 				echo "</ul>";
-
+		//}
+		//日期循环截止符
             mysql_close($con);
 
             ?>
