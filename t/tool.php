@@ -182,33 +182,35 @@
         <?php
         header("Content-type: text/html;charset=utf-8");
 
-            $con = mysql_connect("qdm208731188.my3w.com", "qdm208731188", "funnsy716057");
+        $con = mysql_connect("qdm208731188.my3w.com", "qdm208731188", "funnsy716057");
         mysql_select_db('qdm208731188_db');
-if (!$con) {
-    die('Could not connect: ' . mysql_error());
-}
-mysql_select_db("my_db", $con);
-mysql_query("set names utf8;");
-
-
-            $result = mysql_query("SELECT * FROM tool321_tool");
-        $row = mysql_fetch_array($result);
+		if (!$con) {
+			die('Could not connect: ' . mysql_error());
+		}
+		mysql_select_db("my_db", $con);
+		mysql_query("set names utf8;");
+   
+		$result = mysql_query("SELECT * FROM tool321_tool ORDER BY tool_add_datetime DESC");
+        //$row = mysql_fetch_array($result);
         //                日期
         echo '<section class="post">';
-        echo "<div class='date' title=" . $row['tool_add_datetime'] . ">";
+        echo "<div class='date' title=" . $result['tool_add_datetime'] . ">";
         echo '<span class="cal">';
         echo '<i class="month">Dec</i>';
         echo '<i class="day">28</i>';
         echo '</span>';
-        echo "<small>";
+        echo "<!-- <small>";
+		//按日期进行分节
         echo date("m-d", $row['tool_add_datetime']);
-        echo "</small>";
+        echo "</small> -->";
         echo '</div>';
         //                日期
 
+		echo "<ul class='product-list reorderable'>";
+
             while($row = mysql_fetch_array($result)) {
 
-                echo "<ul class='product-list reorderable'>";
+                
                 echo '<li class="item product-item ">';
                 echo "<div class='posts-group cf'>";
                 echo "<div class='upvote' data-note-id=" . $row['tool_id'] . ">";
@@ -218,9 +220,10 @@ mysql_query("set names utf8;");
                 echo "<span class='vote-count'>" . $row['tool_voted_count'] . "</span>";
                 echo "</a>";
                 echo "</div>";
-                echo "<div class=product-url'><a class='post-url' target='_blank' title=" . $row['tool_url'] . " ref='nofollow' data-client='null' href=" . $row['tool_url'] . ">" . $row['tool_name'] . "</a></div>";
-
+                echo "<div class='product-url'><a class='post-url' target='_blank' title=" . $row['tool_url'] . " ref='nofollow' data-client='null' href=" . $row['tool_url'] . ">" . $row['tool_name'] . "</a>";
+				echo "<br>";
                 echo "<span class='post-tagline'>" . $row['tool_introduction'] . "</span>";
+				echo "</div>";
                 echo "<ul class='product-meta right'>";
                 echo "<li class='product-collect'>";
                 echo "<div class='mark'>";
@@ -228,7 +231,8 @@ mysql_query("set names utf8;");
                 echo ' <i class="marks mark-collect mark-collect-hide"></i>';
                 echo '</a>';
                 echo '</div>';
-
+				//显示整个工具的profile链接
+				echo '<a class="product-link" data-toggle="modal-remote" href="profile.php"></a>';
                 echo "</li>";
 
                 echo "<li class='product-mark'>";
@@ -277,10 +281,10 @@ mysql_query("set names utf8;");
 
                 echo "</ul>";
                 echo "</li>";
-                echo "</ul>";
+                
 
             }
-
+				echo "</ul>";
 
             mysql_close($con);
 
