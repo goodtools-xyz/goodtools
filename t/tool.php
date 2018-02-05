@@ -107,7 +107,7 @@
                 </ul>
             </nav>
             <div class="search">
-                <form action="/posts/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden"
+                <form action="search.php" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden"
                                                                                         value="&#x2713;"/>
                     <span class="icon">🔎</span>
                     <input type="text" name="query" id="query" autocomplete="off" autocapitalize="off"
@@ -195,7 +195,7 @@
 		
 		
         //                日期显示循环
-		//for($riqi=0; $riqi<=10; $riqi--)
+		//for($riqi=date("Y-m-d"); $riqi<=10; $riqi--)
 		//{ //日期循环开始符
         echo '<section class="post">';
         echo "<div class='date' title=" . date("Y-m-d") . ">";

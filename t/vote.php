@@ -1,3 +1,4 @@
+//Í¶Æ±°´Å¥
 <?php
 header("Content-type: text/html;charset=utf-8");
 $con = mysql_connect("qdm208731188.my3w.com", "qdm208731188", "funnsy716057");
