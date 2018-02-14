@@ -178,7 +178,7 @@
 		mysql_select_db("my_db", $con);
 		mysql_query("set names utf8;");
    
-    $result = mysql_query("SELECT * FROM tool321_tool WHERE tool_name,tool_introduction,tool_description like'%IDE%' ORDER BY tool_add_datetime DESC"  );
+    $result = mysql_query("SELECT * FROM tool321_tool WHERE tool_name like'%IDE%' ORDER BY tool_add_datetime DESC"  );
 //tool_name='$_POST['query']' 错误显示
     echo "<ul class='product-list reorderable'>";
             while($row = mysql_fetch_array($result)) {
