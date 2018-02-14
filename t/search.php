@@ -139,10 +139,10 @@
         <ul class='nav nav-tabs' id='search_type_switcher'>
 
           <li class="active">
-            <a data-remote="true" data-type="html" href="/posts/search">产品</a>
+            <a data-remote="true" data-type="html" href="/posts/search">工具</a>
           </li>
           <li>
-            <a data-remote="true" data-type="html" href="/posts/collections/search">产品集</a>
+            <a data-remote="true" data-type="html" href="/posts/collections/search">工具集</a>
           </li>
           <li>
             <a data-remote="true" data-type="html" href="/users/search">用户</a>
@@ -151,7 +151,7 @@
       </div>
 
       <div class="search_wrap">
-        <form id="search_form" class="ignore-submitting" data-remote="true" data-type="html" action="/posts/search" accept-charset="UTF-8"
+        <form id="search_form" class="ignore-submitting" data-remote="true" data-type="html" action="search.php" accept-charset="UTF-8"
           method="get">
           <input name="utf8" type="hidden" value="&#x2713;" />
           <span class="icon">&#x1F50E;</span>
@@ -167,7 +167,7 @@
           <ul class="product-list">
 
            
-             <?php
+  <?php
         header("Content-type: text/html;charset=utf-8");
 
         $con = mysql_connect("qdm208731188.my3w.com", "qdm208731188", "funnsy716057");
@@ -177,8 +177,8 @@
 		}
 		mysql_select_db("my_db", $con);
 		mysql_query("set names utf8;");
-   
-    $result = mysql_query("SELECT * FROM tool321_tool WHERE tool_name like'%IDE%' ORDER BY tool_add_datetime DESC"  );
+   $keyword = $_GET['query'];
+    $result = mysql_query("SELECT * FROM tool321_tool WHERE tool_name like'%".$keyword."%' ORDER BY tool_add_datetime DESC"  );
 //tool_name='$_POST['query']' 错误显示
     echo "<ul class='product-list reorderable'>";
             while($row = mysql_fetch_array($result)) {
