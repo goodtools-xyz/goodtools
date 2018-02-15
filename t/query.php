@@ -1,5 +1,5 @@
 <?php
-    include '/login/mysql.php';    
+    require(realpath("./")."login/mysql.php");  
    $keyword = $_GET['query'];
     $result = mysql_query("SELECT * FROM tool321_tool WHERE tool_name like'%".$keyword."%' ORDER BY tool_add_datetime DESC"  );
     echo "<ul class='product-list reorderable'>";
