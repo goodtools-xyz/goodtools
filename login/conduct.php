@@ -74,13 +74,8 @@
 <?php
 $name = $_POST['user_email'];
 $password = $_POST['password'];
+include 'mysql.php';
 
-$con = mysql_connect("qdm208731188.my3w.com", "qdm208731188", "funnsy716057");
-mysql_select_db('qdm208731188_db');
-if (!$con) {
-    die('Could not connect: ' . mysql_error());
-}
-mysql_select_db("my_db", $con);
 mysql_query("INSERT INTO tool321_user (user_email, user_password) VALUES ('$name','$password')");
 mysql_close($con);
 echo "$name,感谢您注册使用Tool321！";

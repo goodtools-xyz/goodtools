@@ -163,7 +163,11 @@
         <div class="post-sort" id="category_swicher">
             <ul class='post-hot-ul'>
                 <li>
-                    <a class="post-hot right" href="/posts?sort=hot">
+                    <a class="post-mainland right " href="/posts/categories/internal">
+                        <i class="tick-circle"></i> 可用
+                    </a></li>
+                <li>
+                    <a class="post-mainland right" href="/posts?sort=hot">
                         最热 <i class="down_arrow"></i>
                     </a>
                     <ul class="dropdown post-dropdown">
