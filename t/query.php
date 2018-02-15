@@ -10,7 +10,6 @@
 		mysql_query("set names utf8;");
    $keyword = $_GET['query'];
     $result = mysql_query("SELECT * FROM tool321_tool WHERE tool_name like'%".$keyword."%' ORDER BY tool_add_datetime DESC"  );
-//tool_name='$_POST['query']' 错误显示
     echo "<ul class='product-list reorderable'>";
             while($row = mysql_fetch_array($result)) {
             echo '<li class="item product-item ">';
