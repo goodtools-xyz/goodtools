@@ -1,5 +1,5 @@
 <?php
-    require(realpath("./")."login/mysql.php");  
+    include '../login/mysql.php'; 
    $keyword = $_GET['query'];
     $result = mysql_query("SELECT * FROM tool321_tool WHERE tool_name like'%".$keyword."%' ORDER BY tool_add_datetime DESC"  );
     echo "<ul class='product-list reorderable'>";
@@ -21,7 +21,7 @@
                 echo "<li class='product-collect'>";
                 echo "<div class='mark'>";
                 echo '<a class="popup" href="/posts/collections/to_add?note_id=40449">';
-                echo ' <i class="marks mark-collect mark-collect-hide"></i>';
+                echo '<i class="marks mark-collect mark-collect-hide"></i>';
                 echo '</a>';
                 echo '</div>';
 				//显示整个工具的profile链接

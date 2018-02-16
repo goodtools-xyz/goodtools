@@ -166,9 +166,7 @@
         <section class="post">
           <ul class="product-list">
 
-           <?php
-  include 'query.php';
-  ?>
+           <?php include 'query.php'; ?>
           </ul>
         </section>
 
