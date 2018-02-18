@@ -239,8 +239,9 @@
                 echo ' <i class="marks mark-collect mark-collect-hide"></i>';
                 echo '</a>';
                 echo '</div>';
-				//显示整个工具的profile链接
-				echo '<a class="product-link" data-toggle="modal-remote" href="profile.php"></a>';
+				//显示整个工具的profile链接,bug，点击无法跳转详情页
+                echo '<a class="product-link"  data-toggle="modal-remote" href="profile.php?id='.$row['tool_id'].'"></a>';
+                /* echo '<a href="profile.php?id=<?php echo $rs->id?>"></a>'; */
                 echo "</li>";
 
                 echo "<li class='product-mark'>";
