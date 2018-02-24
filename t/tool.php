@@ -44,6 +44,7 @@
 
     <script type="text/javascript" src="jquery.i18n.properties-1.0.9.js"></script>
     <script type="text/javascript" src="tool.js"></script>
+    <script type="text/javascript" src="vote.js"></script>
 	<script src="//rs-assets.b0.upaiyun.com/assets/application-d63b5399e1ba247d4f5e0a676a5a6d41.js" data-turbolinks-track="true"></script>
 	<script type="text/javascript" src="/js/baidutongji.js"></script>
 	<script type="text/javascript" src="/js/cnzz.js"></script>
@@ -221,8 +222,8 @@
                 
                 echo '<li class="item product-item ">';
                 echo "<div class='posts-group cf'>";
-                echo "<div class='upvote' data-note-id=" . $row['tool_id'] . ">";
-                echo "<a class='upvote-link vote-up' rel='nofollow' data-method='put'  href='vote.php'>";
+                echo "<div class='upvote' onclick='vote()' data-note-id=" . $row['tool_id'] . ">";
+                echo "<a class='upvote-link vote-up' rel='nofollow' data-method='put'  href='/user/sign_in?ok_url=%2Fposts'>";
                 echo "<i class='upvote-arrow'>";
                 echo "</i>";
                 echo "<span class='vote-count'>" . $row['tool_voted_count'] . "</span>";
