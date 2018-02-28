@@ -94,7 +94,9 @@ footer {
 html {
     background-color: carbon;
 }
-
+#cnzz_stat_icon_1257102666 {
+    display:none;
+}
 nav {
     position: fixed;
     }
