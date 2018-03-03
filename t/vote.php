@@ -9,21 +9,23 @@ if (!$con) {
 mysql_select_db("my_db", $con);
 mysql_query("set names utf8;");
 
-
-$result = mysql_query("SELECT * FROM tool321_tool");
+$result = mysql_query("SELECT * FROM tool321_tool WHERE tool_id='$_GET[id]'");
 $row = mysql_fetch_array($result);
-$row['tool_voted_count']++;
-$num = $_GET['num'];
-$aindex = $_GET['aindex'];
+$count= ++$row['tool_voted_count'];
+//更新id的点击数+1
+mysql_query("UPDATE tool321_tool SET tool_voted_count = '$count' WHERE tool_id='$_GET[id]'");
+//$num = $_GET['num'];
+//$aindex = $_GET['aindex'];
+//更新tool_adder的记录工具
+//mysql_query("INSERT INTO tool321_user WHERE user_email='$_GET[user_email]'");
+//更新tool_adder的记录工具
 
-echo $row['tool_name'];
-echo $row['tool_voted_count'];
+echo "<script>window.location.href='/t/tool.php';</script>";
 
 mysql_close($con);
 
-?>
+/*
 
-<?php
 $num = $_GET['num'];
 $aindex = $_GET['aindex'];
 $con = mysql_connect("localhost","root","");
@@ -50,4 +52,6 @@ if($_GET['flag'] == 0){
  echo $num;
 }
 mysql_close($con)
+
+*/
 ?>

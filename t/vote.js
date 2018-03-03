@@ -15,7 +15,7 @@ function vote(gindex) {
         senddata(gindex); //通过Ajax修改页面上的数据 
         alert(num);
     } else {
-        alert("你已经点过赞咯！");
+        //
     }
 }
 

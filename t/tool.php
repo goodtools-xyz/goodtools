@@ -223,7 +223,8 @@
                 echo '<li class="item product-item ">';
                 echo "<div class='posts-group cf'>";
                 echo "<div class='upvote' onclick='vote()' data-note-id=" . $row['tool_id'] . ">";
-                echo "<a class='upvote-link vote-up' rel='nofollow' data-method='put'  href='/user/sign_in?ok_url=%2Fposts'>";
+                echo "<a class='upvote-link vote-up' rel='nofollow' data-method='put'  href='vote.php?id=".$row['tool_id']."'>";
+                //href='/user/sign_in?ok_url=%2Fposts'
                 echo "<i class='upvote-arrow'>";
                 echo "</i>";
                 echo "<span class='vote-count'>" . $row['tool_voted_count'] . "</span>";
