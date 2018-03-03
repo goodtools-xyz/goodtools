@@ -11,9 +11,8 @@ mysql_query("set names utf8;");
 
 $result = mysql_query("SELECT * FROM tool321_tool WHERE tool_id='$_GET[id]'");
 $row = mysql_fetch_array($result);
-$count= ++$row['tool_voted_count'];
 //更新id的点击数+1
-mysql_query("UPDATE tool321_tool SET tool_voted_count = '$count' WHERE tool_id='$_GET[id]'");
+mysql_query("UPDATE tool321_tool SET tool_voted_count = tool_voted_count +1 WHERE tool_id='$_GET[id]'");
 //$num = $_GET['num'];
 //$aindex = $_GET['aindex'];
 //更新tool_adder的记录工具
