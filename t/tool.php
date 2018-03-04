@@ -1,4 +1,6 @@
 <!doctype html>
+<?php session_start(); ?>
+<?php setcookie("user", "tool321@qq.com", time()+3600);?>
 <html lang="zh-cn">
 <head>
     <title>NewTool | Tool321 </title>
