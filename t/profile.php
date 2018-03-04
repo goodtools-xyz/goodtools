@@ -39,6 +39,7 @@
 
   <script type="text/javascript" src="jquery.i18n.properties-1.0.9.js"></script>
   <script type="text/javascript" src="tool.js"></script>
+  <script type="text/javascript" src="category.js"></script>
   <script src="//rs-assets.b0.upaiyun.com/assets/application-d63b5399e1ba247d4f5e0a676a5a6d41.js" data-turbolinks-track="true"></script>
   <script type="text/javascript" src="/js/baidutongji.js"></script>
   <script type="text/javascript" src="/js/cnzz.js"></script>
@@ -202,7 +203,7 @@
             <b>国家/地区：</b>
             <form>
               选择一个国家或地区:
-              <select name="users" onchange="showcountry(this.value)">
+              <select name="conuntry" onchange="showcountry(this.value)">
                 <option value="1">中国</option>
                 <option value="2">美国</option>
                 <option value="3">印度</option>
@@ -214,7 +215,7 @@
             <b>类别：</b>
             <form>
               选择一个类别:
-              <select name="users" onchange="showcategory(this.value)">
+              <select name="category" onchange="showcategory(this.value)">
                 <option value="1">Word</option>
                 <option value="2">Excel</option>
                 <option value="3">Powerpoint</option>

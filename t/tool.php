@@ -99,9 +99,9 @@
                             <i class="down_arrow"></i>
                         </a>
                         <ul class="dropdown account-dropdown">
-                            <li><a href="/users/198358">我的主页</a></li>
-                            <li><a href="/users/198358/edit?ok_url=%2Fposts">个人设置</a></li>
-                            <li><a rel="nofollow" data-method="delete" href="/users/sign_out?ok_url=%2Fposts">退出登录</a>
+                            <li><a href="/login/user_profile.php">我的主页</a></li>
+                            <li><a href="/login/user_profile.php">个人设置</a></li>
+                            <li><a rel="nofollow" data-method="delete" href="/login/log_out.php">退出登录</a>
                             </li>
                         </ul>
                     </li>

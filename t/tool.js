@@ -1333,7 +1333,8 @@ if (function() {
                             function(t) {
                                 var n;
                                 do
-                                    if (n = j ? t.lang : t.getAttribute("xml:lang") || t.getAttribute("lang")) return n = n.toLowerCase(), n === e || 0 === n.indexOf(e + "-"); while ((t = t.parentNode) && 1 === t.nodeType);
+                                    if (n = j ? t.lang : t.getAttribute("xml:lang") || t.getAttribute("lang")) return n = n.toLowerCase(), n === e || 0 === n.indexOf(e + "-");
+                                while ((t = t.parentNode) && 1 === t.nodeType);
                                 return !1
                             }
                     }),
@@ -12361,14 +12362,14 @@ var ModalEffects = function() {
         function a(e) {
             var t, n = e.getNodes();
             e: if (n.length && 1 == n[0].nodeType) {
-                t = 1;
-                for (var o = n.length; o > t; ++t)
-                    if (!v.isAncestorOf(n[0], n[t])) {
-                        t = !1;
-                        break e
-                    }
-                t = !0
-            } else t = !1;
+                    t = 1;
+                    for (var o = n.length; o > t; ++t)
+                        if (!v.isAncestorOf(n[0], n[t])) {
+                            t = !1;
+                            break e
+                        }
+                    t = !0
+                } else t = !1;
             if (!t) throw Error("getSingleElementFromRange: range " + e.inspect() + " did not consist of a single element");
             return n[0]
         }
