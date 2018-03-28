@@ -1,0 +1,79 @@
+                .flex-column {
+                    position: fixed;
+                    top: 56;
+                    right: 0;
+                    z-index: 1050;
+                    background: #f8f9fa;
+                    height: 100%;
+                    width: 50px;
+                    -webkit-box-shadow: -1px 0 2px 0 rgba(0, 0, 0, .1);
+                    box-shadow: -1px 0 2px 0 rgba(0, 0, 0, .1)
+                }
+                
+                .tool-box {
+                    padding: 0 50px;
+                }
+                
+                .tab {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                    padding-left: 0;
+                    margin-top: 5px;
+                }
+                
+                .tab li {
+                    border-left: rgb(225, 214, 214) solid 1px;
+                    border-bottom: rgb(225, 214, 214) solid 1px;
+                    padding: 0 5px;
+                    width: 230px;
+                    list-style-type: none;
+                    background-color: white;
+                }
+                
+                .tab li:hover {
+                    background-color: rgba(0, 0, 0, .05);
+                }
+                
+                .tab a {
+                    font-weight: bold;
+                    color: #014cd2;
+                    font-size: 14px;
+                }
+                
+                .tab span {
+                    padding: 5px 0;
+                }
+                
+                .tab-pane {
+                    display: none;
+                }
+                
+                .tool-name {
+                    display: block;
+                    white-space: wrap;
+                }
+                
+                .tool-introduction {
+                    font-size: 12px;
+                }
+                
+                @media (max-width:320px) {}
+                
+                @media (max-width: 640px) {
+                    .tool-box {
+                        padding: 0;
+                    }
+                    .tab li {
+                        width: 100%;
+                    }
+                    .flex-column {
+                        position: relative;
+                        top: 56;
+                    }
+                    .flex-column a {
+                        flex-wrap: nowrap;
+                        flex-direction: row;
+                    }
+                }
