@@ -165,7 +165,7 @@
       <div id="search_result">
         <section class="post">
           <ul class="product-list">
-//核心代码：输出查询的结果
+<!-- 核心代码：输出查询的结果 -->
            <?php include 'query.php'; ?>
           </ul>
         </section>
