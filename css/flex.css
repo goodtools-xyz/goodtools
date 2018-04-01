@@ -10,6 +10,14 @@
                         box-shadow: -1px 0 2px 0 rgba(0, 0, 0, .1)
                     }
                     
+                    .check-box {
+                        z-index: 9000;
+                        border-bottom: black thin solid;
+                        float: right;
+                        display: block;
+                        padding: 10px;
+                    }
+                    
                     .tool-box {
                         padding: 0 50px;
                         margin-top: 50px;
