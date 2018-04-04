@@ -12,10 +12,16 @@
                     
                     .check-box {
                         z-index: 9000;
-                        border-bottom: black thin solid;
-                        float: right;
-                        display: block;
-                        padding: 10px;
+                        border-bottom: #f8f9fa thin solid;
+                        padding: 5px;
+                        color: red;
+                        position: fixed;
+                        right: 0;
+                        margin: auto 0;
+                    }
+                    
+                    .nav-tool a {
+                        font-size: 12px;
                     }
                     
                     .tool-box {
@@ -29,7 +35,6 @@
                         flex-wrap: wrap;
                         justify-content: flex-start;
                         padding-left: 0;
-                        margin-top: 5px;
                     }
                     
                     .tab li {
