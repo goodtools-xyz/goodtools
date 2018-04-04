@@ -11,38 +11,152 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <base target="_blank">
     <link href="/css/style_css.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous"> </head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
 
 <body>
-    <div class="container-fluid">
-        <nav class="navbar navbar-light navbar-fixed-top bg-faded">
-            <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation"> &#9776; </button>
-            <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2"> <a class="navbar-brand" href="/index.html">Tool<span style="color:red">3</span><span style="color:#FFEB63">2</span><span style="color:blue">1</span>.com&nbsp;&nbsp;<span class="small">Beta V0.78</span></a>
-                <ul class="nav navbar-nav">
-                    <li class="nav-item active"> <a class="nav-link" href="/en/index.html"><span class="tag tag-lg tag-danger">English</span><span class="sr-only">(current)</span></a> </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/cn/i/statisticsdata.html"> <i class="fa fa-line-chart fa-lg" aria-hidden="true"></i>&nbsp;趋势·统计数据</a>
-                    </li>
-                    <li class="nav-item"> <a class="nav-link" href="/login/login.html">登陆</a></li>
-                    <li class="nav-item"> <a class="nav-link" href="/about.html">About</a> </li>
-                </ul>
-                <form class="form-inline float-xs-right" role="search" onsubmit="return baiduWithHttps(this)" action="http://www.baidu.com/baidu" target="_blank">
-                    <input class="form-control" type="text" placeholder="Search" onfocus="checkHttps" name="word" size="40">
-                    <!--                    <input name="tn" type="hidden" value="SE_zzsearchcode_shhzc78w">-->
-                    <button class="btn btn-outline-success" type="submit">百度一下</button>
-                </form>
-            </div>
-        </nav>
-        <br/>
-        <br/>
-        <br/>
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="/cn/index.html">首页</a></li>
-            <li class="breadcrumb-item"><a href="/cn/i/industry.html">行业领域工具</a></li>
-            <li class="breadcrumb-item active">统计数据工具库</li>
-        </ol>
-        <div class="col-md-1"> </div>
-        <div class="col-md-10">
+
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/index.html">Tool<span style="color:red">3</span><span
+            style="color:#FFEB63">2</span><span style="color:blue">1</span>.com&nbsp;&nbsp;<span class="small">Beta V0.96</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active"><a class="nav-link" href="/en/index.html"><span class="tag tag-lg tag-danger">English</span><span
+                    class="sr-only">(current)</span></a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/cn/i/statisticsdata.html"> <i class="fas fa-chart-line"></i>&nbsp;趋势·统计数据</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">工作台</a>
+                    <div class="dropdown-menu workbench" aria-labelledby="navbarDropdown">
+                        <a>互联网入口</a>
+                        <div class="dropdown-divider"></div>
+                        <div class="nav-tool">
+                            <a href="/cn/c/searchengine.html" title="搜索引擎">搜索</a>
+                            <a href="/cn/c/news.html" title="新闻,资讯,媒体">资讯</a>
+                            <a href="/cn/c/surfing.html" title="上网导航，浏览器插件">上网</a>
+                            <a href="/cn/c/mp.html" title="自媒体管理工具">自媒体</a>
+                            <a href="/cn/c/download.html" title="传统下载网站和下载工具">下载</a>
+                            <a href="/cn/c/mall.html" title="购物网站和比价工具">购物</a>
+                            <a href="/cn/c/appstore.html" title="应用商店，应用管理工具，小程序">应用商店</a>
+                            <a href="/cn/c/pay.html" title="电子钱包，理财工具">钱包</a>
+                            <a href="/cn/c/voice.html" title="语音">语音助手</a>
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <a>文档·办公</a>
+                        <div class="dropdown-divider"></div>
+                        <div class="nav-tool">
+                            <a href="/cn/c/cloudoffice.html" title="云端在线文档工具,文档模板">在线文档</a>
+                            <a href="/cn/c/note.html" title="知识管理,笔记工具">笔记</a>
+                            <a href="/cn/c/word.html" title="word">文字</a>
+                            <a href="/cn/c/excel.html" title="Excel">表格</a>
+                            <a href="/cn/c/powerpoint.html" title="Powerpoint,slider">幻灯片</a>
+                            <a href="/cn/c/clouddisk.html" title="网盘,云存储工具">网盘</a>
+                            <a href="/cn/c/email.html" title="电子邮箱,收发工具">邮箱</a>
+                            <a href="/cn/c/calender.html" title="日历,万年历,时间管理工具">日历</a>
+                            <a href="/cn/c/task.html" title="事务计划管理工具,Planner,Task">事务</a>
+                            <a href="/cn/c/flowchart.html" title="流程图">流程图</a>
+                            <a href="/cn/c/form.html" title="表单,调查问卷">表单</a>
+                            <a href="/cn/c/publication.html" title="出版,印刷,制作">出版</a>
+                            <a href="/cn/c/webpager.html" title="网页制作工具">网页</a>
+                            <a href="/cn/c/database.html" title="数据管理工具">数据库</a>
+                            <a href="/cn/c/bi.html" title="商业智能,决策工具">BI</a>
+                            <a href="/cn/c/projectmanagement.html" title="项目管理,Project">项目管理</a>
+                            <a href="/cn/c/notepad.html" title="文本处理工具">文本</a>
+                            <a href="/cn/c/explorer.html" title="资源管理器,文件比较,加密,搜索,压缩">文件管理</a>
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <a>沟通·协作</a>
+                        <div class="dropdown-divider"></div>
+                        <div class="nav-tool">
+                            <a href="/cn/c/skype.html" title="聊天,通讯">社交</a>
+                            <a href="/cn/c/sharepoint.html" title="协作工具,团队管理">协作</a>
+                            <a href="/cn/c/oa.html" title="在线协作平台">OA</a>
+                            <a href="/cn/c/crm.html" title="客户关系管理">CRM</a>
+                            <a href="/cn/c/erp.html" title="企业资源规划">ERP</a>
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <a>阅读·视觉</a>
+                        <div class="dropdown-divider"></div>
+                        <div class="nav-tool">
+                            <a href="/cn/c/dictionary.html" title="翻译工具,词典,方言">翻译</a>
+                            <a href="/cn/c/ebook.html" title="电子书,kindle,epub,pdf,文库">电子书</a>
+                            <a href="/cn/c/media.html" title="视频,流媒体播放工具">视频</a>
+                            <a href="/cn/c/vedio.html" title="视频制作工具">视频制作</a>
+                            <a href="/cn/c/photo.html" title="图片,照片,图像">图像</a>
+                            <a href="/cn/c/music.html" title="音乐,流媒体处理工具">音乐</a>
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <a>开发圈</a>
+                        <div class="dropdown-divider"></div>
+                        <div class="nav-tool">
+                            <a href="/cn/c/ide.html" title="开发环境工具">IDE</a>
+                            <a href="/cn/c/server.php" title="服务器,开放云">服务器</a>
+                            <a href="/cn/c/developer.html" title="开发者中心">开发者中心</a>
+                            <a href="/cn/c/academy.html" title="技术学院">学院</a>
+                            <a>研究院</a>
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <a>系统</a>
+                        <div class="dropdown-divider"></div>
+                        <div class="nav-tool">
+                            <a href="/cn/c/operationsystem.html" title="操作系统,虚拟机,驱动">操作系统</a>
+                            <a href="/cn/c/safety.html" title="杀毒软件，系统急救箱">安全</a>
+                            <a href="/cn/c/input.html" title="输入法">输入法</a>
+                        </div>
+
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">职业</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/cn/r/quality.html">质量·品质</a>
+                        <a class="dropdown-item" href="/cn/r/webmaster.html">站长</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/cn/r/productmanager.html">产品经理</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">行业</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/cn/i/informationtechnology.html">IT信息</a>
+                        <a class="dropdown-item" href="/cn/i/electron.html">电子</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/cn/i/finance.html">财经</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">企业</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/cn/i/startup.html">初创</a>
+                        <a class="dropdown-item" href="/cn/i/growup.html">成长</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/cn/i/corporation.html">变革</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="/t/tool.php">新工具</a></li>
+                <li class="nav-item"><a class="nav-link" href="/login/login.html">登陆</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/a/ask.html">增值问答</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="/about.html">About</a></li>
+            </ul>
+
+            <form class="form-inline my-2 my-lg-0" action="/t/search.php" method="GET">
+                <span><input class="form-control mr-sm-2" name="query" type="search" placeholder="查找你喜爱的工具..." aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div class="row">
+       
+        <br>
+
+        <div class="col-md-12">
             <div class="card-block">
                 <div class="table-responsive">
                     <table class="table table-striped table-sm">
@@ -51,31 +165,47 @@
                                 <th>检索</th>
                                 <th></th>
                                 <td><a href="http://epub.cnki.net/kns/brief/result.aspx?dbPrefix=CSYD">中国知网 统计数据</a></td>
+                                <td>
+                                    <a href="http://data.un.org">UN data 联合国官方统计检索</a>
+                                </td>
                                 <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr class="info">
-                                <th>经济指数</th>
-                                <th>宏观经济指数</th>
-                                <td><a href="https://www.msci.com/indexes">MSCI index</a>&nbsp;<a href="https://en.wikipedia.org/wiki/MSCI">Wiki</a></td>
-                                <td><a href="http://data.eastmoney.com/cjsj/cpi.html">东方财富 经济指数</a></td>
-                                <td><a href="http://www.drcnet.com.cn/">国研网</a>&nbsp;<a href="http://218.28.6.75:81/">镜像</a></td>
                                 <td></td>
                                 <td></td>
                             </tr>
                             <tr>
+                                <th>官方统计数据</th>
                                 <th>世界组织</th>
-                                <th></th>
                                 <td><a href="https://www.weforum.org">世界经济组织</a></td>
                                 <td><a href="http://unstats.un.org/" target="_blank">联合国统计司</a></td>
-                                <td><a href="http://www.oecd.org" target="_blank">OECD</a></td>
+                                <td><a href="http://www.oecd.org" target="_blank">OECD 经济合作与发展组织</a></td>
                                 <td><a href="http://www.stats.gov.cn/tjgz/wzlj/gjzzwz/201311/t20131101_451662.html" target="_blank">国际组织统计</a></td>
                                 <td><a href="http://www.principalglobalindicators.org" target="_blank">全球主要经济指标</a></td>
                             </tr>
+
                             <tr>
-                                <th><a href="http://www.stats.gov.cn/tjgz/wzlj/gwtjw/201311/t20131104_452221.html" target="_blank">世界各国官方</a></th>
+                                <th></th>
+                                <th>中国</th>
+                                <td><a href="http://www.gov.cn/shuju/" target="_blank">中央政府数据</a></td>
+                                <td><a href="http://www.stats.gov.cn/tjsj/" target="_blank">国家统计局</a></td>
+                                <td><a href="http://www.stats.gov.cn/tjgz/wzlj/zfjgwz/" target="_blank">政府机构网址</a></td>
+                                <td>&nbsp;</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <th>各地统计数字</th>
+                                <td><a href="http://www.stats.gov.cn/tjgz/wzlj/dftjwz/" target="_blank">地方政府统计</a></td>
+                                <td><a href="www.moi.gov.tw/stat/">台湾</a></td>
+                                <td><a href="http://www.censtatd.gov.hk">香港</a></td>
+                                <td><a href="http://www.dsec.gov.mo">澳门</a></td>
+                                <td><a href="http://www.gdstats.gov.cn/">广东</a></td>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <td colspan="6"><a href="http://www.stats.gov.cn/tjgz/wzlj/gwtjw/201311/t20131104_452221.html" target="_blank">世界各国官方统计局导航-中国国家统计局提供</a></td>
+                            </tr>
+                            <tr>
+                                <th></th>
                                 <th>美国</th>
                                 <td><a href="http://www.bea.gov" target="_blank">BEA经济分析</a></td>
                                 <td><a href="http://www.census.gov" target="_blank">Census普查</a></td>
@@ -83,52 +213,57 @@
                                 <td><a href="http://nces.ed.gov" target="_blank">教育统计局</a></td>
                                 <td></td>
                             </tr>
+
                             <tr>
                                 <th></th>
-                                <th>北美</th>
+                                <th>亚洲</th>
+
+                                <td><a href="http://www.stat.go.jp" target="_blank">日本总务省统计局</a></td>
+                                <td>
+                                    <a href="https://www.e-stat.go.jp/en">E-STAT 日本统计门户</a>
+                                </td>
+                                <td><a href="http://www.singstat.gov.sg" target="_blank">新加坡</a></td>
+                                <td><a href="http://www.nso.go.kr" target="_blank">韩国</a></td>
+                                <td><a href="http://mospi.nic.in" target="_blank">印度</a></td>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <th></th>
+
+                                <td>
+                                    <a href="https://www.dosm.gov.my/">马来西亚</a>
+                                </td>
+                                <td>
+                                    <a href="http://www.en.nso.mn">蒙古</a>
+                                </td>
+                                <td>
+                                    <a href="http://web.nso.go.th">泰国</a>
+                                </td>
+                                <td>
+                                    <a href="http://psa.gov.ph">菲律宾</a>
+                                </td>
+                                <td>
+                                    <a href=""></a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th></th>
+                                <th>欧洲</th>
+                                <td><a href="http://www.statistics.gov.uk" target="_blank">英国</a></td>
+                                <td><a href="https://www.destatis.de/EN/Homepage.html">德国</a></td>
+                                <td><a href="http://www.insee.fr" target="_blank">法国</a></td>
+                                <td><a href="http://www.ksh.hu">匈牙利</a></td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <th>美洲</th>
                                 <td><a href="http://www.statcan.gc.ca/">加拿大</a></td>
                                 <td><a href="http://www.inegi.org.mx">墨西哥</a></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                            </tr>
-                            <tr>
-                                <th></th>
-                                <th>亚洲</th>
-                                <td><a href="http://www.singstat.gov.sg" target="_blank">新加坡</a></td>
-                                <td><a href="http://www.nso.go.kr" target="_blank">韩国</a></td>
-                                <td><a href="http://www.stat.go.jp" target="_blank">日本</a></td>
-                                <td><a href="http://mospi.nic.in" target="_blank">印度</a></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th></th>
-                                <th></th>
-                                <td><a href="http://www.ksh.hu">匈牙利</a></td>
-                                <td><a href="https://www.destatis.de/EN/Homepage.html">德国</a></td>
-                                <td><a href="http://www.insee.fr" target="_blank">法国</a></td>
-                                <td><a href="http://www.statistics.gov.uk" target="_blank">英国</a></td>
-                                <td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <th></th>
-                                <th>中国</th>
-                                <td><a href="http://www.gov.cn/shuju/" target="_blank">中国官方</a></td>
-                                <td><a href="http://www.stats.gov.cn/tjsj/" target="_blank">国家统计局</a></td>
-                                <td>
-                                    <a href="http://www.stats.gov.cn/tjgz/wzlj/dftjwz/" target="_blank"></a>
-                                </td>
-                                <td><a href="http://www.stats.gov.cn/tjgz/wzlj/zfjgwz/" target="_blank">政府机构网址</a></td>
-                                <td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <th></th>
-                                <th>各地统计数字</th>
-                                <td><a href="http://www.stats.gov.cn/tjgz/wzlj/dftjwz/" target="_blank">地方统计局</a></td>
-                                <td><a href="www.moi.gov.tw/stat/">台湾</a></td>
-                                <td><a href="http://www.censtatd.gov.hk">香港</a></td>
-                                <td><a href="http://www.dsec.gov.mo">澳门</a></td>
-                                <td><a href="http://www.gdstats.gov.cn/">广东</a></td>
                             </tr>
                             <tr>
                                 <th></th>
@@ -139,13 +274,23 @@
                                 <td><a href="http://www.bjpc.org.cn/" target="_blank">北京生产力</a></td>
                                 <td><a href="http://www.cpc.org.tw" target="_blank">台湾生产力</a></td>
                             </tr>
+
+                            <tr class="info">
+                                <th>经济指数</th>
+                                <th>宏观经济指数</th>
+                                <td><a href="https://www.msci.com/indexes">MSCI index</a>&nbsp;<a href="https://en.wikipedia.org/wiki/MSCI">Wiki</a></td>
+                                <td><a href="http://data.eastmoney.com/cjsj/cpi.html">东方财富 经济指数</a></td>
+                                <td><a href="http://www.drcnet.com.cn/">国研网</a>&nbsp;<a href="http://218.28.6.75:81/">镜像</a></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
                             <tr>
                                 <th></th>
                                 <th>TOP 500</th>
-                                <td><a href="http://beta.fortune.com/fortune500">Fortune 500</a></td>
-                                <td><a href="http://www.fortunechina.com/fortune500">Fortune China 500 </a></td>
-                                <td><a href="http://www.startupranking.com" target="_blank" class="cellhightlight">Startup Ranking</a></td>
-                                <td><a href="https://www.top500.org/">Top500</a></td>
+                                <td><a href="http://beta.fortune.com/fortune500">Fortune 500 财富世界500强</a></td>
+                                <td><a href="http://www.fortunechina.com/fortune500">Fortune China 500 财富中国500强</a></td>
+                                <td><a href="http://www.startupranking.com" target="_blank" class="cellhightlight">Startup Ranking 初创企业排行榜</a></td>
+                                <td><a href="https://www.top500.org/">Top500 计算机排行榜</a></td>
                                 <td>&nbsp;</td>
                             </tr>
                             <tr>
@@ -170,7 +315,9 @@
                                 <th></th>
                                 <th>电子</th>
                                 <td><a href="http://www.itppi.org/">IT指数</a></td>
-                                <td><a href=""></a></td>
+                                <td>
+                                    <a href=""></a>
+                                </td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -185,8 +332,59 @@
                                 <td>&nbsp;</td>
                             </tr>
                             <tr>
-                                <th>趋势</th>
-                                <th>分析</th>
+                                <th></th>
+                                <th>互联网</th>
+                                <td><a href="http://index.baidu.com/">百度指数</a></td>
+                                <td><a href="http://top.baidu.com/">百度风云榜</a></td>
+                                <td><a href="http://rank.jianso.com/">简搜排行</a></td>
+                                <td>&nbsp;</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <th>网站排行榜</th>
+                                <td><a href="http://www.alexa.com/topsites" target="_blank" class="cellhightlight">Alexa 权威网站排名</a></td>
+
+                                <td><a href="http://www.alexa.com/topsites/countries/CN" target="_blank">ALEXA 中国网站排名</a></td>
+                                <td><a href="http://top.chinaz.com/alltop/index.html" target="_blank">站长之家</a></td>
+                                <td><a href="http://www.2345.com/top/" target="_blank" class="cellhightlight">2345排行榜</a></td>
+                                <td><a href="http://www.chinarank.org.cn/" target="_blank">中国互联网协会-网站排名</a></td>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                                <td><a href="http://www.statscrop.com/websites/top-sites/1000/" target="_blank" class="cellhightlight">Statcrop 网站排行榜</a></td>
+                                <td><a href="http://www.statscrop.com/websites/pagerank/10/" target="_blank">Statscrop 页面权重排行榜</a></td>
+                                <td><a href="https://gtmetrix.com/top1000.html" target="_blank">GTmetrix 网站排行榜</a>
+                                    <a href="http://www.alexa.com/topsites" target="_blank" class="cellhightlight"></a>
+                                </td>
+                                <td> </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <th>票房排行榜</th>
+                                <td><a href="http://www.boxofficemojo.com/" target="_blank">Boxofficemojo</a></td>
+                                <td><a href="http://movie.mtime.com/boxoffice/">Mtime</a></td>
+                                <td><a href="http://pf.maoyan.com/">猫眼</a></td>
+                                <td><a href="http://www.cbooo.cn/">中国票房</a></td>
+                                <td><a href="http://58921.com/">58921</a></td>
+                                <!--						<td><a href="http://dianying.cntv.cn/special/ndpfb/"></a></td>-->
+                            </tr>
+                            <tr>
+                                <th>研究分析</th>
+                                <th>公司</th>
+                                <td><a href="http://www.iresearch.com.cn/">艾瑞</a></td>
+                                <td><a href="http://www.iimedia.com.cn">艾媒数聚</a></td>
+                                <td><a href="http://www.umindex.com/">友盟</a></td>
+
+                                <td><a href="https://ntldstats.com/" data-toggle="tooltip" title="域名注册统计排名">nTLDstats域名注册统计排名</a></td>
+                                <td></td>
+                            </tr>
+
+                            <tr>
+                                <th></th>
+                                <th></th>
                                 <td><a href="http://www.gartner.com" target="_blank">Garterner</a></td>
                                 <td><a href="http://www.idc.com" target="_blank">IDG子公司IDC</a></td>
                                 <td><a href="http://www.counterpointresearch.com/">Counter Point Research</a></td>
@@ -210,56 +408,6 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                            </tr>
-                            <tr>
-                                <th></th>
-                                <th>互联网</th>
-                                <td><a href="http://index.baidu.com/">百度指数</a></td>
-                                <td><a href="http://top.baidu.com/">百度风云榜</a></td>
-                                <td><a href="http://www.alexa.com/topsites/countries/CN" target="_blank">ALEXA</a></td>
-                                <td><a href="http://rank.jianso.com/">简搜排行</a></td>
-                                <td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <th></th>
-                                <th>网站排行榜</th>
-                                <td><a href="http://www.2345.com/top/" target="_blank" class="cellhightlight">2345排行榜</a></td>
-                                <td><a href="http://top.chinaz.com/alltop/index.html" target="_blank">站长之家</a></td>
-                                <td><a href="http://www.chinarank.org.cn/" target="_blank">中国网站排名</a></td>
-                                <td><a href="http://www.alexa.com/topsites" target="_blank" class="cellhightlight">Alexa 500</a></td>
-                                <td><a href="http://www.iwebchoice.com/" target="_blank" class="cellhightlight">iWebchoice</a></td>
-                            </tr>
-                            <tr>
-                                <th></th>
-                                <th></th>
-                                <td><a href="http://www.statscrop.com/websites/top-sites/1000/" target="_blank" class="cellhightlight">Daily Top1,000,000 Statcrop</a></td>
-                                <td><a href="http://www.statscrop.com/websites/pagerank/10/" target="_blank">PR TOP10</a></td>
-                                <td><a href="https://gtmetrix.com/top1000.html" target="_blank">GTmetrix1000</a>
-                                    <a href="http://www.alexa.com/topsites" target="_blank" class="cellhightlight"></a>
-                                </td>
-                                <td> </td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th></th>
-                                <th>票房排行榜</th>
-                                <td><a href="http://www.boxofficemojo.com/" target="_blank">Boxofficemojo</a></td>
-                                <td><a href="http://movie.mtime.com/boxoffice/">Mtime</a></td>
-                                <td><a href="http://pf.maoyan.com/">猫眼</a></td>
-                                <td><a href="http://www.cbooo.cn/">中国票房</a></td>
-                                <td><a href="http://58921.com/">58921</a></td>
-                                <!--						<td><a href="http://dianying.cntv.cn/special/ndpfb/"></a></td>-->
-                            </tr>
-                            <tr>
-                                <th></th>
-                                <th>互联网</th>
-                                <td><a href="http://www.iresearch.com.cn/">艾瑞</a></td>
-                                <td><a href="http://www.iimedia.com.cn">艾媒数聚</a></td>
-                                <td><a href="https://ntldstats.com/" data-toggle="tooltip" title="域名注册统计排名">*nTLDstats</a></td>
-                                <td><a href="http://www.umindex.com/">友盟</a></td>
-                                <td>
-                                    <a href=""></a>
-                                </td>
                             </tr>
                             <tr>
                                 <th>站内相关</th>
@@ -301,28 +449,9 @@
                     </table>
                 </div>
             </div>
-            <!-- 多说评论框 start -->
-            <div class="ds-thread" data-thread-key="statisticsdata" data-title="未来·趋势" data-url="http://tool321.com/cn/i/statisticsdata.html">
-
-            </div>
-            <!-- 多说评论框 end -->
-            <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-            <script type="text/javascript">
-                var duoshuoQuery = {
-                    short_name: "tool321"
-                };
-                (function () {
-                    var ds = document.createElement('script');
-                    ds.type = 'text/javascript';
-                    ds.async = true;
-                    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-                    ds.charset = 'UTF-8';
-                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
-                })();
-            </script>
-            <!-- 多说公共JS代码 end -->
         </div>
-        <div class="col-md-1"> </div>
+        
+    </div>
         <footer>
             <!--QUALIFICAITON INFORMATION-->
             <div id="footer">
@@ -347,10 +476,9 @@
                 <ul> <a href="http://www.miibeian.gov.cn" target="_blank">粤ICP备15117589号</a> </ul>
             </div>
         </footer>
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js" integrity="sha384-ux8v3A6CPtOTqOzMKiuo3d/DomGaaClxFYdCu2HPMBEkf6x2xiDyJ7gkXU0MWwaD" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 
 </html>

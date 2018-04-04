@@ -21,7 +21,11 @@
                     }
                     
                     .dropdown-menu {
-                        min-width: 25em !important;
+                        min-width: 22.5em !important;
+                    }
+                    
+                    .nav-tool {
+                        overflow: scroll;
                     }
                     
                     .nav-tool a {
@@ -73,6 +77,9 @@
                         }
                         .tab li {
                             width: 100%;
+                        }
+                        .nav-tool {
+                            min-width: 1em !important;
                         }
                     }
                     
