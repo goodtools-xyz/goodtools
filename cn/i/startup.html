@@ -25,7 +25,7 @@
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="/index.html">Tool<span style="color:red">3</span><span style="color:#FFEB63">2</span><span style="color:blue">1</span>.com&nbsp;&nbsp;<span class="small">Beta V0.54</span></a> </div>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>                <a class="navbar-brand" href="/index.html">Tool<span style="color:red">3</span><span style="color:#FFEB63">2</span><span style="color:blue">1</span>.com&nbsp;&nbsp;<span class="small">Beta V0.54</span></a> </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
@@ -79,56 +79,15 @@
     </nav>
     <ol class="breadcrumb">
         <li><a href="/" target="_blank">首页</a></li>
-        <li><a href="#">企业级工具</a></li>
+        <li><a href="/cn/field/all.html">企业级工具</a></li>
         <li class="active">初创公司</li>
     </ol>
-    <ul class="nav nav-tabs nav-justified">
-        <li role="presentation" class="active"><a href="#">工具介绍</a></li>
-        <li role="presentation"><a href="#tool_navigation" target="_self">工具导航</a></li>
-        <li role="presentation"><a href="#friend_link" target="_self">友情链接</a></li>
-    </ul>
-    <div class="jumbotron">
-        <h1>初创公司工具</h1>
-        <p>也许是国内第一个初创公司工具导航，在开始使用这些工具之前，也许您可以在我的博客上先阅读下关于这些工具的入门介绍</p>
-        <div class="bdsharebuttonbox">
-            <a href="#" class="bds_more" data-cmd="more"></a>
-            <a href="#" class="bds_qzone" data-cmd="qzone"></a>
-            <a href="#" class="bds_tsina" data-cmd="tsina"></a>
-            <a href="#" class="bds_tqq" data-cmd="tqq"></a>
-            <a href="#" class="bds_renren" data-cmd="renren"></a>
-            <a href="#" class="bds_weixin" data-cmd="weixin"></a>
-        </div>
-        <script>
-            window._bd_share_config = {
-                "common": {
-                    "bdSnsKey": {}
-                    , "bdText": ""
-                    , "bdMini": "2"
-                    , "bdPic": ""
-                    , "bdStyle": "0"
-                    , "bdSize": "16"
-                }
-                , "share": {}
-                , "image": {
-                    "viewList": ["qzone", "tsina", "tqq", "renren", "weixin"]
-                    , "viewText": "分享到："
-                    , "viewSize": "16"
-                }
-                , "selectShare": {
-                    "bdContainerClass": null
-                    , "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"]
-                }
-            };
-            with(document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
-        </script>
-        <p><a class="btn btn-primary btn-lg" href="http://www.tool321.com/wordpress/2016/03/14/初创公司工具/" role="button">工具介绍</a></p>
-    </div>
     <div class="container-fluid">
         <div class="table-responsive">
             <table id="tool_navigation" class="table">
                 <!-- On rows -->
                 <tbody>
-                   <tr class="success">
+                    <tr class="success">
                         <!-- On cells (`td` or `th`) -->
                         <td>综合</td>
                         <td><a href="http://c.qq.com/">腾讯创业服务平台</a></td>
@@ -340,7 +299,8 @@
             </table>
         </div>
         <div class="page-header">
-            <h1>工具介绍 <small>增进你的效率和生产力</small></h1> </div>
+            <h1>工具介绍 <small>增进你的效率和生产力</small></h1>
+        </div>
         <div class="row">
             <div class="col-sm-6 col-md-4">
                 <div class="thumbnail"> <img src="/img/T.png" alt="...">
@@ -501,8 +461,7 @@
                     var data = BaiduHttps.useHttps();
                     if (data.s === 0) {
                         return true;
-                    }
-                    else {
+                    } else {
                         formname.action = 'https://www.baidu.com/baidu' + '?ssl_s=1&ssl_c' + data.ssl_code;
                         return true;
                     }
