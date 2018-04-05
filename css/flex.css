@@ -21,7 +21,11 @@
                     }
                     
                     .dropdown-menu {
-                        min-width: 22.5em !important;
+                        min-width: 12em !important;
+                    }
+                    
+                    ul.navbar-nav>li:hover div.dropdown-menu {
+                        display: block;
                     }
                     
                     .nav-tool {
