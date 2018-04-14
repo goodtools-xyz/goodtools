@@ -26,10 +26,19 @@
                     
                     ul.navbar-nav>li:hover div.dropdown-menu {
                         display: block;
+                        z-index: 9999;
                     }
                     
                     .nav-tool {
                         overflow: scroll;
+                    }
+                    
+                    .sub-nav {
+                        width: 100%;
+                        border: rgb(225, 214, 214) solid 1px;
+                        padding-left: 5px;
+                        vertical-align: center;
+                        background-color: #f8f9fa;
                     }
                     
                     .nav-tool a {
@@ -47,11 +56,12 @@
                         flex-wrap: wrap;
                         justify-content: flex-start;
                         padding-left: 0;
+                        margin-bottom: -1px;
+                        border-bottom: rgb(225, 214, 214) solid 1px;
                     }
                     
                     .tab li {
-                        border-left: rgb(225, 214, 214) solid 1px;
-                        border-bottom: rgb(225, 214, 214) solid 1px;
+                        border-right: rgb(225, 214, 214) solid 1px;
                         padding: 0 5px;
                         width: 230px;
                         list-style-type: none;
@@ -81,6 +91,7 @@
                         }
                         .tab li {
                             width: 100%;
+                            border-bottom: rgb(225, 214, 214) solid 1px;
                         }
                         .nav-tool {
                             min-width: 1em !important;
@@ -93,6 +104,7 @@
                         }
                         .tab li {
                             width: 33.333%;
+                            border-bottom: rgb(225, 214, 214) solid 1px;
                         }
                     }
                     

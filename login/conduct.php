@@ -77,8 +77,18 @@ $password = $_POST['password'];
 include 'mysql.php';
 
 mysql_query("INSERT INTO tool321_user (user_email, user_password) VALUES ('$name','$password')");
+//保存cookie
+//setcookie("user", "$name", time()+3600, "/", "tool321.com", "ture");
+setcookie("user", "$name", time()+3600);
+if (isset($_COOKIE["user"]))
+  echo "Welcome " . $_COOKIE["user"] . "!<br />";
+else
+  echo "Welcome guest!<br />";
+
 mysql_close($con);
 echo "$name,感谢您注册使用Tool321！";
+
+
 ?>
 
 <a href="/login/user.html">
