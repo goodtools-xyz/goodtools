@@ -3,7 +3,7 @@
 <?php setcookie("user", "tool321@qq.com", time()+3600);?>
 <html lang="zh-cn">
 <head>
-    <title>NewTool | Tool321 </title>
+    <title>Discovery-不错过任何一个好工具 | Tool321 </title>
     <link rel="stylesheet" media="all"
           href="//rs-assets.b0.upaiyun.com/assets/application-42c32762eecd4d5bbe1bf9fbe93ec812.css"
           data-turbolinks-track="true">
@@ -26,7 +26,7 @@
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
-    <!-- iOS Icons -->
+    <!-- iOS Icons 
     <link rel="apple-touch-icon-precomposed"
           href="//rs-assets.b0.upaiyun.com/assets/apple-touch-icon-57x57-precomposed-1da8545c70471b56426fa2cc67f530fb.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72"
@@ -37,6 +37,7 @@
           href="//rs-assets.b0.upaiyun.com/assets/apple-touch-icon-144x144-precomposed-2571dd51f7ccb3a6a533e9aa812f29d2.png">
     <link rel="apple-touch-icon-precomposed" sizes="180x180"
           href="//rs-assets.b0.upaiyun.com/assets/apple-touch-icon-180x180-precomposed-8170abf429725528622d216ae0843bdd.png">
+          -->
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     <link rel="dns-prefetch" href="//google-analytics.com">
     <link rel="dns-prefetch" href="//www.google-analytics.com">
@@ -49,7 +50,6 @@
     <script type="text/javascript" src="vote.js"></script>
 	<script src="//rs-assets.b0.upaiyun.com/assets/application-d63b5399e1ba247d4f5e0a676a5a6d41.js" data-turbolinks-track="true"></script>
 	<script type="text/javascript" src="/js/baidutongji.js"></script>
-	<script type="text/javascript" src="/js/cnzz.js"></script>
 
 </head>
 
@@ -66,10 +66,10 @@
 <![endif]-->
 
 <div class="container" id='container'>
-    <header class="topbar top_v2">
-        <h1 class="brand">
-            <a id="logo" class="logo" href="/">
-                NewTool
+    <header class="topbar top_v2" >
+       
+        <h1 class="brand">Discovery
+            <a id="logo"  href="/">
             </a> <span class="slogan">不错过任何一个新工具</span>
         </h1>
 
@@ -306,5 +306,6 @@
             ?>
         </section>
 </div>
+	<script type="text/javascript" src="/js/cnzz.js"></script>
 
 </body>
