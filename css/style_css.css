@@ -90,16 +90,15 @@ footer {
     vertical-align: baseline;
     background: transparent
 }
+
 @charset "UTF-8";
 html {
     background-color: carbon;
 }
+
 #cnzz_stat_icon_1257102666 {
-    display:none;
+    display: none;
 }
-nav {
-    position: fixed;
-    }
 
 #wrapper {
     margin: 0px;
@@ -121,12 +120,12 @@ header {
     background-position: center;
     background-size: cover;
     width: 100%;
-    }
+}
 
 .slide {
-    width:auto;
-
+    width: auto;
 }
+
 #header {
     height: 50px;
     border-bottom: thin solid #E0E0E0;
@@ -434,25 +433,15 @@ footer li {
     border-radius: 4px;
 }
 
-@media (min-width: 1550px) {
+@media (min-width: 1550px) {}
 
-}
+@media (min-width: 1200px) {}
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {}
 
-}
+@media (min-width: 768px) {}
 
-@media (min-width: 992px) {
-
-}
-
-@media (min-width: 768px) {
-
-}
-
-@media (max-width: 640px) {
-
-}
+@media (max-width: 640px) {}
 
 @media screen and (max-width: 1120px) {
     .col-md-3 {
