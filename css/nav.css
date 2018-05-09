@@ -7,28 +7,30 @@ a {
     text-decoration: none;
 }
 
-nav {
+.index-nav {
     width: 100%;
     height: auto;
 }
 
-nav ul {
+.index-nav ul {
     list-style-type: none;
 }
 
-nav ul li {
+.index-nav ul li {
     padding: 5px;
     position: relative;
     float: left;
+    vertical-align: middle;
+    line-height: 20px;
 }
 
-nav ul li:hover {
+.index-nav ul li:hover {
     background-color: lightgray;
     border: 1px solid gray;
     border-bottom: 0;
 }
 
-nav ul li:nth-child(n+4) span::after {
+.index-nav ul li:nth-child(n+4) span::after {
     width: 0;
     height: 0;
     border-left: 5px solid transparent;
@@ -38,10 +40,10 @@ nav ul li:nth-child(n+4) span::after {
     display: inline-block;
 }
 
-nav ul li div {
+.index-nav ul li div {
     display: none;
     position: absolute;
-    top: 32px;
+    top: 30px;
     left: -1px;
     width: 200px;
     height: auto;
@@ -60,6 +62,77 @@ hr {
     background-color: lightgreen;
 }
 
-nav form {
+.index-nav form {
     padding: 5px;
+    line-height: 20px;
+    float: right;
+}
+
+
+/* footer */
+
+footer {
+    margin-top: 40px;
+    padding: 10px;
+    text-align: center;
+    background-color: #F6F6F6;
+    border-top: thin solid #E0E0E0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: auto;
+    clear: both;
+}
+
+footer li {
+    list-style: none;
+    display: inline;
+    margin: 10px;
+}
+
+.goto-box-wrapper {
+    display: block;
+    position: absolute;
+    right: -20px;
+    bottom: 20px;
+    z-index: 99;
+}
+
+.goto-box {
+    position: fixed;
+    bottom: 20px;
+    right: 0px;
+    z-index: 199;
+}
+
+.social-link {
+    width: 50px;
+    text-align: center;
+    background: #fff;
+    margin-bottom: 20px;
+    cursor: pointer;
+    opacity: .8;
+    border-radius: 4px;
+}
+
+.social-link {
+    border: 1px solid #ddd;
+    font-size: 25px;
+    box-shadow: 0 1px 5px rgba(160, 160, 160, .05);
+    display: block;
+}
+
+#clicktotop {
+    display: block;
+    width: 50px;
+    text-align: center;
+    color: #ccc;
+    font-size: 25px;
+    padding: 10px 12px;
+    background: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+    cursor: pointer;
+    box-shadow: 0 1px 5px rgba(160, 160, 160, .05);
+    opacity: .5;
+    border-radius: 4px;
 }
