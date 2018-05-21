@@ -3,7 +3,7 @@
     padding: 0px;
 }
 
-a {
+.index-nav a {
     text-decoration: none;
 }
 
@@ -14,6 +14,7 @@ a {
 
 .index-nav ul {
     list-style-type: none;
+    min-width: 1080px;
 }
 
 .index-nav ul li {
@@ -58,7 +59,7 @@ a {
     z-index: 1010;
 }
 
-hr {
+.index-nav hr {
     margin: 5px auto;
 }
 
@@ -70,6 +71,19 @@ hr {
     padding: 5px;
     line-height: 20px;
     float: right;
+}
+
+
+/* tab */
+
+#tab li {
+    display: inline-block;
+    border: 1px solid lightgray;
+    padding: 5px;
+}
+
+.nav-link active {
+    background-color: red;
 }
 
 

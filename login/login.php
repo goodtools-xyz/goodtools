@@ -1,62 +1,72 @@
-<?php
-/*session_start();
-
-//注销登录
-if($_GET['action'] == "logout"){
-    unset($_SESSION['user_id']);
-    unset($_SESSION['user_email']);
-    echo '注销登录成功！点击此处 <a href="login.html">登录</a>';
-    exit;
-}
-
-*/
-
-//登录
-
-if(isset($_POST['submit'])){
-    echo('正常访问!');
-}
-
-$user_email = $_POST['user_email'];
-$password = $_POST['password'];
-
-
-//包含数据库连接文件
-include('mysql.php');
-//检测用户名及密码是否正确
-$check_query = mysql_query("SELECT user_email,user_password FROM tool321_user WHERE user_email='$user_email' and password='$password' ");
-
-if($result = mysql_fetch_array($check_query)){
-    //登录成功
-    $_SESSION['user_email'] = $user_email;
-    $_SESSION['userid'] = $result['uid'];
-    echo $name,' 欢迎你！进入 <a href="user_profile.php">用户中心</a><br />';
-    echo '点击此处 <a href="login.php?action=logout">注销</a> 登录！<br />';
-    exit;
-} else {
-    exit('登录失败！点击此处 <a href="javascript:history.back(-1);">返回</a> 重试');
-}
-?>
 
 <?php
 session_start();
+header("Content-type:text/html;charset=utf-8");
+include 'mysql.php';
+$user_email = $_POST['user_email'];
+$password = $_POST['password'];
 
-//检测是否登录，若没登录则转向登录界面
-if(!isset($_SESSION['userid'])){
-    header("Location:login.html");
-    exit();
+//$name=$_POST['username'];
+//$pwd=$_POST['password'];
+//$yzm=$_POST['yzm'];
+//$hadden=$_POST['hadden'];
+ if($user_email==''){
+ echo "<script>alert('请输入用户名');location='" . $_SERVER['HTTP_REFERER'] . "'</script>";
+ exit;
+ }
+ if($password==''){
+
+ echo "<script>alert('请输入密码');location='" . $_SERVER['HTTP_REFERER'] . "'</script>";
+ exit;
+
+ }
+ /*
+ if($yzm!=$_SESSION['VCODE']){
+
+ echo"<script>alert('你的验证码不正确，请重新输入');location='".$_SERVER['HTTP_REFERER']. "'</script>";
+ exit;
+ }
+*/
+$result = mysql_num_rows(mysql_query("select * from tool321_user where user_email='" . $user_email . "' and user_password='" . $password . "'"));
+echo "$result";
+if (!$result) {
+ echo "<script>alert('您输入的用户名不存在');location='login.html'</script>";
+    exit ;
+} else {
+ echo "<script>alert('登录成功');location='user_profile.php'</script>";
+    exit ;
 }
 
-//包含数据库连接文件
-include('conduct.php');
-$userid = $_SESSION['userid'];
-$username = $_SESSION['username'];
-$user_query = mysql_query("select * from user where uid=$userid limit 1");
-$row = mysql_fetch_array($user_query);
-echo '用户信息：<br />';
-echo '用户ID：',$userid,'<br />';
-echo '用户名：',$user_email,'<br />';
-echo '邮箱：',$row['email'],'<br />';
-echo '注册日期：',date("Y-m-d", $row['regdate']),'<br />';
-echo '<a href="login.php?action=logout">注销</a> 登录<br />';
-?>
+ $sql_select="select user_id,user_email,user_password from tool321_user where user_email=$user_email"; //从数据库查询信息'
+ echo "$sql_select";    
+ $stmt=mysqli_prepare($link,$sql_select);
+ mysqli_stmt_bind_param($stmt,'s',$user_email);
+ mysqli_stmt_execute($stmt);
+ $result=mysqli_stmt_get_result($stmt);
+ $row=mysqli_fetch_assoc($result);
+
+ if($row){
+
+ if($password !=$row['user_password'] || $name !=$row['user_email']){
+
+ echo "<script>alert('密码错误，请重新输入');location='login.html'</script>";
+ exit;
+ }
+ else{
+ $_SESSION['user_email']=$row['user_email'];
+ $_SESSION['user_id']=$row['user_id'];
+ echo "<script>alert('登录成功');location='user_profile.html'</script>";
+ }
+
+ }else{
+ echo "<script>alert('您输入的用户名不存在');location='login.html'</script>";
+ exit;
+ };
+
+
+
+
+
+
+
+

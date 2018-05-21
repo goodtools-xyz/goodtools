@@ -1,6 +1,8 @@
 
 
 <?php
+header("Content-type:text/html;charset=utf-8");
+
 $user_email = $_POST['user_email'];
 $password = $_POST['password'];
 $password_confirmed = $_POST['password_confirmed'];

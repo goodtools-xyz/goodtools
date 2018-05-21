@@ -9,10 +9,12 @@
     <base target="_blank">
     <!--用户可方便地通过 Windows 启动磁贴来查找和固定您的网页-->
     <meta name="msapplication-square150x150logo" content="square.png" />
-    <title>Tool321_不可错过任何一个工具</title>
+    <title>goodtools_不可错过任何一个工具</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
        <link rel="stylesheet" href="/css/nav.css">
+              <link rel="stylesheet" href="/css/styel_css.css">
+
 
     
 </head>
@@ -21,6 +23,13 @@
     <?php 
     include "nav.html"
  ?>
+ <?php     
+
+echo filetype("index.html");
+
+
+ ?>
+ 
          <?php 
     include "footer.html"
  ?>                                
