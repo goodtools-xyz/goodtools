@@ -28,11 +28,15 @@ $password = $_POST['password'];
  }
 */
 $result = mysql_num_rows(mysql_query("select * from tool321_user where user_email='" . $user_email . "' and user_password='" . $password . "'"));
-echo "$result";
+//显示是否查询到记录 echo "$result";
 if (!$result) {
  echo "<script>alert('您输入的用户名不存在');location='login.html'</script>";
     exit ;
 } else {
+     //保存cookie
+setcookie("user_email", "$user_email", time()+(60*60*24*30),"/","tool321.com");
+setcookie("user_password","$password",time()+(60*60*24*30),"/","tool321.com");
+echo "$user_email";
  echo "<script>alert('登录成功');location='user_profile.php'</script>";
     exit ;
 }
@@ -55,9 +59,8 @@ if (!$result) {
  else{
  $_SESSION['user_email']=$row['user_email'];
  $_SESSION['user_id']=$row['user_id'];
- //保存cookie
-setcookie("user_email", "$user_email", time()+(60*60*24*30),"/","tool321.com");
-setcookie("user_password","$password",time()+(60*60*24*30),"/","tool321.com");
+
+
  echo "<script>alert('登录成功');location='user_profile.html'</script>";
  }
 
