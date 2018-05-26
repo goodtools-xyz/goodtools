@@ -23,6 +23,7 @@
     <?php 
     include "nav.html"
  ?>
+ <br>
  <?php     
 
 echo filetype("index.html");

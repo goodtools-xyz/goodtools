@@ -10,11 +10,11 @@
 .index-nav {
     width: 100%;
     height: auto;
+    min-width: 1400px;
 }
 
 .index-nav ul {
     list-style-type: none;
-    min-width: 1080px;
 }
 
 .index-nav ul li {
@@ -50,7 +50,7 @@
     position: absolute;
     top: 30px;
     left: -1px;
-    width: 200px;
+    min-width: 180px;
     height: auto;
     background-color: lightgray;
     border: 1px solid gray;
