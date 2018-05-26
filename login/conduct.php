@@ -14,10 +14,10 @@ if ($password==$password_confirmed) {
 mysql_query("INSERT INTO tool321_user (user_email, user_password) VALUES ('$user_email','$password')");
 
 //保存cookie
-//setcookie("user", "$name", time()+3600, "/", "tool321.com", "ture");
-setcookie("user", "$user_email", time()+3600);
-if (isset($_COOKIE["user"]))
-  echo "Welcome " . $_COOKIE["user"] . "!<br />";
+setcookie("user_email", "$user_email", time()+(60*60*24*30),"/","tool321.com");
+setcookie("user_password","$password",time()+(60*60*24*30),"/","tool321.com");
+if (isset($_COOKIE["user_email"]))
+  echo "Welcome " . $_COOKIE["user_email"] . "!<br />";
 else
   echo "Welcome guest!<br />";
 

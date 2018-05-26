@@ -55,6 +55,9 @@ if (!$result) {
  else{
  $_SESSION['user_email']=$row['user_email'];
  $_SESSION['user_id']=$row['user_id'];
+ //保存cookie
+setcookie("user_email", "$user_email", time()+(60*60*24*30),"/","tool321.com");
+setcookie("user_password","$password",time()+(60*60*24*30),"/","tool321.com");
  echo "<script>alert('登录成功');location='user_profile.html'</script>";
  }
 

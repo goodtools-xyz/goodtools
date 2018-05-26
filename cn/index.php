@@ -24,12 +24,21 @@
     include "nav.html"
  ?>
  <br>
- <?php     
 
-echo filetype("index.html");
+ <div>
+            <p>功能正在开发中，欢迎收藏网址关注。--Tool321，专注效率和生产力工具</p>
+            <form method="POST" action="/login/login.php"> Name：
+                <input type="email" name="user_email" value="<?php echo $_COOKIE['user_email']?>" placeholder="input your email" required="required"  /> Password：
+                <input type="password" name="password" placeholder="password" required="required" value="<?php  echo $_COOKIE['user_password'] ?>" />
+                <input type="submit" value="login" name="login" /> <a href="/login/help.html">Forget the password?</a> </form>
 
+            <ul>
+                <li><a href="/login/reg.php">注册</a></li>
+                <li><a href="https://oapi.dingtalk.com/connect/qrconnect?appid=dingoanobgxi6mcrgq49mq&response_type=code&scope=snsapi_login&state=STATE&redirect_uri=http://tool321.com">使用钉钉扫码登录</a></li>
+                <li><a href="https://open.weixin.qq.com/connect/oauth2/authorize?appid=ww63b212f636803f4d&redirect_uri=http://tool321.com&response_type=code&scope=snsapi_base&agentid=AGENTID&state=STATE#wechat_redirect">使用企业微信扫码登录</a></li>
 
- ?>
+            </ul>
+        </div>
  
          <?php 
     include "footer.html"
