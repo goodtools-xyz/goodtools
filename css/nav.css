@@ -76,10 +76,12 @@
 
 /* tab */
 
-#tab li {
+.nav-tabs li {
     display: inline-block;
     border: 1px solid lightgray;
     padding: 5px;
+    list-style-type: none;
+    float: left;
 }
 
 .nav-link active {
