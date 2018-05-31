@@ -31,7 +31,7 @@ include '../../cn/nav.html';
     <div class="tool-box">
 
         <br>
-        <ul class="nav nav-tabs nav-justified" id="tab" role="tablist">
+        <ul class="nav nav-tabs nav-justified"  role="tablist">
             <li class="nav-item ">
                 <a class="nav-link active" href="#tab1" data-toggle="tab">区块链资讯</a>
             </li>
@@ -86,6 +86,7 @@ include '../../cn/nav.html';
                 </ul>
         </div>
         <div id="tab2" class="tab-pane" role="tabpanel">
+         <nav class="sub-nav"></nav>
             <ul class="tab ">
                 <li>
                     <a href=" "><span class="tool-name ">行情</span></a>
@@ -98,18 +99,22 @@ include '../../cn/nav.html';
             </ul>
         </div>
         <div id="tab3" class="tab-pane" role="tabpanel">
+                 <nav class="sub-nav"></nav>
+
             <ul class="tab ">
                 <li>
                     <a href="https://star.8.163.com/"><span class="tool-name ">网易星球</span></a>
                     <p class="tool-introduction ">网易严选出品，品质保证</p>
                 </li>
-                <li><a href="http://special.ccidnet.com/pub-bc-eval/index.shtml">赛迪全球公有链技术评估指数</a></li>
+                <li><a href="http://special.ccidnet.com/pub-bc-eval/index.shtml"><span>赛迪全球公有链技术评估指数</span></a><p></p></li>
                 <li></li>
                 <li></li>
                 <li></li>
             </ul>
         </div>
         <div id="tab4" class="tab-pane" role="tabpanel">
+                 <nav class="sub-nav"></nav>
+
             <ul class="tab ">
                 <li>
                     <a href=" "><span class="tool-name ">巴比特</span></a>
@@ -121,22 +126,21 @@ include '../../cn/nav.html';
             </ul>
         </div>
         </div>
-        <ul class="nav nav-tabs" id="tab" role="tablist">
+        <ul class="nav nav-tabs"  role="tablist">
             <li class="nav-item ">
                 <a class="nav-link active" href="#bitcoin" data-toggle="tab">比特币</a>
             </li>
             <li class="nav-item ">
                 <a class="nav-link " href="#pocket" data-toggle="tab">钱包</a>
             </li>
-            <li class="nav-item ">
-                <a class="nav-link " href="#" data-toggle="tab"></a>
-            </li>
+            
             <li class="nav-item ">
                 <a class="nav-link disabled " href="#" data-toggle="tab">社区</a>
             </li>
         </ul>
         <div id="myTabContent" class="tab-content">
             <div id="bitcoin" class="tab-pane active">
+         <nav class="sub-nav"></nav>
 
                 <ul class="tab">
                     <li>
@@ -154,6 +158,8 @@ include '../../cn/nav.html';
                 </ul>
             </div>
             <div id="pocket" class="tab-pane" role="tabpanel">
+                     <nav class="sub-nav"></nav>
+
                 <ul class="tab ">
                     <li>
                         <a href="https://www.mytokenpocket.vip">
@@ -169,24 +175,12 @@ include '../../cn/nav.html';
                     <li></li>
                 </ul>
             </div>
-            <div id="" class="tab-pane" role="tabpanel">友情链接
-                <ul class="tab ">
-                    <li>
-                        <a href="https://www.btc123.com/"><span class="tool-name">BTC123</span></a>
-                        <p class="tool-introduction ">专业的比特币(bitcoin)网址导航,全面汇集比特币相关网站,提供最新比特币资讯以及实时价格行情、K线图</p>
-                    </li>
-                    <li>
-                        <a href="https://www.block123.com/"><span class="tool-name">Block123</span></a>
-                        <p class="tool-introduction ">区块链上网门户导航, 以太坊比特币数字货币资产网址大全</p>
-                    </li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
+           
         </div>
 
-        <ul class="nav nav-tabs" id="tab" role="tablist">
+        <ul class="nav nav-tabs" role="tablist">
+                
+
 
             <li class="nav-item ">
                 <a class="nav-link active" href="#knowledge" data-toggle="tab">知识库</a>
@@ -199,6 +193,8 @@ include '../../cn/nav.html';
         <div id="myTabContent" class="tab-content">
 
             <div id="knowledge" class="tab-pane active" role="tabpanel">
+                     <nav class="sub-nav"></nav>
+
                 <ul class="tab">
                     <li>
                         <a href=" "><span class="tool-name ">比特币视频</span></a>
@@ -215,6 +211,8 @@ include '../../cn/nav.html';
             </div>
 
             <div id="friendlink" class="tab-pane" role="tabpanel">
+                     <nav class="sub-nav"></nav>
+
                 <ul class="tab ">
                     <li>
                         <a href="https://www.btc123.com/"><span class="tool-name">BTC123</span></a>
@@ -240,17 +238,13 @@ include '../../cn/nav.html';
 
 
 
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
+      
         <script type="text/javascript">
            gettoolico();
         </script>
-        <!--CNZZ统计-->
-        <script type="text/javascript">
-            var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-            document.write(unescape("%3Cspan id='cnzz_stat_icon_1257102666'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1257102666%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
-        </script>
+        <?
+include '../../cn/footer.html';
+?>
 </body>
 
 </html>

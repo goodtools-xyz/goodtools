@@ -23,16 +23,21 @@ function gettoolico() {
     var i, j, k;
     for (i = 0; i < oul.length; i++) {
         console.log(oul[i]);
+        console.log(oul.length);
         var oa = oul[i].getElementsByTagName("a");
         for (j = 0; j < oa.length; j++) {
             console.log(oa[j]);
             var toolico = document.createElement("i");
             oa[j].appendChild(toolico);
-            var oi = document.getElementsByTagName("i");
-            for (k = 0; k < oi.length; k++) {
-                console.log(oi[k]);
-                oi[k].setAttribute("class", "tool-ico");
-            }
+            var toolurl = oa[j].href;
+            console.log(toolurl);
+            var oi = oa[j].getElementsByTagName("i");
+            oi[0].setAttribute("class", "tool-ico");
+            oi[0].style.backgroundImage = "url(" + toolurl + "/favicon.ico)";
+            var icourl = oi[0].style.backgroundImage;
+            console.log(oi[0].style);
+            icourl = "url(http://www.tool321.com/favicon.ico)";
+            console.log(icourl);
         }
     }
 

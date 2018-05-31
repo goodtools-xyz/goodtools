@@ -86,7 +86,7 @@
                         color: #014cd2;
                         font-weight: bold;
                         font-size: 14px;
-                        background-image: url(http://www.sina.com.cn/favicon.ico);
+                        /* background-image: url(http://www.sina.com.cn/favicon.ico); */
                         background-repeat: no-repeat;
                         background-size: 100%;
                     }
