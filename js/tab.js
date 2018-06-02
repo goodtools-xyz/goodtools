@@ -27,7 +27,25 @@ function gettoolico() {
             var toolico = document.createElement("i");
             oa[j].appendChild(toolico);
             var toolurl = oa[j].href;
-            var icourl = toolurl + "/favicon.ico";
+            //正则表达式获得域名地址
+            var reg = /^http(s)?:\/\/(.*?)\//;
+            // 必须是http开头或者https开头，结尾为'/'
+
+            // 把host替换成指定数值
+
+            var ToReplace = 'Host/';
+            console.log(ToReplace);
+
+            toolurl.replace(reg, ToReplace);
+
+            // Host/cench
+
+            //*******************************************
+            var domain = reg.exec(toolurl)[2];
+            console.log(domain);
+            //
+
+            var icourl = "http://" + domain + "/favicon.ico";
             console.log(icourl);
             var oi = oa[j].getElementsByTagName("i");
             oi[0].setAttribute("class", "tool-ico");
@@ -37,6 +55,8 @@ function gettoolico() {
                 var orel = document.getElementsByTagName
             }
             // oi[0].style.backgroundImage = "url(" + toolurl + "/favicon.ico)";
+
+            // www.cnblogs.com
 
         }
     }
