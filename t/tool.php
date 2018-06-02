@@ -68,10 +68,7 @@
 <div class="container" id='container'>
     <header class="topbar top_v2" >
        
-        <h1 class="brand">Discovery
-            <a id="logo"  href="/">
-            </a> <span class="slogan">不错过任何一个新工具</span>
-        </h1>
+        
 
         <div class="header_inner cf">
             <nav class="navigation text-center">

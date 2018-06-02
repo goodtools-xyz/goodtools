@@ -5,6 +5,8 @@ header("Content-type:text/html;charset=utf-8");
 include 'mysql.php';
 $user_email = $_POST['user_email'];
 $password = $_POST['password'];
+echo $_SESSION['user_email']=$user_email;
+echo $_SESSION['$password'];
 
 //$name=$_POST['username'];
 //$pwd=$_POST['password'];

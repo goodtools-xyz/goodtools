@@ -32,7 +32,7 @@ include '../../cn/nav.html';
 
         <br>
         <ul class="nav nav-tabs nav-justified"  role="tablist">
-            <li class="nav-item ">
+            <li class="nav-item active">
                 <a class="nav-link active" href="#tab1" data-toggle="tab">区块链资讯</a>
             </li>
             <li class="nav-item ">
@@ -215,11 +215,11 @@ include '../../cn/nav.html';
 
                 <ul class="tab ">
                     <li>
-                        <a href="https://www.btc123.com/"><span class="tool-name">BTC123</span></a>
+                        <a href="https://www.btc123.com"><span class="tool-name">BTC123</span></a>
                         <p class="tool-introduction ">专业的比特币(bitcoin)网址导航,全面汇集比特币相关网站,提供最新比特币资讯以及实时价格行情、K线图</p>
                     </li>
                     <li>
-                        <a href="https://www.block123.com/"><span class="tool-name">Block123</span></a>
+                        <a href="https://www.block123.com"><span class="tool-name">Block123</span></a>
                         <p class="tool-introduction ">区块链上网门户导航, 以太坊比特币数字货币资产网址大全</p>
                     </li>
                     <li>
@@ -227,7 +227,7 @@ include '../../cn/nav.html';
                         <p class="tool-introduction ">区块链产业链内容分发、应用分享及点评平台</p>
                     </li>
                     <li>
-                        <a href="https://www.cybtc.net/"><span>彩云导航</span></a>
+                        <a href="https://www.cybtc.net"><span>彩云导航</span></a>
                     </li>
                     <li></li>
                 </ul>

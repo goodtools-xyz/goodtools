@@ -102,7 +102,9 @@
 </a>            <ul class="dropdown account-dropdown">
               <li><a href="/users/155176">我的主页</a></li>
               <li><a href="/users/155176/edit?ok_url=%2Fusers%2F155176%2Fposts%2Fcontributed">个人设置</a></li>
-              <li><a rel="nofollow" data-method="delete" href="/users/sign_out?ok_url=%2Fusers%2F155176%2Fposts%2Fcontributed">退出登录</a></li>
+              <!-- <li><a rel="nofollow" data-method="delete" href="/users/sign_out?ok_url=%2Fusers%2F155176%2Fposts%2Fcontributed">退出登录</a></li> -->
+
+              <li><a rel="nofollow" data-method="delete" href="/login/log_out.php">退出登录</a></li>
             </ul>
           </li>
       </ul>
