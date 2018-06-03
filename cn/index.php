@@ -12,8 +12,9 @@
     <title>goodtools_不可错过任何一个工具</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-       <link rel="stylesheet" href="/css/nav.css">
-              <link rel="stylesheet" href="/css/styel_css.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/styel_css.css">
+    <link rel="shortcut icon" href="/img/T.png">
 
 
     
