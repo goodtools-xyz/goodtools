@@ -27,7 +27,7 @@ function gettoolico() {
             var toolico = document.createElement("i");
             oa[j].appendChild(toolico);
             var toolurl = oa[j].href;
-            //正则表达式获得域名地址
+            //**********正则表达式获得域名地址
             var reg = /^http(s)?:\/\/(.*?)\//;
             // 必须是http开头或者https开头，结尾为'/'
 
@@ -40,10 +40,10 @@ function gettoolico() {
 
             // Host/cench
 
-            //*******************************************
+
             var domain = reg.exec(toolurl)[2];
             console.log(domain);
-            //
+            //*******************************************
 
             var icourl = "http://" + domain + "/favicon.ico";
             console.log(icourl);
@@ -56,7 +56,24 @@ function gettoolico() {
             }
             // oi[0].style.backgroundImage = "url(" + toolurl + "/favicon.ico)";
 
-            // www.cnblogs.com
+            //******** 使用ajax异步更新icon图标
+            var xmlhttp;
+            if (window.XMLHttpRequest) { // code for IE7+, Firefox, Chrome, Opera, Safari
+                xmlhttp = new XMLHttpRequest();
+            } else { // code for IE6, IE5
+                xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            xmlhttp.open("GET", domain, true);
+            xmlhttp.send();
+            xmlhttp.onreadystatechange = function() {
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                    var ico_shortcut_url = document.querySelector('link[rel="shortcut icon"]').href; //获取shortcut icon
+                    var ico_apple_touch_url = document.querySelector('link[rel="apple-touch-icon"]').href; //获取apple-touch-icon
+                    console.log(ico2url);
+                    //document.getElementById("myDiv").innerHTML = xmlhttp.responseText;
+                }
+
+            }
 
         }
     }
