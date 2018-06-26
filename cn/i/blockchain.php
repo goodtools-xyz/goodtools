@@ -72,7 +72,7 @@ include '../../cn/nav.html';
                 <li><a href="http://www.ccidnet.com/">赛迪网</a>
                 <p class="tool-introduction ">中国最权威的IT门户网站之一,中国信息产业风向标官网</p></li>
                 <li><a href="https://www.bianews.com">Bia News</a>
-                <p>隶属于中国最大的自媒体公司WeMedia旗下的领先区块链资讯平台</p></li>
+                <p tool-introduction>隶属于中国最大的自媒体公司WeMedia旗下的领先区块链资讯平台</p></li>
 
                 </ul>
                 <nav class="sub-nav">英文资讯</nav>
