@@ -42,7 +42,7 @@ include '../../cn/nav.html';
                 <a class="nav-link " href="#tab3" data-toggle="tab">指数</a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link" href="#tab4" data-toggle="tab">社区</a>
+                <a class="nav-link" href="#tab4" data-toggle="tab">链圈</a>
             </li>
         </ul>
         <div id="myTabContent" class="tab-content">
@@ -71,6 +71,8 @@ include '../../cn/nav.html';
                 </li>
                 <li><a href="http://www.ccidnet.com/">赛迪网</a>
                 <p class="tool-introduction ">中国最权威的IT门户网站之一,中国信息产业风向标官网</p></li>
+                <li><a href="https://www.bianews.com">Bia News</a>
+                <p>隶属于中国最大的自媒体公司WeMedia旗下的领先区块链资讯平台</p></li>
 
                 </ul>
                 <nav class="sub-nav">英文资讯</nav>
@@ -86,7 +88,7 @@ include '../../cn/nav.html';
                 </ul>
         </div>
         <div id="tab2" class="tab-pane" role="tabpanel">
-         <nav class="sub-nav"></nav>
+         <nav class="sub-nav">行情</nav>
             <ul class="tab ">
                 <li>
                     <a href=" "><span class="tool-name ">行情</span></a>
@@ -99,13 +101,10 @@ include '../../cn/nav.html';
             </ul>
         </div>
         <div id="tab3" class="tab-pane" role="tabpanel">
-                 <nav class="sub-nav"></nav>
+                 <nav class="sub-nav">指数</nav>
 
             <ul class="tab ">
-                <li>
-                    <a href="https://star.8.163.com/"><span class="tool-name ">网易星球</span></a>
-                    <p class="tool-introduction ">网易严选出品，品质保证</p>
-                </li>
+               
                 <li><a href="http://special.ccidnet.com/pub-bc-eval/index.shtml"><span>赛迪全球公有链技术评估指数</span></a><p></p></li>
                 <li></li>
                 <li></li>
@@ -113,7 +112,7 @@ include '../../cn/nav.html';
             </ul>
         </div>
         <div id="tab4" class="tab-pane" role="tabpanel">
-                 <nav class="sub-nav"></nav>
+                 <nav class="sub-nav">链圈</nav>
 
             <ul class="tab ">
                 <li>
@@ -131,22 +130,33 @@ include '../../cn/nav.html';
                 <a class="nav-link active" href="#bitcoin" data-toggle="tab">比特币</a>
             </li>
             <li class="nav-item ">
+                <a class="nav-link active" href="#exchange" data-toggle="tab">交易所</a>
+            </li>
+            <li class="nav-item ">
                 <a class="nav-link " href="#pocket" data-toggle="tab">钱包</a>
             </li>
-            
             <li class="nav-item ">
-                <a class="nav-link disabled " href="#" data-toggle="tab">社区</a>
+                <a class="nav-link " href="#mine" data-toggle="tab">矿机</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link disabled " href="#" data-toggle="tab">币圈</a>
             </li>
         </ul>
         <div id="myTabContent" class="tab-content">
             <div id="bitcoin" class="tab-pane active">
-         <nav class="sub-nav"></nav>
+         <nav class="sub-nav">交易所</nav>
 
                 <ul class="tab">
+                <li>
+                        <a href="http://www.bitfinex.com"><span class="tool-name">Bitfinex</span></a>
+                        <p class="tool-introduction ">全世界最大的数字货币交易平台</p>
+                    </li>
                     <li>
                         <a href="https://www.huobi.com/"><span class="tool-name">火币网</span></a>
                         <p class="tool-introduction ">中国最大的比特币(BTC)、莱特币(LTC)、以太坊(ETH)、以太坊经典(ETC)交易平台</p>
                     </li>
+                    <li><a class="tool-name" href="https://www.binance.com">币安网</a>
+                    <p class="tool-introduction">目前币币交易量是世界排名第一的网站</p></li>
                     <li>
                         <a href="https://www.btctrade.com/"><span class="tool-name">比特币交易网</span></a>
                         <p class="tool-introduction "></p>
@@ -158,7 +168,7 @@ include '../../cn/nav.html';
                 </ul>
             </div>
             <div id="pocket" class="tab-pane" role="tabpanel">
-                     <nav class="sub-nav"></nav>
+                     <nav class="sub-nav">钱包</nav>
 
                 <ul class="tab ">
                     <li>
@@ -175,12 +185,66 @@ include '../../cn/nav.html';
                     <li></li>
                 </ul>
             </div>
+            <div id="mine" class="tab-pane" role="tabpanel">
+                     <nav class="sub-nav">矿机</nav>
+
+                <ul class="tab">
+                    <li>
+                        <a href="https://shop.bitmain.com.cn">
+                            <span class="tool-name ">比特大陆</span>
+                        </a>
+                        <p class="tool-introduction">三大矿机厂商之一</p>
+                    </li>
+                    <li>
+                        <a href="http://www.canaan-creative.com">嘉楠耘智</a>
+                         <p class="tool-introduction">三大矿机厂商之一</p>
+                    </li>
+                    <li>
+                        <a href="http://mall.ebang.com.cn">亿邦国际</a>
+                         <p class="tool-introduction">三大矿机厂商之一</p>
+                    </li>
+                     
+                    <li>
+                        <a href="https://www.cybtc.com">彩云比特</a>
+                        <p class="tool-introduction">比特币矿机中文资讯第一门户网站</p>
+                    </li>
+                    <li></li>
+                </ul>
+            </div>
            
         </div>
-
         <ul class="nav nav-tabs" role="tablist">
-                
+            <li class="nav-item ">
+                <a class="nav-link active" href="#application" data-toggle="tab">应用</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link " href="#" data-toggle="tab">以太坊</a>
+            </li>
+        </ul>
 
+       
+
+            <div id="knowledge" class="tab-pane active" role="tabpanel">
+                     <nav class="sub-nav">应用</nav>
+
+                <ul class="tab">
+                    <li>
+                        <a href="https://www.stateofthedapps.com"><span class="tool-name ">State of the Dapps</span></a>
+                        <p class="tool-introduction ">去中心化的以太坊应用列表</p>
+                    </li>
+                     <li>
+                    <a href="https://star.8.163.com/"><span class="tool-name ">网易星球</span></a>
+                    <p class="tool-introduction ">网易严选出品，品质保证</p>
+                </li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div> 
+            </div>
+            
+ <ul class="nav nav-tabs" role="tablist">
+                 <div  class="tab-content">
 
             <li class="nav-item ">
                 <a class="nav-link active" href="#knowledge" data-toggle="tab">知识库</a>
@@ -190,7 +254,7 @@ include '../../cn/nav.html';
             </li>
 
         </ul>
-        <div id="myTabContent" class="tab-content">
+        <div class="tab-content">
 
             <div id="knowledge" class="tab-pane active" role="tabpanel">
                      <nav class="sub-nav"></nav>
@@ -214,13 +278,14 @@ include '../../cn/nav.html';
                      <nav class="sub-nav"></nav>
 
                 <ul class="tab ">
+                    
                     <li>
-                        <a href="https://www.btc123.com"><span class="tool-name">BTC123</span></a>
-                        <p class="tool-introduction ">专业的比特币(bitcoin)网址导航,全面汇集比特币相关网站,提供最新比特币资讯以及实时价格行情、K线图</p>
+                        <a href="https://www.block123.com"><span class="tool-name">Block123 区块链导航</span></a>
+                        <p class="tool-introduction ">区块链上网门户导航, 以太坊比特币数字货币资产网址大全</p>
                     </li>
                     <li>
-                        <a href="https://www.block123.com"><span class="tool-name">Block123</span></a>
-                        <p class="tool-introduction ">区块链上网门户导航, 以太坊比特币数字货币资产网址大全</p>
+                        <a href="https://www.btc123.com"><span class="tool-name">BTC123 比特币导航</span></a>
+                        <p class="tool-introduction ">专业的比特币(bitcoin)网址导航,全面汇集比特币相关网站,提供最新比特币资讯以及实时价格行情、K线图</p>
                     </li>
                     <li>
                         <a href="http://www.5bite.com/category-17.html"><span class="tool-name">区块链之家</span></a>
