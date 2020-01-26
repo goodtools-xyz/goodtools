@@ -18,6 +18,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/flex.css">
+    <script src="/js/baidutongji.js" type="text/javascript"></script>
+</head>
 
 <body>
     <nav class="navbar sticky-top  navbar-expand-lg navbar-light bg-light">
@@ -216,17 +218,7 @@
                     <li>QQ:1415948426</li>
                     <li><a target="_blank" href="http://tool321.com/feedback.html" style="text-decoration:none;">意见反馈</a></li>
                     <li><a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=qNzHx8Sbmpno2dmGy8fF" style="text-decoration:none;">提交登录或者定制</a></li>
-                    <li>
-                        <!-- #BeginDate format:IS1m -->2016-03-03 14:36
-                        <!-- #EndDate -->
-                    </li>
-                    <li>
-                        <!--CNZZ统计-->
-                        <script type="text/javascript">
-                            var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-                            document.write(unescape("%3Cspan id='cnzz_stat_icon_1257102666'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1257102666%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
-                        </script>
-                    </li>
+                    
                 </ul>
                 <ul> <a href="http://www.miibeian.gov.cn" target="_blank">粤ICP备15117589号</a> </ul>
             </div>

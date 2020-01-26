@@ -15,7 +15,17 @@
     <link rel="stylesheet" href="/css/nav.css">
     <link rel="stylesheet" href="/css/styel_css.css">
     <link rel="shortcut icon" href="/img/T.png">
+    <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?ba7d20eced597b277580ecf29d16e41d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
 
+    <script src="/js/baidutongji.js" type="text/javascript"></script>
 
     
 </head>
@@ -41,9 +51,10 @@
             </ul>
         </div>
  
-         <?php 
-    include "footer.html"
- ?>                                
+         <?php     include "footer.html" ?>   
+ <?php include_once("baidu_js_push.php") ?>
+
+                             
                                    
 </body>
 
