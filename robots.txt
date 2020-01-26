@@ -6,4 +6,4 @@ Disallow: /e/data/
 Disallow: /e/enews/
 Disallow: /e/update/
 
-Sitemap: http://www.tool321.com/cn/index.html/sitemap.xml
+Sitemap: http://www.goodtools.xzy/cn/index.html/sitemap.xml
