@@ -1,9 +1,9 @@
 <?php
     include '../login/mysql.php'; 
    $keyword = $_GET['query'];
-    $result = mysql_query("SELECT * FROM tool321_tool WHERE tool_name like'%".$keyword."%' ORDER BY tool_add_datetime DESC"  );
+    $result = mysqli_query($con,"SELECT * FROM goodtools_tool WHERE tool_name like'%".$keyword."%' ORDER BY tool_add_datetime DESC"  );
     echo "<ul class='product-list reorderable'>";
-            while($row = mysql_fetch_array($result)) {
+            while($row = mysqli_fetch_array($result)) {
             echo '<li class="item product-item ">';
                 echo "<div class='posts-group cf'>";
                 echo "<div class='upvote' data-note-id=" . $row['tool_id'] . ">";
