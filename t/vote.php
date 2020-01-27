@@ -1,18 +1,12 @@
 
 <?php
 header("Content-type: text/html;charset=utf-8");
-$con = mysql_connect("qdm208731188.my3w.com", "qdm208731188", "funnsy716057");
-mysql_select_db('qdm208731188_db');
-if (!$con) {
-    die('Could not connect: ' . mysql_error());
-}
-mysql_select_db("my_db", $con);
-mysql_query("set names utf8;");
+include '/login/mysql.php';
 
-$result = mysql_query("SELECT * FROM tool321_tool WHERE tool_id='$_GET[id]'");
-$row = mysql_fetch_array($result);
+$result = mysqli_query($con, "SELECT * FROM goodtools_tool WHERE tool_id='$_GET[id]'");
+$row = mysqli_fetch_array($result);
 //更新id的点击数+1
-mysql_query("UPDATE tool321_tool SET tool_voted_count = tool_voted_count +1 WHERE tool_id='$_GET[id]'");
+mysqli_query($con, "UPDATE goodtools_tool SET tool_voted_count = tool_voted_count+1 WHERE tool_id='$_GET[id]'");
 //$num = $_GET['num'];
 //$aindex = $_GET['aindex'];
 //更新tool_adder的记录工具
@@ -21,7 +15,7 @@ mysql_query("UPDATE tool321_tool SET tool_voted_count = tool_voted_count +1 WHER
 
 echo "<script>window.location.href='/t/tool.php';</script>";
 
-mysql_close($con);
+mysqli_close($con);
 
 /*
 

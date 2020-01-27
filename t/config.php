@@ -2,7 +2,7 @@
 
 
 
-<html data-online="true" data-user-id="155176" data-portable-device="false">
+<html>
 
 <head>
   <title>搜索 - NEXT</title>
@@ -170,106 +170,14 @@
           </ul>
         </section>
 
-        <div class="table-pagination">
 
-          <div class="pagination cf remote-pagination" data-target="#search_result">
-            <ul>
-              <li class="next_page">
-                <a class="right" data-remote="true" data-type="html" href="/posts/search?page=2">后一页 &rsaquo;</a>
-
-              </li>
-            </ul>
-          </div>
-
-        </div>
 
       </div>
 
     </div>
 
-    <div class="extensions">
-      <div class="modal">
-        <div class="modal-content"></div>
-      </div>
-      <script>
-        //<![CDATA[
-
-        window.following_user_ids = [24548];
-
-        //]]>
-      </script>
-    </div>
+  
   </div>
-
-  <footer class="footer">
-    <div class="subscribe-email row text-center">
-      <h3>您也可以通过电子邮件订阅每周的更新，不错过任何一个好产品</h3>
-      <p>我们不会公开您的邮箱，您可以随时取消订阅</p>
-      <form class="simple_form form-email" id="mc-embedded-subscribe-form" action="/subscriptions" accept-charset="UTF-8" method="post">
-        <input name="utf8" type="hidden" value="&#x2713;" />
-        <input type="hidden" name="authenticity_token" value="wXka9bicuEmVqjYGQSfGWL1d9WIsMLqngR8/7frXzVlFOF5xgBkBj06kvSo6UfIYNVWZnY7OdAMpdnjCXybAtA=="
-        />
-        <input class="input-email" placeholder="输入您的邮箱" required="required" type="email" name="subscription[email]" id="subscription_email"
-        />
-        <input type="submit" name="commit" value="订阅" class="input-subscribe btn" />
-      </form>
-    </div>
-    <div class="row cf">
-      <div class="copyright">
-        <p>&copy; 2014-2015
-          <strong>NEXT</strong>. All Rights Reserved. A
-          <a href="http://www.36kr.com">36Kr</a> product.</p>
-        <p class="">上 NEXT，每天刷新更酷的生活方式。查看
-          <a href="/about">FAQ</a> /
-          <a href="/feedback">反馈建议</a>
-        </p>
-      </div>
-
-      <div class="footer-follow">
-        <ul class="cf">
-          <li>
-            <a class="icons-weibo" href="http://weibo.com/36krnext" title="Weibo" target="_blank">Weibo</a>
-          </li>
-          <li>
-            <a class="icons-twitter" href="https://twitter.com/36krNEXT" title="Twitter" target="_blank">Twitter</a>
-          </li>
-          <li>
-            <a class="icons-blog" href="http://zhuanlan.zhihu.com/NEXTBlog" title="博客" target="_blank">博客</a>
-          </li>
-          <li>
-            <a class="icons-rss" href="http://next.36kr.com/feed" title="RSS 订阅" target="_blank">RSS Feed</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <script>
-      (function (i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function () {
-          (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-          m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-      })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-      ga('create', 'UA-1268479-18', {
-        'userId': '155176-tool321'
-      });
-      window.ga_user_id = '155176-tool321'
-    </script>
-    <div id="Intercom" class="hide"></div>
-  </footer>
-  <a href="javascript:" class="back-top" title="更多快捷键:
-  j: 下翻页,
-  k: 上翻页,
-  f: 搜索,
-  t: 返回顶部
-您还可以按下键盘空格键自动翻页">返回顶部</a>
-
-  <div id="invisible" class='hide dropzone-previews'></div>
 
 
 

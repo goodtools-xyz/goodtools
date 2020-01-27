@@ -20,7 +20,7 @@
         <!--QUALIFICAITON INFORMATION-->
         <div id="footer">
             <ul>
-                <li>&copy;Copyright Reserved 引用请注明来自Goodtools.xyz</li>
+                <li>&copy;Copyright Reserved 引用请注明来自Goodtools</li>
                 <li>Author:Horseback</li>
                 <li>QQ:1415948426</li>
                 <li>

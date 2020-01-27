@@ -27,7 +27,7 @@
  <br>
 
  <div>
-            <p>功能正在开发中，欢迎收藏网址关注。--Tool321，专注效率和生产力工具</p>
+            <p>功能正在开发中，欢迎收藏网址关注。--Goodtools，专注效率和生产力工具</p>
             <form method="POST" action="/login/login.php"> Email：
                 <input type="email" name="user_email" value="<?php echo $_COOKIE['user_email']?>" placeholder="input your email" required="required"  /> Password：
                 <input type="password" name="password" placeholder="password" required="required" value="<?php  echo $_COOKIE['user_password'] ?>" />
