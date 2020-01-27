@@ -11,7 +11,7 @@
     <meta name="renderer" content="webkit">
     <link rel="shortcut icon" href="/favicon.ico">
     <!-- info -->
-    <meta name="author" content="Tool321">
+    <meta name="author" content="goodtools">
     <meta name="description" content="NewTool - 不错过任何一个新工具">
     <meta name="keywords" content="NewTool，新工具，创业，互联网工具，Startup">
     <link rel="author" href="/humans.txt">
@@ -87,7 +87,7 @@
                         <div class="tool_add_rule">
                             <h1>工具增录准则</h1>
                             <br>
-                            <a href="/">Tool321</a><p>致力于为用户提供七个小时内最有效率的工具，人人都可以参与到工具的推荐来，为此，增录必须满足于如下准则:</p>
+                            <a href="/">goodtools</a><p>致力于为用户提供七个小时内最有效率的工具，人人都可以参与到工具的推荐来，为此，增录必须满足于如下准则:</p>
                             <ul>
                                 <li>只限定于网络工具，并可公开获取</li>
                                 <li>不接受不具有知识产权的工具推荐</li>

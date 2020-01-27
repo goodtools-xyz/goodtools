@@ -23,7 +23,7 @@
 </head>
 
 <body>
-    <?php     include "nav.html" ?>
+    <?php     include "nav.php" ?>
  <br>
 
  <div>
@@ -41,7 +41,7 @@
             </ul>
         </div>
  
-         <?php     include "footer.html" ?>   
+         <?php     include "footer.php" ?>   
  <?php include_once("baidu_js_push.php") ?>
 
                              
