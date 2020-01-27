@@ -15,15 +15,7 @@
     <link rel="stylesheet" href="/css/nav.css">
     <link rel="stylesheet" href="/css/styel_css.css">
     <link rel="shortcut icon" href="/img/T.png">
-    <script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?ba7d20eced597b277580ecf29d16e41d";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
+
 
     <script src="/js/baidutongji.js" type="text/javascript"></script>
 
@@ -31,14 +23,12 @@ var _hmt = _hmt || [];
 </head>
 
 <body>
-    <?php 
-    include "nav.html"
- ?>
+    <?php     include "nav.html" ?>
  <br>
 
  <div>
             <p>功能正在开发中，欢迎收藏网址关注。--Tool321，专注效率和生产力工具</p>
-            <form method="POST" action="/login/login.php"> Name：
+            <form method="POST" action="/login/login.php"> Email：
                 <input type="email" name="user_email" value="<?php echo $_COOKIE['user_email']?>" placeholder="input your email" required="required"  /> Password：
                 <input type="password" name="password" placeholder="password" required="required" value="<?php  echo $_COOKIE['user_password'] ?>" />
                 <input type="submit" value="login" name="login" /> <a href="/login/help.html">Forget the password?</a> </form>
