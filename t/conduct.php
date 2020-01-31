@@ -12,5 +12,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo "感谢您提交工具 $tool_name";
 }
 mysqli_close($con);
-echo "<script>location.href='tool.php';</script>";
+//echo "<script>location.href='tool.php';</script>";
 ?>

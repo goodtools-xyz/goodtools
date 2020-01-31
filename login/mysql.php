@@ -14,3 +14,5 @@ if (!$con) {
 }
 mysqli_select_db("my_db", $con);
 mysqli_query($con,'set names utf8'); 
+echo "mysql connect success!";
+?>
